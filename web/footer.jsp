@@ -344,6 +344,42 @@
 		</div>
 	</div>
 
+<!-- chat start -->
+<div class="container"  id="chat_container"style=" position: absolute; top:10%; left: 10%; z-index: 2000; display: none;  ">
+            <div class="portlet portlet-default">
+               <div class="portlet-heading">
+                  <div class="portlet-title">
+                     <h4><i class="fa fa-circle text-green"></i>실시간 채팅</h4>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div id="chat" class="panel-collapse collapse in">
+                  <div id="chatList" class="portlet-body chat-widget" style="overflow-y: auto; width: auto;height: 700px;">
+                  </div>
+                    <div class="portlet-footer">
+                      <div class="row">
+                         <div class="form-group col-xs-4">
+                          작성자 명 <input style="height: 40px;" type="text" id="chatName" class="form-control" placeholder="이름" maxlength="20" readonly value="">
+                         </div>
+                      </div>
+                      <div class="row" style="height: 90px">
+                         <div class="form-group col-xs-10">
+                         		내용
+                             <textarea style="height: 80px;" id="chatContent" class="form-control"  placeholder="메세지를 입력하세요" maxlength="100" ></textarea>
+                         </div>
+                         <div class="form-group col-xs-2">
+                              <button type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
+                              <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>      
+               </div>
+            </div>
+ 
+   </div>
+
+<!-- char End -->
+
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
