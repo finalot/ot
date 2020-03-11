@@ -63,7 +63,7 @@
 					<li>
 						<a href="product.jsp">Best20</a>
 						<ul class="sub_menu"style="border-radius:10px;background:#000;filter:alpha(opacity=7); opacity:0.6; -moz-opacity:0.1; width:135%;">
-							<li><a href="shop.jsp">랭킹20</a></li>
+							<li><a href="product.jsp">랭킹20</a></li>
 						</ul>
 					</li>
 					<span class="linedivide1"></span>
@@ -400,7 +400,7 @@
 					<li>
 						<a href="product.jsp">Best20</a>
 						<ul class="sub_menu"style="border-radius:10px;background:#000;filter:alpha(opacity=7); opacity:0.6; -moz-opacity:0.1;width:135%;">
-							<li><a href="shop.jsp">랭킹20</a></li>
+							<li><a href="product.jsp">랭킹20</a></li>
 						</ul>
 					</li>
 					<span class="linedivide1"></span>
@@ -600,7 +600,7 @@
 					
 					
 					<li class="item-menu-mobile"style="background:black;">
-						<a class="item-menu-mobile" href="shop.jsp">BEST20</a>
+						<a class="item-menu-mobile" href="product.jsp">BEST20</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">랭킹20</a></li>
 						</ul>
@@ -672,7 +672,7 @@
 		 <div class="allMenuOuter">
 	<div class="allMenuInner">
         <div class="allMenuTop">
-            <h3 class="helve">Shop</h3>
+            <h3 class="helve">product</h3>
         	<div>
                 <h4 class="helve">#</h4>
                 <ul><li><a href="/product/list.html?cate_no=96">NEW5%</a></li>
