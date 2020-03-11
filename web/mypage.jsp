@@ -10,14 +10,15 @@
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
    <link rel="stylesheet" href="./css/Login_style.css">
    <link rel="stylesheet" href="./css/mypage.css">
-   
+   <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 </head>
 <body>
-	<%@include file="header.jsp" %>    
+	<%@include file="header.jsp" %>
+	
  	<div id="memberInf">
     	<p class="xans-element- xans-myshop xans-myshop-asyncbenefit mypage_top ">
     		<strong>
-    		<span><span class="xans-member- var-name">신경섭</span></span>
+    		<span><span class="xans-member- var-name">홍길동</span></span>
     		</strong>
  			님은 현재 
 			<strong>
@@ -133,7 +134,9 @@
 				<div class="title">
 			        <h3>나의 주문처리 현황 <span class="desc">(최근 <em>3개월</em> 기준)</span></h3>
 			    </div>
+			    
 				<div class="state">
+				
 			        <ul class="order">
 						<li>
 			                <strong>입금전</strong>
@@ -152,6 +155,7 @@
 			                <a href="/myshop/order/list.html?order_status=shipped_complate" class="count"><span id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
 			            </li>
 			        </ul>
+			        
 					<ul class="cs">
 						<li>
 			                <span class="icoDot"></span>
@@ -173,7 +177,7 @@
 			</div>
 		</div>
 		
-				<hr class="layout">
+	<hr class="layout">
 	</div>
 
  <%@include file="footer.jsp" %>

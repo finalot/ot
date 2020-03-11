@@ -274,7 +274,7 @@
 					</span>
 					&nbsp;&nbsp;
 					
-					<a href="#" class="topbar-email">
+					<a href="/ot/mypage.jsp" class="topbar-email">
 					MyPage
 					</a>
 					&nbsp;&nbsp;
@@ -585,7 +585,7 @@
 			</div>
 		
 
-		<!-- Menu Mobile -->aa
+		<!-- Menu Mobile -->
 		<div class="wrap-side-menu" >
 			<nav class="side-menu">
 				<ul class="main-menu" >
