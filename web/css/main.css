@@ -2098,20 +2098,24 @@ li.sale-noti > a {
 .table-shopping-cart .column-5 {
   padding-right: 30px;
   padding-top: 1px;
+  width:133px;
 }
 
 .table-shopping-cart .column-6 {
   width: 191px;
   padding-left:64px;
+  padding-top:1px;
 }
 .table-shopping-cart .column-7 {
   width: 191px;
   padding-left:31px;
+  padding-top:1px;
 }
 
 .table-shopping-cart .column-8 {
   width: 191px;
   padding-left:19px;
+  padding-top:1px;
 }
 
 
@@ -2128,7 +2132,7 @@ li.sale-noti > a {
 
 .table-shopping-cart td {
   font-family: Montserrat-Regular;
-  font-size: 16px;
+  font-size: 13px;
   color: #555555;
   line-height: 1.5;
   padding-top: 37px;

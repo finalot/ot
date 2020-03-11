@@ -3137,10 +3137,12 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .s-text18 {
-	font-family: Montserrat-Bold;
-	font-size: 15px;
-	color: #555555;
-	line-height: 1.5;
+	font-family: 'HelveticaLTPro','Arial';
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .s-text19 {
@@ -3315,25 +3317,29 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .m-text20 {
-	font-family: Montserrat-Bold;
-	font-size: 20px;
-	color: #333333;
-	line-height: 1.5;
-	text-transform: uppercase;
+	font-family: 'HelveticaLTPro','Arial';
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .m-text21 {
-	font-family: Montserrat-Regular;
-	font-size: 18px;
-	color: #888888;
-	line-height: 1.5;
+font-family: 'HelveticaLTPro','Arial';
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .m-text22 {
-	font-family: Montserrat-Bold;
-	font-size: 18px;
-	color: #555555;
-	line-height: 1.5;
+	    font-family: 'HelveticaLTPro','Arial';
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .m-text23 {
@@ -4161,6 +4167,6 @@ font-family: Montserrat-Bold;
     padding-top: 16px;
     padding-bottom: 16px;
     position: relative;
-    left: 19px;
+    left: 14px;
     
 }
