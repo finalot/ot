@@ -141,7 +141,7 @@ font-family: 'Nanum Gothic', sans-serif;
       카테고리별 게시판을 클릭하신 후 유형에 맞는 문의글을 남겨주세요.<br>
 아래의 FAQ(자주묻는질문)을 확인하시면 좀 더 빠른 답변을 얻으실 수 있습니다.  
     </div>
-            
+              
   <div class="qna_box">
   <ul>
   	<li><a href="" style="line-height: 2.2em;">상품문의</a></li>
@@ -152,14 +152,14 @@ font-family: 'Nanum Gothic', sans-serif;
   	<li><a href="" >상품불량 및<br>오배송접수</a></li>
   </ul>  
    </div>
-    
+         
     
     
 <br><br><br><br>
 <div  class="titleArea" >
         <h2>FAQ</h2>
     </div>
-    
+       
   <div id="container">
     <ul class="tabs">
         <li class="active" rel="tab1">배송문의</li>
