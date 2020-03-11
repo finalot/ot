@@ -448,8 +448,14 @@
 
 				<div class="size15 trans-0-4">
 					<!-- Button -->
-					<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-						Proceed to Checkout
+					<button>
+						<a class="hov1 s-text1 trans-0-4 yg_btn_141"
+						style="position: relative;left: 43px;"><span id="idMsg3">전체상품주문</span></a>
+					</button>
+					
+					<button>
+						<a class="hov1 s-text1 trans-0-4 yg_btn_141"
+						style="position: relative;left: 54px;"><span id="idMsg3">선택상품주문</span></a>
 					</button>
 				</div>
 			</div>
