@@ -213,7 +213,7 @@
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-01.jpg" alt="IMG">
+										<a href ="cart.jsp"><img src="images/item-cart-01.jpg" alt="IMG" ></a>
 									</div>
 
 									<div class="header-cart-item-txt">
