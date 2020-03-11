@@ -159,7 +159,7 @@ font-family: 'Nanum Gothic', sans-serif;
 <div  class="titleArea" >
         <h2>FAQ</h2>
     </div>
-       
+          
   <div id="container">
     <ul class="tabs">
         <li class="active" rel="tab1">배송문의</li>
