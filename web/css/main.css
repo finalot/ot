@@ -2475,4 +2475,12 @@ input.num-product::-webkit-inner-spin-button {
 	font-weight: bold;
 }
 
+#chat_container{
+       position: fixed;
+    z-index: 2000;
+    top: 100px;
+    right: 100px;
+    width: 370px
+    
+}
 

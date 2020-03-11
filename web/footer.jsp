@@ -6,6 +6,8 @@
 	<title>oT.</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
@@ -189,12 +191,13 @@
 		</div>
 	</footer>
 
-					
 
 
 
 	<!-- 리모콘 -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn" style="height:320px; background:black; margin-bottom:10%;">
+		
+
 		
 		<button class="header-icon1 js-show-header-dropdown" style="width:88%;height:12%;background:snow;margin-top:-650%;border-radius:10%;" >
 			
@@ -307,12 +310,11 @@
 				onmouseout="this.src='images/icons/icon-header-01.png'">
 			</a></button>
 		
-		<button style="width:88%;height:12%;background:snow;margin-top:230%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
-		<a class="symbol-btn-back-to-top" href="index.jsp" >
+		<button id="chatBtn" style="width:88%;height:12%;margin-top:230%;margin-left:-88%;border-radius:10%;">
 			<img  style="border-radius:10%;" src="images/icons/icon-header-05.png" class="header-icon1" alt="ICON"
 				onmouseover="this.src='images/icons/icon-header-05-5.png'"
 				onmouseout="this.src='images/icons/icon-header-05.png'">
-		</a></button>
+		</button>
 		<button style="width:88%;height:12%;background:snow;margin-top:450%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="symbol-btn-back-to-top" href="index.jsp" >
 			<img  style="border-radius:10%;" src="images/icons/icon-header-06-6.png" class="header-icon1" alt="ICON"
@@ -325,9 +327,43 @@
 		</span>
 		
 	</div>
+	
+	
 
 	<!-- Container Selection1 -->
-	<div id="dropDownSelect1"></div>
+	<div  id="dropDownSelect1">
+	
+	</div>
+	
+	<div class="btn-back-to-top bg0-hov" id="chat_container" >
+            <div class="portlet portlet-default">
+               <div class="portlet-heading">
+                  <div class="portlet-title">
+                     <h4><img  style="width: 19px;height: 17px;margin-bottom: 6px;margin-right: 10px;" src="images/icons/favicon.png"></img>실시간 문의</h4>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div id="chat" class="panel-collapse collapse in">
+                  <div id="chatList" class="portlet-body chat-widget" style="overflow-y: auto; width: auto;height: 393px;">
+                  </div>
+                    <div class="portlet-footer">
+                      <div class="row">
+                      </div>
+                      <div class="row" style="height: 90px">
+                         <div class="form-group col-xs-10" style="width: 100%;padding: 0px; display: inline-flex;">
+                  
+                             <textarea style="height: 178%; width: 89%;" id="chatContent" class="form-control"  placeholder="메세지를 입력하세요" maxlength="100" ></textarea>
+                                                           <button type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
+                             
+                         </div>
+                         <div class="form-group col-xs-2">
+                              <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>      
+               </div>
+            </div>
+   </div>
 
 	<!-- Modal Video 01-->
 	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
@@ -344,41 +380,24 @@
 		</div>
 	</div>
 
-<!-- chat start -->
-<div class="container"  id="chat_container"style=" position: absolute; top:10%; left: 10%; z-index: 2000; display: none;  ">
-            <div class="portlet portlet-default">
-               <div class="portlet-heading">
-                  <div class="portlet-title">
-                     <h4><i class="fa fa-circle text-green"></i>실시간 채팅</h4>
-                  </div>
-                  <div class="clearfix"></div>
-               </div>
-               <div id="chat" class="panel-collapse collapse in">
-                  <div id="chatList" class="portlet-body chat-widget" style="overflow-y: auto; width: auto;height: 700px;">
-                  </div>
-                    <div class="portlet-footer">
-                      <div class="row">
-                         <div class="form-group col-xs-4">
-                          작성자 명 <input style="height: 40px;" type="text" id="chatName" class="form-control" placeholder="이름" maxlength="20" readonly value="">
-                         </div>
-                      </div>
-                      <div class="row" style="height: 90px">
-                         <div class="form-group col-xs-10">
-                         		내용
-                             <textarea style="height: 80px;" id="chatContent" class="form-control"  placeholder="메세지를 입력하세요" maxlength="100" ></textarea>
-                         </div>
-                         <div class="form-group col-xs-2">
-                              <button type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
-                              <div class="clearfix"></div>
-                        </div>
-                     </div>
-                  </div>      
-               </div>
-            </div>
- 
-   </div>
-
-<!-- char End -->
+<!--===============================================================================================-->
+	<script>
+	
+	var check = true
+	
+	$('#chatBtn').click(function(e){
+		e.stopPropagation();
+		if(check == true){
+		$('#chat_container').fadeIn(100);
+		check=false;
+		}else{
+		$('#chat_container').fadeOut(100);
+		check=true;
+		}
+		
+	})
+	
+	</script>
 
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
