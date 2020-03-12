@@ -331,26 +331,98 @@
 	
 
 	<!-- Container Selection1 -->
-	<div  id="dropDownSelect1">
-	<div class="btn-back-to-top bg0-hov" id="chat_container" >
+	<div  id="dropDownSelect1" >
+	<div class="btn-back-to-top bg0-hov" id="chat_container" style="cursor:default;">
             <div class="portlet portlet-default">
-               <div class="portlet-heading"  style="background: #333330;    height: 40px;">
-                  <div class="portlet-title" style="background: #333330;">
-                     <h4 style="padding-left: 2%; color: white;padding-top: 10px;font-size: 15px;"><img  style="width: 19px;height: 17px;margin-bottom: 6px;margin-right: 10px;" src="images/icons/favicon.png"></img>실시간 문의</h4>
+               <div class="portlet-heading"  style="background: #333330; border-radius:25%; margin-bottom:-10px;  height: 40px; ">
+                  <div class="portlet-title" style="background: #333330; border-radius:60%;margin-bottom:-5px;">
+                     <h4 style="padding-left: 2%; float:left; color: white;padding-top: 10px;font-size: 15px;"><img  style="width: 13px;height: 11px;
+                     margin-bottom: 6px;margin-right: 10px;" 
+                     src="images/icons/favicon.png"></img>실시간 문의</h4><button style="color:white; margin-left:64%; margin-top:1.2%">X</button>
                   </div>
                   <div class="clearfix"></div>
                </div>
                <div id="chat" >
-                  <div id="chatList"  style="background: white;overflow-y: auto; width: auto; height: 393px;border-right: 6px solid #333330;border-left: 6px solid #333330;">
+                  <div id="chatList"  style="background: white;overflow-y:auto;  width: auto; height: 450px;
+                  border-right: 6px solid #333330;border-left: 6px solid #333330;">
+                  
+                   <!--손님용 메세지 샘플창  -->
+                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
+                  </div></div>
+                  <!--손님용 메세지 샘플창 끝 -->
+                  
+                  <!--메세지 샘플창  -->
+                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:10 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">상담사 메세지창 샘플입니다만????</textarea>
+                  </div></div>
+                  <!--메세지 샘플창 끝 -->
+                  
+                   <!--메세지 샘플창  -->
+                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:11 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">샘플이라구요 아시겟어요????</textarea>
+                  </div></div>
+                  <!--메세지 샘플창 끝 -->
+                  
+                   <!--손님용 메세지 샘플창  -->
+                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
+                  </div></div>
+                  <!--손님용 메세지 샘플창 끝 --> 
+                  
+                  <!--손님용 메세지 샘플창  -->
+                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
+                  </div></div>
+                  <!--손님용 메세지 샘플창 끝 -->
+                  
+                  <!--메세지 샘플창  -->
+                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:10 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">상담사 메세지창 샘플입니다만????</textarea>
+                  </div></div>
+                  <!--메세지 샘플창 끝 -->
+                  
+                   <!--손님용 메세지 샘플창  -->
+                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
+                  </div></div>
+                  <!--손님용 메세지 샘플창 끝 -->
+                  
+                   <!--메세지 샘플창  -->
+                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:10 am</font>
+                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
+                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;float:left;">상담사 메세지창 샘플입니다만????</textarea>
+                  </div></div>
+                  <!--메세지 샘플창 끝 -->
+                  
+                  
                   </div>
-                    <div class="portlet-footer">
+                    <div class="portlet-footer" style="border-radius:15%;">
                       <div class="row">
                       </div>
-                      <div style="height: 90px;padding: 2%;background: #333330;;">
+                      <div style="height: 90px;padding: 2%;background: #333330;border-radius:3%;margin-top:-10px;">
                          <div class="form-group col-xs-10" style="width: 100%;padding: 0px; display: inline-flex;">
                   
-                             <textarea style=" resize:none;;height: 115%;width: 89%;" id="chatContent" class="form-control"  placeholder="메세지를 입력하세요" maxlength="100" ></textarea>
-                 <button style="margin-left: 2%;background: white; width: 18%;height: 50%;margin-top: 6%;margin-left: 2%;" type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
+                             <textarea style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
+                             border-radius:4%;width: 89%;" id="chatContent" class="form-control"  
+                             placeholder="메세지를 입력하세요." maxlength="100" ></textarea>
+                 <button style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
+                 type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
                          </div>
                          <div class="form-group col-xs-2">
                               <div class="clearfix"></div>
