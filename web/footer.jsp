@@ -332,29 +332,25 @@
 
 	<!-- Container Selection1 -->
 	<div  id="dropDownSelect1">
-	
-	</div>
-	
 	<div class="btn-back-to-top bg0-hov" id="chat_container" >
             <div class="portlet portlet-default">
-               <div class="portlet-heading">
-                  <div class="portlet-title">
-                     <h4><img  style="width: 19px;height: 17px;margin-bottom: 6px;margin-right: 10px;" src="images/icons/favicon.png"></img>실시간 문의</h4>
+               <div class="portlet-heading"  style="background: #333330;    height: 40px;">
+                  <div class="portlet-title" style="background: #333330;">
+                     <h4 style="padding-left: 2%; color: white;padding-top: 10px;font-size: 15px;"><img  style="width: 19px;height: 17px;margin-bottom: 6px;margin-right: 10px;" src="images/icons/favicon.png"></img>실시간 문의</h4>
                   </div>
                   <div class="clearfix"></div>
                </div>
-               <div id="chat" class="panel-collapse collapse in">
-                  <div id="chatList" class="portlet-body chat-widget" style="overflow-y: auto; width: auto;height: 393px;">
+               <div id="chat" >
+                  <div id="chatList"  style="background: white;overflow-y: auto; width: auto; height: 393px;border-right: 6px solid #333330;border-left: 6px solid #333330;">
                   </div>
                     <div class="portlet-footer">
                       <div class="row">
                       </div>
-                      <div class="row" style="height: 90px">
+                      <div style="height: 90px;padding: 2%;background: #333330;;">
                          <div class="form-group col-xs-10" style="width: 100%;padding: 0px; display: inline-flex;">
                   
-                             <textarea style="height: 178%; width: 89%;" id="chatContent" class="form-control"  placeholder="메세지를 입력하세요" maxlength="100" ></textarea>
-                                                           <button type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
-                             
+                             <textarea style=" resize:none;;height: 115%;width: 89%;" id="chatContent" class="form-control"  placeholder="메세지를 입력하세요" maxlength="100" ></textarea>
+                 <button style="margin-left: 2%;background: white; width: 18%;height: 50%;margin-top: 6%;margin-left: 2%;" type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
                          </div>
                          <div class="form-group col-xs-2">
                               <div class="clearfix"></div>
@@ -363,7 +359,10 @@
                   </div>      
                </div>
             </div>
-   </div>
+   		</div>
+	</div>
+	
+	
 
 	<!-- Modal Video 01-->
 	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
@@ -398,8 +397,37 @@
 	})
 	
 	</script>
+	<script>
+	 function addChat(chatName,chatContent,chatTime){
+   	  
+         $('#chatList').append('<div class="row"'+
+                          '</div class="col-lg-12">' + 
+                          '<div class="media">' +
+                          '<a class="pull-left" href="#">'+
+                          '<img class="media-object img-circle" chatListFunctionchatListFunctionchatListFunctionsrc="images/icon.png" alt="">'+
+                          '</a>' + 
+                          '<div class="media-body">'+
+                          '<h4 class="media-heading">'+
+                          chatName+
+                          '<span class="small pull-right">'+
+                          chatTime+
+                          '</span>'+
+                          '</h4>'+
+                          '<p>'+
+                          chatContent+
+                          '</p>'+
+                          '</div>'+
+                          '</div>'+
+                          '</div>'+
+                          '</div>'+
+                          '<hr>')      
+                  $('#chatList').scrollTop($('#chatList')[0].scrollHeight);
+            }
+    
+	</script>
 
-<!--===============================================================================================-->
+
+<!--==============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>

@@ -90,7 +90,8 @@ h4{
 }
 
 .portlet .portlet-footer {
-   padding: 35px 15px;
+	 padding-right: 15px;
+    padding-left: 15px;
     background: #e0e7e8;
 }
 

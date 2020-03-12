@@ -93,9 +93,9 @@ font-size: 11px;
 <script>
 	$('#SendBtn').click(function(){
 		
-		frm.sunmit();
+		$('#frm').submit();
 		
-	})
+	});
 </script>
 
 
