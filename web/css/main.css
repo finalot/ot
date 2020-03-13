@@ -2387,7 +2387,7 @@ input.num-product::-webkit-inner-spin-button {
     line-height: 1.9em;
     font-size: 12px;
     font-weight: 400;
-    z-index: 4;
+    z-index: 110;
   
 }
 .allMenuInner {
