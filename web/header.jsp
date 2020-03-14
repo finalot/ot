@@ -268,7 +268,7 @@
 					</span>
 					&nbsp;&nbsp;
 					
-					<a href="#" class="topbar-email">
+					<a href="/ot/mypage.jsp" class="topbar-email">
 					MyPage
 					</a>
 					&nbsp;&nbsp;
