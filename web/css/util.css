@@ -4359,7 +4359,7 @@ input[type=text] {
     text-align: center;
     font-family: 'HelveticaLTPro-bold';
     position: relative;
-    left: -420px;
+    /* left: -420px; */
 }
 
 .yg_btn_140 {
@@ -4376,7 +4376,7 @@ input[type=text] {
     background: #000;
     color: #fff;
     border-radius: 0px;
-    font-family: Nanum Gothic
+    font-family: Nanum Gothic;
 }
 
 .check_btn_140 {
@@ -4393,7 +4393,7 @@ input[type=text] {
     background: #000;
     color: #fff;
     border-radius: 0px;
-    font-family: Nanum Gothic
+    font-family: Nanum Gothic;
 }
 
 #postcode1 {

@@ -9,8 +9,8 @@
 <title>oT.</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
-   <link rel="stylesheet" href="./css/mypage_basic.css">
    <link rel="stylesheet" href="./css/mypage_list.css">
+   <link rel="stylesheet" href="./css/mypage_basic.css">
    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 </head>
 <body>
@@ -188,7 +188,7 @@
     			</span>
 				<span class="gRight">
        				<a href="#none" onclick="NewWishlist.orderAll();" class="yg_btn_140" alt="전체상품주문">전체상품주문</a>
-       	 			<a href="#none" onclick="NewWishlist.deleteAll();" class="yg_btn_140 yg_btn4" alt="관심상품 비우기">관심상품 비우기</a>
+       	 			<a href="#none" onclick="NewWishlist.deleteAll();" class="yg_btn_140 yg_btn4" alt="관심상품 비우기" style="background:#f4f4f4">관심상품 비우기</a>
     			</span>
 			</div>
 			

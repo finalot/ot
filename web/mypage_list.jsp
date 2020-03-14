@@ -172,8 +172,8 @@
                 				<div class="displaynone"></div>
 							</td>
                 			<td class="state">
-                   				<p>입금전취소</p>
-								<p class="displaynone">
+                   				<p style="font-size:13px;">입금전취소</p>
+								<p class="displaynone" style="font-size:13px;">
 									<a href="#" target="_self"></a>
 								</p>
 								<p class="displaynone">
