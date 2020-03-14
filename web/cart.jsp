@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Cart</title>
  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
@@ -322,7 +323,7 @@
 		<div class="container">
 				<!-- <h3 style="font-size:12px;font-weight:600;">국내배송상품 주문내역</h3> -->
 		
-			<div class="container-table-cart pos-relative">
+			<div class="container-table-cart pos-relative" style="position: relative;right: 4%;">
 				<div class="wrap-table-shopping-cart bgwhite">
 					<table class="table-shopping-cart">
 						<tr class="table-head">
@@ -398,16 +399,88 @@
 				</div>
 			</div>
 
-		
-			
-			
+		 <div class="information4">
+    
+	</div>
 			
 
 			<!-- Total -->
-			<div class="bo9 w-size18 p-l-40 p-r-40 p-t-30 p-b-38 m-t-30 m-r-0 m-l-auto p-lr-15-sm">
-				<h5 class="m-text20 p-b-24">
+			<h3 class=" " style="    position: relative;
+    font-size: 12px;
+    font-weight: 600; top:56px;left:-48px;">주문 정보</h3><br>
+    <p class = "required" style="color:#000;">
+      <img src = "/ot/images/red.png" alt="필수">
+      필수입력사항
+   </p>
+			<div style="display:flex;margin-top: 3%;">
+			    <form method="GET" name="inputForm"
+			    style="width: 100%;margin-right: 3%;margin-left:-4%; margin-top:2%;">
+        <table class="jointype" cellpadding="0" cellspacing="0";
+        style="height: 100%;width: 100%;">
+        <tbody>
+           <tr>
+                <th style="border-top:1px solid #ddd;">
+                   	 주문하시는 분<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td style="border-top:1px solid #ddd;">
+                	<input type="text" name="userName" id="userName" size="20px"> 
+                </td>
+                </tr>
+           
+            
+            <tr>
+                <th>
+                      주소<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td>
+                   <input id="zipCode" style=" width:50px;" name="postcode1" fw-filter="isLengthRange[1][14]" fw-label="우편번호1" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
+                   <a href="#none" onclick="addrSearch();" id="postBtn" class="yg_btn_24 yg_btn3" alt="우편번호">우편번호</a>
+                   <br>
+                   <input id="address1"  name="address1"  class="inputTypeText" placeholder="" readonly="readonly" value="" type="text"><span id="idMsg" style="left: 7px;
+                  position: relative;">기본주소</span>
+                   <br>
+                   <input id="address2" name="address2"class="inputTypeText" placeholder="" value="" type="text"><span id="idMsg" style="left: 7px;
+               position: relative;">나머지주소</span>
+                   
+                </td>
+            </tr>
+            
+            <tr>
+                <th style="border-bottom:1px solid #ddd;">
+                    휴대전화<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td style="border-bottom:1px solid #ddd;">
+                    <select id="mobile1" name="mobile[]" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" style="font-size:12px;">
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                  <option value="017">017</option>
+                  <option value="018">018</option>
+                  <option value="019">019</option>
+                  </select>
+                    -<input id="mobile2"  name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">
+                    -<input id="mobile3"  name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>
+                    이메일<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td>
+                    <input id="email" name="email" value="" type="text">
+                   
+                </td>
+            </tr>
+			
+			</tbody>
+		</table>
+	</form>
+	
+			<div  class="bo9 w-size18 p-l-40 p-r-40 p-t-30 p-b-38 m-t-30 m-r-0 m-l-auto p-lr-15-sm">
+				<!-- <h5 class="m-text20 p-b-24">
 					결제예정금액
-				</h5>
+				</h5> -->
 
 				<!--  -->
 				<div class="flex-w flex-sb-m p-b-12">
@@ -454,12 +527,100 @@
 					</button>
 					
 					<button>
-						<a class="hov1 s-text1 trans-0-4 yg_btn_141"
+						<a class="hov1 s-text1 trans-0-4 yg_btn_142"
 						style="position: relative;left: 54px;"><span id="idMsg3">선택상품주문</span></a>
 					</button>
 				</div>
 			</div>
-		</div>
+			
+			</div>
+			<h3 class=" " style="    position: relative;
+    font-size: 12px;
+    font-weight: 600; top:56px;left:-48px;">배송 정보</h3><br>
+    <p class = "required2" style="color:#000;">
+      <img src = "/ot/images/red.png" alt="필수">
+      필수입력사항
+   </p>
+		<form method="GET" name="inputForm"
+			    style="    width: 100%;
+    margin-right: 3%;
+    margin-left: -4%;
+    margin-top: 5%;
+    height: 300px;">
+        <table class="jointype2" cellpadding="0" cellspacing="0";
+        style="/* border: 2px solid; */height: 100%;width: 100%;">
+        <tbody>
+            <tr>
+                <th style="border-top:1px solid #ddd;">
+                   	 주문하시는 분<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td style="border-top:1px solid #ddd;">
+                	<input id="delivery" name="delivery" type="radio">
+                    <label id="delivery" style="position: relative; left: -2px;top: -2px;">주문자 정보와 동일</label>
+                    <!-- <input id="delivery2" name="delivery2"  type="radio"
+                    style="position: relative;left: -2px;">
+                    <label id="delivery2" style="position: relative;left: -3px;top: -2px;">새로운배송지</label> -->
+                </td>
+                </tr>
+            <tr>
+                <th>
+                      받으시는 분<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                   </th>
+                <td>
+                    <input type="text" name="userName" id="userName" size="20px"> 
+                </td>
+            </tr>
+            
+            <tr>
+                <th>
+                      주소<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td>
+                   <input id="zipCode" style=" width:50px;" name="postcode1" fw-filter="isLengthRange[1][14]" fw-label="우편번호1" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
+                   <a href="#none" onclick="addrSearch();" id="postBtn" class="yg_btn_24 yg_btn3" alt="우편번호">우편번호</a>
+                   <br>
+                   <input id="address1"  name="address1" fw-filter="isFill" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" value="" type="text"><span id="idMsg" style="left: 7px;
+                  position: relative;">기본주소</span>
+                   <br>
+                   <input id="address2" name="address2" fw-filter="" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" value="" type="text"><span id="idMsg" style="left: 7px;
+               position: relative;">나머지주소</span>
+                   
+                </td>
+            </tr>
+            
+            <tr>
+                <th style="border-bottom:1px solid #ddd;">
+                    휴대전화<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                </th>
+                <td style="border-bottom:1px solid #ddd;">
+                    <select id="mobile1" name="mobile[]" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" style="font-size:12px;">
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                  <option value="017">017</option>
+                  <option value="018">018</option>
+                  <option value="019">019</option>
+                  </select>
+                    -<input id="mobile2"  name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">
+                    -<input id="mobile3"  name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">
+                </td>
+            </tr>
+            
+            <tr>
+            	<th style="border-bottom:1px solid #ddd;">
+            	배송메시지
+            	</th>
+            	<td style="border-bottom:1px solid #ddd;">
+            		<textarea id="omessage" name="omessage" maxlength="255" cols="70"></textarea>
+            	</td>
+            
+            
+            </tr>
+			
+			</tbody>
+		</table>
+	</form>
+	
 	</section>
 
 
@@ -501,6 +662,55 @@
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect2')
 		});
+		
+		 function addrSearch() {
+		      new daum.Postcode({
+		          oncomplete: function(data) {
+		              // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+		              // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+		              // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+		              var fullAddr = ''; // 최종 주소 변수
+		              var extraAddr = ''; // 조합형 주소 변수
+
+		              // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+		              if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+		                  fullAddr = data.roadAddress;
+
+		              } else { // 사용자가 지번 주소를 선택했을 경우(J)
+		                  fullAddr = data.jibunAddress;
+		              }
+
+		              // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+		              if(data.userSelectedType === 'R'){
+		                  //법정동명이 있을 경우 추가한다.
+		                  if(data.bname !== ''){
+		                      extraAddr += data.bname;
+		                  }
+		                  // 건물명이 있을 경우 추가한다.
+		                  if(data.buildingName !== ''){
+		                      extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+		                  }
+		                  // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+		                  fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+		              }
+
+		              // 우편번호와 주소 정보를 해당 필드에 넣는다.
+		              $('#zipCode').val(data.zonecode); //5자리 새우편번호 사용
+		              
+		              $('#address1').val(fullAddr);
+
+		              // 커서를 상세주소 필드로 이동한다.
+		              $('#address2').focus();
+		          }
+		      }).open();
+		  };
+		  
+		  function validateEmail(email) {
+			  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+			  return re.test(email);
+			  }
+		  
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>

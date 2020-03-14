@@ -156,9 +156,9 @@
                 </th>
                
                 <td style="border-top:1px solid #ddd;">
-                    <input id="is_sex0" name="is_sex" fw-filter="isFill" fw-label="성별" fw-msg="" value="M" type="radio">
+                    <input id="is_sex0" name="is_sex" value="M" type="radio">
                     <label id="is_sex0" style="position: relative; left: -6px;top: -2px;">남자</label>
-                    <input id="is_sex1" name="is_sex" fw-filter="isFill" fw-label="성별" fw-msg="" value="F" type="radio"
+                    <input id="is_sex1" name="is_sex" value="F" type="radio"
                     style="position: relative;left: -10px;">
                     <label id="is_sex1" style="position: relative;left: -15px;top: -2px;">여자</label>
                 </td>
@@ -607,7 +607,10 @@
           }
       }).open();
   };
-  
+  function validateEmail(email) {
+	  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+	  return re.test(email);
+	  }
 
     </script>
     
