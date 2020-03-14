@@ -408,14 +408,14 @@
 			<h3 class=" " style="    position: relative;
     font-size: 12px;
     font-weight: 600; top:56px;left:-48px;">주문 정보</h3><br>
-    <p class = "required" style="color:#000;">
+    <p class = "required3" style="color:#000;">
       <img src = "/ot/images/red.png" alt="필수">
       필수입력사항
    </p>
 			<div style="display:flex;margin-top: 3%;">
 			    <form method="GET" name="inputForm"
 			    style="width: 100%;margin-right: 3%;margin-left:-4%; margin-top:2%;">
-        <table class="jointype" cellpadding="0" cellspacing="0";
+        <table class="jointype3" cellpadding="0" cellspacing="0";
         style="height: 100%;width: 100%;">
         <tbody>
            <tr>
