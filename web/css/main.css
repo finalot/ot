@@ -2047,10 +2047,9 @@ li.sale-noti > a {
   content: '';
   display: block;
   position: absolute;
-  width: 1px;
   height: calc(100% - 51px);
   background-color: #e6e6e6;
-  top: 51px;
+  top: 75px;
   left: 0;
 }
 
@@ -2058,22 +2057,23 @@ li.sale-noti > a {
   content: '';
   display: block;
   position: absolute;
-  width: 1px;
   height: calc(100% - 51px);
   background-color: #e6e6e6;
-  top: 51px;
+  top: 75px;
   right: 0;
 }
 
 .table-shopping-cart {
   border-collapse: collapse;
-  width: 100%;
+  width: 99%;
   min-width: 992px;
 }
 
 .table-shopping-cart .table-row {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+  border-left:1px solid #e6e6e6;
+  border-right:1px solid #e6e6e6;
 }
 
 .table-shopping-cart .column-1 {

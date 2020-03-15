@@ -27,7 +27,7 @@
    
    <div class="information">
     <form method="GET" name="inputForm">
-        <table class="jointype" cellpadding="0" cellspacing="0">
+        <table class="jointype">
         <tbody>
             <tr>
                 <th style="border-top:1px solid #ddd;">
@@ -91,13 +91,13 @@
                       주소<img src="/ot/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
-                   <input id="zipCode" style=" width:50px;" name="postcode1" fw-filter="isLengthRange[1][14]" fw-label="우편번호1" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
-                   <a href="#none" onclick="addrSearch();" id="postBtn" class="yg_btn_24 yg_btn3" alt="우편번호">우편번호</a>
+                   <input id="zipCode" style=" width:50px;" name="postcode1"  class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
+                   <a href="#none" onclick="addrSearch();" id="postBtn" class="yg_btn_24 yg_btn3">우편번호</a>
                    <br>
-                   <input id="address1"  name="address1" fw-filter="isFill" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" value="" type="text"><span id="idMsg" style="left: 7px;
+                   <input id="address1"  name="address1" class="inputTypeText" placeholder="" readonly="readonly" value="" type="text"><span id="idMsg" style="left: 7px;
                   position: relative;">기본주소</span>
                    <br>
-                   <input id="address2" name="address2" fw-filter="" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" value="" type="text"><span id="idMsg" style="left: 7px;
+                   <input id="address2" name="address2" class="inputTypeText" placeholder="" value="" type="text"><span id="idMsg" style="left: 7px;
                position: relative;">나머지주소</span>
                    
                 </td>
@@ -107,7 +107,7 @@
                     휴대전화<img src="/ot/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td style="border-bottom:1px solid #ddd;">
-                    <select id="mobile1" name="mobile[]" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" style="font-size:12px;">
+                    <select id="mobile1" name="mobile[]" style="font-size:12px;">
                   <option value="010">010</option>
                   <option value="011">011</option>
                   <option value="016">016</option>
@@ -115,8 +115,8 @@
                   <option value="018">018</option>
                   <option value="019">019</option>
                   </select>
-                    -<input id="mobile2"  name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">
-                    -<input id="mobile3"  name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">
+                    -<input id="mobile2"  name="mobile[]" maxlength="4" value="" type="text">
+                    -<input id="mobile3"  name="mobile[]" maxlength="4" value="" type="text">
                 </td>
             </tr>
             
@@ -125,7 +125,7 @@
                     이메일<img src="/ot/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
-                    <input id="email" name="email"  fw-filter="isFill&amp;isEmail" fw-label="이메일" fw-alone="N" fw-msg="" value="" type="text">
+                    <input id="email" name="email" value="" type="text">
                    
                 </td>
             </tr>
@@ -147,8 +147,8 @@
     top: -10px;">추가정보</h3>
     
     <div class="information2">
-        <form method="GET" name="inputForm">
-        <table class="jointype" cellpadding="0" cellspacing="0">
+        <form method="POST" name="inputForm">
+        <table class="jointype">
         <tbody>
             <tr>
                 <th style="border-top:1px solid #ddd;">
@@ -169,13 +169,13 @@
                          생년월일<img src="/ot/images/red.png" style="position:relative;left:8px;">
                     </th>
                     <td>
-                   <input id="birth_year"  name="birth_year" fw-filter="isFill" fw-label="생년월일" fw-msg="" class="inputTypeText" placeholder="" maxlength="4" value="" type="text"
+                   <input id="birth_year"  name="birth_year" class="inputTypeText" placeholder="" maxlength="4" value="" type="text"
                    style="position: relative;width: 60px;">
                       <span id="idMsg">년</span>
-                      <input id="birth_month" name="birth_month" fw-filter="isFill" fw-label="생년월일" fw-msg="" class="inputTypeText" placeholder="" maxlength="2" value="" type="text"
+                      <input id="birth_month" name="birth_month"  class="inputTypeText" placeholder="" maxlength="2" value="" type="text"
                       style="position: relative;width: 30px;">
                       <span id="idMsg">월</span>
-                      <input id="birth_day" name="birth_day" fw-filter="isFill" fw-label="생년월일" fw-msg="" class="inputTypeText" placeholder="" maxlength="2" value="" type="text"
+                      <input id="birth_day" name="birth_day" class="inputTypeText" placeholder="" maxlength="2" value="" type="text"
                       style="position: relative;width: 30px;">
                       <span id="idMsg">일</span>
                     </td>
@@ -190,7 +190,7 @@
                      <br>
                      
                      <span id="idMsg">은행명</span>
-                     <select id="bank_code" name="bank_code" fw-filter="" fw-label="은행명" fw-msg=""
+                     <select id="bank_code" name="bank_code"
                      style="position: relative;left: 40px; margin-top:11px; font-size:12px;">
                   <option value="" selected="selected">- 은행선택 -</option>
                   <option value="bank_02">산업은행</option>
@@ -267,7 +267,7 @@
                
            </tbody>
           </table>
-    
+    	</form>
     </div>
     
     <br><br>
@@ -448,7 +448,7 @@
 <p>②“몰”과 이용자간에 제기된 전자상거래 소송에는 한국법을 적용합니다.</p>
 
 부 칙(시행일) 이 약관은 년 월 일부터 시행합니다.                              </div>
-            <p class="check"><br><span style="position: relative;top: -5px;">이용약관에 동의하십니까?</span> <input id="agree_service_check0" name="checkRow" fw-filter="/1/" fw-label="이용약관 동의" fw-msg="이용약관에 동의 하세요" value="1" type="checkbox" style="position: relative;top: -2px;">
+            <p class="check"><br><span style="position: relative;top: -5px;">이용약관에 동의하십니까?</span> <input id="agree_service_check0" name="checkRow" value="1" type="checkbox" style="position: relative;top: -2px;">
             <label for="agree_service_check0" style="position: relative;top: -4px;">동의함</label></p>
         </div>
     
@@ -460,7 +460,7 @@
     margin-top: 12px; font-weight:600;">[필수] 개인정보 수집 및 이용 동의</h3>
             <div class="content">
                 <p style="font-size: 12px;font-weight: 500; color: #353535;">■ 수집하는 개인정보 항목<br>회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p> <p> ο 수집항목 : 이름 , 생년월일 , 성별 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 직업 , 회사명 , 부서 , 직책 , 회사전화번호 , 취미 , 결혼여부 , 기념일 , 법정대리인정보 , 서비스 이용기록 , 접속 로그 , 접속 IP 정보 , 결제기록<br>ο 개인정보 수집방법 : 홈페이지(회원가입) , 서면양식</p><p> ■ 개인정보의 수집 및 이용목적</p><p> 회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p><p> ο 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송<br>ο 회원 관리<br>회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 연령확인 , 만14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인 , 고지사항 전달 ο 마케팅 및 광고에 활용<br>접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계</p><p> ■ 개인정보의 보유 및 이용기간</p><p> 회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.            </p></div>
-            <p class="check"><br><span style="position: relative;top: -5px;">개인정보 수집 및 이용에 동의하십니까?</span> <input id="agree_privacy_check0" name="checkRow" fw-filter="/1/" fw-label="개인정보 수집 및 이용 방침" fw-msg="개인정보 수집 및 이용 방침에 동의하세요" value="1" type="checkbox" style="position: relative;top: -2px;">
+            <p class="check"><br><span style="position: relative;top: -5px;">개인정보 수집 및 이용에 동의하십니까?</span> <input id="agree_privacy_check0" name="checkRow" value="1" type="checkbox" style="position: relative;top: -2px;">
             <label for="agree_privacy_check0" style="position: relative;top: -4px;">동의함</label></p>
         </div>
         
@@ -479,16 +479,16 @@
                 
             </div>
             
-            <p class="check"><br><span style="position: relative;top: -5px;">SMS 수신을 동의하십니까?</span><input id="is_sms0" name="checkRow" fw-label="is_sms" fw-msg="" class="ec-base-chk" value="T" type="checkbox" style="position: relative;top: -2px; left:4px;">
+            <p class="check"><br><span style="position: relative;top: -5px;">SMS 수신을 동의하십니까?</span><input id="is_sms0" name="checkRow" class="ec-base-chk" value="T" type="checkbox" style="position: relative;top: -2px; left:4px;">
             <label for="is_sms0" style="position: relative;top: -5px; left:-7px;">동의함</label>
             
-                
+     </p>
+           
 </div>
-    
     </div>
     
     <div class="ec-base-button" style="margin-left:25%;">
-        <a href="#none" onclick="memberJoinAction()" class="yg_btn_140" alt="회원가입">회원가입</a>
+        <a href="#none" onclick="memberJoinAction()" class="yg_btn_140">회원가입</a>
     </div>
         
         <br><br><br><br>

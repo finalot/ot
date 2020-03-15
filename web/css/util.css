@@ -494,7 +494,7 @@
 .p-b-35 {padding-bottom: 35px;}
 .p-b-36 {padding-bottom: 36px;}
 .p-b-37 {padding-bottom: 37px;}
-.p-b-38 {padding-bottom: 14px;}
+.p-b-38 {padding-bottom: 16px;}
 .p-b-39 {padding-bottom: 39px;}
 .p-b-40 {padding-bottom: 40px;}
 .p-b-41 {padding-bottom: 41px;}
@@ -1966,7 +1966,7 @@
 .m-l-248 {margin-left: 248px;}
 .m-l-249 {margin-left: 249px;}
 .m-l-250 {margin-left: 250px;}
-.m-r-0 {margin-right: -71px;}
+.m-r-0 {margin-right: -58px;}
 .m-r-1 {margin-right: 1px;}
 .m-r-2 {margin-right: 2px;}
 .m-r-3 {margin-right: 3px;}
@@ -3332,10 +3332,17 @@ font-family: 'HelveticaLTPro','Arial';
     line-height: 1.2;
     text-transform: uppercase;
 }
+#m-text21 {
+font-family: 'HelveticaLTPro','Arial';
+    font-size: 13px;
+    color: #e65540;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
 
 .m-text22 {
 	    font-family: 'HelveticaLTPro','Arial';
-    font-size: 15px;
+    font-size: 13px;
     color: #555555;
     line-height: 1.2;
     text-transform: uppercase;
@@ -4247,15 +4254,25 @@ h3 {
     background: #d7d5d5;
 }
 
-
-.required3 {
+.required4 {
 	margin: -16px 0 -9px;
     text-align: right;
     top: 41px;
     position: relative;
     font-size: 12px;
     font-weight: 600;
-    left:-406px;
+    left:58px;
+}
+
+
+.required3 {
+	margin: -16px 0 -9px;
+    text-align: right;
+    top: 64px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    left:-420px;
 }
 .required2 {
 	margin: -16px 0 -9px;
@@ -4264,11 +4281,12 @@ h3 {
     position: relative;
     font-size: 12px;
     font-weight: 600;
-    left:-46px;
+    left:58px;
 }
 
+
 .jointype2 th {
-	padding: 11px 52px 10px 18px !important;
+	padding: 11px 0px 10px 18px !important;
     border-bottom-width: 0 !important;
     color: #353535 !important;
     text-align: left !important;
@@ -4291,7 +4309,7 @@ h3 {
 }
 
 .jointype3 th {
-	padding: 11px 13px 10px 18px !important;
+	padding: 11px 115px 10px 18px !important;
     border-bottom-width: 0 !important;
     color: #353535 !important;
     text-align: left !important;
@@ -4310,6 +4328,27 @@ h3 {
      color: #353535;
      vertical-align: middle;
      border-right:1px solid #ddd;
+    /*  width:1000px; */
+}
+
+.jointype4 th {
+	padding: 11px 13px 10px 18px !important;
+    border-bottom-width: 0 !important;
+    color: #353535 !important;
+    text-align: left !important;
+    font-weight: normal !important;
+    background-color: #fafafa !important;
+    border-bottom: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+    border-left:1px solid #ddd !important;
+    font-size:12px !important;
+  
+}
+
+.jointype4 td {
+	 padding: 10px 10px 9px !important; 
+     color: #353535;
+     vertical-align: middle;
     /*  width:1000px; */
 }
 input[type=text] {
@@ -4485,3 +4524,94 @@ textarea {
     border: 1px solid #eaeaea;
     line-height: 1.5;
 }
+.method {
+ padding: 24px 29px 4px;
+    font-weight: bold;
+}
+
+#pay1 {
+	    position: relative;
+    top: 2px;
+}
+#pay2 {
+	    position: relative;
+    top: 2px;
+}
+#pay3 {
+	    position: relative;
+    top: 2px;
+}
+#pay4 {
+	    position: relative;
+    top: 2px;
+}
+#pay-cash th {
+	    font-size: 12px;
+    font-weight: 500;
+        padding-left: 31px;
+    padding-top: 10px;
+}
+#pay-cash input[type=text] {
+	    margin-left: 24px;
+	    margin-top:11px;
+}
+#pay-cash select {
+	margin-left:24px;
+	margin-top:11px;
+	
+}
+
+#idMsg4 {
+	    color: #000;
+    position: relative;
+    font-size:12px;
+}
+
+#idMsg5 {
+	    color: #000;
+    position: relative;
+    font-size:12px;
+    font-weight:600;
+}
+#idMsg6 {
+	    color: #777;
+    position: relative;
+    font-size:12px;
+    font-weight:600;
+}
+.info li {
+	padding: 0 0 0 9px;
+}
+
+p.help {
+	margin: 6px 9px 2px 0;
+    padding: 1px 0 1px 20px;
+    line-height: 1.4;
+    background: url(//img.echosting.cafe24.com/skin/base/common/ico_info.gif) no-repeat 0 2px;
+}
+
+.cashfuture th {
+	    padding: 11px 0 10px;
+    border-bottom: 4px double #ddd;
+    color: #353535;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 12px;
+    height: 39px;
+    background: #fbfafa;
+}
+table {
+    border-spacing:0;
+}
+
+table td, table th {
+    padding:0px;
+}
+
+.cashfuture td {
+	    height: 86px;
+}
+
+ .txt14 {
+ 	font-size:12px;
+ }

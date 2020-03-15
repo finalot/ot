@@ -270,15 +270,15 @@
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="cart.jsp" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										View Cart
+									<a href="cart.jsp" class="hov1 s-text1 trans-0-4 yg_btn_141">
+										<span id="idMsg3">장바구니</span>
 									</a>
 								</div>
 
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										Check Out
+									<a href="#" class="hov1 s-text1 trans-0-4 yg_btn_142">
+										<span id="idMsg3">창 닫기</span>
 									</a>
 								</div>
 							</div>
