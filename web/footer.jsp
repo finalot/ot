@@ -333,7 +333,7 @@
 	<!-- Container Selection1 -->
 	<div  id="dropDownSelect1" >
 	<div class="btn-back-to-top bg0-hov" id="chat_container" style="cursor:default;">
-            <div class="portlet portlet-default" style="width: 410px;">
+            <div class="portlet portlet-default" style="width: 440px;">
                <div class="portlet-heading"  style="background: #333330; border-radius:25%; margin-bottom:-10px;  height: 40px; ">
                   <div class="portlet-title" style="background: #333330; border-radius:60%;margin-bottom:-5px;">
                      <h4 style="padding-left: 2%; float:left; color: white;padding-top: 10px;font-size: 15px;"><img  style="width: 13px;height: 11px;
