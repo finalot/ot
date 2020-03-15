@@ -232,6 +232,8 @@
 			<div class="topbar2" style="margin-top:-1%;">
 				<div class="topbar-social">
 					<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
+					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
+					
 				</div>
 
 				<!-- Logo2 -->

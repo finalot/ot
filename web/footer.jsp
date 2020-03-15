@@ -310,7 +310,7 @@
 				onmouseout="this.src='images/icons/icon-header-01.png'">
 			</a></button>
 		
-		<button id="chatBtn" style="width:88%;height:12%;margin-top:230%;margin-left:-88%;border-radius:10%;">
+		<button class="chatBtn" style="width:88%;height:12%;margin-top:230%;margin-left:-88%;border-radius:10%;">
 			<img  style="border-radius:10%;" src="images/icons/icon-header-05.png" class="header-icon1" alt="ICON"
 				onmouseover="this.src='images/icons/icon-header-05-5.png'"
 				onmouseout="this.src='images/icons/icon-header-05.png'">
@@ -333,81 +333,29 @@
 	<!-- Container Selection1 -->
 	<div  id="dropDownSelect1" >
 	<div class="btn-back-to-top bg0-hov" id="chat_container" style="cursor:default;">
-            <div class="portlet portlet-default">
+            <div class="portlet portlet-default" style="width: 410px;">
                <div class="portlet-heading"  style="background: #333330; border-radius:25%; margin-bottom:-10px;  height: 40px; ">
                   <div class="portlet-title" style="background: #333330; border-radius:60%;margin-bottom:-5px;">
                      <h4 style="padding-left: 2%; float:left; color: white;padding-top: 10px;font-size: 15px;"><img  style="width: 13px;height: 11px;
                      margin-bottom: 6px;margin-right: 10px;" 
-                     src="images/icons/favicon.png"></img>실시간 문의</h4><button style="color:white; margin-left:64%; margin-top:1.2%">X</button>
+                     src="images/icons/favicon.png"></img>실시간 문의</h4><button class="chatBtn" style="color:white; margin-left:64%; margin-top:1.2%">X</button>
                   </div>
                   <div class="clearfix"></div>
                </div>
                <div id="chat" >
-                  <div id="chatList"  style="background: white;overflow-y:auto;  width: auto; height: 450px;
+                  <div id="chatList"  style="background:#f3f3f3;overflow-y:auto;  width: auto; height: 450px;
                   border-right: 6px solid #333330;border-left: 6px solid #333330;">
-                  
-                   <!--손님용 메세지 샘플창  -->
-                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
-                  </div></div>
-                  <!--손님용 메세지 샘플창 끝 -->
-                  
-                  <!--메세지 샘플창  -->
-                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:10 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">상담사 메세지창 샘플입니다만????</textarea>
-                  </div></div>
-                  <!--메세지 샘플창 끝 -->
-                  
-                   <!--메세지 샘플창  -->
-                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:11 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">샘플이라구요 아시겟어요????</textarea>
-                  </div></div>
-                  <!--메세지 샘플창 끝 -->
-                  
-                   <!--손님용 메세지 샘플창  -->
-                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
-                  </div></div>
-                  <!--손님용 메세지 샘플창 끝 --> 
-                  
-                  <!--손님용 메세지 샘플창  -->
-                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
-                  </div></div>
-                  <!--손님용 메세지 샘플창 끝 -->
-                  
-                  <!--메세지 샘플창  -->
-                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:10 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">상담사 메세지창 샘플입니다만????</textarea>
-                  </div></div>
-                  <!--메세지 샘플창 끝 -->
-                  
-                   <!--손님용 메세지 샘플창  -->
-                  <div><small style="font-size:10px;margin-left:47%;">eodbs321</small><font style="font-size:7px;margin-bottom:20px;margin-left:13%">20-03-13 06:00 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:47.5%;margin-top:1%;border:2px solid black;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">옷좀 사고 싶습니다만????</textarea>
-                  </div></div>
-                  <!--손님용 메세지 샘플창 끝 -->
-                  
-                   <!--메세지 샘플창  -->
-                  <div><small style="font-size:10px;">&nbsp;ot.chat</small><font style="font-size:7px;margin-bottom:20px;margin-left:15%">20-03-12 06:10 am</font>
-                  <div style="width:180px;height:60px;background:white;margin-left:3.5%;margin-top:1%;border:2px solid #e65540;">
-                  <textarea rows="3" cols="21" style="resize:none; font-size:12px;background:none;
-                  margin-left:3%;margin-top:3%;border:none;float:left;">상담사 메세지창 샘플입니다만????</textarea>
-                  </div></div>
+                   <!--메세지 샘플창 시작 -->
+                  <div> 
+                  <span style="font-size:12px; margin-left: 18px">상담사</span>
+                 <div style="display:flex">
+                  <div style="color:black;width:270px;border-radius: 10px;background:white;margin-left:3.5%;margin-top:1%;">
+                  <pre  style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;">상담사 메세지창 샘플입니다만????</pre>
+                  </div>
+                  <span style="font-size:7px;margin-left:15px;margin-top: auto;">06:10 am</span>
+                  </div>
+                  </div>
                   <!--메세지 샘플창 끝 -->
                   
                   
@@ -421,8 +369,8 @@
                              <textarea style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
                              border-radius:4%;width: 89%;" id="chatContent" class="form-control"  
                              placeholder="메세지를 입력하세요." maxlength="100" ></textarea>
-                 <button style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
-                 type="button" class="btn btn-default pull-right" onclick="submitfunction();">전송</button>
+                 <button id="sendChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
+                 type="button" class="btn btn-default pull-right" onclick="addChat();">전송</button>
                          </div>
                          <div class="form-group col-xs-2">
                               <div class="clearfix"></div>
@@ -456,7 +404,7 @@
 	
 	var check = true
 	
-	$('#chatBtn').click(function(e){
+	$('.chatBtn').click(function(e){
 		e.stopPropagation();
 		if(check == true){
 		$('#chat_container').fadeIn(100);
@@ -470,32 +418,36 @@
 	
 	</script>
 	<script>
-	 function addChat(chatName,chatContent,chatTime){
-   	  
-         $('#chatList').append('<div class="row"'+
-                          '</div class="col-lg-12">' + 
-                          '<div class="media">' +
-                          '<a class="pull-left" href="#">'+
-                          '<img class="media-object img-circle" chatListFunctionchatListFunctionchatListFunctionsrc="images/icon.png" alt="">'+
-                          '</a>' + 
-                          '<div class="media-body">'+
-                          '<h4 class="media-heading">'+
-                          chatName+
-                          '<span class="small pull-right">'+
-                          chatTime+
-                          '</span>'+
-                          '</h4>'+
-                          '<p>'+
-                          chatContent+
-                          '</p>'+
+	 function addChat(chatContent){
+		 
+			if(!$('#chatContent').val()==""){
+   	 
+		var today = new Date();   
+		var hours = today.getHours(); // 시
+		var minutes = today.getMinutes();  // 분
+		  var ampm = hours >= 12 ? 'pm' : 'am';
+		  hours = hours % 12;
+		  hours = hours ? hours : 12; // the hour '0' should be '12'
+		  minutes = minutes < 10 ? '0'+minutes : minutes;
+		  var strTime = ampm + ' '+hours + ' : ' + minutes;
+		
+		var content = document.getElementById('chatContent').value;
+		
+         $('#chatList').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
+                          '<div style="display:flex">'+
+                          '<span style="font-size:7px;margin-left:60px;margin-top: auto;">'+strTime+'</span>'+
+                          '<div style="text-align: left; width: 270px;margin-left: 3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
+                          '<pre style="color:black ;font-size:12px;background:none;'+
+                          'margin-left:3%;margin-top:3%;border:none;">'+content+'</pre>'+
                           '</div>'+
-                          '</div>'+
-                          '</div>'+
-                          '</div>'+
-                          '<hr>')      
-                  $('#chatList').scrollTop($('#chatList')[0].scrollHeight);
-            }
-    
+                          '</div>' + 
+                          '</div>')
+                  $('#chatList').scrollTop($('#chatList')[0].scrollHeight)
+                          
+                  document.getElementById('chatContent').value = "";
+			}
+          }
+	
 	</script>
 
 
