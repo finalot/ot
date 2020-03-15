@@ -97,28 +97,28 @@
 			        <a href="/ot/mypage_wishList.jsp">관심상품</a>
 			    </div>
 				<div class="shopMain likeIt displaynone">
-			        <a href="">좋아요</a>
+			        <a href="/ot/mypage_like.jsp">좋아요</a>
 			    </div>
 				<div class="shopMain mileage">
-			        <a href="/myshop/mileage/historyList.html">적립금</a>
+			        <a href="/ot/mypage_point.jsp">적립금</a>
 			    </div>
 				<div class="shopMain coupon  ">
-			        <a href="/myshop/coupon/coupon.html">쿠폰</a>
+			        <a href="/ot/mypage_coupon.jsp">쿠폰</a>
 			    </div>
 				<div class="shopMain view">
-			        <a href="/product/recent_view_product.html">최근 본 상품</a>
+			        <a href="/ot/mypage_recently.jsp">최근 본 상품</a>
 			    </div>
 				<div class="shopMain deposits  ">
-			        <a href="/myshop/deposits/historyList.html">예치금</a>
+			        <a href="/ot/mypage_deposit.jsp">예치금</a>
 			    </div>
 				<div class="shopMain board">
-			        <a href="/myshop/board_list.html">내가 쓴 게시글</a>
+			        <a href="/ot/mypage_board.jsp">내가 쓴 게시글</a>
 			    </div>
 				<div class="shopMain address">
-			        <a href="/myshop/addr/list.html">배송 주소록 관리</a>
+			        <a href="/ot/mypage_address.jsp">배송 주소록 관리</a>
 			    </div>
 				<div class="shopMain profile">
-			        <a href="/member/modify.html">회원 정보 수정</a>
+			        <a href="/ot/mypage_memberEdit.jsp">회원 정보 수정</a>
 			    </div>
 			    
 		<!--    <div class="shopMain consult displaynone">

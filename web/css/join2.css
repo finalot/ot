@@ -335,3 +335,11 @@ table {
 table td, table th {
     padding:0px;
 }
+
+#id_bank_info {
+	font-size:13px;
+}
+
+.displaynone {
+	display : none;	
+}
