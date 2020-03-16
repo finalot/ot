@@ -382,6 +382,15 @@
 		</table>
 	</form>
 	</div>
+	
+	<a href="#none" class=" yg_btn_24 yg_btn3">현금영수증 신청</a>
+	<a href="#none" class=" yg_btn_24 yg_btn3">세금계산서 신청</a>
+	<a href="#none" class=" yg_btn_24 yg_btn3">거래명세서 인쇄</a>
+	
+	 <div class="" style="margin-left:25%;">
+        <a href="index.jsp" class="yg_btn_24 yg_btn31"><span style="position:relative;top:7px;">쇼핑계속하기</span></a>
+        <a href="mypage_list.jsp" class="hov1 s-text1 trans-0-4 yg_btn_143">주문확인하기</a>
+    </div>
 	</section>
 
 

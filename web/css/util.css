@@ -4430,6 +4430,24 @@ input[type=text] {
     border-radius: 0px;
     font-family: Nanum Gothic;
 }
+.yg_btn_143 {
+    height: 38px;
+    width: 140px;
+    line-height: 38px;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+    background: #000;
+    color: #fff;
+    border-radius: 0px;
+    font-family: Nanum Gothic;
+    position: relative;
+    top: 8px;
+    left: 652px;
+}
 
 .check_btn_140 {
 	height: 29px;
@@ -4654,3 +4672,24 @@ table td, table th {
     width: 110px;
     text-align: center;
  }
+ 
+ .yg_btn3 {
+    background: #fff;
+    color: #444!important;
+    border-color: #ddd!important;
+    position: relative;
+    top: 39px;
+    height: 25px;
+    left: -46px;s
+}
+ .yg_btn31 {
+    background: #fff;
+    color: #444!important;
+    border-color: #ddd!important;
+    position: relative;
+    top: 7px;
+    left: 649px;
+     height: 37px;
+    width: 140px;
+
+}
