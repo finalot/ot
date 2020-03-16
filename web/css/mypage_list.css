@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+th, td {
+    border: 0;
+}
+
 caption {
     display: none;
 }
@@ -147,13 +151,6 @@ button {
     cursor: pointer;
 }
 
-input, select, textarea {
-    font-size: 100%;
-    font-family: 'Noto Sans KR','dotum',sans-serif;
-    color: #222;
-    vertical-align: middle;
-}
-
 .xans-myshop-orderhistoryhead {
 	font-size : 13px;
 }
@@ -197,7 +194,6 @@ table {
     vertical-align: middle;
     font-weight: normal;
     font-size: 11px;
-    border : 0;
     text-align : center;
 }
 
@@ -420,12 +416,6 @@ input[type=radio], input[type=checkbox] {
     height: 13px;
     border: 0;
 }
-input, select, textarea {
-    font-size: 100%;
-    font-family: 'Noto Sans KR','dotum',sans-serif;
-    color: #222;
-    vertical-align: middle;
-}
 
 .xans-myshop-wishlist td.thumb img {
     max-width: 80px;
@@ -584,4 +574,55 @@ select {
 
 .xans-record- {
 	font-size: 13px;
+}
+
+/* 배송 주소록 */
+.ec-base-table.typeList table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.yg_btn {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 24px;
+}
+
+div.ec-base-help {
+    margin: 60px 0;
+    line-height: 18px;
+}
+
+div.ec-base-help > h2, div.ec-base-help > h3 {
+    font-size: 14px;
+}
+
+div.ec-base-help ul, div.ec-base-help ol {
+    margin: 15px 0 0 0;
+}
+
+div.ec-base-help ol .item1 {
+    background-position: -484px 0;
+}
+
+div.ec-base-help ol .item2 {
+    background-position: -434px -100px;
+}
+
+div.ec-base-help ol .item3 {
+    background-position: -384px -200px;
+}
+
+div.ec-base-help ol li {
+    padding: 0 0 0 25px;
+    background: url(//img.echosting.cafe24.com/skin/base/common/ico_number.png) no-repeat;
+}
+
+div.ec-base-help li {
+    color: #777;
+}
+
+div.ec-base-help {
+    margin: 60px 0;
+    line-height: 18px;
 }
