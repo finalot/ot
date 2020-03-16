@@ -9,9 +9,9 @@
 <title>oT.</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
-   <link rel="stylesheet" href="./css/mypage_list.css">
-   <link rel="stylesheet" href="./css/mypage_basic.css">
-   <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<link rel="stylesheet" href="./css/mypage_list.css">
+<link rel="stylesheet" href="./css/mypage_basic.css">
+<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 </head>
 <body>
 	<%@include file="header.jsp" %>	

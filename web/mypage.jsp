@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="./css/Login_style.css">
    <link rel="stylesheet" href="./css/mypage_basic.css">
    <link rel="stylesheet" href="./css/mypage.css">
+   
    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 </head>
 <body>

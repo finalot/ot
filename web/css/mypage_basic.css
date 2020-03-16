@@ -20,13 +20,13 @@ body {
 
 .titleArea {
     min-height: 30px;
-    margin: 10px 0 40px;
+    margin: 10px 0 100px;
     text-align: center;
 }
 
 .titleArea h2 {
 	font-family: 'HelveticaLTPro','Arial';
-    font-size: 50px;
+    font-size: 39px;
     color: black;
     line-height: 1.2;
     text-transform: uppercase;
