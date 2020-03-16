@@ -4483,7 +4483,7 @@ input[type=text] {
     line-height: 24px;
     padding: 0 14px;
     position:relative;
-    top:-2px;
+    top:0px;
 }
 .yg_btn,  .yg_btn_24 {
     display: inline-block;
@@ -4673,14 +4673,14 @@ table td, table th {
     text-align: center;
  }
  
- .yg_btn3 {
+ .yg_btn32 {
     background: #fff;
     color: #444!important;
     border-color: #ddd!important;
     position: relative;
     top: 39px;
     height: 25px;
-    left: -46px;s
+    left: -46px;
 }
  .yg_btn31 {
     background: #fff;
