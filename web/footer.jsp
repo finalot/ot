@@ -366,11 +366,11 @@
                       <div style="height: 90px;padding: 2%;background: #333330;border-radius:3%;margin-top:-10px;">
                          <div class="form-group col-xs-10" style="width: 100%;padding: 0px; display: inline-flex;">
                   
-                             <textarea style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
+                             <textarea onkeyPress="keyevent();" style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
                              border-radius:4%;width: 89%;" id="chatContent" class="form-control"  
                              placeholder="메세지를 입력하세요." maxlength="100" ></textarea>
                  <button id="sendChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
-                 type="button" class="btn btn-default pull-right" onclick="addChat();">전송</button>
+                 type="button" class="btn btn-default pull-right" onclick="addChat();" >전송</button>
                          </div>
                          <div class="form-group col-xs-2">
                               <div class="clearfix"></div>
@@ -418,6 +418,11 @@
 	
 	</script>
 	<script>
+	function keyevent(){
+	
+		if(event.keyCode==13){addChat();}
+	}
+	
 	 function addChat(chatContent){
 		 
 			if(!$('#chatContent').val()==""){
@@ -434,10 +439,10 @@
 		var content = document.getElementById('chatContent').value;
 		
          $('#chatList').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
-                          '<div style="display:flex">'+
+                          '<div style="display:flex; margin-left:4.5%;">'+
                           '<span style="font-size:7px;margin-left:60px;margin-top: auto;">'+strTime+'</span>'+
-                          '<div style="text-align: left; width: 270px;margin-left: 3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
-                          '<pre style="color:black ;font-size:12px;background:none;'+
+                          '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
+                          '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
                           'margin-left:3%;margin-top:3%;border:none;">'+content+'</pre>'+
                           '</div>'+
                           '</div>' + 
