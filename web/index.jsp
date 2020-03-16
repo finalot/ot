@@ -230,7 +230,7 @@
 										<div style="width:17px;height:17px;background:navy;margin-left:3px;float:left;border:1px solid black;"></div>
 									</span>
 										<br>
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5"style="font-size:12px">
+									<a href="productDetail.jsp" class="block2-name dis-block s-text3 p-b-5"style="font-size:12px">
 										[B-BASIC] 베이직 라운드 반팔티
 
 									</a>
@@ -1091,7 +1091,7 @@
 									</div>
 
 									<div class="block2-txt p-t-20">
-										<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										<a href="productDetail.jsp" class="block2-name dis-block s-text3 p-b-5">
 											Herschel supply co 25l
 										</a>
 
@@ -1124,7 +1124,7 @@
 									</div>
 
 									<div class="block2-txt p-t-20">
-										<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+										<a href="productDetail.jsp" class="block2-name dis-block s-text3 p-b-5">
 											Denim jacket blue
 										</a>
 
