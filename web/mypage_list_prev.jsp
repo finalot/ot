@@ -177,9 +177,9 @@
 
 			<div class="xans-element- xans-myshop xans-myshop-orderhistorypaging ec-base-paginate">
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019" class="first">
-					<img src="http://black-up.kr/web/upload/yangji_pc_crumb/btn_page_first.gif" alt="첫 페이지"></a>
+					<img src="/ot/images/btn_page_first.gif" alt="첫 페이지"></a>
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019">
-					<img src="http://black-up.kr/web/upload/yangji_pc_crumb/btn_page_prev.gif" alt="이전 페이지"></a>
+					<img src="/ot/images/btn_page_prev.gif" alt="이전 페이지"></a>
 					
 					<ol>
 						<li class="xans-record-">
@@ -188,9 +188,9 @@
        				</ol>
        				
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019">
-					<img src="http://black-up.kr/web/upload/yangji_pc_crumb/btn_page_next.gif" alt="다음 페이지"></a>
+					<img src="/ot/images/btn_page_next.gif" alt="다음 페이지"></a>
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019" class="last">
-					<img src="http://black-up.kr/web/upload/yangji_pc_crumb/btn_page_last.gif" alt="마지막 페이지"></a>
+					<img src="/ot/images/btn_page_last.gif" alt="마지막 페이지"></a>
 			</div>
 		</div>
 		<hr class="layout">
