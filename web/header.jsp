@@ -48,7 +48,7 @@
 		</a>
 		<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
 					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
-					<a href="#" class="chatBtn"><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
+					<a href="cart.jsp" ><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
 
 		<!-- Menu -->
 		<div class="wrap_menu"style="margin-top:-0.5%;">
@@ -236,7 +236,7 @@
 				<div class="topbar-social">
 					<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
 					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
-					<a href="#" class="chatBtn"><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
+					<a href="cart.jsp" ><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
 					
 				</div>
 
@@ -494,7 +494,7 @@
 				<div class="header-icons-mobile">
 					<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
 					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
-					<a href="#" class="chatBtn"><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
+					<a href="cart.jsp" ><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
 
 				<!-- 	<span class="linedivide2"></span> -->
 <!-- 
