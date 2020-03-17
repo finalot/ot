@@ -297,14 +297,14 @@
 		</a></button>
 		
 		<button style="width:88%;height:12%;background:snow;margin-top:-210%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
-		<a class="symbol-btn-back-to-top" href="index.jsp" >
+		<a class="symbol-btn-back-to-top" href="/ot/mypage_wishList.jsp" >
 			<img style="border-radius:10%;" src="images/icons/icon-header-04.png" class="header-icon1" alt="ICON"
 				onmouseover="this.src='images/icons/icon-header-04-4.png'"
 				onmouseout="this.src='images/icons/icon-header-04.png'">
 		</a></button>
 			
 		<button style="width:88%;height:12%;background:snow;margin-top:10%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
-		<a class="header-wrapicon1 dis-block"href="index.jsp" >
+		<a class="header-wrapicon1 dis-block"href="/ot/mypage.jsp" >
 				<img style="border-radius:10%;" src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON"
 				onmouseover="this.src='images/icons/icon-header-01-1.png'"
 				onmouseout="this.src='images/icons/icon-header-01.png'">

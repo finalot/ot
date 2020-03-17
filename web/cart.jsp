@@ -347,16 +347,18 @@
 							<td class="column-2">Men Tshirt</td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
-								<div class="flex-w bo5 of-hidden w-size17">
-									<button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+								<div class="flex-w bo5 of-hidden w-size17" style="margin-left:25%;">
+									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
 									</button>
 
 									<input class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
 
-									<button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
 									</button>
+									
+							
 								</div>
 							</td>
 							<td class="column-6"><img src="/ot/images/icons/icon-point.png" width="15px;height:15px;" 
@@ -377,14 +379,14 @@
 							<td class="column-2">Mug Adventure</td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
-								<div class="flex-w bo5 of-hidden w-size17">
-									<button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+								<div class="flex-w bo5 of-hidden w-size17"style="margin-left:25%;">
+									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
 									</button>
 
 									<input class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
 
-									<button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
 									</button>
 								</div>
@@ -978,6 +980,22 @@
 	
 		 
 	</script>
+			<script>
+								
+/*[ +/- num product ]
+   ===========================================================*/
+   $('.num-product-down1').on('click', function(e){
+       e.preventDefault();
+       var numProduct = Number($(this).next().val());
+       if(numProduct > 1) $(this).next().val(numProduct - 1);
+   });
+
+   $('.num-product-up1').on('click', function(e){
+       e.preventDefault();
+       var numProduct = Number($(this).prev().val());
+       $(this).prev().val(numProduct + 1);
+   });
+</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
