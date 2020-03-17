@@ -440,7 +440,7 @@
 		
          $('#chatList').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
                           '<div style="display:flex; margin-left:4.5%;">'+
-                          '<span style="font-size:7px;margin-left:60px;margin-top: auto;">'+strTime+'</span>'+
+                          '<span style="font-size:7px;margin-left:55px;margin-top: auto;">'+strTime+'</span>'+
                           '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
                           '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
                           'margin-left:3%;margin-top:3%;border:none;">'+content+'</pre>'+

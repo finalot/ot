@@ -12,7 +12,7 @@
 <jsp:include page="header.jsp"/>
 		<div align="center" style="margin-top: 20%;background: #f9f9f9;padding: 5%;">
 		<img src="./images/icons/ot.png" alt="로고" style="margin-bottom: 5%;height: 100px;width: 200px;">
-		<h2 style="font-size: 100px;font-weight: bold;">Daily Check Event!!</h2><br><br>
+		<h2 style="font-size: 70px;font-weight: bold;">Daily Check Event!!</h2><br><br>
 		<p style="font-size: 22px;color: black;">하단의 출석체크 버튼을 눌러주세요! <br>
 		누적 7일이상 출석하시면 Ot.에서 사용하실수 있는 쿠폰을 드립니다!
 		</p>
