@@ -97,9 +97,6 @@
 				<div class="shopMain wishlist">
 			        <a href="/ot/mypage_wishList.jsp">관심상품</a>
 			    </div>
-				<div class="shopMain likeIt displaynone">
-			        <a href="/ot/mypage_like.jsp">좋아요</a>
-			    </div>
 				<div class="shopMain mileage">
 			        <a href="/ot/mypage_point.jsp">적립금</a>
 			    </div>
