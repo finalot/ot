@@ -297,14 +297,14 @@
 		</a></button>
 		
 		<button style="width:88%;height:12%;background:snow;margin-top:-210%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
-		<a class="symbol-btn-back-to-top" href="index.jsp" >
+		<a class="symbol-btn-back-to-top" href="/ot/mypage_wishList.jsp" >
 			<img style="border-radius:10%;" src="images/icons/icon-header-04.png" class="header-icon1" alt="ICON"
 				onmouseover="this.src='images/icons/icon-header-04-4.png'"
 				onmouseout="this.src='images/icons/icon-header-04.png'">
 		</a></button>
 			
 		<button style="width:88%;height:12%;background:snow;margin-top:10%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
-		<a class="header-wrapicon1 dis-block"href="index.jsp" >
+		<a class="header-wrapicon1 dis-block"href="/ot/mypage.jsp" >
 				<img style="border-radius:10%;" src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON"
 				onmouseover="this.src='images/icons/icon-header-01-1.png'"
 				onmouseout="this.src='images/icons/icon-header-01.png'">
@@ -440,7 +440,7 @@
 		
          $('#chatList').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
                           '<div style="display:flex; margin-left:4.5%;">'+
-                          '<span style="font-size:7px;margin-left:60px;margin-top: auto;">'+strTime+'</span>'+
+                          '<span style="font-size:7px;margin-left:55px;margin-top: auto;">'+strTime+'</span>'+
                           '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
                           '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
                           'margin-left:3%;margin-top:3%;border:none;">'+content+'</pre>'+

@@ -97,20 +97,11 @@
 				<div class="shopMain wishlist">
 			        <a href="/ot/mypage_wishList.jsp">관심상품</a>
 			    </div>
-				<div class="shopMain likeIt displaynone">
-			        <a href="/ot/mypage_like.jsp">좋아요</a>
-			    </div>
 				<div class="shopMain mileage">
 			        <a href="/ot/mypage_point.jsp">적립금</a>
 			    </div>
 				<div class="shopMain coupon  ">
 			        <a href="/ot/mypage_coupon.jsp">쿠폰</a>
-			    </div>
-				<div class="shopMain view">
-			        <a href="/ot/mypage_recently.jsp">최근 본 상품</a>
-			    </div>
-				<div class="shopMain deposits  ">
-			        <a href="/ot/mypage_deposit.jsp">예치금</a>
 			    </div>
 				<div class="shopMain board">
 			        <a href="/ot/mypage_board.jsp">내가 쓴 게시글</a>
