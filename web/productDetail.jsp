@@ -162,7 +162,7 @@
 								<!-- Button -->
 								<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:50%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 							</div>
 						</div>
@@ -250,7 +250,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -284,7 +284,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -318,7 +318,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -352,7 +352,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -390,7 +390,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -424,7 +424,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -458,7 +458,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -492,7 +492,7 @@
 										<!-- Button -->
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 									</div>
 								</div>
@@ -567,21 +567,21 @@
 		$('.block2-btn-addcart').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
+				swal(nameProduct, "관심상품에 등록되었습니다 !", "success");
 			});
 		});
 
 		$('.block2-btn-addwishlist').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+				swal(nameProduct, "Like 되었습니다 !", "success");
 			});
 		});
 
 		$('.btn-addcart-product-detail').each(function(){
 			var nameProduct = $('.product-detail-name').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+				swal(nameProduct, "관심상품에 등록되었습니다 !", "success");
 			});
 		});
 	</script>
