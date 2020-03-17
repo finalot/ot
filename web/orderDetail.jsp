@@ -46,9 +46,9 @@
 
 
 	<!-- Title Page -->
-	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: images/heading-pages-01.jpg;margin-top:54px;">
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: images/heading-pages-01.jpg;">
 		<h2 class="l-text315 t-center">
-			ORDER RESULT
+			ORDER DETAIL
 		</h2>
 		
 		<br>
