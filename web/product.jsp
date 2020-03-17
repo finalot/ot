@@ -173,10 +173,6 @@
 									<label class="color-filter color-filter6" for="color-filter6"style="background:green;"></label>
 								</li>
 
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter7" type="checkbox" name="color-filter7">
-									<label class="color-filter color-filter7" for="color-filter7"style="background:#A73D3D;"></label>
-								</li>
 							</ul>
 						</div>
 
@@ -237,7 +233,7 @@
 											<!-- Button -->
 											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
-												<small>장바구니 담기</small>
+												<small>관심상품 담기</small>
 											</button>
 										</div>
 									</div>
