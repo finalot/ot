@@ -46,6 +46,9 @@
 		<a href="index.jsp" class="logo">
 			<img src="images/icons/ot.png" alt="IMG-LOGO" style="max-height:28px;">
 		</a>
+		<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
+					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
+					<a href="#" class="chatBtn"><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
 
 		<!-- Menu -->
 		<div class="wrap_menu"style="margin-top:-0.5%;">
@@ -233,6 +236,7 @@
 				<div class="topbar-social">
 					<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
 					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
+					<a href="#" class="chatBtn"><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
 					
 				</div>
 
@@ -240,6 +244,7 @@
 				<a href="index.jsp" class="logo2">
 					<img src="images/icons/ot.png" alt="IMG-LOGO" style="max-height:35px;">
 				</a>
+				
 
 				<div class="topbar-child2">
 					<span class="topbar-email">
@@ -487,9 +492,9 @@
 			<div class="btn-show-menu"style="margin-bottom:10px;">
 				<!-- Header Icon mobile -->
 				<div class="header-icons-mobile">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-					</a>
+					<a href="https://www.instagram.com/blackup_kr/" target="blank_" class="topbar-social-item fa fa-instagram"></a>
+					<a href="#" class="chatBtn"><img style="width: 15px;margin-left: 11px;margin-bottom: 4px;" src="./images/icons/chat_icon.png"></a>
+					<a href="#" class="chatBtn"><img style="width: 17px;margin-left: 15px;margin-bottom: 4px;" src="./images/icons/cart.png"></a>
 
 				<!-- 	<span class="linedivide2"></span> -->
 <!-- 

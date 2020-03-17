@@ -173,10 +173,6 @@
 									<label class="color-filter color-filter6" for="color-filter6"style="background:green;"></label>
 								</li>
 
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter7" type="checkbox" name="color-filter7">
-									<label class="color-filter color-filter7" for="color-filter7"style="background:#A73D3D;"></label>
-								</li>
 							</ul>
 						</div>
 

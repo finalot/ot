@@ -46,18 +46,18 @@
 		</a>
 
 
-		<a href="product.html" class="s-text16">
+		<a href="product.jsp" class="s-text16">
 			clothing
 			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
 		</a>
 
-		<a href="#" class="s-text16">
-			T-Shirt
+		<a href="product.jsp" class="s-text16">
+			티셔츠/나시
 			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
 		</a>
 
 		<span class="s-text17">
-			Boxy T-Shirt with Roll Sleeve Detail
+			[B-BASIC] 베이직 크롭 컬러나시
 		</span>
 	</div>
 
@@ -92,15 +92,15 @@
 
 			<div class="w-size14 p-t-30 respon5">
 				<h4 class="product-detail-name m-text16 p-b-13">
-					Boxy T-Shirt with Roll Sleeve Detail
+					[B-BASIC] 베이직 크롭 컬러나시
 				</h4>
 
 				<span class="m-text17">
-					$22
+					7,000WON
 				</span>
 
 				<p class="s-text8 p-t-10">
-					Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+					핏한 착용감과 세련된 색감으로 간편히 입을 수 있는 크롭 나시입니다.
 				</p>
 
 				<!--  -->
@@ -112,11 +112,11 @@
 
 						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 							<select class="selection-2" name="size">
-								<option>Choose an option</option>
-								<option>Size S</option>
-								<option>Size M</option>
-								<option>Size L</option>
-								<option>Size XL</option>
+								<option>--------</option>
+								<option>XS</option>
+								<option>S</option>
+								<option>M</option>
+								<option>L</option>
 							</select>
 						</div>
 					</div>
@@ -126,14 +126,21 @@
 							Color
 						</div>
 
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
+						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16" >
+								
 							<select class="selection-2" name="color">
-								<option>Choose an option</option>
-								<option>Gray</option>
-								<option>Red</option>
+								<option>--------</option>
 								<option>Black</option>
-								<option>Blue</option>
+								<option>Grey</option>
+								<option>Green</option>
+								<option>NeonYellow</option>
 							</select>
+						
+							<div style="width:17px;height:17px;background:black;float:left;border:1px solid black;"></div>
+								<div style="width:17px;height:17px;background:gray;margin-left:3px;float:left;border:1px solid black;"></div>
+								<div style="width:17px;height:17px;background:#39761F;margin-left:3px;float:left;border:1px solid black;"></div>
+								<div style="width:17px;height:17px;background:#E4F650;margin-left:3px;float:left;border:1px solid black;"></div>
+								<div style="width:17px;height:17px;background:none;margin-left:3px;"></div>
 						</div>
 					</div>
 
@@ -153,17 +160,18 @@
 
 							<div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
 								<!-- Button -->
-								<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-									Add to Cart
-								</button>
+								<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:50%">
+												<small>장바구니 담기</small>
+											</button>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="p-b-45">
-					<span class="s-text8 m-r-35">SKU: MUG-01</span>
-					<span class="s-text8">Categories: Mug, Design</span>
+					<span class="s-text8 m-r-35">oT: n-01</span>
+					<span class="s-text8">Categories: 나시</span>
 				</div>
 
 				<!--  -->
@@ -240,9 +248,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -273,9 +282,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -306,9 +316,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -339,9 +350,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -376,9 +388,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -409,9 +422,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -442,9 +456,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
@@ -475,9 +490,10 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+											style="width:60%;margin-left:20%">
+												<small>장바구니 담기</small>
+											</button>
 									</div>
 								</div>
 							</div>
