@@ -3417,6 +3417,17 @@ font-family: 'HelveticaLTPro','Arial';
     position: relative;
     top: 44px;
 }
+.l-text317 {
+	font-family: 'HelveticaLTPro','Arial';
+    font-size: 39px;
+    color: black;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: -57px;
+}
+
 
 /*[ XL-Text >= 51 ]
 ///////////////////////////////////////////////////////////
@@ -4448,6 +4459,24 @@ input[type=text] {
     top: 8px;
     left: 652px;
 }
+.yg_btn_144 {
+    height: 38px;
+    width: 140px;
+    line-height: 38px;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+    background: #444;
+    color: #fff;
+    border-radius: 0px;
+    font-family: Nanum Gothic;
+    position: relative;
+    top: 8px;
+    left: 91%;
+}
 
 .check_btn_140 {
 	height: 29px;
@@ -4618,6 +4647,13 @@ textarea {
     font-weight:600;
     left:12px;
 }
+#idMsg8 {
+	    color: #555555;
+    position: relative;
+    font-size:12px;
+    font-weight:600;
+    left:2px;
+}
 .info li {
 	padding: 0 0 0 9px;
 }
@@ -4682,6 +4718,8 @@ table td, table th {
     height: 25px;
     left: -46px;
 }
+
+
  .yg_btn31 {
     background: #fff;
     color: #444!important;
@@ -4692,4 +4730,47 @@ table td, table th {
      height: 37px;
     width: 140px;
 
+}
+
+
+#memberInf {
+    width: 100%;
+    margin: 5% 5% 5% 11%;
+}
+
+.totalDetail {
+    display: none;
+    width: 300px;
+    color: #757575;
+}
+
+.ec-base-layer .header {
+    padding: 8px 36px 15px 19px;
+    color: #fff;
+    background: #000;
+}
+
+.ec-base-layer .content {
+    padding: 20px;
+    font-size: 12px;
+    background-color:#fff;
+}
+.totalDetail .content p {
+    margin: -4px 0 8px;
+    padding: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px dotted #b0b1b3;
+}
+
+.ec-base-desc.typeDot dt, .ec-base-desc.typeDot .term {
+    padding: 0 4px 0 6px;
+    background: url(//img.echosting.cafe24.com/skin/base/common/ico_square3.gif) no-repeat left 10px;
+}
+
+.ec-base-desc.rightDT dt, .ec-base-desc.rightDD dd, .ec-base-desc.rightDT .term, .ec-base-desc.rightDD .desc, .ec-base-desc.right, .ec-base-desc .right {
+    position: relative;
+    left: 131px;
+}
 }

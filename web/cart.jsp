@@ -344,7 +344,9 @@
 									<img src="//black-up.kr/web/product/medium/201910/7e87ddc2879aa1c854575447f27b6026.gif" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="">
 								</div>
 							</td>
-							<td class="column-2">Men Tshirt</td>
+							<td class="column-2">Men Tshirt
+							<br><span id="idMsg7">[옵션 : 블루/S/1개]</span>
+							</td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
@@ -374,7 +376,8 @@
 									<img src="//black-up.kr/web/product/medium/201910/7e87ddc2879aa1c854575447f27b6026.gif" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="">
 								</div>
 							</td>
-							<td class="column-2">Mug Adventure</td>
+							<td class="column-2">Mug Adventure
+							<br><span id="idMsg7">[옵션 : 베이지/S/1개]</span></td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">

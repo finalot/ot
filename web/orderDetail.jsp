@@ -42,44 +42,28 @@
 	<!-- Header -->
 	<%@include file="header.jsp" %>
 
-		
-
-
-	<!-- Title Page -->
-	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: images/heading-pages-01.jpg;">
-		<h2 class="l-text315 t-center">
-			ORDER DETAIL
-		</h2>
-		
-		<br>
-		<p class="membertype" style="position: relative;left: -182px;top: 102px;">
+		<div id="memberInf" style="font-size:16px;">
+    	<p class="xans-element- xans-myshop xans-myshop-asyncbenefit mypage_top ">
     		<strong>
-    		<span><span class="mem_type">홍길동</span></span>
+    		<span class="xans-member- var-name" style="font-size:17px;">홍길동</span>
     		</strong>
  			님은 현재 
 			<strong>
-			<span class="mem_type2" style="color:rgba(230,106,87,1);">MEMBER</span>
+			<span class="xans-member- var-group_name" style="color:rgba(230,106,87,1); font-size:17px;">MEMBER</span>
+		
 			</strong>
   			입니다.
-  			<div class="xans-myshop-bankbook "><ul><li class="xans-layout-shoppinginfo "><strong class="title"><a href="/myshop/wish_list.html">WISH</a></strong>
-  			<br>
-			<strong class="data "><a href="/myshop/wish_list.html"><span id="xans_myshop_interest_prd_cnt">0개</span></a></strong>
-			</li>
-                <li>
-                    <strong class="title"><a href="/myshop/mileage/historyList.html">POINT</a></strong>
-                    <br>
-                    <strong class="data"><a href="/myshop/mileage/historyList.html">0원</a></strong>
-                </li>
-                <li class="etc ">
-                    <strong class="title"><a href="/myshop/coupon/coupon.html">COUPON</a></strong>
-                    <br>
-                    <strong class="data"><a href="/myshop/coupon/coupon.html">0<span>개</span></a></strong>
-                    <a href="/myshop/coupon/coupon.html"></a>
-                </li>
-            </ul>
-</div>
 		</p>
-	</section>
+	</div>
+
+
+	<!-- Title Page -->
+<!-- 	<section class="" style="background-image: images/heading-pages-01.jpg;"> -->
+
+		<h2 class="l-text317 t-center">
+			ORDER DETAIL
+		</h2>
+	
 	
 	
 	<!-- 주문완료창 -->
@@ -92,22 +76,93 @@
 				<!-- <h3 style="font-size:12px;font-weight:600;">국내배송상품 주문내역</h3> -->
 		
 			<div class="container-table-cart pos-relative" style="position: relative;right: 4%;">
-			<div class="orderInfo" style="border: 1px solid #e6e6e6; height:216px;">
-        <p>
-            <strong style="font-weight:600; color:#000; font-size: 20px;position: relative;left: 492px;top: 31px;">고객님의 주문이 완료 되었습니다.</strong>
-            		<br>
-       			   <span id="idMsg4" style="font-weight: 600;position: relative;left: 458px;top: 31px;">주문내역 및 배송에 관한 안내는 주문조회 를 통하여 확인 가능합니다.</span>
-         		   <br>   
-            		<span id="idMsg4" style="font-weight:600;position: relative;top: 25px;left: 387px;">비회원으로 주문하신 고객님께서는 주문번호와 비회원 주문 비밀번호를 꼭 기억해두셔야 합니다.</span>
-        </p>
-       		  <ul>
-					 <li style="position: relative;left: 553px;top: 58px;">
-					 <span id="idMsg4" style="font-weight:600;">주문번호 : 20200315-0006124</span></li>
-           			 <li><span id="idMsg4" style="font-weight:600;position: relative;left: 551px;top: 54px;">
-           			 주문일자 : <span>2020-03-15 20:23:05</span></li>
-       		 </ul>
-		</div>
+			
 		
+		<h3 class=" " style="position: relative;
+    font-size: 12px;
+    font-weight: 600; top:51px;left:-2px;">주문 정보</h3><br>
+		<div class="detail-pay">
+				<table style="height: 128%;width: 100%;margin-top:3%;
+			    border: 1px solid #ddd;">
+					<colgroup>
+						<col style="width:160px">
+						<col style="width:auto">
+					</colgroup>
+				<tbody>
+					<tr class="txt14">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<span id="idMsg4">주문번호</span></th>
+						<td><span id="idMsg4" style="margin-left:10px;">
+						20200316-0010199
+					</span>
+						</td>	
+					</tr>
+					
+					
+					<tr class="txt15">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<span id="idMsg4">주문일자</span></th>
+						<td style="border-top: 1px solid #ddd;">
+						<span id="idMsg4" style="margin-left:10px;">2020-03-16 23:32:35</span>
+						</td>	
+					</tr>
+					
+					<tr class="txt15">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<span id="idMsg4">주문자</span></th>
+						<td style="border-top: 1px solid #ddd;">
+						<span id="idMsg4" style="margin-left:10px;">우예진</span>
+						</td>	
+					</tr>
+					
+					<tr class="txt15">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<span id="idMsg4">주문처리상태</span></th>
+						<td style="border-top: 1px solid #ddd;">
+						<span id="idMsg4" style="margin-left:10px;">입금전</span>
+						
+						<button>
+						<p class="yg_btn_24 yg_btn3 ">
+						<span style="position:relative;top:-1px;">주문취소</span></p>
+						</button>
+						</td>	
+					</tr>
+					
+					
+				
+				
+				</tbody>
+				
+				
+				</table>
+		
+			    </div>
+			    
+	
 		<h3 class=" " style="position: relative;
     font-size: 12px;
     font-weight: 600; top:51px;left:-2px;">결제 정보</h3><br>
@@ -127,10 +182,35 @@
    					     text-align: left;
     					font-weight: normal;
     					background-color: #fafafa;">
-						<strong>최종결제금액</strong></th>
-						<td><span class="m-text21 w-size20 w-full-sm" style="margin-left:6px;">
+						<strong>총 주문금액</strong></th>
+						<td><span class="m-text21 w-size20 w-full-sm" style="margin-left:11px;
+						position:relative;top:2px;">
 						60,500 <span id="m-text21">won</span>
-					</span>
+						</span>
+						&nbsp;&nbsp;
+						<button id="infodetail" 
+						class="more yg_btn_24 yg_btn3">내역보기</button>
+						
+						
+					
+						</td>	
+					</tr>
+					
+					<tr class="txt14">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<strong>총 결제금액</strong></th>
+						<td style="border-top: 1px solid #ddd;">
+						<span class="m-text21 w-size20 w-full-sm" style="margin-left:11px;
+						position:relative;top:2px;">
+						60,500 <span id="m-text21">won</span>
+						</span>	
+					
 						</td>	
 					</tr>
 					
@@ -186,7 +266,8 @@
 									<img src="//black-up.kr/web/product/medium/201910/7e87ddc2879aa1c854575447f27b6026.gif" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="">
 								</div>
 							</td>
-							<td class="column-2">Men Tshirt</td>
+							<td class="column-2">Men Tshirt
+							<br><span id="idMsg7" style="margin-left:-10px;">[옵션 : 블루/S/1개]</span></td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
@@ -211,7 +292,8 @@
 									<img src="//black-up.kr/web/product/medium/201910/7e87ddc2879aa1c854575447f27b6026.gif" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="">
 								</div>
 							</td>
-							<td class="column-2">Mug Adventure</td>
+							<td class="column-2">Mug Adventure
+							<br><span id="idMsg7" style="margin-left:-10px;">[옵션 : 베이지/S/1개]</span></td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
@@ -230,69 +312,8 @@
 				</div>
 			</div>
 
-		
+	
 			
-
-			<!-- Total -->
-			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:63px;left:-48px;">
-			결제 예정 금액</h3><br>
- 
-			<div class="totalArea"style="display:flex;margin-top: 3%;">
-			    <form method="POST" name="payform"
-			    style="width: 100%;margin-right: 3%;margin-left:-4%; margin-top:2%;">
-			    
-			    <table class="cashfuture"  style="height: 41%;width: 109%;
-			   border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;
-			   border-bottom:1px solid #ddd;">
-			    <colgroup>
-					<col style="width:42%">
-				<!-- 	<col style="width:38%"> -->
-					<col style="width:37%">
-				</colgroup>
-			    		<tr>	
-			    			<th scope="col">
-			    			<strong style="position: relative;left: 148px;">총 주문 금액</strong>
-			    			</th>
-			    			
-			    			<th scope="col">
-							<!-- <strong>총 </strong><strong id="total">할인</strong>
-							<strong id="plus_mark"> + </strong>
-							<strong id="total" class="">부가결제</strong>
-							<strong> 금액</strong> -->
-							</th>
-							
-							<th scope="col">
-							<strong>총 결제예정 금액</strong>
-							</th>
-			    		</tr>
-			    	<tbody class="center">
-			    		<tr>
-			    		
-			    			<td class="price">
-			    			<span class="m-text21 w-size20 w-full-sm"
-			    			style="position: relative;left: 143px;">
-						58,000 won
-					</span>
-			    		</td>
-			    		
-			    			<td class="option">
-			    			
-						</td>	
-
-						 	<td class="total-price">
-						 
-						 	<span class="m-text21 w-size20 w-full-sm">
-						58,000 <span id="m-text21">won</span>
-					</span>
-					</td>
-						 	
-			    		</tr>
-			 	</tbody>
-			    </table>
-			    
-			    
-		</form>
-	</div>
 			
 	
 	<!-- 수정함 수정함 기억해내! -->
@@ -388,11 +409,31 @@
 	<a href="#none" class=" yg_btn_24 yg_btn32">거래명세서 인쇄</a>
 	
 	 <div class="" style="margin-left:25%;">
-        <a href="index.jsp" class="yg_btn_24 yg_btn31"><span style="position:relative;top:7px;">쇼핑계속하기</span></a>
-        <a href="mypage_list.jsp" class="hov1 s-text1 trans-0-4 yg_btn_143">주문확인하기</a>
+        <a href="mypage_list.jsp" class="hov1 s-text1 trans-0-4 yg_btn_144">주문목록보기</a>
     </div>
 	</section>
-
+	
+	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:704px; left: 580.906px; display:none;position:absolute;
+	border:1px solid #000;height:166px;">
+        <div class="header">
+            <h3 style="font-size: 14px;position: relative;top: 3px;">총 주문금액 상세내역</h3>
+        </div>
+        <div class="content">
+            <p>21,500 won</p>
+            <ul class="ec-base-desc typeDot gLarge rightDD">
+<li>
+<strong class="term">상품금액</strong><span class="desc">19,000 won</span>
+</li>
+                
+                <li style="position: relative;top: 16px;">
+<strong class="term">배송비</strong><span class="desc" style="padding-left:19px;">2,500 won</span>
+</li>
+            </ul>
+</div>
+        <a href="#none" class="close" onclick="OrderLayer.offDiv('order_layer_detail');">
+        <img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기"
+        style="position: relative;left: -14px;top: -151px;"></a>
+    </div>
 
 
 	<!-- Footer -->
@@ -422,6 +463,18 @@
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script>
+	
+	
+	$('#infodetail').click(function(){
+		$('#orderdetail').css('display','block');
+		
+	});
+	$('.close').click(function(){
+		$('#orderdetail').css('display','none');
+	})
+	
+	</script>
 	<script type="text/javascript">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
