@@ -4654,6 +4654,25 @@ textarea {
     font-weight:600;
     left:2px;
 }
+#idMsg9 {
+    color: #000;
+    position: relative;
+    font-size: 12px;
+    top:3px;
+}
+#idMsg10 {
+    color: #000;
+    position: relative;
+    font-size: 13px;
+    font-weight:600;
+    top:1px;
+}
+#idMsg11 {
+	    color: #000;
+    position: relative;
+    font-size:13px;
+}
+
 .info li {
 	padding: 0 0 0 9px;
 }
@@ -4773,4 +4792,32 @@ table td, table th {
     position: relative;
     left: 131px;
 }
+.xans-board-search {
+    padding: 14px 0 14px 0;
+    color: #2e2e2e;
+    font-size: 12px;
+}
+.xans-board-search select {
+    padding: 0 0 1px 3px;
+    width: 72px;
+    height: 30px;
+    font-size:12px;
+}
+.xans-board-search input[type=text] {
+    height: 30px;
+    line-height: 22px;
+    padding: 2px 4px;
+    border: 1px solid #eaeaea;
+    color: #222;
+    font-size: 12px;
+}
+
+
+
+.yg_btn318 {
+    background: #fff;
+    color: #444!important;
+    border-color: #ddd!important;
+    height: 29px;
+    width: 76px;
 }
