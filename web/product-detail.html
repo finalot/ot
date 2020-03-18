@@ -1074,6 +1074,17 @@
 
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
 
+    /*[ Show content Product detail ]
+    ===========================================================*/
+    $('.active-dropdown-content .js-toggle-dropdown-content').toggleClass('show-dropdown-content');
+    $('.active-dropdown-content .dropdown-content').slideToggle('fast');
+
+    $('.js-toggle-dropdown-content').on('click', function(){
+        $(this).toggleClass('show-dropdown-content');
+        $(this).parent().find('.dropdown-content').slideToggle('fast');
+    });
+	</script>
 </body>
 </html>

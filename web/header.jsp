@@ -267,7 +267,7 @@
 					&nbsp;&nbsp;
 					
 					<a href="/ot/join.jsp" class="topbar-email">
-
+					Join
 					</a>
 					&nbsp;&nbsp;
 					
@@ -856,6 +856,7 @@
 	});
 	
 	</script>
+
 
 </body>
 </html>
