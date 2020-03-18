@@ -347,9 +347,9 @@
 							<td class="column-2">Men Tshirt
 							<br><span id="idMsg7">[옵션 : 블루/S/1개]</span>
 							</td>
-							<td class="column-3">29,000 won</td>
+							<td class="column-3"><font class="format-money">29000</font> won</td>
 							<td class="column-4">
-								<div class="flex-w bo5 of-hidden w-size17" style="margin-left:25%;">
+								<div class="flex-w bo5 of-hidden w-size17">
 									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
 									</button>
@@ -367,8 +367,8 @@
 							style="position: relative;left: -5px;
 								top: -1px;">900원</td>
 							<td class="column-7" style="padding-left: 40px;">기본배송</td>
-							<td class="column-8">2,500 won</td>
-							<td class="column-5">58,000 won</td>
+							<td class="column-8"><font class="format-money">2500</font> won</td>
+							<td class="column-5"><font class="format-money">58000</font> won</td>
 						</tr>
 
 						<tr class="table-row">
@@ -380,9 +380,9 @@
 							</td>
 							<td class="column-2">Mug Adventure
 							<br><span id="idMsg7">[옵션 : 베이지/S/1개]</span></td>
-							<td class="column-3">29,000 won</td>
+							<td class="column-3"><font class="format-money">29000</font> won</td>
 							<td class="column-4">
-								<div class="flex-w bo5 of-hidden w-size17"style="margin-left:25%;">
+								<div class="flex-w bo5 of-hidden w-size17">
 									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
 									</button>
@@ -398,8 +398,8 @@
 							style="position: relative;left: -5px;
 								top: -1px;">900원</td>
 							<td class="column-7" style="padding-left: 40px;">기본배송</td>
-							<td class="column-8">2,500 won</td>
-							<td class="column-5">58,000 won</td>
+							<td class="column-8"><font class="format-money">2500</font> won</td>
+							<td class="column-5"><font class="format-money">58000</font> won</td>
 						</tr>
 					</table>
 				</div>
@@ -445,7 +445,7 @@
 			    			<td class="price">
 			    			<span class="m-text21 w-size20 w-full-sm"
 			    			style="position: relative;left: 143px;">
-						58,000 won
+						<font class="format-money">58000</font> won
 					</span>
 			    		</td>
 			    		
@@ -458,7 +458,7 @@
 						 	<td class="total-price">
 						 	<strong>=</strong>
 						 	<span class="m-text21 w-size20 w-full-sm">
-						58,000 <span id="m-text21">won</span>
+						<font class="format-money">58000</font> <span id="m-text21">won</span>
 					</span>
 					</td>
 						 	
@@ -514,7 +514,7 @@
 						<strong>적립금</strong></th>
 						<td style="border-top: 1px solid #ddd;">
 						<input type="text" name="point" id="point" size="20px;" style="margin-left: 8px; margin-top:10px;">
-						<span id="idMsg5">원 (총 사용가능 적립금 : 2,000원)</span>
+						<span id="idMsg5">원 (총 사용가능 적립금 : <font class="format-money">2000</font>원)</span>
 						
 						<br>
 						
@@ -578,7 +578,7 @@
 			    				<td>
 			    					<select id="bank" name="bank" style="font-size:12px;">
 									<option value="-1">::: 선택해 주세요. :::</option>
-									<option value="1">국민은행:543001-01-454061</option>
+									<option value="1">국민은행:093402-04-081571</option>
 									<option value="2">신한은행:140-012-58997</option>
 									<option value="3">농협:301-0231-3595-51</option>
 								</select>
@@ -638,7 +638,7 @@
 					</span>
 
 					<span class="m-text21 w-size20 w-full-sm">
-						58,000 won
+						<font class="format-money">58000</font> won
 					</span>
 				</div>
 				
@@ -651,7 +651,7 @@
 					</span>
 
 						<span class="m-text21 w-size20 w-full-sm">
-						2,500 won
+						<font class="format-money">2500</font> won
 					</span>
 
 
@@ -665,7 +665,7 @@
 					</span>
 
 					<span class="m-text21 w-size20 w-full-sm">
-						60,500 <span id="m-text21">won</span>
+						<font class="format-money">60500</font> <span id="m-text21">won</span>
 					</span>
 				</div>
 

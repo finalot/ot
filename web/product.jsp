@@ -202,9 +202,9 @@
 							<div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10"style="background:black;">
 								<select class="selection-2" name="sorting">
 									<option>Price</option>
-									<option>5000<small>￦</small> - 50000<small>￦</small></option>
-									<option>50000<small>￦</small> - 100000<small>￦</small></option>
-									<option>100000<small>￦</small> - 150000<small>￦</small></option>
+									<option><font class="format-money">5000</font><small>￦</small> - <font class="format-money">50000</font><small>￦</small></option>
+									<option><font class="format-money">50000</font><small>￦</small> - <font class="format-money">100000</font><small>￦</small></option>
+									<option><font class="format-money">100000</font><small>￦</small> - <font class="format-money">150000</font><small>￦</small></option>
 
 								</select>
 							</div>
@@ -255,7 +255,7 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>7,000 won</small>
+										<small><font class="format-money">7000</font> won</small>
 									</span>
 								</div>
 							</div>
@@ -293,7 +293,7 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>20,000 won</small>
+										<small><font class="format-money">20000</font> won</small>
 									</span>
 								</div>
 							</div>
@@ -334,7 +334,7 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>12,000 won</small>
+										<small><font class="format-money">12000</font> won</small>
 									</span>
 								</div>
 							</div>

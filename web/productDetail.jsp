@@ -84,16 +84,23 @@
 				</div>
 			</div>
 			<div class="w-size14 p-t-30 respon5">
-				<br> <br>
-				<h4 class="product-detail-name m-text16 p-b-13">[B-BASIC] 베이직
+				
+				<h4 class="product-detail-name m-text16 p-b-13" >[B-BASIC] 베이직
 					크롭 컬러나시</h4>
 
-				<span class="m-text17"> <small>7,000WON</small>
-				</span>
-
+				price&nbsp;:&nbsp;&nbsp;
+				<span class="m-text17format-money"> <small>7000</small>
+				<input class="price" id="price" type="hidden"value="7000"/>
+				</span>WON
+				<br>
+				point(1%)&nbsp;:&nbsp;&nbsp;
+				<span class="m-text17"> <small>70</small>
+				</span>p
+				<hr>
+				
 				<p class="s-text8 p-t-10">핏한 착용감과 세련된 색감으로 간편히 입을 수 있는 크롭 나시입니다.
 				</p>
-				<br> <br> <br>
+				<br> <br> 
 				<!--  -->
 				<div class="p-t-33 p-b-60" style="margin-left: -10%;">
 					<div class="flex-m flex-w p-b-10">
@@ -117,10 +124,10 @@
 
 							<select class="selection-2" name="color">
 								<option>--------</option>
-								<option>Black</option>
-								<option>Grey</option>
-								<option>Green</option>
-								<option>NeonYellow</option>
+								<option>블랙</option>
+								<option>그레이</option>
+								<option>그린</option>
+								<option>네온옐로우</option>
 							</select>
 
 							<div
@@ -136,25 +143,51 @@
 						</div>
 					</div>
 					<br>
+					<hr style="margin-left: 9.8%;">
+							<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp; <small id="total" class="format-money">7000</small>&nbsp;WON
+							</span>
+					<br>
 					<div class="flex-r-m flex-w p-t-10">
 						<div class="w-size16 flex-m flex-w">
 							<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
-								<button class="num-product-down color1 flex-c-m size7 bg8 eff2">
+								<button class="num-product-down color1 flex-c-m size7 bg8 eff2" onclick="sub();">
 									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
 								</button>
 
 								<input class="size8 m-text18 t-center num-product" type="number"
 									name="num-product" value="1">
 
-								<button class="num-product-up color1 flex-c-m size7 bg8 eff2">
+								<button class="num-product-up color1 flex-c-m size7 bg8 eff2" onclick="sub();">
 									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
 								</button>
 
 
 							</div>
+<script>
 
-							<div
-								class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
+
+function sub(){
+	var num = jQuery('.num-product').val();
+	console.log(num);
+	if(num > 1){
+		var price = parseInt(stat, 10);;
+	
+		console.log(num);
+		console.log(price);
+		
+		var sub = num*price;
+		console.log("sub"+sub);
+		
+		$('#total').text(sub.format());
+	}
+
+}
+
+
+</script>
+
+
+							<div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
 								<!-- Button -->
 								<button
 									class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
@@ -162,8 +195,13 @@
 									<small>장바구니 담기</small>
 								</button>
 							</div>
+								
+							
+						<br><br>
+							
 						</div>
 					</div>
+						
 				</div>
 
 				<div class="p-b-45">
@@ -291,7 +329,7 @@
 	<section class="relateproduct bgwhite p-t-45 p-b-138">
 		<div class="container">
 			<div class="sec-title p-b-60">
-				<h3 class="m-text5 t-center">함께 착용한 상품</h3>
+				<h3 class="m-text5 t-center">With Item</h3>
 			</div>
 
 			<!-- Slide2 -->
@@ -327,20 +365,15 @@
 
 							<div class="block2-txt p-t-20">
 								<span class="block2-price m-text6 p-r-5">
-									<div
-										style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-									<div
-										style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-									<div
-										style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-									<div
-										style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-									<div
-										style="width: 17px; height: 17px; background: #4A87B9; margin-left: 3px; float: left; border: 1px solid black;"></div>
+									<div style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
+									<div style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
+									<div style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
+									<div style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
+									<div style="width: 17px; height: 17px; background: #4A87B9; margin-left: 3px; float: left; border: 1px solid black;"></div>
 								</span> <br> <a href="productDetail.jsp"
 									class="block2-name dis-block s-text3 p-b-5"
 									style="font-size: 12px"> [B-BASIC] 베이직 크롭 컬러나시 </a> <span
-									class="block2-price m-text6 p-r-5"> <small>7,000
+									class="block2-price m-text6 p-r-5"> <small><font class="format-money">7000</font>
 										won</small>
 								</span>
 							</div>
@@ -380,7 +413,7 @@
 								</span> <br> <a href="productDetail.jsp"
 									class="block2-name dis-block s-text3 p-b-5"
 									style="font-size: 12px"> [B-BASIC] 넘브 레터링 티셔츠 </a> <span
-									class="block2-price m-text6 p-r-5"> <small>20,000
+									class="block2-price m-text6 p-r-5"> <small><font class="format-money">20000</font>
 										won</small>
 								</span>
 							</div>
@@ -425,7 +458,7 @@
 								</span> <br> <a href="productDetail.jsp"
 									class="block2-name dis-block s-text3 p-b-5"
 									style="font-size: 12px"> [B-BASIC] 베이직 라운드 반팔티 </a> <span
-									class="block2-price m-text6 p-r-5"> <small>12,000
+									class="block2-price m-text6 p-r-5"> <small><font class="format-money">12000</font>
 										won</small>
 								</span>
 							</div>
