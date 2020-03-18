@@ -700,3 +700,39 @@ div.ec-base-help ol .item4 {
     background: #777;
     border-color: #777!important;
 }
+
+/* 내가 쓴 게시판 */
+
+.gBlank10 {
+    display: block;
+    margin-top: 10px;
+}
+
+.xans-myshop-boardlistsearch {
+    padding: 15px 0 20px;
+    color: #2e2e2e;
+    font-size: 12px;
+}
+
+.xans-myshop-boardlistsearch #search_key {
+    height: 30px;
+}
+
+.xans-myshop-boardlistsearch #search {
+    width: 162px;
+    height: 30px;
+    line-height: 24px;
+}
+
+.xans-myshop-boardlistsearch .boardSearch {
+    display: block;
+}
+
+.yg_btn_28 {
+    height: 30px;
+    line-height: 28px;
+    padding: 0 14px;
+}
+
+.ec-base-table .left {
+    text-align: left;
