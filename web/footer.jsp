@@ -530,5 +530,6 @@ jQuery('.format-money').text(function() {
     );	
 });
 </script>
+
 </body>
 </html>
