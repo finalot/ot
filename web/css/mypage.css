@@ -111,3 +111,8 @@
 	font-weight : 700;
 	color : black;
 }
+
+.xans-myshop-orderstate .cs strong {
+    font-weight: normal;
+    font-size: 16px;
+}
