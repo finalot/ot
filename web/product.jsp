@@ -255,7 +255,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small><font class="format-money">7000</font> won</small>
+										<small><font class="format-money">7000</font> won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>
@@ -293,7 +294,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small><font class="format-money">20000</font> won</small>
+										<small><font class="format-money">20000</font> won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>
@@ -334,7 +336,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small><font class="format-money">12000</font> won</small>
+										<small><font class="format-money">12000</font> won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>
@@ -376,7 +379,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>12,000 won</small>
+										<small>12,000 won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>
@@ -420,7 +424,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>7,000 won</small>
+										<small>7,000 won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>
@@ -458,7 +463,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>20,000 won</small>
+										<small>20,000 won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>
@@ -480,6 +486,7 @@
 											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
 											style="width:60%;margin-left:20%">
 												<small>장바구니 담기</small>
+												
 											</button>
 										</div>
 									</div>
@@ -499,7 +506,8 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>12,000 won</small>
+										<small>12,000 won</small>&nbsp;&nbsp;
+										<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 								</div>
 							</div>

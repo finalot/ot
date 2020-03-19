@@ -236,7 +236,7 @@
 									</a>
 
 									<span class="block2-price m-text6 p-r-5">
-										<small>12,000 won</small>
+										<small>12,000 won</small>&nbsp;&nbsp;<font style="font-size:9px;color:gray">리뷰 : 100</font>
 									</span>
 									</div>
 								</div>
