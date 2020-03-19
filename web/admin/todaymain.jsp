@@ -44,6 +44,7 @@
       
       
       <!-- WELCOME-->
+      <div style="padding-left:300px">
       <section class="welcome p-t-10">
           <div class="container">
               <div class="row">
@@ -190,6 +191,7 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+    </div>
 
 </body>
 </html>

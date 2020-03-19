@@ -73,8 +73,7 @@
 			                <th scope="col">DATE</th>
             			</tr>
           			</thead>
-          			
-          			
+
 					<tbody class="xans-element- xans-board xans-board-notice-1002 xans-board-notice xans-board-1002 center"><!--
                 
                 --><tr style="background-color:#F9F9F9; color:#555555;" class="xans-record-">
