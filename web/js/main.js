@@ -110,6 +110,7 @@
             $('.fixed-header2').find('.header-dropdown').removeClass("show-header-dropdown");
         } 
 
+        
     });
     
     /*[ Show menu mobile ]
