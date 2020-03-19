@@ -4478,6 +4478,25 @@ input[type=text] {
     left: 91%;
 }
 
+.yg_btn_145 {
+     height: 34px;
+    width: 107px;
+    line-height: 38px;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+    background: #444;
+    color: #fff;
+    border-radius: 0px;
+    font-family: Nanum Gothic;
+    position: relative;
+    top: 12px;
+    left: 92%;
+}
+
 .check_btn_140 {
 	height: 29px;
     width: 82px;
@@ -4658,7 +4677,8 @@ textarea {
     color: #000;
     position: relative;
     font-size: 12px;
-    top:3px;
+    top:0px;
+    left:-1px;
 }
 #idMsg10 {
     color: #000;
@@ -4796,6 +4816,9 @@ table td, table th {
     padding: 14px 0 14px 0;
     color: #2e2e2e;
     font-size: 12px;
+    top: -33px;
+    position:relative;
+    width: 41%;
 }
 .xans-board-search select {
     padding: 0 0 1px 3px;
@@ -4820,4 +4843,21 @@ table td, table th {
     border-color: #ddd!important;
     height: 29px;
     width: 76px;
+}
+.ec-base-table #subject {
+    width: 390px;
+    font-size:12px;
+}
+.yg_btn_30 {
+    height: 28px;
+    width: 100px;
+    line-height: 28px;
+}
+input[type=password] {
+    height: 20px;
+    line-height: 22px;
+    padding: 2px 4px;
+    border: 1px solid #eaeaea;
+    color: #222;
+    font-size: 12px;
 }
