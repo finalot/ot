@@ -4395,7 +4395,7 @@ input[type=text] {
     line-height: 22px;
     border: 1px solid #ddd;
     left: 4px;
-    position: relative;
+/*     position: relative; */
 }
 
 #idMsg {
@@ -4555,7 +4555,7 @@ input[type=text] {
     font-size: 12px;
 }
 input[type=radio] + label, input[type=checkbox] + label {
-    margin: 0 4px 0 2px;
+    margin: 0 4px 0 5px;
     font-size:12px;
     font-weight:600;
         position: relative;
