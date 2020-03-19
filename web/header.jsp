@@ -696,8 +696,8 @@
 						</h4>
 						<ul>
 							<li><a href="/board/qna_index.html">자주하는 질문</a></li>
-							<li><a href="/board/product/list.html?board_no=6">상품문의</a></li>
-							<li><a href="/board/free/list.html?board_no=3001">배송문의</a></li>
+							<li><a href="product_board.jsp">상품문의</a></li>
+							<li><a href="delivery_board.jsp">배송문의</a></li>
 							<li><a href="/board/free/list.html?board_no=2">배송전취소/변경</a></li>
 							<li><a href="/board/free/list.html?board_no=3">배송후교환/반품</a></li>
 							<li><a href="/board/free/list.html?board_no=5">입금확인/입금자변경</a></li>

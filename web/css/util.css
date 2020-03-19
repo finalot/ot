@@ -4861,3 +4861,17 @@ input[type=password] {
     color: #222;
     font-size: 12px;
 }
+
+#prd_name {
+	color: #aaa;
+	font-weight:600;
+	position:relative;
+	top:0px;
+	font-size:13px;
+}
+
+.ppro {
+	position: relative;
+    left: 6px;
+}
+}
