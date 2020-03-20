@@ -12,7 +12,7 @@
 
     <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icon/favicon.png"/>
-   
+
     <!-- Title Page-->
     <title>oT. ADMIN</title>
 
@@ -39,17 +39,17 @@
 </head>
 <body class="animsition">
 	<div class="page-wrapper">
-	
+
       <%@ include file="a_header.jsp" %>
-      
-      
+
+
       <!-- WELCOME-->
       <div style="padding-left:300px">
       <section class="welcome p-t-10">
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
-                      <h1 class="title-4"> 
+                      <h1 class="title-4">
                        &nbsp; &nbsp; &nbsp; Today
                       </h1>
                       <hr class="line-seprate">
@@ -165,7 +165,7 @@
                 </div>
         </section>
         <!-- END STATISTIC CHART-->
-	
+
 	</div>
 
     <!-- Jquery JS-->

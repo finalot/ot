@@ -423,6 +423,7 @@
 		if(event.keyCode==13){addChat();}
 	}
 	
+	
 	 function addChat(chatContent){
 		 
 			if(!$('#chatContent').val()==""){
