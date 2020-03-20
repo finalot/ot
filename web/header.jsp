@@ -266,7 +266,7 @@
 						class="topbar-email"> . </span>
 				</div>
 
-				<font style="font-size: 8px; color: brown; position: relative; bottom: -17px; left: 35%;">2000+</font>
+				<font style="font-size: 8px; color: brown; position: relative; bottom: -17px; left: 35.5%;">2000+</font>
 
 			</div>
 		</div>
