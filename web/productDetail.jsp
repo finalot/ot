@@ -388,7 +388,7 @@ function washing_tip(){
 								<div class="reviews_index__no_data_message">아직 작성한 리뷰가
 									없습니다.</div>
 								<ul class="reviews_index__reviews reviews">
-
+									<!-- 리뷰1줄 시작 -->
 									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
 										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
@@ -465,7 +465,7 @@ function washing_tip(){
 										</div>
 									</li>
 									<!-- 리뷰1 끝 -->
-									<!-- 리뷰1 -->
+									<!-- 리뷰2 -->
 									<li class="reviews_index_gallery_review"
 										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
@@ -540,8 +540,8 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰1 끝 -->
-									<!-- 리뷰1 -->
+									<!-- 리뷰2 끝 -->
+									<!-- 리뷰3 -->
 									<li class="reviews_index_gallery_review"
 										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
@@ -616,8 +616,8 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰1 끝 -->
-									<!-- 리뷰1 -->
+									<!-- 리뷰3 끝 -->
+									<!-- 리뷰4 -->
 									<li class="reviews_index_gallery_review"
 										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
@@ -692,8 +692,8 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰1 끝 -->
-									<!-- 리뷰1 -->
+									<!-- 리뷰4 끝 -->
+									<!-- 리뷰5 -->
 									<li class="reviews_index_gallery_review"
 										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
@@ -768,8 +768,13 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰1 끝 -->
-									<!-- 리뷰1 -->
+									<!-- 리뷰5 끝 -->
+									
+									<!-- 리뷰1줄 끝 -->
+									<br><br>
+									<!-- 리뷰2줄 시작 -->
+									
+									<!-- 리뷰6 -->
 									<li class="reviews_index_gallery_review"
 										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
@@ -844,7 +849,7 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰1 끝 -->
+									<!-- 리뷰6 끝 -->
 									
 
 								</ul>
