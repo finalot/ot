@@ -385,9 +385,497 @@ function washing_tip(){
 								<img class="." alt="best_review"
 									src="images/oT/common/best_review.jpg" width="100%"
 									height="auto" style="margin-left: 2.9%">
+									
+									<br>
+									<div class="products_reviews_form__title" style="float:left;">
+      <strong>REVIEW</strong><span class="divider">|</span><span class="weak">문의글 혹은 악의적인 비방글은 무통보 삭제된다는 점 유의해주세요^^</span>
+      
+    </div>
+    					<button class="flex-c-m bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style="position: relative; left: 63.5%; width: 7%; height: 20px; font-size: 10px; ">리뷰 게시판</button>
+    								<hr>
+									<br>
+									
+									<!-- 리뷰평점부분-->
+<style>
+.products_reviews_form {
+    padding-bottom: 44px;
+}
+.products_reviews_form__head {
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    font-family: 나눔고딕, NanumGothic, "맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 11px;
+    line-height: 20px;
+}
+.products_reviews_form__title {
+    font-size: 12px;
+    float: left;
+}
+.products_reviews_form__button {
+    float: right;
+    width: auto;
+    line-height: 20px;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(16, 16, 16);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 0px 2px;
+}
+.products_reviews_summary {
+    padding: 20px 0px 20px 29px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    border-image: initial;
+}
+.products_reviews_summary__inner {
+    position: relative;
+}
+.products_reviews_summary__lcontent {
+    margin-right: 263px;
+    padding: 9px 20px 9px 0px;
+    border-right: 1px solid rgb(237, 237, 237);
+}
+.products_reviews_summary__rcontent {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.score_summary {
+    min-width: 90px;
+}
+.score_summary__footer {
+    font-size: 14px;
+    margin-top: 16px;
+}
+.score_summary__avg_score {
+    width: 96px;
+    float: left;
+}
+.score_summary__score_filters {
+    padding-left: 120px;
+}
+.score_summary__average {
+    line-height: 77px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    background: rgb(37, 37, 37);
+}
+.score_summary__reviews_count {
+    text-align: center;
+    color: rgb(118, 118, 118);
+    padding: 7px;
+}
+.score_summary__score_filter {
+    display: inline-block;
+    margin-bottom: 9px;
+    height: 14px;
+    width: 100%;
+}
+.score_summary__score_filter a {
+    display: block;
+    color: rgb(157, 157, 157);
+}
+.score_summary__score_filter__title {
+    float: left;
+    width: 50px;
+}
+.score_summary__score_filter__status {
+    float: right;
+    width: 64px;
+    margin-left: 6px;
+}
+.score_summary__score_filter__gauge {
+    margin-left: 54px;
+    margin-right: 70px;
+    position: relative;
+    background: rgb(244, 244, 244);
+}
+.score_summary__score_filter__count {
+    float: left;
+    text-align: right;
+    color: rgb(157, 157, 157);
+    width: 42px;
+}
+.score_summary__score_filter__check {
+    float: left;
+    visibility: hidden;
+    margin-left: 10px;
+}
+.sprites-check {
+    vertical-align: middle;
+    background-image: url(//assets.cre.ma/latte/assets/sprites-9f78e5e….png);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: -35px -88px;
+}
+.score_summary__score_filter a {
+    display: block;
+    color: rgb(157, 157, 157);
+}
+.score_summary__score_filter__gauge .percentile {
+    width: 0px;
+    height: 14px;
+    background: rgb(255, 76, 35);
+}
+.score_summary__footer {
+    font-size: 14px;
+    margin-top: 16px;
+}
+.score_summary__footer .percentage {
+    color: rgb(110, 182, 126);
+}
+.products_reviews_summary__rcontent {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.products_reviews_summary_thumbnail_small_with_score {
+    width: 245px;
+}
+.products_reviews_summary_thumbnail_small_with_score__items {
+    text-align: center;
+    font-size: 0px;
+    margin-top: 8px;
+}
+.products_reviews_summary_thumbnail_small_with_score__show_all_photo_reviews {
+    text-align: center;
+    margin-top: 18px !important;
+}
+.products_reviews_summary_thumbnail_small_with_score__item_row:first-child {
+    margin-top: 0px;
+}
+.products_reviews_summary_thumbnail_small_with_score__item_row {
+    margin-top: 8px;
+    display: inline-block;
+}
+.products_reviews_summary_thumbnail_small_with_score__item:first-child {
+    margin-left: 0px;
+}
+.products_reviews_summary_thumbnail_small_with_score__item {
+    float: left;
+    margin-left: 4px;
+    background: rgb(237, 237, 237);
+}
+.products_reviews_summary_thumbnail_small_with_score__item_link {
+    display: inline-block;
+    font-size: 0px;
+    position: relative;
+}
+.products_reviews_summary_thumbnail_small_with_score__show_all_photo_reviews {
+    text-align: center;
+    margin-top: 18px !important;
+}
+.widget_reviews {
+    padding: 44px 0px;
+}
+.products_reviews_header {
+    font-size: 16px;
+}
+.widget_reviews__body {
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.products_reviews_header__upper {
+    font-family: 나눔고딕, NanumGothic, "맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+.products_reviews_header__separator {
+    height: 1px;
+    background: rgb(218, 218, 218);
+    margin: 10px 0px;
+}
+.products_reviews_header__lower {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.products_reviews_header__sort_type--selected {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+}
+.products_reviews_header__sort_type {
+    color: rgb(148, 148, 148);
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.products_reviews_header__sort_type_divider {
+    font-size: 13px;
+    padding: 0px 13px;
+}
+.products_reviews_header__upper {
+    font-family: 나눔고딕, NanumGothic, "맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+.reviews_manager--absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.products_reviews_header__separator {
+    height: 1px;
+    background: rgb(218, 218, 218);
+    margin: 10px 0px;
+}
+.review_options_search__option_types {
+    float: right;
+}
+.widget_reviews__body {
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.products_reviews_summary__lcontent {
+    margin-right: 263px;
+    padding: 9px 20px 9px 0px;
+    border-right: 1px solid rgb(237, 237, 237);
+}
+.score_summary__avg_score {
+    width: 96px;
+    float: left;
+}
+.score_summary__average {
+    line-height: 77px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    background: rgb(37, 37, 37);
+}
+.products_reviews_summary_thumbnail_small_with_score__show_all_photo_reviews_icon {
+    display: none;
+    position: absolute;
+    right: -15px;
+}
+.sprites-check {
+    vertical-align: middle;
+    background-image: url(//assets.cre.ma/latte/assets/sprites-9f78e5e….png);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: -35px -88px;
+}
+</style>
+									<div  style="margin-bottom:5%;"class="products_reviews_summary
+           products_reviews_summary--small_with_score
+           products_reviews_summary--without_write_form" data-url="/black-up.kr/products/reviews?app=0&amp;atarget=reviews&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;product_code=12124&amp;widget_env=100">
+    <div class="products_reviews_summary__inner">
+      
+        <div class="products_reviews_summary__lcontent">
+          <div class="score_summary score_summary--list">
+  <div class="score_summary__body">
+    <div class="score_summary__avg_score">
+      <div class="score_summary__average">4.9</div>
+      
+      <div class="score_summary__reviews_count">395개 리뷰 평점</div>
+    </div>
+    <ul class="score_summary__score_filters">
+      
+        <li class="score_summary__score_filter " data-score="5">
+          <a class="js-link-score">
+            <div class="score_summary__score_filter__title">5 Stars</div>
+            <div class="score_summary__score_filter__status">
+              <div class="score_summary__score_filter__count">(377)</div>
+              <div class="score_summary__score_filter__check sprites-check"></div>
+            </div>
+            <div class="score_summary__score_filter__gauge">
+              <div style="width: 95%" class="percentile"></div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="score_summary__score_filter " data-score="4">
+          <a class="js-link-score">
+            <div class="score_summary__score_filter__title">4 Stars</div>
+            <div class="score_summary__score_filter__status">
+              <div class="score_summary__score_filter__count">(12)</div>
+              <div class="score_summary__score_filter__check sprites-check"></div>
+            </div>
+            <div class="score_summary__score_filter__gauge">
+              <div style="width: 3%" class="percentile"></div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="score_summary__score_filter " data-score="3">
+          <a class="js-link-score">
+            <div class="score_summary__score_filter__title">3 Stars</div>
+            <div class="score_summary__score_filter__status">
+              <div class="score_summary__score_filter__count">(5)</div>
+              <div class="score_summary__score_filter__check sprites-check"></div>
+            </div>
+            <div class="score_summary__score_filter__gauge">
+              <div style="width: 1%" class="percentile"></div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="score_summary__score_filter " data-score="2">
+          <a class="js-link-score">
+            <div class="score_summary__score_filter__title">2 Stars</div>
+            <div class="score_summary__score_filter__status">
+              <div class="score_summary__score_filter__count">(1)</div>
+              <div class="score_summary__score_filter__check sprites-check"></div>
+            </div>
+            <div class="score_summary__score_filter__gauge">
+              <div style="width: 0%" class="percentile"></div>
+            </div>
+          </a>
+        </li>
+      
+        <li class="score_summary__score_filter " data-score="1">
+          <a class="js-link-score">
+            <div class="score_summary__score_filter__title">1 Star</div>
+            <div class="score_summary__score_filter__status">
+              <div class="score_summary__score_filter__count">(0)</div>
+              <div class="score_summary__score_filter__check sprites-check"></div>
+            </div>
+            <div class="score_summary__score_filter__gauge">
+              <div style="width: 0%" class="percentile"></div>
+            </div>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="score_summary__footer">
+    <span class="percentage">100%</span>
+    의 구매자들이 이 상품을 좋아합니다.
+    
+    
+    <span class="score_summary__likes_count">( 395명 중 394명 )</span>
+  </div>
+</div>
+
+        </div>
+        <div class="products_reviews_summary__rcontent" style="margin-left:-1%;">
+          
+<div class="products_reviews_summary_thumbnail_small_with_score">
+  
+    <div class="products_reviews_summary_thumbnail_small_with_score__items">
+      
+        <ul class="products_reviews_summary_thumbnail_small_with_score__item_row">
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/99189/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                  
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/09/91/89/image1/thumbnail_fda4eef876b2c0dd.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/09/91/89/image1/thumbnail_fda4eef876b2c0dd.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/118246/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                  
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/11/82/46/image1/thumbnail_21bdba5e22122276.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/11/82/46/image1/thumbnail_21bdba5e22122276.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/112232/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                 
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/11/22/32/image1/thumbnail_0bd7c2eee101616e.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/11/22/32/image1/thumbnail_0bd7c2eee101616e.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/102392/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                  
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/10/23/92/image1/thumbnail_1756221246c8471e.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/10/23/92/image1/thumbnail_1756221246c8471e.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="products_reviews_summary_thumbnail_small_with_score__item_row">
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/108463/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                 
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/10/84/63/image1/thumbnail_a05db29f134c34b3.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/10/84/63/image1/thumbnail_a05db29f134c34b3.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/144494/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/14/44/94/image1/thumbnail_56c606efc6baaad0.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/14/44/94/image1/thumbnail_56c606efc6baaad0.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/123041/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                 
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/12/30/41/image1/thumbnail_c9149c95281400a7.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/12/30/41/image1/thumbnail_c9149c95281400a7.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+            
+            
+            
+              <li class="products_reviews_summary_thumbnail_small_with_score__item">
+                <a data-url="/black-up.kr/reviews/111847/photo_review_popup?app=0&amp;filter=20&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;page=2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;parent_widget_id=2&amp;photo_index=1&amp;product_code=12124&amp;product_id=10590&amp;sort=10&amp;widget_env=100" ,="" class="products_reviews_summary_thumbnail_small_with_score__item_link js-link-fullscreen-popup">
+                 
+                  <img src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/11/18/47/image1/thumbnail_b187976297932d92.jpg" alt="//assets6.cre.ma/p/black-up-kr/reviews/00/00/11/18/47/image1/thumbnail_b187976297932d92.jpg" width="54" height="54" class="products_reviews_summary_thumbnail_small_with_score__back_photo grayscale" style="opacity: 1;">
+                </a>
+              </li>
+            
+          
+        </ul>
+      
+    </div>
+    <div class="products_reviews_summary_thumbnail_small_with_score__show_all_photo_reviews">
+      <a class="products_reviews_summary_thumbnail_small_with_score__show_all_photo_reviews_link
+                js-link-photo-reviews
+                ">
+        이 상품의 포토리뷰 모아보기
+        <span class="products_reviews_summary_thumbnail_small_with_score__show_all_photo_reviews_icon sprites-check"></span>
+      </a>
+    </div>
+  
+</div>
+
+        </div>
+      
+    </div>
+  </div>
+									<!-- 리뷰평점부분끝 -->
 								<div class="reviews_index__no_data_message">아직 작성한 리뷰가
 									없습니다.</div>
 								<ul class="reviews_index__reviews reviews">
+								
 									<!-- 리뷰1줄 시작 -->
 									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
