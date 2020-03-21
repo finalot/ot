@@ -72,7 +72,7 @@
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             	<li>
-                                    <a href="category.jsp">분류관리</a>
+                                    <a href="category.jsp">카테고리관리</a>
                                 </li>
                                 <li>
                                     <a href="productAdd.html">상품등록</a>
@@ -96,7 +96,10 @@
                                     <a href="">재고관리</a>
                                 </li>
                                 <li>
-                                    <a href="">쿠폰관리</a>
+                                    <a href="">쿠폰/이벤트 등록</a>
+                                </li>
+                                <li>
+                                    <a href="">쿠폰/이벤트 관리</a>
                                 </li>
                                 <li>
                                     <a href="">이벤트관리</a>
@@ -130,7 +133,7 @@
               <div class="row">
                   <div class="col-md-12">
                       <h1 class="title-4">
-                       &nbsp; &nbsp; &nbsp; 분류간리
+                       &nbsp; &nbsp; 카테고리 관리
                       </h1>
                       <hr class="line-seprate">
                   </div>
@@ -138,6 +141,215 @@
           </div>
        </section>
        <!-- END WELCOME-->
+       
+       
+       <!-- 카테고리관리 내용 -->
+       <br><br>
+       
+       <center>
+       <table style="width:90%;">
+        <tr>
+            <td style="width:50%;">
+            	<input class="btn btn-danger" type="button" value="삭제" id="btnRemoveLeft" style="margin-left:35%;"/>
+                <input class="btn btn-success" type="button" value="모두 선택" id="getValue"/>
+             	<input class="btn btn-success" type="button" value="선택값" id="getSelectedValue"/>
+                <br>
+                
+                <select id="sel" name="sel" style="WIDTH: 50%; HEIGHT: auto; margin-left:30%; margin-top:3%;" 
+                			size=20 multiple>
+                    <option value="#" >#</option>
+                    <option value="PROJECT" >PROJECT</option>
+                    <option value="NTNY" >NTNY</option>
+                    <option value="MADE" >MADE</option>
+                    <option value="TOP" >TOP</option>
+                    <option value="OUTER" >OUTER</option>
+                    <option value="PANTS" >PANTS</option>
+                    <option value="SKIRT" >SKIRT</option>
+                    <option value="JEWELRY" >JEWELRY</option>
+                    <option value="BAGSHOES" >BAGSHOES</option>
+                    <option value="ACC" >ACC</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                    <option value="ETC" >ETC.</option>
+                </select>
+              
+              	<br>
+              	
+                    
+            	<input type="text" id="addOption"  style="margin-left:30%; width:50%;"/>
+                <input class="btn btn-primary" type="button" value="추가" id="btnAdd"/>
+
+            </td>
+            <td>
+            
+            	<input class="btn btn-danger" type="button" value="삭제" id="btnRemoveRight" style="margin-left:24%;"/>
+                <input class="btn btn-success" type="button" value="모두선택" id="getValue2"/>
+                <input class="btn btn-success" type="button" value="선택값" id="getSelectedValue2"/>
+                <br>
+                
+                <select id="sel2" name="sel2" style="WIDTH: 50%; HEIGHT: auto; margin-left:20%; margin-top:3%;" 
+                	size="20" multiple>
+                	<option value="1" >긴팔</option>
+                	<option value="2" >니트</option>
+                	<option value="3" >슬리브리스/반팔</option>
+                	<option value="4" >크롭</option>
+                	<option value="5" >오프숄더</option>
+                	<option value="6" >자켓</option>
+                	<option value="7" >코트/점퍼</option>
+                	<option value="8" >가디건</option>
+                	<option value="9" >베스트</option>
+                	<option value="10" >슬렉스</option>
+                	<option value="11" >데님</option>
+                	<option value="12" >부츠컷</option>
+                	<option value="13" >와이드</option>
+                	<option value="14" >면바지/기타</option>
+                	<option value="15" >트레이닝</option>
+                	<option value="16" >조거팬츠</option>
+                	<option value="17" >숏/반바지</option>
+                	<option value="18" >등등</option>
+                </select>
+                 
+                 <br>       
+ 
+                <input type="text" id="addOption2"  style="margin-left:20%; width:50%;"/>
+                <input class="btn btn-primary" type="button" value="추가" id="btnAdd2"/>
+            </td>
+        </tr>
+    </table>
+    </center>
+       
+       
+       
+       
+       </div></div>
+    <script type="text/javascript">
+
+        $(function(){
+            $("#btnRemoveLeft").on("click",function(){
+                $('#sel option:selected').each( function() {
+                    $(this).remove();
+                });
+            });
+ 
+            $("#btnRemoveRight").on("click",function(){
+                $('#sel2 option:selected').each( function() {
+                    $(this).remove();
+                });
+            });
+ 
+            $("#btnMoveRight").on("click",function(){
+                $('#sel option:selected').each( function() {
+                    $(this).remove().appendTo('#sel2');
+                });
+            });
+ 
+            $("#btnMoveLeft").on("click",function(){
+                $('#sel2 option:selected').each( function() {
+                    $(this).remove().appendTo('#sel');
+                });
+            });
+ 
+            $("#getValue").on("click",function(){
+                var values = "";
+                $('#sel option').each( function() {
+                    values= values + "/" + $(this).val();
+                });
+                alert(values);
+            });
+ 
+            $("#getValue2").on("click",function(){
+                var values = "";
+                $('#sel2 option').each( function() {
+                    values= values + "/" + $(this).val();
+                });
+                alert(values);
+            });
+ 
+            $("#getSelectedValue").on("click",function(){
+                var values = "";
+                $('#sel option:selected').each( function() {
+                    values= values + "/" + $(this).val();
+                });
+                alert(values);
+            });
+ 
+            $("#getSelectedValue2").on("click",function(){
+                var values = "";
+                $('#sel2 option:selected').each( function() {
+                    values= values + "/" + $(this).val();
+                });
+                alert(values);
+            });
+ 
+            $("#btnCopyLeft").on("click",function(){
+                $('#sel option:selected').each( function() {
+                    $(this).clone().appendTo('#sel2');
+                });
+            });
+ 
+            $("#btnCopyLeft2").on("click",function(){
+                $('#sel2 option:selected').each( function() {
+                    $(this).clone().appendTo('#sel');
+                });
+            });
+ 
+            $("#btnAdd").on("click",function(){
+                if($('#sel').find("[value='"+$('#addOption').val().replace('"','\'')+"']").length == 0)
+                {
+                    $('#sel').append('<option value="'+$('#addOption').val().replace('"','\'')+'">'+$('#addOption').val()+"</option>");
+                }else{
+                    alert("존재하는 카테고리입니다. 다시입력해주세요");
+                }
+            });
+ 
+            $("#btnAdd2").on("click",function(){
+                if($('#sel2').find("[value='"+$('#addOption2').val().replace('"','\'')+"']").length == 0)
+                {
+                    $('#sel2').append('<option value="'+$('#addOption2').val().replace('"','\'')+'">'+$('#addOption2').val()+"</option>");
+                }else{
+                    alert("존재하는 카테고리입니다. 다시입력해주세요");
+                }
+            });
+        });
+ 
+        $(window).load(function(e){
+ 
+        });
+ 
+
+    </script>
+       <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    
 
 </body>
 </html>

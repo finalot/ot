@@ -72,7 +72,7 @@
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             	<li>
-                                    <a href="category.jsp">분류관리</a>
+                                    <a href="category.jsp">카테고리관리</a>
                                 </li>
                                 <li>
                                     <a href="productAdd.html">상품등록</a>
@@ -96,7 +96,10 @@
                                     <a href="">재고관리</a>
                                 </li>
                                 <li>
-                                    <a href="">쿠폰관리</a>
+                                    <a href="">쿠폰/이벤트 등록</a>
+                                </li>
+                                <li>
+                                    <a href="">쿠폰/이벤트 관리</a>
                                 </li>
                                 <li>
                                     <a href="">이벤트관리</a>
@@ -149,16 +152,14 @@
        </div>
     </div>
     
-    
+   
     
     <!-- 월별 매출량 -->
 	<!-- MAIN CONTENT-->
-      <div class="main-content">
           <div class="section__content section__content--p30">
               <div class="container-fluid">
-                  <div class="row">
-                      <div class="col-lg-6">
-                          <div class="au-card m-b-30" style="margin-top:-15%; margin-left:5%; 	width: 201%; height: auto;">
+                  <div class="col-lg-6">
+                          <div class="au-card m-b-30" style="margin-top:150%; margin-left:-103%; 	width: 207%; height: auto;">
                               <div class="au-card-inner">
                                   <h3 class="title-2 m-b-40"> 월별 판매량 &lt;2020년&gt; </h3>
                                   <canvas id="barChart"></canvas>
@@ -170,7 +171,6 @@
       </div>
       <!-- END MAIN CONTENT-->
   	</div>
-  	
   	
   	    <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
@@ -195,6 +195,5 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
-    </div>
 </body>
 </html>

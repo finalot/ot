@@ -72,7 +72,7 @@
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             	<li>
-                                    <a href="category.jsp">분류관리</a>
+                                    <a href="category.jsp">카테고리관리</a>
                                 </li>
                                 <li>
                                     <a href="productAdd.html">상품등록</a>
@@ -96,7 +96,10 @@
                                     <a href="">재고관리</a>
                                 </li>
                                 <li>
-                                    <a href="">쿠폰관리</a>
+                                    <a href="">쿠폰/이벤트 등록</a>
+                                </li>
+                                <li>
+                                    <a href="">쿠폰/이벤트 관리</a>
                                 </li>
                                 <li>
                                     <a href="">이벤트관리</a>
