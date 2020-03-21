@@ -44,7 +44,7 @@
   <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="adminmain.html">
+                <a href="todaymain.jsp">
                     <img src="images/icon/ot.png" alt="OT" style="max-height: 35px;"/>
                 </a>
             </div>
@@ -60,10 +60,10 @@
                                     <a href="todaymain.jsp">당일현황</a>
                                 </li>
                                 <li>
-                                    <a href="chart.html">월별매출량</a>
+                                    <a href="todaychart.jsp">매출그래프</a>
                                 </li>
                                 <li>
-                                    <a href="table.html">상품판매순위</a>
+                                    <a href="best.jsp">상품판매순위</a>
                                 </li>
                             </ul>
                         </li>
@@ -127,7 +127,7 @@
               <div class="row">
                   <div class="col-md-12">
                       <h1 class="title-4">
-                       &nbsp; &nbsp; &nbsp; Today
+                       &nbsp; &nbsp; &nbsp; 당일현황
                       </h1>
                       <hr class="line-seprate">
                   </div>
@@ -192,7 +192,7 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-4" style="margin-left: 15%">
                         <!-- CHART-->
-                        <div class="statistic-chart-1">
+                        <div class="statistic-chart-1" style="margin-left:-35%; width:140%; height:auto;">
                             <h3 class="title-3 m-b-30">일별 판매량</h3>
                             <div class="chart-wrap">
                                 <canvas id="widgetChart5"></canvas>
@@ -204,9 +204,9 @@
                         </div>
                         <!-- END CHART-->
                     </div>
-                    <div class="col-md-6 col-lg-4" style="margin-left: 5%;">
+                    <div class="col-md-6 col-lg-4" style="margin-left: 1%;">
                         <!-- TOP CAMPAIGN-->
-                        <div class="top-campaign">
+                        <div class="top-campaign" style="width:140%; height:auto;">
                             <h3 class="title-3 m-b-30">인기 상품</h3>
                             <div class="table-responsive">
                                 <table class="table table-top-campaign">
