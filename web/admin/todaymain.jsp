@@ -137,7 +137,7 @@
        <!-- END WELCOME-->
 
         <!-- STATISTIC-->
-        <section class="statistic statistic2">
+        <section class="statistic statistic2" onclick="location.href='status.jsp'">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
@@ -192,7 +192,8 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-4" style="margin-left: 15%">
                         <!-- CHART-->
-                        <div class="statistic-chart-1" style="margin-left:-35%; width:140%; height:auto;">
+                        <div class="statistic-chart-1" 
+                        	style="margin-left:-35%; width:140%; height:auto;" onclick="location.href='todaychart.jsp'">
                             <h3 class="title-3 m-b-30">일별 판매량</h3>
                             <div class="chart-wrap">
                                 <canvas id="widgetChart5"></canvas>
@@ -206,7 +207,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4" style="margin-left: 1%;">
                         <!-- TOP CAMPAIGN-->
-                        <div class="top-campaign" style="width:140%; height:auto;">
+                        <div class="top-campaign" style="width:140%; height:auto;" onclick="location.href='best.jsp'">
                             <h3 class="title-3 m-b-30">인기 상품</h3>
                             <div class="table-responsive">
                                 <table class="table table-top-campaign">
