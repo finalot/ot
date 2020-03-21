@@ -505,6 +505,7 @@ label{
                <label for="product" >상품 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="product"value="사은품"></label>
                <label for="money"  >적립금 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="money" value="적립금"></label>
                <label for="coupon" >쿠폰 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="coupon" value="쿠폰"></label>
+               							
             </td>
         </tr>
         <tr>
@@ -517,7 +518,8 @@ label{
                                         <option value="daily">daily</option>
                                         <option value="joinmember">joinmember</option>
                                         <option value="buy50000">buy50000</option>
-                                      </select>
+                                      </select> <span id="coupon-price" style="padding-left: 10px; color: darkred;"></span>
+                                      
             </td>
         </tr>  
               <tr>
@@ -611,7 +613,15 @@ label{
          $('#endday').val(endday);   
             
         });
-
+        $('#d_coupon').click(function(){
+        	
+	     if($('#d_coupon').val()=='daily'){
+    		 $('#coupon-price').html('쿠폰가 : 3,000원');
+    	}else{
+    		 $('#coupon-price').html('');
+    	}
+	
+        });
 
     </script>
 

@@ -11,10 +11,11 @@
     <meta name="keywords" content="au theme template">
 
     <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icon/favicon.png"/>
+   <link rel="icon" type="image/png" href="/images/icon/favicon.png"/>
    
     <!-- Title Page-->
     <title>oT. ADMIN</title>
+    	    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -36,6 +37,34 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+      <!-- chat -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/custom.css">
+<script src="<%=request.getContextPath()%>/js/bootstrap.js"></script> 
+    <!-- chat -->
+ <style>
+ #chat-list{
+     position: absolute;
+    margin-top: 470px;
+    margin-left: -150px;
+ }
+ 
+#chat_container{
+      position: absolute;
+    margin-top: 590px;
+    margin-left: -700px;
+    display: none;
+   
+    
+} 
+ .portlet .portlet-footer{
+ padding-right: 0px;
+ padding-left: 0px;
+ }
+ .portlet .portlet-heading .portlet-title {
+    float: none;
+}
+ </style>
 </head>
 <body class="animsition">
     <div>
@@ -145,161 +174,191 @@
                             </form>
                             <div class="header-button">
                                 <div class="noti-wrap">
-                                    <div class="noti__item js-item-menu">
-                                        <i class="zmdi zmdi-comment-more"></i>
-                                        <span class="quantity">1</span>
-                                        <div class="mess-dropdown js-dropdown">
-                                            <div class="mess__title">
-                                                <p>You have 2 news message</p>
-                                            </div>
-                                            <div class="mess__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-06.jpg" alt="Michelle Moreno" />
-                                                </div>
-                                                <div class="content">
-                                                    <h6>Michelle Moreno</h6>
-                                                    <p>Have sent a photo</p>
-                                                    <span class="time">3 min ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="mess__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-04.jpg" alt="Diane Myers" />
-                                                </div>
-                                                <div class="content">
-                                                    <h6>Diane Myers</h6>
-                                                    <p>You are now connected on message</p>
-                                                    <span class="time">Yesterday</span>
-                                                </div>
-                                            </div>
-                                            <div class="mess__footer">
-                                                <a href="#">View all messages</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="noti__item js-item-menu">
-                                        <i class="zmdi zmdi-email"></i>
-                                        <span class="quantity">1</span>
-                                        <div class="email-dropdown js-dropdown">
-                                            <div class="email__title">
-                                                <p>You have 3 New Emails</p>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-06.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, 3 min ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-05.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, Yesterday</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-04.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, April 12,,2018</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__footer">
-                                                <a href="#">See all emails</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="noti__item js-item-menu">
-                                        <i class="zmdi zmdi-notifications"></i>
-                                        <span class="quantity">3</span>
-                                        <div class="notifi-dropdown js-dropdown">
-                                            <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c1 img-cir img-40">
-                                                    <i class="zmdi zmdi-email-open"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c2 img-cir img-40">
-                                                    <i class="zmdi zmdi-account-box"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c3 img-cir img-40">
-                                                    <i class="zmdi zmdi-file-text"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div>
+                            <button id="chat-icon"><img style="width: 10%;margin-left: 7%;" src="../images/icons/chat_icon.png"></button>
                                 </div>
-                                <div class="account-wrap">
-                                    <div class="account-item clearfix js-item-menu">
-                                        <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
-                                        </div>
-                                        <div class="content">
-                                            <a class="js-acc-btn" href="#">it_seohyun</a>
-                                        </div>
-                                        <div class="account-dropdown js-dropdown">
-                                            <div class="info clearfix">
-                                                <div class="image">
-                                                    <a href="#">
-                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
-                                                    </a>
-                                                </div>
-                                                <div class="content">
-                                                    <h5 class="name">
-                                                        <a href="#">it_seohyun</a>
-                                                    </h5>
-                                                    <span class="email">johndoe@example.com</span>
-                                                </div>
-                                            </div>
-                                            <div class="account-dropdown__body">
-                                                <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-account"></i>Account</a>
-                                                </div>
-                                                <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
-                                                </div>
-                                                <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-money-box"></i>Billing</a>
-                                                </div>
-                                            </div>
-                                            <div class="account-dropdown__footer">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-power"></i>Logout</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <div id="chat-list" class="container bootstrap snippet" style=" display: none">
+      <div class=row >
+         <div class="col-xs-12" style="width: 530px;">
+            <div class="portlet portlet-default" style="position: relative;left: -30px;top: 3px;background: #333330;">
+               <div class="portlet-heading" style="background-color: #333330;">
+                  <div class="portlet-title" style="    display: flex;">
+                     <h4><i class="fa fa-circle text-green"></i>회원목록</h4><button id="chatlist-close" style="color:white; margin-left:74%;">X</button>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div id="chat" class="panel-collapse collapse in">
+                  <div id="chatList" class="portlet-body chat-widget" style="overflow-y:auto; padding:0%;overflow-y: auto; width: auto;height: 700px;">
+                  <ul id="chatList" style="list-style: none; padding-left: 0%">
+                 	 <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					  <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					  <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					   <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					   <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					   <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					   <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					   <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+				 </ul>
+                  </div>
+                    <div class="portlet-footer" style="background: #333330;height: 80px;">
+                      <div class="row">
+                      </div>
+                      <div class="row" style="height: 90px">
+                     </div>
+                  </div>      
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+	<div class="btn-back-to-top bg0-hov" id="chat_container" style="cursor:default;">
+            <div class="portlet portlet-default" style="width: 440px;">
+               <div class="portlet-heading"  style="background: #333330; margin-bottom:-10px; ">
+                  <div class="portlet-title" style="background: #333330; border-radius:60%;margin-bottom:-5px;height: 50px;">
+                     <h4 style="padding-left: 2%; float:left; color: white;padding-top: 10px;font-size: 15px;"><img  style="width: 13px;height: 11px;
+                     margin-bottom: 6px;margin-right: 10px;" 
+                     src="../images/icons/favicon.png"></img>실시간 문의</h4><button id="chat-close" class="chatBtn" style="color:white; margin-left:68%; margin-top:4.2%">X</button>
+                  </div>
+  
+               </div>
+               <div id="chat" >
+                  <div id="chat-box"  style="background:#f3f3f3;overflow-y:auto;  width: auto; height: 450px;
+                  border-right: 6px solid #333330;border-left: 6px solid #333330;width: 100%">
+                   <!--메세지 샘플창 시작 -->
+                  <div> 
+                  <span style="font-size:12px; margin-left: 18px">상담사</span>
+                 <div style="display:flex">
+                  <div style="color:black;width:270px;border-radius: 10px;background:white;margin-left:3.5%;margin-top:1%;">
+                  <pre  style="resize:none; font-size:12px;background:none;
+                  margin-left:3%;margin-top:3%;border:none;">상담사 메세지창 샘플입니다만????</pre>
+                  </div>
+                  <span style="font-size:7px;margin-left:15px;margin-top: auto;">06:10 am</span>
+                  </div>
+                  </div>
+                  <!--메세지 샘플창 끝 -->
+                  
+                  
+                  </div>
+                    <div class="portlet-footer" style="border-radius:15%;">
+                      <div class="row">
+                      </div>
+                      <div style="height: 90px;padding: 2%;background: #333330;border-radius:3%;margin-top:-10px;">
+                         <div class="form-group col-xs-10" style="width: 100%;padding: 0px; display: inline-flex;">
+                  
+                             <textarea onkeyPress="keyevent();" style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
+                             border-radius:4%;width: 89%;" id="chatContent" class="form-control"  
+                             placeholder="메세지를 입력하세요." maxlength="100" ></textarea>
+                 <button id="sendChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
+                 type="button" class="btn btn-default pull-right" onclick="addChat();" >전송</button>
+                         </div>
+                         <div class="form-group col-xs-2">
+                              <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>      
+               </div>
+            </div>
+   		</div>
+   
+                		</div> 
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -336,16 +395,13 @@
         </section> -->
         <!-- END COPYRIGHT-->
     </div>
-
             
         </div></div>
 
 
 
-
-
     <!-- Jquery JS-->
-    <script src="vendor/jquery-3.2.1.min.js"></script>
+  
     <!-- Bootstrap JS-->
     <script src="vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
@@ -367,6 +423,86 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+	<script>
+	
+	var check = true
+	
+	
+	$('#chat-icon').click(function(){
+		if(check == true){
+		$('#chat-list').fadeIn(100);;	
+		check=false;
+		}else{
+			$('#chat-list').fadeOut(100);		
+		check=true;
+		}	
+		
+	})
+	$('#chatlist-close').click(function(){
+		$('#chat-list').fadeOut(100);		
+		check=true;
+	})
+	
+	/* function keyevent(){
+	
+		if(event.keyCode==13){addChat();}
+	} */
+	$('#chat-close').click(function(){
+		$('#chat_container').css('display','none');
+		
+	});
+	
+	 function addChat(chatContent){
+		 
+			if(!$('#chatContent').val()==""){
+   	 
+		var today = new Date();   
+		var hours = today.getHours(); // 시
+		var minutes = today.getMinutes();  // 분
+		  var ampm = hours >= 12 ? 'pm' : 'am';
+		  hours = hours % 12;
+		  hours = hours ? hours : 12; // the hour '0' should be '12'
+		  minutes = minutes < 10 ? '0'+minutes : minutes;
+		  var strTime = ampm + ' '+hours + ' : ' + minutes;
+		
+		var content = document.getElementById('chatContent').value;
+		
+         $('#chat-box').append('<div>'+ 
+         '<span style="font-size:12px; margin-left: 18px">상담사</span>'+
+         '<div style="display:flex">'+
+         '<div style="color:black;width:270px;border-radius: 10px;background:white;margin-left:3.5%;margin-top:1%;">'+
+         '<pre  style="resize:none; font-size:12px;background:none;'+
+         'margin-left:3%;margin-top:3%;border:none;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;">'+content+'</pre>'+
+         '</div>'+
+         '<span style="font-size:7px;margin-left:15px;margin-top: auto;">'+strTime+'</span>'+
+         '</div>'+
+         '</div>')
+                  $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight)
+                          
+                  document.getElementById('chatContent').value = "";
+			}
+          }
+	
+	</script>
+	
+ <script>
+   $('#chatList li').mouseenter(function(){
+	   $(this).css('background','gray');
+   });
+   $('#chatList li').mouseleave(function(){
+	   $(this).css('background','white');
+   });
+   
+   $('#chatList li').click(function(){
+	   $('#chat_container').css('display','block');
+   });
+  $('#chat_exit').click(function(){
+	  $('#chat_container').css('display','none');
+  });
+
+  
+   </script>	
+
 
 </body>
 </html>

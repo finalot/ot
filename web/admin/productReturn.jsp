@@ -36,6 +36,8 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+    
+  
 </head>
 <style>
 .top_info{
@@ -64,7 +66,7 @@
 	width: 215px;
 	
 }
-#product-table,#member-table{
+#product-table,#member-table,#pay-table{
 	width: 100%;
 
 
@@ -76,17 +78,20 @@
      overflow-y: none;
 }
 th,td{
-	padding-bottom : 5%;
-	
-		padding-top : 3%;
+    padding: 13px 11px 12px !important;
+       border:1px solid #d9dadc;
+          font-weight:normal;
 }
 th{
       width: 135px;
+      border:1px solid #d9dadc;
+   
+background-color:#f5f4f4;
 
 }
 td{
     color: black;
-    font-weight: bold;
+   
 }
 .info-title{
 margin-bottom:3%;
@@ -307,6 +312,7 @@ color: red;
   			<th><span>*</span> 결제일  </th>
   			<td>2020-03-16</td>
   		</tr>
+  		 
   		<tr>
   			<th><span>*</span> 반품 신청일  </th>
   			<td>2020-03-20</td>
@@ -328,7 +334,6 @@ color: red;
   	</div>	
 	
     <!-- Jquery JS-->
-    <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
