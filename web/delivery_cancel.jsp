@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<title>배송문의</title>
+<title>배송전 주문취소/변경문의</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
 <link rel="stylesheet" href="./css/mypage_list.css">
@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>배송 문의</h2>
+    			<h2>배송전 주문취소/변경</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">
@@ -80,7 +80,7 @@
 				<td style="font-weight:600;"> 공지</td>
                     <td class="displaynone"></td>
                     <td class="subject left txtBreak">
-                        <strong> <a href="/article/배송문의/3001/279655/" style="color:#555555; font-size:14px;">▶ 배송 안내입니다.</a></span></strong>
+                        <strong> <a href="/article/배송문의/3001/279655/" style="color:#555555; font-size:14px;">▶ 배송 전 변경/취소 안내입니다.</a></span></strong>
                     </td>
                     <td>홍길동</td>
                     <td class=""><span class="txtNum">2017-11-09</span></td>
@@ -99,7 +99,7 @@
                					
                         <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
                         <a id="idMsg10" style="color:#555555;">
-                        [배송문의]</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
+                        [배송전 주문취소/변경]</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
                     </td>
                				
        						</td>
@@ -120,7 +120,7 @@
 									<span id="idMsg4">141262</span>
 							</td>
                				<td class="subject left txtBreak">
-                        &nbsp;&nbsp;&nbsp;<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_re.gif" alt="답변" class="ec-common-rwd-image"> 
+                       &nbsp;&nbsp;&nbsp;<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_re.gif" alt="답변" class="ec-common-rwd-image"> 
                         <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
                         <a id="idMsg10" style="color:#555555;">답변완료:)</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
                     </td>
@@ -141,7 +141,7 @@
 		
 			</div>
 				
-        <a href="delivery_board_write.jsp" class="hov1 s-text1 trans-0-4 yg_btn_145">
+        <a href="delivery_cancel_write.jsp" class="hov1 s-text1 trans-0-4 yg_btn_145">
         <span style="position: relative;top: -2px;">write</span></a>
     			
 			<div class="xans-element- xans-board xans-board-search-1002 xans-board-search xans-board-1002 "><fieldset class="boardSearch">

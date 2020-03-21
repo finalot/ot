@@ -698,11 +698,11 @@
 							<li><a href="/board/qna_index.html">자주하는 질문</a></li>
 							<li><a href="product_board.jsp">상품문의</a></li>
 							<li><a href="delivery_board.jsp">배송문의</a></li>
-							<li><a href="/board/free/list.html?board_no=2">배송전취소/변경</a></li>
-							<li><a href="/board/free/list.html?board_no=3">배송후교환/반품</a></li>
-							<li><a href="/board/free/list.html?board_no=5">입금확인/입금자변경</a></li>
+							<li><a href="delivery_cancel.jsp">배송전취소/변경</a></li>
+							<li><a href="product_change.jsp">배송후교환/반품</a></li>
+							<li><a href="bank_insert_board.jsp">입금확인/입금자변경</a></li>
 							<li><a href="/board/free/list.html?board_no=101">해외배송문의</a></li>
-							<li><a href="/board/free/list.html?board_no=1002">상품불량 및
+							<li><a href="bad_product_board.jsp">상품불량 및
 									오배송접수</a></li>
 							<li><a href="/board/free/list.html?board_no=7">vip/vvip
 									전용게시판</a></li>

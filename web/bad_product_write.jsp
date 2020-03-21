@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<title>배송문의쓰기</title>
+<title>상품불량 및 오배송접수</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
 <link rel="stylesheet" href="./css/mypage_list.css">
@@ -55,7 +55,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>배송 문의</h2>
+    			<h2>상품불량 및 오배송접수</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">
@@ -79,7 +79,7 @@
 		<input id="22a52e1f2ba700edbc6c" name="22a52e1f2ba700edbc6c" value="be72b6700c2bb10ea29aac31702af80d" type="hidden">
 		<input id="fix_title_form_0" name="fix_title_form_0" value="[배송문의]" type="hidden">
 		<input id="bulletin_type" name="bulletin_type" value="title" type="hidden">
-		<input id="fix_content_0" name="fix_content_0" value="▶ 오전에는 입고 작업중으로 오후 2시정도에 문의주시는게 더 정확합니다.<br/>
+		<input id="fix_content_0" name="fix_content_0" value="▶ 배송전 상품교환/주문취소/배송지변경/추가주문 문의시 [배송전 주문취소/변경] 게시판 또는 고객센터(1566-6813)로 오전 11시까지 꼭 요청 해주셔야합니다.<br/>
 		<br />
 		당일 주문건은 재고가 있을 시 당일 배송처리 되고 보통 다음날부터 입고가 되기 때문에 바로 안내가 어렵습니다.<br />
 		<br />
@@ -106,7 +106,7 @@
 	<tr>
 		<th scope="row">SUBJECT</th>
            <td><select id="subject" name="subject">
-			<option value="[배송문의]">[배송문의]</option>
+			<option value="[배송문의]">[상품불량 및 오배송접수]</option>
 			</select>  	
 		   </td>
     </tr>
@@ -130,9 +130,9 @@
             <script type="text/javascript" src="//editor.cafe24.com/js/nneditor.js?c=ko"></script>
             <style type="text/css">@import "http://editor.cafe24.com/css/style.css?ver=r3.4.0.20191127.1";@import "http://editor.cafe24.com/css/styleie8.css?ver=r3.4.0.20191127.1";		</style>		<script type="text/javascript" src="http://editor.cafe24.com/lang/ko.js?version=r3.4.0.20191127.1" charset="UTF-8"></script><script type="text/javascript" src="http://editor.cafe24.com/js/nneditorUtils.dev.js?version=r3.4.0.20191127.1" charset="UTF-8"></script><script type="text/javascript" src="http://editor.cafe24.com/js/nneditorRange.dev.js?version=r3.4.0.20191127.1" charset="UTF-8"></script><script type="text/javascript" src="http://editor.cafe24.com/js/nneditorCore.dev.js?version=r3.4.0.20191127.1" charset="UTF-8"></script>
             <script type="text/javascript">
-                NN.Config.instanceID = "content";
-                NN.Config.value = "▶ 오전에는 입고 작업중으로 오후 2시정도에 문의주시는게 더 정확합니다.<br />\n<br />\n당일 주문건은 재고가 있을 시 당일 배송처리 되고 보통 다음날부터 입고가 되기 때문에 바로 안내가 어렵습니다.<br />\n<br />\n* 배송전 교환/취소시 [배송전 부분취소/변경] 제목선택을 안해주시면 상품교환/주문취소는 당일 처리되지 않습니다 *<br />\n<br />\n비회원으로 문의주실 경우엔 동명이인으로 인해 주문정보와 함께 남겨주셔야 바로 처리 가능합니다.<br />\n<br />\n----------------------------------------------------------------------<br>";
-                NN.Config.toolbarType = "simple";
+            NN.Config.instanceID = "content";
+            NN.Config.value = "";
+            NN.Config.toolbarType = "simple";
                 
                 
                 
@@ -239,11 +239,11 @@
 		<div class="ec-base-button ">
             <span class="gLeft">
                 <span class="displaynone"><a href="#none" onclick="" class="yg_btn_30 yg_btn4" alt="관리자답변보기">관리자답변보기</a></span>
-                <a href="delivery_board.jsp" class="yg_btn_30 yg_btn4" alt="목록">LIST</a>
+                <a href="bad_product_board.jsp" class="yg_btn_30 yg_btn4" alt="목록">LIST</a>
             </span>
             <span class="gRight">
                 <a href="#none" onclick="BOARD_WRITE.form_submit('boardWriteForm');" class="yg_btn_30 yg_btn4" alt="등록">OK</a>
-                <a href="delivery_board.jsp" class="yg_btn_30 yg_btn4" alt="취소">CANCEL</a>
+                <a href="bad_product_board.jsp" class="yg_btn_30 yg_btn4" alt="취소">CANCEL</a>
             </span>
         </div>
 	</div>
