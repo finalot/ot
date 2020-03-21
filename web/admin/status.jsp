@@ -71,6 +71,9 @@
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            	<li>
+                                    <a href="category.jsp">분류관리</a>
+                                </li>
                                 <li>
                                     <a href="productAdd.html">상품등록</a>
                                 </li>
