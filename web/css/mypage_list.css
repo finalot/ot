@@ -847,7 +847,360 @@ input[type=text], input[type=password] {
     width: 30px;
     margin: 0;
 }
+/* 팝업 */
+.optiondetail {
+    background: white;
+    width: 40%;
+    position: absolute;
+    display: block;
+    /* border: 1px solid rgb(0, 0, 0); */
+    height: auto;
+    z-index: 100;
+}
 
-    
- 
-    
+.optiondetail .optionheader {
+    padding: 8px 36px 15px 19px;
+    color: #fff;
+    background: #000;
+}
+
+.optiondetail .optiontitle {
+	font-size: 14px;
+    position: relative;
+    top: 3px;
+}
+
+.optiondetail .optionbody {
+	padding : 20px;
+}
+
+.optiondetail h4 {
+	font-size:12px;
+	color : #353535;
+	font-weight : bold;
+}
+
+.optiondetail .optionbody li {
+	padding : 6px 0 10px;
+	height: 36px;
+}
+
+.optiondetail .optionbody li strong {
+    float: left;
+    width: 110px;
+    margin: 6px 0 0;
+    font-size: 12px;
+}
+
+.optiondetail .optionbody .optiontype {
+	padding : 0;
+	background : none;
+}
+
+.optiondetail .optionbody li select {
+    float: right;
+    width: 294px;
+    line-height: 24px;
+    font-size: 12px;
+    height : 26px;
+}
+
+.option_btn {
+    padding: 10px;
+    border-top: 1px solid #d7d5d5;
+    text-align: center;
+}
+.option_close {
+ 	position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#popup .ec-base-layer {
+    position: relative;
+    border: 0;
+}
+
+body#popup {
+    min-width: 0;
+}
+
+body#popup {
+    overflow: hidden;
+    min-width: 600px;
+}
+
+.xans-product-optionselectlayer {
+    width: 600px;
+}
+
+#popup .ec-base-layer .header {
+    padding: 12px 35px 12px 19px;
+}
+
+.ec-base-layer .header > h1, .ec-base-layer .header > h3 {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.xans-product-optionselectlayer.ec-base-layer .content {
+    position: relative;
+    min-height: 434px;
+    padding: 0;
+}
+.ec-base-layer .content {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.xans-product-optionselectlayer .inner {
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 359px;
+    padding: 30px 25px 14px;
+}
+
+.xans-product-optionselectlayer .inner .name {
+    padding: 0 0 20px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    font-weight: normal;
+}
+
+.xans-product-optionselectlayer .productNormal {
+    margin: 20px 0 0;
+    min-height: 130px;
+    position: relative;
+    padding: 0 0 0 140px;
+}
+
+.xans-product-optionselectlayer .productNormal .imgArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: auto;
+}
+
+.xans-product-optionselectlayer .productNormal .imgArea img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.xans-product-optionselectlayer.ec-base-layer .content table {
+    color: #353535;
+    clear: both;
+    text-align: left;
+}
+
+#totalProducts {
+    margin: 20px 0;
+    clear: both;
+}
+
+.xans-product-optionselectlayer .productNormal table th:first-child {
+    border-left: 0;
+}
+
+.xans-product-optionselectlayer .productNormal table th {
+    padding: 5px 0 5px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.xans-product-optionselectlayer .xans-product-option .ec-product-button.ec-product-preview li a {
+    min-width: 22px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.xans-product-optionselectlayer .xans-product-option .ec-product-button li a {
+    display: block;
+    min-width: 28px;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.xans-product-optionselectlayer .xans-product-option .ec-product-button.ec-product-preview li a span {
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    padding: 0;
+    text-indent: 120%;
+    white-space: nowrap;
+}
+
+.xans-product-optionselectlayer .xans-product-option .ec-product-button li {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 5px 3px 0;
+    padding: 3px;
+    vertical-align: top;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *display: inline;
+    *zoom: 1;
+    border-radius: 3px;
+}
+
+.xans-product-optionselectlayer .xans-product-option .ec-product-button.ec-product-preview li {
+    border-radius: 50%;
+}
+
+.add-cart {
+    position: absolute;
+    z-index: 100;
+    border: 1px solid #757575;
+    background: #fff;
+    top: 50%;
+    left: 34%;
+    display: none;
+}
+
+span.ec-base-help, p.ec-base-help, ul.ec-base-help li {
+    margin: 6px 9px 2px 0;
+    padding: 1px 0 1px 20px;
+    line-height: 1.4;
+    background: url(//img.echosting.cafe24.com/skin/base/common/ico_info.gif) no-repeat 0 2px;
+}
+.txt11 {
+    font-size: 11px;
+}
+.txtWarn {
+    color: #999;
+}
+
+#totalProducts tbody tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+
+#totalProducts tbody tr:first-child td {
+    border-top: 1px solid #ddd;
+}
+
+#totalProducts tbody tr td:first-child {
+    padding-left: 4px;
+}
+
+#totalProducts tbody td {
+    padding: 9px 0;
+    border-top: 1px solid #ebebeb;
+    color: #353535;
+    line-height: 24px;
+    vertical-align: middle;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#totalProducts tfoot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0 0;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+#totalProducts tfoot td {
+    padding: 3px 9px 8px 19px;
+    font-size: 12px;
+    line-height: 20px;
+    border: 0;
+    color: #353535;
+    vertical-align: middle;
+    background: #fff;
+}
+
+#totalProducts tfoot td .total em {
+    font-style: normal;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+#totalProducts tbody td p {
+    padding: 0 10px 0 0;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+#totalProducts tbody td .quantity {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    vertical-align: top;
+}
+
+#totalProducts tbody.option_products tr td .quantity input, #totalProducts tbody.add_products tr td .quantity input {
+    height: 19px;
+    line-height: 19px;
+}
+
+#totalProducts tbody td .quantity .up {
+    position: absolute;
+    left: 28px;
+    top: -6px;
+}
+
+#totalProducts tbody td img {
+    vertical-align: middle;
+}
+
+#totalProducts tbody.option_products tr td .quantity .down, #totalProducts tbody.add_products tr td .quantity .down {
+    bottom: 0;
+    top: auto;
+}
+
+#totalProducts table .right {
+    padding-right: 9px;
+    font-weight: normal;
+    text-align: right;
+}
+
+#totalProducts tbody td .quantity input {
+    width: 29px;
+    height: 21px;
+    padding: 0 2px 0 3px;
+    line-height: 21px;
+    border: 1px solid #d4d8d9;
+    border-radius: 3px 0 0 3px;
+}
+
+#totalProducts tbody td .quantity .down {
+    position: absolute;
+    left: 28px;
+    top: 4px;
+}
+
+#totalProducts thead th {
+    height: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.xans-product-optionselectlayer select {
+    width: 100%;
+}
+
+#totalProducts tbody td .mileage {
+    display: block;
+    white-space: nowrap;
+}
+
+.ec-base-layer .header {
+    padding: 12px 36px 12px 19px;
+    color: #fff;
+    background: #000;
+}

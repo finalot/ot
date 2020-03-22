@@ -4784,7 +4784,7 @@ table td, table th {
 }
 
 .ec-base-layer .header {
-    padding: 8px 36px 15px 19px;
+    padding: 12px 36px 12px 19px;
     color: #fff;
     background: #000;
 }
