@@ -45,13 +45,13 @@
  <style>
  #chat-list{
      position: absolute;
-    margin-top: 470px;
-    margin-left: -150px;
+        margin-top: 390px; 
+           margin-left: -150px;
  }
  
 #chat_container{
       position: absolute;
-    margin-top: 590px;
+      margin-top: 440px;
     margin-left: -700px;
     display: none;
    
@@ -63,6 +63,28 @@
  }
  .portlet .portlet-heading .portlet-title {
     float: none;
+}
+#chatlist-close{
+	color:white; 
+	margin-left:74%;
+
+}
+#chatList{
+overflow-y:auto; padding:0%;overflow-y: auto; width: auto;height: 555px;
+
+}
+#chat-user{
+list-style: none; padding-left: 0%
+}
+.user-icon{
+border: 1px solid black;border-radius: 44px;height: 70px;
+}
+.user-text{
+overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.massege-count{
+background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;
+
 }
  </style>
 </head>
@@ -183,44 +205,44 @@
             <div class="portlet portlet-default" style="position: relative;left: -30px;top: 3px;background: #333330;">
                <div class="portlet-heading" style="background-color: #333330;">
                   <div class="portlet-title" style="    display: flex;">
-                     <h4><i class="fa fa-circle text-green"></i>회원목록</h4><button id="chatlist-close" style="color:white; margin-left:74%;">X</button>
+                     <h4><i class="fa fa-circle text-green"></i>회원목록</h4><button id="chatlist-close">X</button>
                   </div>
                   <div class="clearfix"></div>
                </div>
                <div id="chat" class="panel-collapse collapse in">
-                  <div id="chatList" class="portlet-body chat-widget" style="overflow-y:auto; padding:0%;overflow-y: auto; width: auto;height: 700px;">
-                  <ul id="chatList" style="list-style: none; padding-left: 0%">
+                  <div id="chatList" class="portlet-body chat-widget" style="">
+                  <ul id="chat-user">
                  	 <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" class="user-icon">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
+					  	  <p class="user-text"  style="margin-left: 5%;">안녕하세요~~!! 문의드립니다</p>
 					  	  </div>
 					  	  <div>
 					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  	<p class="massege-count">1</p>	
 					  	  </div>
 					  	</div>
 					 </li>
 					  <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
 					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
 					  	  </div>
 					  	  <div>
 					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  	<p style=" background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
 					  	  </div>
 					  	</div>
 					 </li>
 					  <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
 					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
 					  	  </div>
 					  	  <div>
@@ -231,9 +253,9 @@
 					 </li>
 					   <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
 					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
 					  	  </div>
 					  	  <div>
@@ -244,9 +266,9 @@
 					 </li>
 					   <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
 					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
 					  	  </div>
 					  	  <div>
@@ -257,9 +279,22 @@
 					 </li>
 					   <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
+					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
+					  	  </div>
+					  	  <div>
+					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
+					  	  	<p style="background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
+					  	  </div>
+					  	</div>
+					 </li>
+					   <li style="padding: 2%;">
+                 	   <div style="display:flex">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
+						  <div style="width: 70%;">                
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
 					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
 					  	  </div>
 					  	  <div>
@@ -270,22 +305,9 @@
 					 </li>
 					   <li style="padding: 2%;">
                  	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
+						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
 						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					   <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="회원사진?" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 81px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4><br>
+					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
 					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
 					  	  </div>
 					  	  <div>
@@ -486,14 +508,14 @@
 	</script>
 	
  <script>
-   $('#chatList li').mouseenter(function(){
+   $('#chat-user li').mouseenter(function(){
 	   $(this).css('background','gray');
    });
-   $('#chatList li').mouseleave(function(){
+   $('#chat-user li').mouseleave(function(){
 	   $(this).css('background','white');
    });
    
-   $('#chatList li').click(function(){
+   $('#chat-user li').click(function(){
 	   $('#chat_container').css('display','block');
    });
   $('#chat_exit').click(function(){

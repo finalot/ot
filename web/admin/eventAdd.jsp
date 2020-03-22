@@ -55,19 +55,8 @@
 
 }
 
-.first{
-   
-    padding-left: 5%;
-    width: 18%;
-    font-weight: bold;
-}
-.second{
-    padding-left: 2%;
-}
-#addlist td{
-padding-top: 2%;
-    padding-bottom: 3.5%;
-}
+
+
 
 #addlist input{
     border: 1px solid #333330;
@@ -98,6 +87,18 @@ label{
     width: 90px;
     border-radius: 10px;
     margin-bottom: 4%;
+
+}
+td{
+    padding: 13px 11px 12px !important;
+       border:1px solid #d9dadc;
+          font-weight:normal;
+          height: 100px
+}
+.first{
+      width: 135px;
+      border:1px solid #d9dadc;
+background-color:#f5f4f4 !important;
 
 }
 </style>
@@ -213,7 +214,7 @@ label{
         <td colspan="2" style="background: black; margin-bottom: 2%;padding-bottom: 2%;"><h3 style="color: white;;margin-left: 5%;"> 이벤트 상세내용</h3></td>
         </tr>
         <tr>
-            <td class="first">* 이벤트 명</td>
+            <td class="first"><span style="color: red">*</span> 이벤트 명</td>
             <td class="second"><input type="text" name="subject" id="subject">  <button id="coupon_open" style="margin-left: 41%;background: black;color: white;height: 40px; width: 90px;border-radius: 10px;">쿠폰등록</button>
                 <div id="coupon_div">
                     <div align="right" style="background: black;"><button id="coupon_close" style="color: white;margin-right: 1%;">X</button></div>
@@ -226,26 +227,26 @@ label{
         </tr>
         
         <tr>
-            <td class="first">* 기 간</td>
+            <td class="first"><span style="color: red">*</span> 기 간</td>
             <td class="second"><input type=date name="startday" id="startday"> ~ 
                                 <input type=date name="endday" id="endday">
-                <label for="d-day30" style="margin-left: 3%;" >30일 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="d-day" class="d-day" id="d-day30"value="30"></label>
-               <label for="d-day60"  >60일 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="d-day" class="d-day" id="d-day60" value="60"></label>
-               <label for="d-day90" >90일 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="d-day" class="d-day" id="d-day90" value="90"></label>
+                <label for="d-day30" style="margin-left: 3%;" >30일</label> <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="d-day" class="d-day" id="d-day30"value="30">
+               <label for="d-day60"  >60일 </label><input style="margin-right: 5%;margin-left: 1%;" type="radio" name="d-day" class="d-day" id="d-day60" value="60">
+               <label for="d-day90" >90일 </label><input style="margin-right: 5%;margin-left: 1%;" type="radio" name="d-day" class="d-day" id="d-day90" value="90">
             </td>
         </tr>
         <tr>
-            <td class="first">* 사은품 종류</td>
+            <td class="first"><span style="color: red">*</span> 사은품 종류</td>
             <td class="second">
               
-               <label for="product" >상품 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="product"value="사은품"></label>
-               <label for="money"  >적립금 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="money" value="적립금"></label>
-               <label for="coupon" >쿠폰 <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="coupon" value="쿠폰"></label>
+               <label for="product" >상품</label> <input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="product"value="사은품">
+               <label for="money"  >적립금 </label><input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="money" value="적립금">
+               <label for="coupon" >쿠폰 </label><input style="margin-right: 5%;margin-left: 1%;" type="radio" name="category" class="category" id="coupon" value="쿠폰">
                							
             </td>
         </tr>
         <tr>
-            <td class="first">* 사은품</td>
+            <td class="first"><span style="color: red">*</span> 사은품</td>
             <td class="second">
                <label >상품</label> : <input style="margin-right: 5%; background: rgba(190, 181, 181, 0.24);" type="text" id="d_product" readonly>
                <label >적립금</label> : <input style="margin-right: 5%;  background: rgba(190, 181, 181, 0.24);" type="number"  id="d_money" min="1000" step="1000" readonly>
@@ -259,11 +260,11 @@ label{
             </td>
         </tr>  
               <tr>
-            <td class="first">* 이벤트 내용</td>
+            <td class="first"><span style="color: red">*</span> 이벤트 내용</td>
             <td class="second"><textarea style="height: 195px;width: 600px; resize: none; border : 1px solid" ></textarea></td>
         </tr>
         <tr>
-            <td class="first">* 이미지</td>
+            <td class="first"><span style="color: red">*</span> 이미지</td>
             <td class="second"><input type="file" name="startday" id="startday" style="border:0px"> 
             </td>
         </tr>
