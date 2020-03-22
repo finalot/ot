@@ -874,10 +874,14 @@
 	
 	<script>
 
-	IMP.init('imp71871253'); 
+	
 	
 	$('#idMsg3').click(function(){
+		
+		
 		 if($('#pay2').prop('checked') == true){
+		
+			 IMP.init('imp71871253'); 
 			 var totalpay = $('.format-money').text();
 				IMP.request_pay({
 				    pg : 'inicis',
