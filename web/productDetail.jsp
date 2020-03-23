@@ -104,12 +104,13 @@
 				<div class="p-t-33 p-b-60"
 					style="margin-left: -10%; height: 400px; overflow-y: scroll;">
 					<!-- 셀렉트시작 -->
+					<div id="select1o" >
 					<div class="flex-m flex-w p-b-10">
 						<div class="s-text15 w-size15 t-center">Size</div>
 
 						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 							<select class="selection-2" name="size">
-								<option>1.밑에 갯수에따라 셀렉트 늘어나는샘플</option>
+								<option>1.--------</option>
 								<option>1.XS</option>
 								<option>1.S</option>
 								<option>1.M</option>
@@ -143,20 +144,54 @@
 								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
 						</div>
 					</div>
+					</div>
 					<br>
 					<!-- 셀렉트끝 -->
+					
 
-					<!-- 셀렉트시작 -->
+
+
+					<hr style="margin-left: 9.8%;">
+					<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp;
+						<small id="total" class="format-money">7000</small>&nbsp;WON
+					</span> <br>
+					<div class="flex-r-m flex-w p-t-10">
+						<div class="w-size16 flex-m flex-w">
+							<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
+								<button onclick="optionDel();"class="num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+								<input class="size8 m-text18 t-center num-product" type="number"
+									name="num-product" value="1">
+
+
+								<button onclick="option1Add();"class="num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
+
+
+							</div>
+							<!-- 토탈계산을 위한 프로덕트 price -->
+							<input class="num-price" type="hidden" value="7000">
+
+<script>
+    var count = 2;
+function option1Add(){
+    const str = 
+  `
+      <!-- 셀렉트시작 -->
+    	<div id="select`+count+`o">
 					<div class="flex-m flex-w p-b-10">
 						<div class="s-text15 w-size15 t-center">Size</div>
 
 						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 							<select class="selection-2" name="size">
-								<option>2.--------</option>
-								<option>2.XS</option>
-								<option>2.S</option>
-								<option>2.M</option>
-								<option>2.L</option>
+								<option>`+count+`.--------</option>
+								<option>`+count+`.XS</option>
+								<option>`+count+`.S</option>
+								<option>`+count+`.M</option>
+								<option>`+count+`.L</option>
 							</select>
 						</div>
 					</div>
@@ -167,11 +202,11 @@
 						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 
 							<select class="selection-2" name="color">
-								<option>2.--------</option>
-								<option>2.블랙</option>
-								<option>2.그레이</option>
-								<option>2.그린</option>
-								<option>2.네온옐로우</option>
+								<option>`+count+`.--------</option>
+								<option>`+count+`.블랙</option>
+								<option>`+count+`.그레이</option>
+								<option>`+count+`그린</option>
+								<option>`+count+`네온옐로우</option>
 							</select>
 
 							<div
@@ -186,33 +221,22 @@
 								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
 						</div>
 					</div>
+					</div>
 					<br>
 					<!-- 셀렉트끝 -->
+      
+ `;
+ 
+    $("#select1o").append(str); 
+    count++;
+}
 
 
-					<hr style="margin-left: 9.8%;">
-					<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp;
-						<small id="total" class="format-money">14000</small>&nbsp;WON
-					</span> <br>
-					<div class="flex-r-m flex-w p-t-10">
-						<div class="w-size16 flex-m flex-w">
-							<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
-								<button class="num-product-down color1 flex-c-m size7 bg8 eff2">
-									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-								</button>
-
-								<input class="size8 m-text18 t-center num-product" type="number"
-									name="num-product" value="2">
-
-
-								<button class="num-product-up color1 flex-c-m size7 bg8 eff2">
-									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-								</button>
-
-
-							</div>
-							<!-- 토탈계산을 위한 프로덕트 price -->
-							<input class="num-price" type="hidden" value="7000">
+function optionDel(){
+    $("#select"+(count-1)+"o").remove();
+    count--;
+}
+</script>
 
 
 
@@ -391,10 +415,97 @@ function washing_tip(){
       <strong>REVIEW</strong><span class="divider">|</span><span class="weak">문의글 혹은 악의적인 비방글은 무통보 삭제된다는 점 유의해주세요^^</span>
       
     </div>
+    					<button class="flex-c-m bg4 bo-rad-23 hov1 s-text1 trans-0-4" onclick="reviewOn();" 
+						style="position: relative; left: 55%; width: 7%; height: 20px; font-size: 12px; float:left;background:#c3b798; ">리뷰 작성하기</button>
     					<button class="flex-c-m bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
-						style="position: relative; left: 63.5%; width: 7%; height: 20px; font-size: 10px; ">리뷰 게시판</button>
+						style="position: relative; left: 56%; width: 7%; height: 20px; font-size: 12px; ">리뷰 게시판</button>
     								<hr>
 									<br>
+									<!-- 리뷰 작성하기부분 -->
+
+								<div id="reviewWrite"
+									style="display: none; padding: 20px 0px 20px 29px; border-width: 1px; border-style: solid; border-color: rgb(218, 218, 218); border-image: initial; height: 22%; background: white; margin-bottom: 3%;">
+
+									<form action="#">
+										<label>키 : <input type="text"
+											style="width: 80px; align: center; height: 25px; border: 2px solid lightgray; text-align: center; border-radius: 10px;"
+											maxlength="6">&nbsp;<small>cm</small></label>&nbsp;&nbsp;&nbsp;
+
+										<label>몸무게 : <input type="text"
+											style="width: 80px; height: 25px; border: 2px solid lightgray; text-align: center; border-radius: 10px;"
+											maxlength="6">&nbsp;<small>kg</small></label>&nbsp;&nbsp;&nbsp;
+
+										<label>평소사이즈 : <select style="background: none;">
+												<option>상의</option>
+												<option>하의</option>
+										</select> <input type="text"
+											style="width: 80px; height: 25px; border: 2px solid lightgray; text-align: center; border-radius: 10px;"
+											maxlength="6">
+										</label>
+
+										<button  onclick="reviewOff();"
+											style="position: relative; float: right; width: 70px; height: 30px; background: black; border-radius: 9%; margin-right: 15px; color: white;">작성
+											취소</button>
+										<button
+											style="position: relative; float: right; width: 70px; height: 30px; background: #c3b798; border-radius: 9%; margin-right: 15px; color: white;">작성
+											완료</button>
+
+										<br>
+										<br> <input type="file"
+											style="background: #c3b798; border: 2px solid lightgray">&nbsp;<input
+											type="file"
+											style="background: #c3b798; border: 2px solid lightgray">
+										<br>
+										<br>
+										<br> <label>리뷰 내용 <small>(200자 이내)</small><br>
+										<textarea maxlength="200"
+												style="border: 2px solid lightgray; border-image: initial; width: 700%; height: 270px; resize: none; font-size: 15px;"></textarea></label>
+									</form>
+
+								</div>
+								
+								<hr id="scrollX">
+
+<style>
+.moveOn{
+ position: relative;
+  animation-name: example;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;
+  }
+
+
+ 
+  @keyframes example {
+  from {top: -25%; height:600px;background-color: white;}
+  to {top: -25%; height:1px;background-color: white;}
+
+ 
+</style>
+
+								<!-- 리뷰작성 끝 -->
+									
+									
+						<script>
+						var scrollX=document.getElementById('scrollX');
+						
+						function reviewOn() {
+							$('#reviewWrite').css("display","block");
+							scrollX.className ='moveOn';
+						}
+						function reviewOff() {
+							$('#reviewWrite').css("display","none");
+							scrollX.className ='';
+						}
+						
+						</script>			
+									
+									
+					
+						
+						
+						
+									
 									
 									<!-- 리뷰평점부분-->
 <style>
@@ -678,7 +789,7 @@ function washing_tip(){
       
         <li class="score_summary__score_filter " data-score="5">
           <a class="js-link-score">
-            <div class="score_summary__score_filter__title">5 Stars</div>
+            <div class="score_summary__score_filter__title">5Stars</div>
             <div class="score_summary__score_filter__status">
               <div class="score_summary__score_filter__count">(377)</div>
               <div class="score_summary__score_filter__check sprites-check"></div>
@@ -691,7 +802,7 @@ function washing_tip(){
       
         <li class="score_summary__score_filter " data-score="4">
           <a class="js-link-score">
-            <div class="score_summary__score_filter__title">4 Stars</div>
+            <div class="score_summary__score_filter__title">4Stars</div>
             <div class="score_summary__score_filter__status">
               <div class="score_summary__score_filter__count">(12)</div>
               <div class="score_summary__score_filter__check sprites-check"></div>
@@ -704,7 +815,7 @@ function washing_tip(){
       
         <li class="score_summary__score_filter " data-score="3">
           <a class="js-link-score">
-            <div class="score_summary__score_filter__title">3 Stars</div>
+            <div class="score_summary__score_filter__title">3Stars</div>
             <div class="score_summary__score_filter__status">
               <div class="score_summary__score_filter__count">(5)</div>
               <div class="score_summary__score_filter__check sprites-check"></div>
@@ -717,7 +828,7 @@ function washing_tip(){
       
         <li class="score_summary__score_filter " data-score="2">
           <a class="js-link-score">
-            <div class="score_summary__score_filter__title">2 Stars</div>
+            <div class="score_summary__score_filter__title">2Stars</div>
             <div class="score_summary__score_filter__status">
               <div class="score_summary__score_filter__count">(1)</div>
               <div class="score_summary__score_filter__check sprites-check"></div>
@@ -730,7 +841,7 @@ function washing_tip(){
       
         <li class="score_summary__score_filter " data-score="1">
           <a class="js-link-score">
-            <div class="score_summary__score_filter__title">1 Star</div>
+            <div class="score_summary__score_filter__title">1Star</div>
             <div class="score_summary__score_filter__status">
               <div class="score_summary__score_filter__count">(0)</div>
               <div class="score_summary__score_filter__check sprites-check"></div>
@@ -1341,8 +1452,16 @@ function washing_tip(){
 									
 
 								</ul>
-
 							</div>
+<font align="center"style>
+1&nbsp;&nbsp;...&nbsp;
+<a style="border-radius:5px; border:1px solid black;background:black;color:white;">&nbsp;6&nbsp;</a>&nbsp;&nbsp;
+<a>7</a>&nbsp;&nbsp;
+<a>8</a>&nbsp;&nbsp;
+<a>9</a>&nbsp;&nbsp;
+<a>10</a>&nbsp;&nbsp;
+&nbsp;...&nbsp;&nbsp;13
+</font>
 						</div>
 					</div>
 				</div>
