@@ -133,19 +133,19 @@
 			        <ul class="order">
 						<li>
 			                <strong>입금전</strong>
-			                <a href="/myshop/order/list.html?order_status=shipped_before" class="count"><span id="xans_myshop_orderstate_shppied_before_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_shppied_before_count">0</span></a>
 			            </li>
 			            <li>
 			                <strong>배송준비중</strong>
-			                <a href="/myshop/order/list.html?order_status=shipped_standby" class="count"><span id="xans_myshop_orderstate_shppied_standby_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_shppied_standby_count">0</span></a>
 			            </li>
 			            <li>
 			                <strong>배송중</strong>
-			                <a href="/myshop/order/list.html?order_status=shipped_begin" class="count"><span id="xans_myshop_orderstate_shppied_begin_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_shppied_begin_count">0</span></a>
 			            </li>
 			            <li>
 			                <strong>배송완료</strong>
-			                <a href="/myshop/order/list.html?order_status=shipped_complate" class="count"><span id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
 			            </li>
 			        </ul>
 			        
@@ -153,17 +153,17 @@
 						<li>
 			                <span class="icoDot"></span>
 			                <strong>취소 : </strong>
-			                <a href="/myshop/order/list.html?order_status=order_cancel" class="count"><span id="xans_myshop_orderstate_order_cancel_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_order_cancel_count">0</span></a>
 			            </li>
 			            <li>
 			                <span class="icoDot"></span>
 			                <strong>교환 : </strong>
-			                <a href="/myshop/order/list.html?order_status=order_exchange" class="count"><span id="xans_myshop_orderstate_order_exchange_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_order_exchange_count">0</span></a>
 			            </li>
 			            <li>
 			                <span class="icoDot"></span>
 			                <strong>반품 : </strong>
-			                <a href="/myshop/order/list.html?order_status=order_return" class="count"><span id="xans_myshop_orderstate_order_return_count">0</span></a>
+			                <a href="/ot/mypage_list.jsp" class="count"><span id="xans_myshop_orderstate_order_return_count">0</span></a>
 			            </li>
 			        </ul>
 				</div>

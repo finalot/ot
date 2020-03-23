@@ -552,7 +552,7 @@ select {
 }
 
 .xans-myshop-wishlist td.button a {
-    margin: 1px 0;
+    margin: 3px 0;
 }
 
 .yg_btn1 {
@@ -562,7 +562,7 @@ select {
 }
 
 .yg_btn_100 {
-    height: 20px;
+    height: 25px;
     width: 100px;
     line-height: 20px;
     margin: 1px 0;
@@ -1062,8 +1062,8 @@ body#popup {
     z-index: 100;
     border: 1px solid #757575;
     background: #fff;
-    top: 50%;
-    left: 34%;
+    top: 35%;
+    left: 35%;
     display: none;
 }
 

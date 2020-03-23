@@ -176,7 +176,7 @@
                 				<td class="price center">21,500 won</td>
 				                <td class="button">
 				                    <a href="#none" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(10550,  26, 'wishlist', '')" class=" yg_btn_100 yg_btn1 add-to-cart" alt="담기">ADD TO CART</a>
-				                    <a href="#none" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(10550,  26, 'wishlist', '')" class=" yg_btn_100 yg_btn4 add-to-cart" alt="주문">BUY IT NOW</a>
+				                    <!-- <a href="#none" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(10550,  26, 'wishlist', '')" class=" yg_btn_100 yg_btn4 add-to-cart" alt="주문">BUY IT NOW</a> -->
 				                    <a href="#none" class="btn_wishlist_del yg_btn_100 yg_btn4" rel="10550||||" alt="삭제">DELETE</a>
 				                </td>
            					</tr>
@@ -264,7 +264,7 @@
                 				<td class="price center">21,500 won</td>
 				                <td class="button">
 				                    <a href="#none" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(10550,  26, 'wishlist', '')" class=" yg_btn_100 yg_btn1" alt="담기">ADD TO CART</a>
-				                    <a href="#none" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(10550,  26, 'wishlist', '')" class=" yg_btn_100 yg_btn4" alt="주문">BUY IT NOW</a>
+				                    <!-- <a href="#none" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(10550,  26, 'wishlist', '')" class=" yg_btn_100 yg_btn4" alt="주문">BUY IT NOW</a> -->
 				                    <a href="#none" class="btn_wishlist_del yg_btn_100 yg_btn4" rel="10550||||" alt="삭제">DELETE</a>
 				                </td>
            					</tr>
@@ -282,6 +282,7 @@
     			</span>
 				<span class="gRight">
        				<a href="#none" onclick="NewWishlist.orderAll();" class="yg_btn_140" alt="전체상품주문">전체상품주문</a>
+       	 			<a href="/ot/cart.jsp" onclick="NewWishlist.deleteAll();" class="yg_btn_140 yg_btn4" alt="관심상품 비우기" style="background:#f4f4f4">장바구니 가기</a>
        	 			<a href="#none" onclick="NewWishlist.deleteAll();" class="yg_btn_140 yg_btn4" alt="관심상품 비우기" style="background:#f4f4f4">관심상품 비우기</a>
     			</span>
 			</div>
