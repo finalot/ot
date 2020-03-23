@@ -75,10 +75,13 @@
                                     <a href="category.jsp">카테고리관리</a>
                                 </li>
                                 <li>
-                                    <a href="productAdd.html">상품등록</a>
+                                    <a href="productAdd.jsp">상품등록</a>
                                 </li>
                                 <li>
-                                    <a href="productList.html">상품관리</a>
+                                    <a href="productList.jsp">상품관리</a>
+                                </li>
+                                <li>
+                                    <a href="">재고관리</a>
                                 </li>
                             </ul>
                         </li>
@@ -91,9 +94,6 @@
                                 </li>
                                 <li>
                                     <a href="">주문관리</a>
-                                </li>
-                                <li>
-                                    <a href="">재고관리</a>
                                 </li>
                                 <li>
                                     <a href="">쿠폰/이벤트 등록</a>

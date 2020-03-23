@@ -50,51 +50,89 @@
      <script src="./assets/vendor/slimscroll/jquery.slimscroll.js"></script>
      <script src="./assets/libs/js/main-js.js"></script>
     <!--color box-->
-    <style>
-    #addlist{
-    margin-top: 5%;
+    
+    
+<style>
+#product_okay{
+    border-radius: 10px; 
+    background-color: skyblue; 
+    margin-left: 73%;
+    width: 10%;
+    height: 30%;
+}
+#addlist{
+    margin-top: 1%;
     margin-bottom: 3%;
     padding-left: 4%;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 
-    }
+}
 
-    #addlist td{
-    padding-top: 2%;
-        padding-bottom: 3.5%;
-    }
 
-    #addlist input{
+
+
+#addlist input{
     border: 1px solid #333330;
     padding-left: 2%;
-    }
+}
+#addlist [input="type==radio"]{
+
+margin-right: 5%;
+}
+label{
+    display: inline;
+    font-weight: bold;
    
-    #titleImgArea{
-        vertical-align:middle;
-        cursor:pointer;
-        border:2px  darkgray;
-        display:table-cell;
-    }
+}
+#coupon_div{
+    display: none; position: absolute;
+                top: 442px;
+                left: 857px;
+                background: white;
+                width: 410px;
+                border: 1px solid;
 
-    .input>text{
-        border: 1px;
-    }
+}
+#coupon_input{
+    margin-right: 9%;background: black;
+    color: white;
+    height: 35px; 
+    width: 90px;
+    border-radius: 10px;
+    margin-bottom: 4%;
 
-    </style>
+}
+td{
+    padding: 13px 11px 12px !important;
+       border:1px solid #d9dadc;
+          font-weight:normal;
+          height: 80px
+}
+th{
+	padding: 13px 11px 12px !important;
+	text-align:center;
+	border:1px solid #d9dadc;
+}
+.first{
+      width: 135px;
+      border:1px solid #d9dadc;
+	  background-color:#f5f4f4 !important;
+
+}
+</style>
+
 </head>
 <body class="animsition">
 
     <div class="page-wrapper">
     
     <%@ include file="a_header.jsp" %>
-    
-    <div style="padding-left:300px;">
-        <!-- MENU SIDEBAR-->
+  <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="adminmain.html">
+                <a href="todaymain.jsp">
                     <img src="images/icon/ot.png" alt="OT" style="max-height: 35px;"/>
                 </a>
             </div>
@@ -107,13 +145,13 @@
                                 <i class="fa fa-bar-chart-o"></i>통계</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="adminmain.html">당일현황</a>
+                                    <a href="todaymain.jsp">당일현황</a>
                                 </li>
                                 <li>
-                                    <a href="chart.html">월별매출량</a>
+                                    <a href="todaychart.jsp">매출그래프</a>
                                 </li>
                                 <li>
-                                    <a href="table.html">상품판매순위</a>
+                                    <a href="best.jsp">상품판매순위</a>
                                 </li>
                             </ul>
                         </li>
@@ -121,11 +159,17 @@
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="productAdd.html">상품등록</a>
+                            	<li>
+                                    <a href="category.jsp">카테고리관리</a>
                                 </li>
                                 <li>
-                                    <a href="productList.html">상품관리</a>
+                                    <a href="productAdd.jsp">상품등록</a>
+                                </li>
+                                <li>
+                                    <a href="productList.jsp">상품관리</a>
+                                </li>
+                                <li>
+                                    <a href="">재고관리</a>
                                 </li>
                             </ul>
                         </li>
@@ -139,9 +183,7 @@
                                 <li>
                                     <a href="">주문관리</a>
                                 </li>
-                                <li>
-                                    <a href="">재고관리</a>
-                                </li>
+                                
                                 <li>
                                     <a href="">쿠폰/이벤트 등록</a>
                                 </li>
@@ -170,7 +212,9 @@
             </div>
         </aside>
         <!-- END MENU SIDEBAR-->
-      
+     
+     
+    <div style="padding-left:300px">
      <!-- WELCOME-->
      <section class="welcome p-t-10">
         <div class="container">
@@ -188,100 +232,64 @@
     </section>
     <!-- END WELCOME-->
     
-    <center>
-    <table id="addlist" style="width: 90%; height:400px; font-size: 20px; margin-top:0%; text-align: left; border: 1px dotted; background: white;">
-        <tr>
-            <td colspan="2" style="background: black; margin-bottom: 2%;padding-bottom: 2%;"><h2 style="color: white;;margin-left: 5%;"> 상품 상세내용</h2></td>
-        </tr>
-        <tr>
-            <td rowspan="7">
-            <br>
-            <div id="titleImgArea" class="ImgArea0" style="border:0px;">
-                <img id="titleImg" class="titleImg0" style="width: 500px; height: 670px; margin-left: 15%;">
-            </div>
-            <br>
-            <div class="fileArea" id="fileArea">
-                <input type="file" id="thumbnailImg1"
-                      name="thumbnailImg1" accept="image/*" onchange="loadImg(this, 1);" style="font-size: 13pt; text-align: center; border: 0px;"/>
-            </div>        
-            </td>
-            <td>
-               	 상품명 : &nbsp; &nbsp;&nbsp;&nbsp;
-                <input type="text" id="product_name"> 
-            </td> 
+    
 
+    <!-- 이벤트 내용 -->
+   <table id="addlist" style="border: 1px dotted; background: white; font-size:13pt;">
+        <tr colspan="2">
+        	<td colspan="2" style="background: black; margin-bottom: 2%;padding-bottom: 2%;">
+        	<h3 style="color: white;;margin-left: 5%;"> 상품 상세내용</h3></td>
         </tr>
         <tr>
-            <td>가격 : &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-                <input type="number" id="product_price" min="5,000" step="500" style="width:30%;">
-            </td> 
-            
-            <br>
+        	<th>분류</th>
+        	<td>
+	       		대(大) : &nbsp;&nbsp;
+                   <select onchange="categoryChange(this)">
+                       <option>선택1(대분류)</option>
+                       <option value="a">탑</option>
+                       <option value="b">아우터</option>
+                       <option value="c">하의</option>
+                       <option value="d"">스커트</option>
+                       <option value="e"">악세사리</option>
+                       <option value="f">가방/신발</option>
+                       <option value="g">ACC</option>
+                   </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                                    중(中) : &nbsp;&nbsp;
+                   <select id="mdivide" onclick="test1();">
+                       <option>선택2(중분류)</option>
+                   </select>
+        	</td>
         </tr>
         <tr>
-            <td>사이즈 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" name="size" value="xsmall" id="xsmall">
-                <label for="xsmall">&nbsp;XS &nbsp;</label>
-                <input type="checkbox" name="size" value="small" id="small">
-                <label for="small">&nbsp;S &nbsp;</label>
-                <input type="checkbox" name="size" value="medium" id="medium">
-                <label for="medium">&nbsp;M &nbsp;</label>
-                <input type="checkbox" name="size" value="large" id="large">
-                <label for="large">&nbsp;L &nbsp;</label>
-                <input type="checkbox" name="size" value="xlarge" id="xlarge">
-                <label for="xlarge">&nbsp;XL &nbsp; </label>
-                <br>    
-            </td>
+        	<th>상품코드</th>
+        	<td>
+        		<input type="text" id="product_code">
+        	</td>
         </tr>
         <tr>
-            <td>수량 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
-                <input type="number" id="product_quality" style="width: 15%;">
-            </td>
+        	<th>상품명</th>
+        	<td>
+        		<input type="text" id="product_name">
+        	</td>
         </tr>
         <tr>
-            <td>상품코드 : &nbsp;
-                <input type="text" id="product_code">
-            </td>
+        	<th>수량</th>
+        	<td>
+        		<input type="number" id="product_quality" style="width: 15%;">
+        	</td>
         </tr>
         <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td rowspan="2">
-                            분류 : &nbsp; &nbsp; &nbsp;&nbsp; 
-                        </td>
-                        <td>
-                            대(大) : &nbsp;&nbsp;
-                            <select onchange="categoryChange(this)">
-                                <option>선택1(대분류)</option>
-                                <option value="a">탑</option>
-                                <option value="b">아우터</option>
-                                <option value="c">하의</option>
-                                <option value="d"">스커트</option>
-                                <option value="e"">악세사리</option>
-                                <option value="f">가방/신발</option>
-                                <option value="g">ACC</option>
-                            </select>
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <br>
-                            중(中) : &nbsp;&nbsp;
-                            <select id="mdivide">
-                                <option>선택2(중분류)</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-               
-            </td>
+        	<th>가격</th>
+        	<td>
+        		<input type="number" id="product_price" min="5,000" step="500" style="width:20%;">
+        	</td>
         </tr>
         <tr>
-            <td>
-              
-                <div id="color-area" style="display: flex;">
+        	<th>색상</th>
+        	<td>
+        		 <div id="color-area" style="display: block;">
                     <div id="color-div" class="col-sm-12 col-md-6">
                         <div class="form-group">
                             <div class="input-group" >
@@ -289,28 +297,53 @@
                             </div>
                         </div>
                     </div>
-                
-                </div>
-                <div id="line"></div>
-                
-                   
-                <span class="input-group-btn">
+                     <div id="line"></div>
+                	<span class="input-group-btn">
                     <button id="color_add" class="btn btn-default" type="button"">ADD</button>
                 </span> 
-            </td>
+                
+                </div>
+        	</td>
         </tr>
         <tr>
-            <td colspan="2">
-                <br>
-                    상세설명 : &nbsp;&nbsp;
-                <input type="file" id="detail_upload" name="detail_upload" style="font-size: 13pt; text-align: center; border: 0px;">
-                <br><br><br>
-            </td>
+        	<th>할인가</th>
+        	<td>
+        		<input type="number" id="product_sale" style="width:20%;"> &nbsp; &nbsp; %
+        	</td>
+        </tr>
+        <tr>
+        	<th>대표이미지</th>
+        	<td>
+        		<input type="file" id="titleImg" style="border:white 1px;">
+        	</td>
+        </tr>
+        <tr>
+        	<th>상세설명</th>
+        	<td>
+        		<input type="file" id="descrptionImg" style="border:white 1px;">
+        	</td>
+        </tr>
+        <tr>
+        	<th>옵션설정</th>
+        	<td>
+        		<input type="text" id="mdivide_value" style="width:20%;">
+        		
+        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                
+                <select>
+                       <option>선택</option>
+                       <option>FREE</option>
+                       <option>상의(XS,S,M,L,XL)</option>
+                       <option>하의(25,26~38)</option>
+                       <option>신발(225~290)</option>
+                       <option>모자(S,M,L)</option>
+                </select>
+        		
+         	</td>
         </tr>
     </table>
-    <br><br><br>
-    </center>
-	</div>
+    
 
     <div style="height: 130px;">
         <div align="center">
@@ -326,40 +359,28 @@
         </div>
     </div>
    
-    </div>
-
-
+    
+</div></div>
     <br><br>
 
 
 
-<!-- 사진 미리보기 기능 지원 스크립트 -->
-    <script>
-     $(function(){
-       	$('#fileArea').hide();
-        
-           
-        $('#titleImgArea').click(() => {
-           $('#thumbnailImg1').click();
-           
-        });
-     });
 
-    function loadImg(value, num){
-    
-        if(value.files && value.files[0])  {
-        
-        var reader = new FileReader();
-        reader.onload = function(e){
-            if(num==1){
-                $('#titleImg').attr('src', e.target.result);
-            }
-        }
-            reader.readAsDataURL(value.files[0]);
-        }
-    
-        }
-    </script>
+
+
+	<!-- 옵션설정 select -->
+	<script>
+	function test1(){
+		var mtext = document.getElementById("mdivide_value");
+		var moption = document.getElementById("mdivide");
+		
+		mtext.value= moption.options[moption.selectedIndex].value;
+		
+		console.log(mtext);
+		console.log(moption);
+	}
+	</script>
+	
 
     <!-- 색상 받아오기 스크립트 -->
   
