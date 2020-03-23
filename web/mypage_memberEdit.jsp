@@ -624,12 +624,13 @@
 					}
 
 					// 우편번호와 주소 정보를 해당 필드에 넣는다.
-					$('#zipCode').val(data.zonecode); //5자리 새우편번호 사용
+					$('#postcode1').val(data.zonecode); //5자리 새우편번호 사용
 
-					$('#address1').val(fullAddr);
+					$('#addr1').val(fullAddr);
 
 					// 커서를 상세주소 필드로 이동한다.
-					$('#address2').focus();
+					$('#addr2').val('');
+					$('#addr2').focus();
 				}
 			}).open();
 		};
