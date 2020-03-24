@@ -196,9 +196,9 @@ background-color:#f5f4f4 !important;
      <!-- WELCOME-->
      <div style="padding-left:300px;">
      <section class="welcome p-t-10">
-        <div class="container">
+        <div class="container" style="margin-left: 6%">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" >
                     <h1 class="title-4"> 
                      &nbsp; &nbsp; &nbsp; 쿠폰&nbsp;/&nbsp;이벤트 등록
                     </h1>
@@ -211,7 +211,7 @@ background-color:#f5f4f4 !important;
     
     <table id="addlist" style="border: 1px dotted; background: white;">
         <tr>
-        <td colspan="2" style="background: black; margin-bottom: 2%;padding-bottom: 2%;"><h3 style="color: white;;margin-left: 5%;"> 이벤트 상세내용</h3></td>
+        <td colspan="2" style="background:#dfe3e6;; margin-bottom: 2%;padding-bottom: 2%;"><h3 style="color: black;;margin-left: 5%;"> 이벤트 상세내용</h3></td>
         </tr>
         <tr>
             <td class="first"><span style="color: red">*</span> 이벤트 명</td>
