@@ -102,123 +102,7 @@
 				<!--  -->
 
 
-<style>
-/*[ rs1-select2 ]
------------------------------------------------------------
-*/
-.rs1-select2 .select2-container {
-  margin-left: 26px;
-}
 
-.rs1-select2 .select2-container .select2-selection--single {
-  height: 20px;;
-}
-
-/*[ rs2-select2 ]
------------------------------------------------------------
-*/
-.rs2-select21 .select2-container1 .select2-selection--single1 {
-  background-color: white;
-  height: 50px;
-}
-
-.rs2-select21 .select2-container1 .select2-selection--single1 .select2-selection__rendered1 {
-  line-height: 20px;
-  color: #555555;
-  padding-left: 22px ;
-}
-
-.rs2-select21 .select2-container--default1 .select2-selection--single1 .select2-selection__arrow1 {
-  right: 10px;
-}
-
-#dropDownSelect21 .select2-results__options1 {
-  color: #555555;
-}
-
-#dropDownSelect21 .select2-search--dropdown1 .select2-search__field1 {
-  color: #555555;
-}
-
-
-
-/*[ rs3-select2 ]
------------------------------------------------------------
-*/
-.rs3-select21 .select2-container1 .select2-selection--single1 {
-  height: 45px;
-}
-
-.rs3-select21 .select2-selection__arrow1 b1 {
-
-  display: block;
-}
-
-.rs3-select21 .select2-selection__arrow:after1 {
-  display: none;
-}
-
-/*[ rs4-select2 ]
------------------------------------------------------------
-*/
-.rs4-select2 .select2-container .select2-selection--single {
-  height: 40px;
-}
-
-.rs4-select2 .select2-container .select2-selection--single .select2-selection__rendered {
-  padding-left: 15px ;
-}
-
-.rs4-select2 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  right: 5px;
-}
-.bo41 {
-	border: 1px solid #e6e6e6;
-	border-radius: 2px;
-}
-.of-hidden1 {overflow: hidden;}
-
-.w-size161 {
-	width: 79%;
-}
-.flex-m1 {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-}
-.flex-w1 {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-.p-b-101 {padding-bottom: 10px;}
-.s-text151 {
-	font-family: Montserrat-Regular;
-	font-size: 13px;
-	color: #666666;
-	line-height: 1.8;
-}
-.w-size151 {
-font-family: Montserrat-Regular;
-	font-size: 13px;
-	color: #666666;
-	line-height: 1.8;
-	width: 21%;
-	text-align: center;
-}
-.t-center1 {text-align: center;}
-</style>
 
 
 
@@ -229,13 +113,13 @@ font-family: Montserrat-Regular;
 					<div class="flex-m flex-w p-b-10">
 						<div class="s-text15 w-size15 t-center">Size</div>
 
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
+						<div id="select1" class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 							<select class="selection-2" name="size">
-								<option>1.--------</option>
-								<option>1.XS</option>
-								<option>1.S</option>
-								<option>1.M</option>
-								<option>1.L</option>
+								<option>--------</option>
+								<option>XS</option>
+								<option>S</option>
+								<option>M</option>
+								<option>L</option>
 							</select>
 						</div>
 					</div>
@@ -245,12 +129,12 @@ font-family: Montserrat-Regular;
 
 						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 
-							<select class="selection-2" name="color">
-								<option>1.--------</option>
-								<option>1.블랙</option>
-								<option>1.그레이</option>
-								<option>1.그린</option>
-								<option>1.네온옐로우</option>
+							<select id="select2" class="selection-2" name="color">
+								<option>--------</option>
+								<option>블랙</option>
+								<option>그레이</option>
+								<option>그린</option>
+								<option>네온옐로우</option>
 							</select>
 
 							<div
@@ -266,55 +150,14 @@ font-family: Montserrat-Regular;
 						</div>
 					</div>
 					<!-- 셀렉1끝 -->
-					<br>
 					
-					<!-- 셀렉2 시작 -->
-					<div class="flex-m flex-w p-b-10">
-						<div class="s-text15 w-size15 t-center">Size</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-							<select class="selection-2" name="size">
-								<option>1.--------</option>
-								<option>1.XS</option>
-								<option>1.S</option>
-								<option>1.M</option>
-								<option>1.L</option>
-							</select>
-						</div>
 					</div>
-
-					<div class="flex-m flex-w">
-						<div class="s-text15 w-size15 t-center">Color</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-
-							<select class="selection-2" name="color">
-								<option>1.--------</option>
-								<option>1.블랙</option>
-								<option>1.그레이</option>
-								<option>1.그린</option>
-								<option>1.네온옐로우</option>
-							</select>
-
-							<div
-								style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
-						</div>
-					</div>
-					<!-- 셀렉 2 끝 -->
-					</div>
-					
 					<!-- 셀렉트끝 -->
 					<br>
-
-
+					<!-- 추가 셀렉트 -->
+					<div id=selectArea1o>
+					</div>
+					<!-- 추가 셀렉트 -->
 
 					<hr style="margin-left: 9.8%;">
 					<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp;
@@ -342,74 +185,60 @@ font-family: Montserrat-Regular;
 
 <script>
     var count = 2;
+    
 function option1Add(){
+    
     const str = 
-    	 `
-    	  
-        <!-- 셀렉트시작 -->
-      	<div id="select`+count+`o">
-  					<div id="select`+count+`t">
-  						<div id="select`+count+`y" >Size</div>
+   	 `<div id="selectArea`+count+`o">
+   	<div class="flex-m flex-w p-b-10">
+		<div class="s-text15 w-size15 t-center">Size</div>
 
-  						<div id="select`+count+`q" >
-  							<select id="select`+count+`w" name="size">
-  								<option>`+count+`.--------</option>
-  								<option>`+count+`.XS</option>
-  								<option>`+count+`.S</option>
-  								<option>`+count+`.M</option>
-  								<option>`+count+`.L</option>
-  							</select>
-  						</div>
-  					</div>
+		<div id="select1" class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
+			<select class="selection-2" name="size">
+				<option>--------</option>
+				<option>XS</option>
+				<option>S</option>
+				<option>M</option>
+				<option>L</option>
+			</select>
+		</div>
+	</div>
 
-  					<div id="select`+count+`u">
-  						<div id="select`+count+`i">Color</div>
+	<div class="flex-m flex-w">
+		<div class="s-text15 w-size15 t-center">Color</div>
 
-  						<div id="select`+count+`e" >
+		<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
 
-							<select id="select`+count+`r" name="color">
-							<option>`+count+`.--------</option>
-								<option>`+count+`.블랙</option>
-								<option>`+count+`.그레이</option>
-								<option>`+count+`그린</option>
-								<option>`+count+`네온옐로우</option>
-							</select>
+			<select id="select2" class="selection-2" name="color">
+				<option>--------</option>
+				<option>블랙</option>
+				<option>그레이</option>
+				<option>그린</option>
+				<option>네온옐로우</option>
+			</select>
 
-  							<div
-  								style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-  							<div
-  								style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-  							<div
-  								style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-  							<div
-  								style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-  							<div
-  								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
-  						</div>
-  					</div>
-  					</div>
-  					<br id="select`+count+`a">
-  					<!-- 셀렉트끝 -->
-      
- `;
- 
-    $("#select1o").append(str); 
-    $('#select'+count+'q').addClass('rs2-select21 rs3-select21 bo41 of-hidden1 w-size161');
-    $('#select'+count+'w').addClass('selection-2');
-    $('#select'+count+'e').addClass('rs2-select21 rs3-select21 bo41 of-hidden1 w-size161');
-    $('#select'+count+'r').addClass('selection-2');
-    $('#select'+count+'t').addClass('flex-m flex-w p-b-10');
-    $('#select'+count+'y').addClass('s-text15 w-size15 t-center');
-    $('#select'+count+'u').addClass('flex-m1 flex-w1 p-b-101');
-    $('#select'+count+'i').addClass('s-text15 w-size15 t-center');
-   
+			<div
+				style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
+			<div
+				style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
+			<div
+				style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
+			<div
+				style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
+			<div
+				style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
+		</div>
+	</div><div>`;
+	
+    document.getElementById("selectArea1o").innerHTML=str;
     count++;
+    
 }
 
 
 function optionDel(){
 	if(count>2){
-    $("#select"+(count-1)+"o").remove();
+    $("#selectArea"+(count-1)+"o").remove();
     $("#select"+(count-1)+"a").remove();
     count--;}
 }
@@ -2267,7 +2096,6 @@ function washing_tip(){
 	<div id="dropDownSelect2"></div>
 
 
-
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
@@ -2289,6 +2117,8 @@ function washing_tip(){
 			minimumResultsForSearch : 20,
 			dropdownParent : $('#dropDownSelect2')
 		});
+		
+		
 	</script>
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
