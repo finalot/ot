@@ -879,9 +879,14 @@
 	$('#idMsg3').click(function(){
 		
 		
+		//IMP.init('imp36292670');  핸드폰 결제용
 		 if($('#pay2').prop('checked') == true){
-		
-			 IMP.init('imp71871253'); 
+			 IMP.init('imp71871253');
+		}else if($('#pay3').prop('checked') == true){
+			IMP.init('imp36292670');	 
+		 } 
+			 
+			 
 			 var totalpay = $('.format-money').text();
 				IMP.request_pay({
 				    pg : 'inicis',
@@ -927,8 +932,6 @@
 				        alert(msg);
 				    }
 				});
-				
-	 	}
 	});
 	
 	</script>

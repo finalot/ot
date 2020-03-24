@@ -103,9 +103,9 @@ background-color:#f5f4f4 !important;
 }
 </style>
 </head>
-<body class="animsition">
+<body class="animsition" style="background: rgb(243, 243, 243);">
 
-    <div class="page-wrapper">
+   
     <%@ include file="a_header.jsp" %>
   <!-- MENU SIDEBAR-->
      <aside class="menu-sidebar d-none d-lg-block">
@@ -282,7 +282,9 @@ background-color:#f5f4f4 !important;
                 border-radius: 10px;
                 ">등록</button>
             </div>
-    </div></div></div>
+    </div></div>
+     <div class="page-wrapper">
+    </div>
 
     <script>
         $('#coupon_open').click(function(){
