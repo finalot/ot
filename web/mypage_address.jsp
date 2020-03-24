@@ -138,7 +138,7 @@ th, td {
 				                    	<span>KH정보교육원 H클래스</span>
 				                    </td>
 				                    <td>	
-				                    	<a href="modify.html?ma_idx=843124" class=" yg_btn_24 yg_btn3" alt="수정">수정</a>
+				                    	<a href="/ot/mypage_address_modify.jsp" class=" yg_btn_24 yg_btn3" alt="수정">수정</a>
 			                    	</td>
                 				</tr>
 							</tbody>

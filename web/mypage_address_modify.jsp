@@ -89,19 +89,19 @@ input {
 <tbody style="font-size:13px;">
 <tr>
 <th scope="row">배송지명 <img src="/ot/images/req_check.png" alt="필수"></th>
-                    <td><input id="ma_rcv_title" name="ma_rcv_title" fw-filter="isFill&amp;isMaxByte[90]" fw-label="배송지명" fw-msg="" class="inputTypeText" placeholder="" value="" type="text"></td>
+                    <td><input id="ma_rcv_title" name="ma_rcv_title" fw-filter="isFill&amp;isMaxByte[90]" fw-label="배송지명" fw-msg="" class="inputTypeText" placeholder="" value="미지정" type="text"></td>
                 </tr>
 <tr>
 <th scope="row">성명 <img src="/ot/images/req_check.png" alt="필수"></th>
-                    <td><input id="ma_rcv_name" name="ma_rcv_name" fw-filter="isFill&amp;isMaxByte[90]" fw-label="성명" fw-msg="" class="ec-member-name" placeholder="" value="신경섭" type="text"></td>
+                    <td><input id="ma_rcv_name" name="ma_rcv_name" fw-filter="isFill&amp;isMaxByte[90]" fw-label="성명" fw-msg="" class="ec-member-name" placeholder="" value="홍길동" type="text"></td>
                 </tr>
 <tr>
 <th scope="row">주소 <img src="/ot/images/req_check.png" alt="필수"></th>
                     <td>
-                        <input id="address_zip1" name="address_zip1" fw-filter="isMin[3]&amp;isMax[8]" fw-label="우편번호" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text">                        
+                        <input id="address_zip1" name="address_zip1" fw-filter="isMin[3]&amp;isMax[8]" fw-label="우편번호" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="12345" type="text">                        
                         <a href="#none" onclick="addrSearch();" id="SearchAddress" class="yg_btn_24 yg_btn5" alt="우편번호">우편번호</a><br>
-                        <input id="address_addr1" name="address_addr1" fw-filter="" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" value="" type="text"> 기본주소<br>
-                        <input id="address_addr2" name="address_addr2" fw-filter="isFill" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" value="" type="text"> 나머지주소<span class="displaynone">(선택입력가능)</span>
+                        <input id="address_addr1" name="address_addr1" fw-filter="" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" value="서웉특별시 강남구 테헤란로" type="text"> 기본주소<br>
+                        <input id="address_addr2" name="address_addr2" fw-filter="isFill" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="" value="KH정보교육원 H클래스" type="text"> 나머지주소<span class="displaynone">(선택입력가능)</span>
                     </td>
                 </tr>
 <tr>
@@ -151,7 +151,7 @@ input {
 <option value="017">017</option>
 <option value="018">018</option>
 <option value="019">019</option>
-</select>-<input id="ma_rcv_mobile_no2" name="ma_rcv_mobile_no[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text">-<input id="ma_rcv_mobile_no3" name="ma_rcv_mobile_no[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="" type="text"></td>
+</select>-<input id="ma_rcv_mobile_no2" name="ma_rcv_mobile_no[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="1234" type="text">-<input id="ma_rcv_mobile_no3" name="ma_rcv_mobile_no[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" value="5678" type="text"></td>
                 </tr>
 <tr class="right">
 <td colspan="2" style="border-left:1px solid #ddd;"><input id="ma_main_flag0" name="ma_main_flag" fw-filter="" fw-label="기본 배송지로 저장" fw-msg="" value="T" type="checkbox"><label for="ma_main_flag0">기본 배송지로 저장</label></td>
