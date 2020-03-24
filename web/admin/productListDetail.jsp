@@ -247,25 +247,7 @@ th{
      
      
     <div style="padding-left:300px">
-     <!-- WELCOME-->
-     <section class="welcome p-t-10">
-        <div class="container" style="margin-left: 3%;">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="title-4"> 
-                    <b>
-                    &nbsp; &nbsp; &nbsp; 상품등록
-                    </b>
-                    </h1>
-                    <hr class="line-seprate">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END WELCOME-->
-    
-    
-
+     
     <!-- 이벤트 내용 -->
    <table id="addlist" style="border: 1px dotted; background: white; font-size:13pt;">
         <tr colspan="2">
@@ -276,149 +258,156 @@ th{
         	<th><span style="color:red">*</span> 분류</th>
         	<td>
 	       		대(大) : &nbsp;&nbsp;
-                   <select id="select-category" onchange="categoryChange(this)">
-                       <option value="select">선택1(대분류)</option>
-                       <option value="a">탑</option>
-                       <option value="b">아우터</option>
-                       <option value="c">하의</option>
-                       <option value="d"">스커트</option>
-                       <option value="e"">악세사리</option>
-                       <option value="f">가방/신발</option>
-                       <option value="g">ACC</option>
-                   </select>
+                   <input type="text" value="아우터" style="width:15%;">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
                                     중(中) : &nbsp;&nbsp;
-                   <select id="mdivide" onclick="test1();">
-                       <option>선택2(중분류)</option>
-                   </select>
+                   <input type="text" value="가디건" style="width:15%;">
         	</td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 상품코드</th>
         	<td>
-        		<input type="text" id="product_code">
+        		<input type="text" id="product_code" value="SEO1231111R">
         	</td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 상품명</th>
         	<td>
-        		<input type="text" id="product_name">
+        		<input type="text" id="product_name" value="깜떄까르썽 가디건">
         	</td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 가격</th>
         	<td>
-        		<input type="number" id="product_price" min="5,000" step="500" style="width:20%;">
+        		<input type="text" value="78,000" style="width:20%;">
         	</td>
         </tr>
-       <!--  <tr>
-        	<th><span style="color:red">*</span> 색상</th>
-        	<td>
-        		 <div id="color-area" style="display: block;">
-                    <div id="color-div" class="col-sm-12 col-md-6">
-                        <div class="form-group">
-                            <div class="input-group" >
-                                <input type="text" style=" padding-right: 0%;;padding-left: 36%;"  id="input-group" class="form-control demo" value="#ff0000" />
-                            </div>
-                        </div>
-                    </div>
-                     <div id="line"></div>
-                	<span class="input-group-btn">
-                    <button id="color_add" class="btn btn-default" type="button"">ADD</button>
-                </span> 
-                
-                </div>
-        	</td>
-        </tr> -->
+       
         <tr>
         	<th><span style="color:red">*</span> 할인가</th>
         	<td>
-        		<input type="number" id="product_sale" style="width:20%;"> &nbsp; &nbsp; %
+        		<input type="text" value="15" style="width:10%;"> &nbsp; &nbsp; %
         	</td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 대표이미지</th>
         	<td>
-        		<div id="titleImgArea">
+<!--         		<div id="titleImgArea">
 			<img id="titleImg" width="177px" height="200">
 			</div>
 			<div class="fileArea" id="fileArea">
 		      				<input type="file" id="thumbnailImg1"
 		      				name="thumbnailImg1" onchange="loadImg(this, 1);" />
-		     			 </div>
+		     			 </div> -->
+		     <img src="images/outer.jpg" alt="꼼데가디건" style="width:177px; height:200px;">
         	</td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 상세설명</th>
         	<td>
-        		<input type="file" id="descrptionImg" style="border:white 1px;">
+        		<!-- <input type="file" id="descrptionImg" style="border:white 1px;"> -->
+        		상세설명예시 .jpg
         	</td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 색상설정</th>
         	<td>
-        	
-        		 <div id="color-area" style="display: block;" >
-                    <div id="color-div" class="col-sm-12 col-md-6">
-                        <div class="form-group">
-                            <div class="input-group" style="    width: 105px" >
-                                <input type="text" style=" padding-right: 0%;;padding-left: 36%;"  id="input-group" class="form-control demo" value="#ff0000" />
-								
-                                  <span>등록 색상명 </span> <input type="text" id="color-name">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-         	</td>
-        </tr>
-        <tr>
-        	<th><span style="color:red">*</span>사이즈 설정</th>
-        	<td>상의/모자
-        	 <select id="top-select" style="background:rgba(190, 181, 181, 0.24);margin-left: 10px;margin-right: 10px" disabled>
-                       <option></option>
-                       <option>FREE</option>
-                       <option>XS</option>
-                       <option>S</option>
-                       <option>M</option>
-                       <option>L</option>
-                       <option>XL</option>
-                </select>
-				하의/신발        	
-        		<input id="bottom-select" type="number" style="background:rgba(190, 181, 181, 0.24);border: 1px solid #333330; margin-left: 10px;width: 75px;" readonly>
-        	
+	        	<span class="block2-price m-text6 p-r-5" >
+					<div style="width:17px;height:17px;background:black;float:left;border:1px solid black;"></div>
+					<div style="width:17px;height:17px;background:white;margin-left:3px;float:left;border:1px solid black;"></div>
+					<div style="width:17px;height:17px;background:red;margin-left:3px;float:left;border:1px solid black;"></div>
+					<div style="width:17px;height:17px;background:navy;margin-left:3px;float:left;border:1px solid black;"></div>
+					<div style="width:17px;height:17px;background:gray;margin-left:3px;float:left;border:1px solid black;"></div>
+				</span>
         	</td>
         </tr>
+ 
+        
+        
     </table>
     <div align="center" style="margin-bottom:3%">
-    <button id="product-info-add" style="width: 100px; height: 40px;border-radius: 10px;;background: black; color: white">상품추가</button>
     </div>
     <div style="border: 1px solid #dfe3e6;margin-left: 5%;margin-right: 5%;padding-left: 1%;">
     <h4 > <span style="color:red">*</span>재고설정</h4>
     </div>
     <div align="center" id="product-count">
-    <table style="width: 90%;">
+    <table style="width: 90%;" >
     	<thead>
     		<tr>
-    		<th>상품코드</th>
-    		<th>상품명</th>
-    		<th>이미지</th>
-    		<th>사이즈</th>
-    		<th>색상</th>
-    		<th>수량</th>
-    		<th>삭제</th>
+	    		<th>상품코드</th>
+	    		<th>상품명</th>
+	    		<th>이미지</th>
+	    		<th>사이즈</th>
+	    		<th>색상</th>
+	    		<th>수량</th>
     		</tr>
     	</thead>
-    </table>
-   <div  style="height: 200px; overflow: scroll ; width: 90%;">
-    <table  style="width:100%;">	
-    	<tbody id="product-add-count" style="text-align: center;">
+    	<tbody>
+    		<tr>
+    			<td>SEO1231111R</td>
+    			<td>깜떄까르썽 가디건</td>
+    			<td><img src="images/outer.jpg"></td>
+    			<td>S</td>
+    			<td>
+    				레드 &nbsp;
+    				<div style="width:17px;height:17px;background:red;float:left;border:1px solid black;"></div>
+    			</td>
+    			<td>40</td>
+    		</tr>
+    		
+    		<tr>
+    			<td>SEO1231111R</td>
+    			<td>깜떄까르썽 가디건</td>
+    			<td><img src="images/outer.jpg"></td>
+    			<td>S</td>
+    			<td>
+    				레드 &nbsp;
+    				<div style="width:17px;height:17px;background:black;float:left;border:1px solid black;"></div>
+    			</td>
+    			<td>40</td>
+    		</tr>
+    		
+    		<tr>
+    			<td>SEO1231111R</td>
+    			<td>깜떄까르썽 가디건</td>
+    			<td><img src="images/outer.jpg"></td>
+    			<td>S</td>
+    			<td>
+    				레드 &nbsp;
+    				<div style="width:17px;height:17px;background:white;float:left;border:1px solid black;"></div>
+    			</td>
+    			<td>40</td>
+    		</tr>
+    		<tr>
+    			<td>SEO1231111R</td>
+    			<td>깜떄까르썽 가디건</td>
+    			<td><img src="images/outer.jpg"></td>
+    			<td>S</td>
+    			<td>
+    				레드 &nbsp;
+    				<div style="width:17px;height:17px;background:navy;float:left;border:1px solid black;"></div>
+    			</td>
+    			<td>40</td>
+    		</tr>
+    		<tr>
+    			<td>SEO1231111R</td>
+    			<td>깜떄까르썽 가디건</td>
+    			<td><img src="images/outer.jpg"></td>
+    			<td>M</td>
+    			<td>
+    				레드 &nbsp;
+    				<div style="width:17px;height:17px;background:red;float:left;border:1px solid black;"></div>
+    			</td>
+    			<td>40</td>
+    		</tr>
     	</tbody>
     </table>
-    </div>
+   
     </div>
     
 
+	<br><br>
     <div style="height: 130px;">
         <div align="center">
             <button style="background: black;
@@ -427,8 +416,8 @@ th{
             padding: 10px;
             height: 65px;
             width: 135px;
-            border-radius: 10px;">
-            <b>등록</b></button>
+            border-radius: 10px;" onclick="location.href='productList.jsp'">
+            <b>목록으로</b></button>
         </div>
     </div>
    
@@ -436,44 +425,8 @@ th{
 	</div>
 <div class="page-wrapper">
 </div>
-
-
-
-
-
-
-	<!-- 옵션설정 select -->
-	<script>
 	
-	
-	function test1(){
-		var mtext = document.getElementById("mdivide_value");
-		var moption = document.getElementById("mdivide");
-		
-		mtext.value= moption.options[moption.selectedIndex].value;
-		
-		console.log(mtext);
-		console.log(moption);
-	}
-	</script>
-	<script>
-	$('#select-category').click(function(){
-		
-		if($('#select-category').val()=='a' ||$('#select-category').val()=='b'){
-			$('#top-select').removeAttr('disabled').css('background','white').focus();
-		}else{
-			$('#top-select').css('background','rgba(190, 181, 181, 0.24)').attr("disabled",true).val('선택');
-		}
-		if($('#select-category').val() != 'a' &&  $('#select-category').val() !='b' && $('#select-category').val() != 'select'){
-			$('#bottom-select').removeAttr('readonly').css('background','white').focus();
-		}else{
-			$('#bottom-select').css('background','rgba(190, 181, 181, 0.24)').attr("readonly",true).val('선택');
-		}
-	})
-	
-	</script>
-	
-
+    
     <!-- 색상 받아오기 스크립트 -->
   
       <!-- This Page JS -->

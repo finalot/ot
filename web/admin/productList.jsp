@@ -44,13 +44,14 @@
 <%@ include file="a_header.jsp" %>
 
 <div style="padding-left:300px;">
-<aside class="menu-sidebar d-none d-lg-block">
+<!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="adminmain.html">
+                <a href="todaymain.jsp">
                     <img src="images/icon/ot.png" alt="OT" style="max-height: 35px;"/>
                 </a>
             </div>
-           <div class="menu-sidebar__content js-scrollbar1">
+            <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="has-sub"> 
@@ -69,6 +70,21 @@
                                 </li>
                             </ul>
                         </li>
+                        
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-truck"></i>회원 &nbsp;/&nbsp;주문</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="customer.jsp">회원 관리</a>
+                                </li>
+                                <li>
+                                    <a href="order.jsp">주문 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
@@ -84,39 +100,42 @@
                                 </li>
                             </ul>
                         </li>
+                        
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fa fa-tasks"></i>관리</a>
+                                <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="">회원관리</a>
+                                    <a href="eventAdd.jsp">이벤트/쿠폰 등록</a>
                                 </li>
                                 <li>
-                                    <a href="">주문관리</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="">쿠폰/이벤트 등록</a>
-                                </li>
-                                <li>
-                                    <a href="">쿠폰/이벤트 관리</a>
-                                </li>
-                                <li>
-                                    <a href="">이벤트관리</a>
-                                </li>
-                                <li>
-                                    <a href="">교환신청관리</a>
+                                    <a href="eventList.jsp">이벤트/쿠폰 관리</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-truck"></i>반품</a>
+                        
+                        
+                        
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="productReturn.jsp">교환 / 반품신청</a>
+                                </li>
+                                <li>
+                                    <a href="productReturnList.jsp">교환 / 반품관리</a>
+                                </li>
+                            </ul>
                         </li>
+                 		<li>
+                           <a href="DesignEdit.jsp">
+                               <i class="fa fa-desktop"></i>디자인</a>
+                       </li>
                         <li>
-                            <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>Q & A</a>
-                        </li>
+                           <a href="qna.jsp">
+                               <i class="fa fa-users"></i>Q & A 관리</a>
+                       </li>
                         
                     </ul>
                 </nav>
@@ -124,7 +143,20 @@
         </aside>
         <!-- END MENU SIDEBAR-->
         
-        
+         <!-- WELCOME-->
+      <section class="welcome p-t-10">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h1 class="title-4">
+                       &nbsp; &nbsp; &nbsp; 상품리스트
+                      </h1>
+                      <hr class="line-seprate">
+                  </div>
+              </div>
+          </div>
+       </section>
+       <!-- END WELCOME-->
         
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
@@ -369,6 +401,19 @@
     </div>
     <div class="page-wrapper">
 </div>
+	
+	
+	<!-- // td(class=next) 클릭시 페이지 이동 -->
+	<script>
+     $("td").click(function(){
+    	 location.href='productListDetail.jsp';
+  	 <%-- var userId = $(this).parent().find('input').val();
+  	 
+  	 console.log("선택한 유저 ID : "+userId);
+  	 
+     location.href="<%= request.getContextPath() %>/sone.rp?userId=" + userId; --%>
+    }); 
+    </script>
 
     <script src="./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>

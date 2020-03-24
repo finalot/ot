@@ -44,7 +44,7 @@
   <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="adminmain.html">
+                <a href="todaymain.jsp">
                     <img src="images/icon/ot.png" alt="OT" style="max-height: 35px;"/>
                 </a>
             </div>
@@ -67,6 +67,21 @@
                                 </li>
                             </ul>
                         </li>
+                        
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-truck"></i>회원 &nbsp;/&nbsp;주문</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="customer.jsp">회원 관리</a>
+                                </li>
+                                <li>
+                                    <a href="order.jsp">주문 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
@@ -80,43 +95,44 @@
                                 <li>
                                     <a href="productList.jsp">상품관리</a>
                                 </li>
-                                <li>
-                                    <a href="">재고관리</a>
-                                </li>
                             </ul>
                         </li>
+                        
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fa fa-tasks"></i>관리</a>
+                                <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="">회원관리</a>
+                                    <a href="eventAdd.jsp">이벤트/쿠폰 등록</a>
                                 </li>
                                 <li>
-                                    <a href="">주문관리</a>
-                                </li>
-                                <li>
-                                    <a href="">쿠폰/이벤트 등록</a>
-                                </li>
-                                <li>
-                                    <a href="">쿠폰/이벤트 관리</a>
-                                </li>
-                                <li>
-                                    <a href="">이벤트관리</a>
-                                </li>
-                                <li>
-                                    <a href="">교환신청관리</a>
+                                    <a href="eventList.jsp">이벤트/쿠폰 관리</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-truck"></i>반품</a>
+                        
+                        
+                        
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="productReturn.jsp">교환 / 반품신청</a>
+                                </li>
+                                <li>
+                                    <a href="productReturnList.jsp">교환 / 반품관리</a>
+                                </li>
+                            </ul>
                         </li>
+            			<li>
+                           <a href="DesignEdit.jsp">
+                               <i class="fa fa-desktop"></i>디자인</a>
+                       </li>
                         <li>
-                            <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>Q & A</a>
-                        </li>
+                           <a href="qna.jsp">
+                               <i class="fa fa-users"></i>Q & A 관리</a>
+                       </li>
                         
                     </ul>
                 </nav>
