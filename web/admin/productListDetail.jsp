@@ -329,7 +329,7 @@ th{
     <div align="center" style="margin-bottom:3%">
     </div>
     <div style="border: 1px solid #dfe3e6;margin-left: 5%;margin-right: 5%;padding-left: 1%;">
-    <h4 > <span style="color:red">*</span>재고설정</h4>
+    <h4 > <span style="color:red">*</span>재고관리</h4>
     </div>
     <div align="center" id="product-count">
     <table style="width: 90%;" >
@@ -410,6 +410,16 @@ th{
 	<br><br>
     <div style="height: 130px;">
         <div align="center">
+        
+        	<button style="background: black;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            height: 65px;
+            width: 135px;
+            border-radius: 10px;" onclick="location.href='productList.jsp'">
+            <b>수정</b></button>
+            
             <button style="background: black;
             color: white;
             font-size: 20px;
@@ -418,9 +428,9 @@ th{
             width: 135px;
             border-radius: 10px;" onclick="location.href='productList.jsp'">
             <b>목록으로</b></button>
-        </div>
+       </div>
     </div>
-   
+    
     
 	</div>
 <div class="page-wrapper">

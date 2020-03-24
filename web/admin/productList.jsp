@@ -6,7 +6,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>회원정보 테이블</title>
+        <title>oT. ADMIN</title>
         <link rel="icon" type="image/png" href="images/icon/favicon.png"/>
         
         <!-- Bootstrap CSS -->
