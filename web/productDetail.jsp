@@ -106,58 +106,64 @@
 
 
 
-				<div class="p-t-33 p-b-60"
+				<div class="p-t-33 p-b-60" id="select1o"
 					style="margin-left: -10%; height: 400px; overflow-y: scroll;">
-					<!-- 셀렉트시작 -->
-					<div id="select1o" >
-					<div class="flex-m flex-w p-b-10">
-						<div class="s-text15 w-size15 t-center">Size</div>
-
-						<div id="select1" class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-							<select class="selection-2" name="size">
-								<option>--------</option>
-								<option>XS</option>
-								<option>S</option>
-								<option>M</option>
-								<option>L</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flex-m flex-w">
-						<div class="s-text15 w-size15 t-center">Color</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-
-							<select id="select2" class="selection-2" name="color">
-								<option>--------</option>
-								<option>블랙</option>
-								<option>그레이</option>
-								<option>그린</option>
-								<option>네온옐로우</option>
-							</select>
-
-							<div
-								style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
-						</div>
-					</div>
-					<!-- 셀렉1끝 -->
 					
+					
+					
+					<!-- 셀렉트시작 -->
+					<div  >
+					<!-- 셀렉2 -->
+    	<div id="select11o">
+						<div
+							style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Size</div>
+
+							<div 
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 50px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								<select id="select1" style="border:none;background:none;outline: 0;width:98%;" name="size" >
+									<option mouseover="background:black">--------</option>
+									<option>XS</option>
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+								</select>
+							</div>
+						</div>
+						<div style="height: 3px;"></div>
+						<div style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Color</div>
+
+							<div
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 60px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+
+								<select id="select2" style="border:none;background:none;outline: 0;width:98%;hover:black;" name="color">
+									<option>--------</option>
+									<option>블랙</option>
+									<option>그레이</option>
+									<option>그린</option>
+									<option>네온옐로우</option>
+								</select><div/>
+
+								<div
+									style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
+							</div>
+						</div>
+						<!-- 셀렉2 -->
+						<br>
+						
 					</div>
 					<!-- 셀렉트끝 -->
-					<br>
-					<!-- 추가 셀렉트 -->
-					<div id=selectArea1o>
-					</div>
-					<!-- 추가 셀렉트 -->
 
 					<hr style="margin-left: 9.8%;">
 					<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp;
@@ -189,48 +195,58 @@
 function option1Add(){
     
     const str = 
-   	 `<div id="selectArea`+count+`o">
-   	<div class="flex-m flex-w p-b-10">
-		<div class="s-text15 w-size15 t-center">Size</div>
+   	 `
+    <!-- 셀렉2 -->
+    	<div id="select`+count+`o">
+						<div
+							style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Size</div>
 
-		<div id="select1" class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-			<select class="selection-2" name="size">
-				<option>--------</option>
-				<option>XS</option>
-				<option>S</option>
-				<option>M</option>
-				<option>L</option>
-			</select>
-		</div>
-	</div>
+							<div 
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 50px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								<select id="select1" style="border:none;background:none;outline: 0;width:98%;" name="size" >
+									<option mouseover="background:black">--------</option>
+									<option>XS</option>
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+								</select>
+							</div>
+						</div>
+						<div style="height: 3px;"></div>
+						<div style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Color</div>
 
-	<div class="flex-m flex-w">
-		<div class="s-text15 w-size15 t-center">Color</div>
+							<div
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 60px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
 
-		<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
+								<select id="select2" style="border:none;background:none;outline: 0;width:98%;hover:black;" name="color">
+									<option>--------</option>
+									<option>블랙</option>
+									<option>그레이</option>
+									<option>그린</option>
+									<option>네온옐로우</option>
+								</select><div/>
 
-			<select id="select2" class="selection-2" name="color">
-				<option>--------</option>
-				<option>블랙</option>
-				<option>그레이</option>
-				<option>그린</option>
-				<option>네온옐로우</option>
-			</select>
-
-			<div
-				style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-			<div
-				style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-			<div
-				style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-			<div
-				style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-			<div
-				style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
-		</div>
-	</div><div>`;
+								<div
+									style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
+							</div>
+						</div>
+						<!-- 셀렉2 -->
+						</div>
+<br id="select`+count+`a">`;
 	
-    document.getElementById("selectArea1o").innerHTML=str;
+    $("#select1o").append(str); 
     count++;
     
 }
