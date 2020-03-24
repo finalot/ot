@@ -10,7 +10,7 @@
     <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
 
-    <!--===============================================================================================-->
+ <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icon/favicon.png"/>
 
     <!-- Title Page-->
@@ -271,8 +271,7 @@
     <script src="vendor/circle-progress/circle-progress.min.js"></script>
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
+    <script src="vendor/select2/select2.min.js"></script>
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
