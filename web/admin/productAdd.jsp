@@ -234,7 +234,7 @@ th{
     <div style="padding-left:300px">
      <!-- WELCOME-->
      <section class="welcome p-t-10">
-        <div class="container">
+        <div class="container" style="margin-left: 3%;">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="title-4"> 
@@ -254,8 +254,8 @@ th{
     <!-- 이벤트 내용 -->
    <table id="addlist" style="border: 1px dotted; background: white; font-size:13pt;">
         <tr colspan="2">
-        	<td colspan="2" style="background: black; margin-bottom: 2%;padding-bottom: 2%;">
-        	<h3 style="color: white;;margin-left: 5%;"> 상품 상세내용</h3></td>
+        	<td colspan="2" style="background:#dfe3e6; margin-bottom: 2%;padding-bottom: 2%;">
+        	<h3 style="color: black;margin-left: 5%;"> 상품 상세내용</h3></td>
         </tr>
         <tr>
         	<th><span style="color:red">*</span> 분류</th>
