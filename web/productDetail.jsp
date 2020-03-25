@@ -284,7 +284,7 @@ function optionDel(){
 						나시</span>
 				</div>
 
-				<!--  -->
+				
 				<!-- <div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
 					<h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
 						Description
@@ -1730,6 +1730,7 @@ function washing_tip(){
 					</div>
 				</div>
 			</div>
+		
 		</div>
 	</div>
 	<style>
@@ -1800,7 +1801,7 @@ function washing_tip(){
 	<style>
 .detail_pic {
 	position: relative;
-	left: 23%;
+	left: 10%;
 }
 </style>
 	<img class="detail_pic"
@@ -2337,10 +2338,8 @@ function washing_tip(){
 	</section>
 
 
-	<!-- Footer -->
+<!-- Footer -->
 	<%@include file="footer.jsp"%>
-
-
 
 	<!-- Back to top -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">
@@ -2353,6 +2352,8 @@ function washing_tip(){
 	<div id="dropDownSelect1"></div>
 	<div id="dropDownSelect2"></div>
 
+
+	
 
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
