@@ -1801,7 +1801,7 @@ function washing_tip(){
 	<style>
 .detail_pic {
 	position: relative;
-	left: 10%;
+	left: 8.4%;
 }
 </style>
 	<img class="detail_pic"
@@ -1880,7 +1880,7 @@ function washing_tip(){
                 fit_product_basic__size_table--free-size
                 "
 						border="0" cellspacing="0" cellpadding="0"
-						style="border-top: 1px solid gray; border-bottom: 1px solid gray; font-size: 15px; width: 800px; margin-left:29.15%;">
+						style="border-top: 1px solid gray; border-bottom: 1px solid gray; font-size: 15px; width: 800px; margin-left:16%;">
 						<thead>
 							<tr class="fit_product_basic__size_table_title_row"
 								style="background: ivory;">
@@ -1936,7 +1936,7 @@ function washing_tip(){
 					</table>
 
 				</div>
-				<div class="fit_product_basic__size_unit" style="margin-left: 38%;"><small>단위:
+				<div class="fit_product_basic__size_unit" style="margin-left: 63%;"><small>단위:
 					cm</small></div>
 				<br>
 				<br>
@@ -2332,9 +2332,8 @@ function washing_tip(){
 					</div>
 				</div>
 			</div>
+</div>
 
-
-		</div>
 	</section>
 
 
