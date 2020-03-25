@@ -98,32 +98,69 @@
 
 				<p class="s-text8 p-t-10">핏한 착용감과 세련된 색감으로 간편히 입을 수 있는 크롭 나시입니다.
 				</p>
-				<br> <br>
-				<!--  -->
+				
+				<hr>
+				
+				<span class="m-text17" ><small>total</small>&nbsp;:&nbsp;&nbsp;
+						<font id="total" class="format-money">7000</font>&nbsp;<small>WON</small>
+					</span> <br>
+					<div class="flex-r-m flex-w p-t-10" style="margin-left:-39%;">
+						<div class="w-size16 flex-m flex-w">
+							<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
+								<button onclick="optionDel();"class="num-product-down color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+								</button>
+
+								<input class="size8 m-text18 t-center num-product" type="number"
+									name="num-product" value="1">
 
 
+								<button onclick="option1Add();"class="num-product-up color1 flex-c-m size7 bg8 eff2">
+									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+								</button>
 
 
+							</div>
+							<!-- 토탈계산을 위한 프로덕트 price -->
+							<input class="num-price" type="hidden" value="7000">
+
+							<div
+								class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10"
+								style="width:18%;height:50px;margin-left: 12%">
+								<!-- Button -->
+								<button
+									class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+									<small>장바구니 담기</small>
+								</button>
+							</div>
 
 
-				<div class="p-t-33 p-b-60" id="select1o"
-					style="margin-left: -10%; height: 400px; overflow-y: scroll;">
+							<br>
+							<br>
+						</div>
+						</div>
+					<br>
+					
+				<div class="p-t-33 p-b-60" 
+					style="margin-left: -10%;margin-top:-20px; height: 300px; overflow-y: scroll;">
+					
 					
 					
 					
 					<!-- 셀렉트시작 -->
-					<div  >
-					<!-- 셀렉2 -->
-    	<div id="select11o">
+					
+					<div id="select1o">
+					<!-- 셀렉 -->
+    	
 						<div
 							style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
 							<div
-								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Size</div>
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">1.Size</div>
 
 							<div 
-								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 50px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 45px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
 								<select id="select1" style="border:none;background:none;outline: 0;width:98%;" name="size" >
-									<option mouseover="background:black">--------</option>
+									<option>--------</option>
 									<option>XS</option>
 									<option>S</option>
 									<option>M</option>
@@ -134,10 +171,10 @@
 						<div style="height: 3px;"></div>
 						<div style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
 							<div
-								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Color</div>
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">1.Color</div>
 
 							<div
-								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 60px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 57px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
 
 								<select id="select2" style="border:none;background:none;outline: 0;width:98%;hover:black;" name="color">
 									<option>--------</option>
@@ -158,37 +195,18 @@
 								<div
 									style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
 							</div>
-						</div>
-						<!-- 셀렉2 -->
-						<br>
 						
 					</div>
+					
+						</div>
+						<!-- 셀렉 -->
+						<br>
 					<!-- 셀렉트끝 -->
 
-					<hr style="margin-left: 9.8%;">
-					<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp;
-						<small id="total" class="format-money">7000</small>&nbsp;WON
-					</span> <br>
-					<div class="flex-r-m flex-w p-t-10">
-						<div class="w-size16 flex-m flex-w">
-							<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
-								<button onclick="optionDel();"class="num-product-down color1 flex-c-m size7 bg8 eff2">
-									<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-								</button>
+					
+					</div>
 
-								<input class="size8 m-text18 t-center num-product" type="number"
-									name="num-product" value="1">
-
-
-								<button onclick="option1Add();"class="num-product-up color1 flex-c-m size7 bg8 eff2">
-									<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-								</button>
-
-
-							</div>
-							<!-- 토탈계산을 위한 프로덕트 price -->
-							<input class="num-price" type="hidden" value="7000">
-
+				</div>
 <script>
     var count = 2;
     
@@ -201,10 +219,10 @@ function option1Add(){
 						<div
 							style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
 							<div
-								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Size</div>
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">`+count+`.Size</div>
 
 							<div 
-								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 50px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 45px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
 								<select id="select1" style="border:none;background:none;outline: 0;width:98%;" name="size" >
 									<option mouseover="background:black">--------</option>
 									<option>XS</option>
@@ -217,10 +235,10 @@ function option1Add(){
 						<div style="height: 3px;"></div>
 						<div style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
 							<div
-								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">Color</div>
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">`+count+`.Color</div>
 
 							<div
-								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 60px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 57px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
 
 								<select id="select2" style="border:none;background:none;outline: 0;width:98%;hover:black;" name="color">
 									<option>--------</option>
@@ -254,32 +272,12 @@ function option1Add(){
 
 function optionDel(){
 	if(count>2){
-    $("#selectArea"+(count-1)+"o").remove();
+    $("#select"+(count-1)+"o").remove();
     $("#select"+(count-1)+"a").remove();
     count--;}
 }
 </script>
 
-
-
-							<div
-								class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
-								<!-- Button -->
-								<button
-									class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
-									style="width: 60%; margin-left: 50%">
-									<small>장바구니 담기</small>
-								</button>
-							</div>
-
-
-							<br>
-							<br>
-
-						</div>
-					</div>
-
-				</div>
 
 				<div class="p-b-45">
 					<span class="s-text8 m-r-35">oT: n-01</span> <span class="s-text8">Categories:
@@ -1005,6 +1003,250 @@ function washing_tip(){
     </div>
   </div>
 									<!-- 리뷰평점부분끝 -->
+									<!-- 정렬 부분 버튼 -->
+						<div id=sortButton>
+									
+								<!-- Button -->
+								<button id="scoreSort" class=" bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style=" width: 7%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>평점순</Strong> <small>(100)</small></button>
+									
+									&nbsp;|
+									
+								<!-- Button -->
+								<button id="recommandSort"class="bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>추천순</Strong></button>
+									
+									&nbsp;|
+									
+								<!-- Button -->
+								<button id="newSort"class=" bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>최신순</Strong></button>
+									
+						</div>
+						<!-- 정렬 부분 버튼 -->
+						
+						
+						<div class="products_reviews_header__lower" >
+      
+  <div class="review_options_search js-review-options-search">
+    
+    <ul class="review_options_search__option_types"style="border:2px solid lightgray;margin-top:17px;color:#c3b798;">
+      <br>
+        <li class="review_options_search__option_type">
+          <a class="review_options_search__option_type_link js-link-review-option-type">
+            <div class="review_options_search__option_type_name" title="키"><small><strong>키</strong></small></div>
+            <div class="review_options_search__option_type_dropdown_button">
+              <i class="review_options_search__option_type_icon sprites-icon-drop-down-s"></i>
+            </div>
+          </a>
+          <div class="review_options_search__dropdown_menu js-dialog-iframe-height">
+            
+              <ul class="review_options_search__values"style="margin-left:10px;">
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="-150" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_0">
+                    <label for="review_option_type_3_0">149 cm 이하</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="150-153" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_1">
+                    <label for="review_option_type_3_1">150 - 152 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="153-156" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_2">
+                    <label for="review_option_type_3_2">153 - 155 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="156-159" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_3">
+                    <label for="review_option_type_3_3">156 - 158 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="159-162" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_4">
+                    <label for="review_option_type_3_4">159 - 161 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="162-165" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_5">
+                    <label for="review_option_type_3_5">162 - 164 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="165-168" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_6">
+                    <label for="review_option_type_3_6">165 - 167 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="168-171" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_7">
+                    <label for="review_option_type_3_7">168 - 170 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="171-174" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_8">
+                    <label for="review_option_type_3_8">171 - 173 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="174-177" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_9">
+                    <label for="review_option_type_3_9">174 - 176 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="177-180" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_10">
+                    <label for="review_option_type_3_10">177 - 179 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="180" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_11">
+                    <label for="review_option_type_3_11">180 cm 이상</label>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </li>
+      <br><br>
+        <li class="review_options_search__option_type">
+          <a class="review_options_search__option_type_link js-link-review-option-type">
+            <div class="review_options_search__option_type_name" title="몸무게"><small><strong>몸무게</strong></small></div>
+            <div class="review_options_search__option_type_dropdown_button">
+              <i class="review_options_search__option_type_icon sprites-icon-drop-down-s"></i>
+            </div>
+          </a>
+          <div class="review_options_search__dropdown_menu js-dialog-iframe-height">
+            
+              <ul class="review_options_search__values"style="margin-left:11px;">
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="-45" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_0">
+                    <label for="review_option_type_4_0">44 kg 이하</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="45-48" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_1">
+                    <label for="review_option_type_4_1">45 - 47 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="48-51" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_2">
+                    <label for="review_option_type_4_2">48 - 50 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="51-54" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_3">
+                    <label for="review_option_type_4_3">51 - 53 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="54-57" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_4">
+                    <label for="review_option_type_4_4">54 - 56 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="57-60" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_5">
+                    <label for="review_option_type_4_5">57 - 59 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="60-63" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_6">
+                    <label for="review_option_type_4_6">60 - 62 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="63-66" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_7">
+                    <label for="review_option_type_4_7">63 - 65 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="66-69" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_8">
+                    <label for="review_option_type_4_8">66 - 68 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="69-72" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_9">
+                    <label for="review_option_type_4_9">69 - 71 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="72-75" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_10">
+                    <label for="review_option_type_4_10">72 - 74 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="75-78" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_11">
+                    <label for="review_option_type_4_11">75 - 77 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="78-81" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_12">
+                    <label for="review_option_type_4_12">78 - 80 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="81" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_13">
+                    <label for="review_option_type_4_13">81 kg 이상</label>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </li>
+      <br><br>
+        <li class="review_options_search__option_type">
+          <a class="review_options_search__option_type_link js-link-review-option-type">
+            <div class="review_options_search__option_type_name" title="평소사이즈-상의"><small><strong>평소사이즈</strong></small></div>
+            <div class="review_options_search__option_type_dropdown_button">
+              <i class="review_options_search__option_type_icon sprites-icon-drop-down-s"></i>
+            </div>
+          </a>
+          <div class="review_options_search__dropdown_menu js-dialog-iframe-height">
+            
+              <ul class="review_options_search__values"style="margin-left:12px;">
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="XS" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_0">
+                    <label for="review_option_type_5_0">XS</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="S" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_1">
+                    <label for="review_option_type_5_1">S</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="M" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_2">
+                    <label for="review_option_type_5_2">M</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="L" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_3">
+                    <label for="review_option_type_5_3">L</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="XL" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_4">
+                    <label for="review_option_type_5_4">XL</label>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </li>
+      <br>
+    </ul>
+  </div>
+
+
+    </div>
+						
+						
+						
+							<!-- 정렬 부분 버튼 -->
+									
+									<hr style="border:1px solid lightgray;margin-top:2px;">
+									<br><br>
 								<div class="reviews_index__no_data_message">아직 작성한 리뷰가
 									없습니다.</div>
 								<ul class="reviews_index__reviews reviews">
@@ -1012,7 +1254,7 @@ function washing_tip(){
 									<!-- 리뷰1줄 시작 -->
 									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1086,9 +1328,9 @@ function washing_tip(){
 										</div>
 									</li>
 									<!-- 리뷰1 끝 -->
-									<!-- 리뷰2 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1161,10 +1403,10 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰2 끝 -->
-									<!-- 리뷰3 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1237,10 +1479,10 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰3 끝 -->
-									<!-- 리뷰4 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1313,10 +1555,10 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰4 끝 -->
-									<!-- 리뷰5 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1389,15 +1631,15 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰5 끝 -->
+									<!-- 리뷰1 끝 -->
+									
 									
 									<!-- 리뷰1줄 끝 -->
 									<br><br>
 									<!-- 리뷰2줄 시작 -->
-									
-									<!-- 리뷰6 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1470,21 +1712,21 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰6 끝 -->
+									<!-- 리뷰1 끝 -->
 									
 
 								</ul>
 							</div>
 <font align="center"style>
-1&nbsp;&nbsp;...&nbsp;
-<a style="border-radius:5px; border:1px solid black;background:black;color:white;">&nbsp;6&nbsp;</a>&nbsp;&nbsp;
-<a>7</a>&nbsp;&nbsp;
-<a>8</a>&nbsp;&nbsp;
-<a>9</a>&nbsp;&nbsp;
-<a>10</a>&nbsp;&nbsp;
-&nbsp;...&nbsp;&nbsp;13
+<Strong>1</Strong>&nbsp;&nbsp;...&nbsp;
+<a style="border-radius:5px; border:1px solid black;background:black;color:white;">&nbsp;<Strong>6</Strong>&nbsp;</a>&nbsp;&nbsp;
+<a><Strong>7</Strong></a>&nbsp;&nbsp;
+<a><Strong>8</Strong></a>&nbsp;&nbsp;
+<a><Strong>9</Strong></a>&nbsp;&nbsp;
+<a><Strong>10</Strong></a>&nbsp;&nbsp;
+&nbsp;...&nbsp;&nbsp;<Strong>13</Strong>
 </font>
-						</div>
+						
 					</div>
 				</div>
 			</div>
