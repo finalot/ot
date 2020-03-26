@@ -36,6 +36,9 @@
 	td.denied {
     color: #fa4251;
 	}
+	.btn-danger{
+	    margin-left: 40%;
+	}
     </style>
     
     
@@ -85,7 +88,7 @@
                         </li>
                         
                         
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -101,7 +104,7 @@
                             </ul>
                         </li>
                         
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -115,27 +118,32 @@
                         </li>
                         
                         
-                        
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                                <li>
+                                    <a class="js-arrow" href="productReturnList.jsp">
                                 <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="productReturn.jsp">교환 / 반품신청</a>
                                 </li>
-                                <li>
-                                    <a href="productReturnList.jsp">교환 / 반품관리</a>
-                                </li>
-                            </ul>
-                        </li>
                  		<li>
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                        <li>
-                           <a href="qna.jsp">
-                               <i class="fa fa-users"></i>Q & A 관리</a>
-                       </li>
+                         <li class="active has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-shopping-cart"></i>Q & A</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            	<li>
+                                    <a href="">상품문의</a>
+                                </li>
+                                <li>
+                                    <a href="productAdd.jsp">배송전 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">입금확인/입급자 변경 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">상품불량 및 오배송 문의</a>
+                                </li>
+                            </ul>
+                        </li>
                         
                     </ul>
                 </nav>
@@ -171,6 +179,7 @@
                         <th>가격</th>
                         <th>할인가</th>
                         <th>상태</th>
+                        <th>삭제</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -180,7 +189,10 @@
                         <td>뽀글이 점퍼</td>
                         <td>34,000</td>
                         <td>5%</td>
-                        <td class="process">Processed</td>
+                          <td class="process">Processed</td>
+                        <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>아우터</td>
@@ -189,6 +201,9 @@
                         <td>34,000</td>
                         <td>5%</td>
                         <td class="process">Processed</td>
+                        <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>아우터</td>
@@ -197,6 +212,9 @@
                         <td>34,000</td>
                         <td>5%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>아우터</td>
@@ -205,6 +223,9 @@
                         <td>34,000</td>
                         <td>5%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>아우터</td>
@@ -213,6 +234,9 @@
                         <td>34,000</td>
                         <td>5%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>상의</td>
@@ -221,6 +245,9 @@
                         <td>19,000</td>
                         <td>30%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>상의</td>
@@ -229,6 +256,9 @@
                         <td>19,000</td>
                         <td>30%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -237,6 +267,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                              <td>하의</td>
@@ -245,6 +278,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                              <td>하의</td>
@@ -253,6 +289,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -261,6 +300,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -269,6 +311,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                        	<td>하의</td>
@@ -277,6 +322,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -285,6 +333,9 @@
                         <td>32,000</td>
                         <td>20%</td>
                         <td class="process">Processed</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -293,6 +344,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -301,6 +355,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -309,6 +366,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -317,6 +377,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -325,6 +388,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -333,6 +399,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -341,6 +410,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -349,6 +421,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -357,6 +432,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -365,6 +443,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -373,6 +454,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                     <tr>
                         <td>하의</td>
@@ -381,6 +465,9 @@
                         <td>50,000</td>
                         <td>1%</td>
                         <td class="denied">denied</td>
+                         <td style="align:center;">
+                       		<button type="button" class="btn btn-danger">삭제</button>
+                       	</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -391,6 +478,7 @@
                         <th>가격</th>
                         <th>할인가</th>
                         <th>상태</th>
+                         <th>삭제</th>
                     </tr>
                 </tfoot>
             </table>

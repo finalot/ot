@@ -146,7 +146,7 @@ th{
     
     
     <%@ include file="a_header.jsp" %>
-  <!-- MENU SIDEBAR-->
+ <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="todaymain.jsp">
@@ -187,7 +187,7 @@ th{
                         </li>
                         
                         
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -203,7 +203,7 @@ th{
                             </ul>
                         </li>
                         
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -217,27 +217,32 @@ th{
                         </li>
                         
                         
-                        
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                                <li>
+                                    <a class="js-arrow" href="productReturnList.jsp">
                                 <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="productReturn.jsp">교환 / 반품신청</a>
                                 </li>
-                                <li>
-                                    <a href="productReturnList.jsp">교환 / 반품관리</a>
-                                </li>
-                            </ul>
-                        </li>
                  		<li>
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                        <li>
-                           <a href="qna.jsp">
-                               <i class="fa fa-users"></i>Q & A 관리</a>
-                       </li>
+                         <li class="active has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-shopping-cart"></i>Q & A</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            	<li>
+                                    <a href="">상품문의</a>
+                                </li>
+                                <li>
+                                    <a href="productAdd.jsp">배송전 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">입금확인/입급자 변경 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">상품불량 및 오배송 문의</a>
+                                </li>
+                            </ul>
+                        </li>
                         
                     </ul>
                 </nav>
@@ -390,8 +395,10 @@ th{
         	</td>
         </tr>
     </table>
-    <div align="center" style="margin-bottom:3%">
+  <div style="height: 130px;">
+          <div align="center" style="margin-bottom:3%">
     <button id="product-info-add" style="width: 100px; height: 40px;border-radius: 10px;;background: black; color: white">상품추가</button>
+    </div>
     </div>
     <div style="border: 1px solid #dfe3e6;margin-left: 5%;margin-right: 5%;padding-left: 1%;">
     <h4 > <span style="color:red">*</span>재고설정</h4>

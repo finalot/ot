@@ -86,6 +86,9 @@ overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
 background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;
 
 }
+a:cursor{
+	hand;
+}
  </style>
 </head>
 <body class="animsition">

@@ -2357,7 +2357,7 @@ function washing_tip(){
 
 
 <!-- Footer -->
-	<%@include file="footer.jsp"%>
+
 
 
 	<!-- Back to top -->
@@ -2371,7 +2371,9 @@ function washing_tip(){
 	<div id="dropDownSelect1"></div>
 	<div id="dropDownSelect2"></div>
 
-
+<div>
+<%@include file="footer.jsp"%>
+</div>
 	
 
 	<!--===============================================================================================-->
@@ -2468,6 +2470,7 @@ function washing_tip(){
 
 	</script>
 	
-	
 </body>
+		
+
 </html>
