@@ -130,7 +130,7 @@ a{
 								<td class="left subject"><img
 									src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif"
 									alt="비밀글" class="ec-common-rwd-image"> <a
-									href="/board/product/read.html?no=818716&amp;board_no=6">[상품문의]</a>
+									href="/ot/mypage_board_view.jsp">[상품문의]</a>
 									<img
 									src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif"
 									alt="NEW" class="ec-common-rwd-image"></td>
