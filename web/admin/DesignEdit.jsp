@@ -89,7 +89,7 @@ th{
 
    
     <%@ include file="a_header.jsp" %>
-  <!-- MENU SIDEBAR-->
+ <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="todaymain.jsp">
@@ -146,7 +146,7 @@ th{
                             </ul>
                         </li>
                         
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -160,27 +160,32 @@ th{
                         </li>
                         
                         
-                        
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                                <li>
+                                    <a class="js-arrow" href="productReturnList.jsp">
                                 <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="productReturn.jsp">교환 / 반품신청</a>
                                 </li>
-                                <li>
-                                    <a href="productReturnList.jsp">교환 / 반품관리</a>
-                                </li>
-                            </ul>
-                        </li>
-                 		<li class="active has-sub">
+                 		<li>
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                        <li>
-                           <a href="qna.jsp">
-                               <i class="fa fa-users"></i>Q & A 관리</a>
-                       </li>
+                         <li class="active has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-shopping-cart"></i>Q & A</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            	<li>
+                                    <a href="">상품문의</a>
+                                </li>
+                                <li>
+                                    <a href="productAdd.jsp">배송전 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">입금확인/입급자 변경 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">상품불량 및 오배송 문의</a>
+                                </li>
+                            </ul>
+                        </li>
                         
                     </ul>
                 </nav>
@@ -215,52 +220,52 @@ th{
         	<th ><span style="color: red">*</span> 메인배너</th>
         	<td class="main-design">
         		<div style="display: flex;margin-top: 3%"><span>FILE 1</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>
 				
 				<div style="display: flex;"><span>FILE 2</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		   
         		
 				<div style="display: flex;"><span>FILE 3</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		    		    
 				<div style="display: flex;"><span>FILE 4</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		        		
         		
 				<div style="display: flex;"><span>FILE 5</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    						
 				
 				<div style="display: flex;"><span>FILE 6</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		        	   
         		
         		
 				<div style="display: flex;"><span>FILE 7</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		        		
 				<div style="display: flex;"><span>FILE 8</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		    		    
         		
         		
 				<div style="display: flex;"><span>FILE 9</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    						
 				
 				<div style="display: flex;"><span>FILE 10</span><input class="mainbaner" type="file">
-        		<span>이벤트 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
+        		<span>메인배너 문구</span><input style="margin-left:2%;border: 1px solid #333330" class="main-text" type="text">
         		<span>바로가기 링크</span><input style="margin-left:2%;border: 1px solid #333330" class="main-link" type="text">
         		</div>    		        	
         		</td>
@@ -301,6 +306,9 @@ th{
         	
         	</tr>
     </table>
+    <div align="center">
+    <button style="width: 90px; height: 30px;border-radius: 10px; background: black;color: white;margin-bottom: 30px"> 배너등록 </button>
+    </div>   
    		
     
     	
@@ -401,12 +409,9 @@ th{
         }
         }
         </script>
-        
-        
     
 
 
-    </script>
      <!-- Jquery JS-->
      <script src="vendor/jquery-3.2.1.min.js"></script>
      <!-- Bootstrap JS-->
@@ -432,3 +437,5 @@ th{
      <script src="js/main.js"></script>
 </body>
 </html>
+
+
