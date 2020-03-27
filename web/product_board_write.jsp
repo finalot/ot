@@ -43,6 +43,10 @@
  text-align: left !important;
 	padding-left: 1% !important;
 }
+.ec-base-table.typeWrite{
+	border: none;
+}
+
 </style>
 <body>
 	<%@include file="header.jsp" %>	

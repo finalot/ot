@@ -42,6 +42,10 @@
 .ec-base-table.typeWrite td {
     padding: 0px 0px 0px !important;
 }
+.ec-base-table.typeWrite{
+	border: none;
+}
+
 
 </style>
 <body>

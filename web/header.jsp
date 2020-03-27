@@ -692,10 +692,10 @@
 					<h3 class="helve">Board</h3>
 					<div>
 						<h4 class="helve">
-							<a href="/board/qna_index.html">Q&amp;A</a>
+							<a href="FaQ.jsp">Q&amp;A</a>
 						</h4>
 						<ul>
-							<li><a href="/board/qna_index.html">자주하는 질문</a></li>
+							<li><a href="FaQ.jsp">자주하는 질문</a></li>
 							<li><a href="product_board.jsp">상품문의</a></li>
 							<li><a href="delivery_board.jsp">배송문의</a></li>
 							<li><a href="delivery_cancel.jsp">배송전취소/변경</a></li>

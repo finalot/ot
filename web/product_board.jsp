@@ -118,7 +118,7 @@
        							<br>
        							<div class="ppro">
        							<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
-                       			 <a id="idMsg10" style="color:#555555;">
+                       			 <a id="idMsg10" style="color:#555555;" href="product_board_detail.jsp">
                       			  [상품문의]</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
        							</div>
        						</td>
@@ -151,7 +151,7 @@
        							<br>
        							<div class="ppro">
        							<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
-                       			 <a id="idMsg10" style="color:#555555;">
+                       			 <a id="idMsg10" style="color:#555555;" href="product_board_detail.jsp">
                       			  [상품문의]</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
        							</div>
        						</td>
