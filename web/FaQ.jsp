@@ -22,7 +22,7 @@
     display: block;
     font-size: 34px;
     padding: 10px 20px;
-    font-weight: 900;
+    font-weight: 600;
     font-family: 'HelveticaLTPro','Arial';
     *display: inline;
     *zoom: 1;
