@@ -47,7 +47,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body class="animsition">
+<body class="animsition" style="overflow-x:hidden;">
 
 	<!-- Header -->
 	<%@include file="header.jsp"%>
@@ -2349,7 +2349,7 @@ function washing_tip(){
 
 	<!-- Relate Product -->
 	<section class="relateproduct bgwhite p-t-45 p-b-138">
-		<div class="container">
+	
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">With Item</h3>
 			</div>
@@ -2664,22 +2664,23 @@ function washing_tip(){
 						</div>
 					</div>
 				</div>
-			</div>
+			
 </div>
+
 </section>
-	
 
 
-<div style="width:159.3%;margin-left:-30%;">
-<!-- Footer -->
-<%@include file="footer.jsp"%>
 
-</div>
+
 	<!-- Container Selection -->
 	<div id="dropDownSelect1"></div>
 	<div id="dropDownSelect2"></div>
 
-	
+<div style=" width: 160%; margin-left:-30%;">
+<!-- Footer -->
+<%@include file="footer.jsp"%>
+</div>
+
 
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>

@@ -54,7 +54,7 @@
 		</h1>
 	</section>
 	<div class="container bgwhite " style="max-width:95%;">
-		<div class="flex-w flex-sb" style="width:100%;margin-left:5.3%;">
+		<div class="flex-w flex-sb" style="width:80%;margin-left:13%;">
 
 				
 				<style class="modalcss">
@@ -135,7 +135,7 @@
 
 						<!-- Modal content -->
 						<div class="wrap-dropdown-content p-t-15 bo7 p-b-14 modalcss"
-							style="width: 98%; height: 100%; margin-top: 60px;margin-left:1%;">
+							style="width: 98%; height: 100%; margin-top: 60px;margin-left:3.2%;">
 							
 
 							<div class="page">
@@ -415,9 +415,11 @@
 }
 </style>
 									<br><br><br>
-									<!-- 정렬 부분 버튼 -->
+									
+									
 						<div id=sortButton>
 									
+						<!-- 정렬 부분 버튼 -->
 								<!-- Button -->
 								<button id="scoreSort" class=" bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
 						style=" width: 7%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>평점순</Strong> <small>(100)</small></button>
@@ -434,14 +436,13 @@
 								<button id="newSort"class=" bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
 						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>최신순</Strong></button>
 									
-						</div>
 						<!-- 정렬 부분 버튼 -->
-						
+						</div>
 						
 						<div class="products_reviews_header__lower"  >
       
   <div class="review_options_search js-review-options-search" >
-    
+    	
     <ul class="review_options_search__option_types"style="border:2px solid lightgray;margin-top:17px;margin-left:-40px;color:#c3b798;width:10%; font-size:14px;">
       <br>
         <li class="review_options_search__option_type">
@@ -655,13 +656,28 @@
 						
 						
 						
-							<!-- 정렬 부분 버튼 -->
-									
 									<hr style="border:1px solid lightgray;margin-top:2px;">
 									<br><br>
+									<select style="margin-bottom:3.1%;">
+									<option>Best20</option>
+									<option>clothing</option>
+									<option>asd</option>
+									</select>
+									<!-- 검색 -->
+									
+						<form class="submitSearch" action="#" style="margin-top:-5%;position:relative;left:8%;">
+							<input type="text"  name="search"
+							 style="border: 1px solid gray !important; border-radius: 5px; background: none;"
+								placeholder="Search..">
+							<button type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form><br>
+						<!-- 검색 -->
 								<div class="reviews_index__no_data_message">아직 작성한 리뷰가
 									없습니다.</div>
 								<ul class="reviews_index__reviews reviews" style="margin-top:25px;">
+								
 								
 									<!-- 리뷰1줄 시작 -->
 									<!-- 리뷰1 -->
@@ -2240,7 +2256,7 @@
 							</div>
 	 
 					</div><br><br><br><br><br><br>
-<div style="position:relative;left:39.4%;">
+<div style="position:relative;left:-46.5%;">
 <Strong>1</Strong>&nbsp;&nbsp;...&nbsp;
 <a style="border-radius:5px; border:1px solid black;background:black;color:white;">&nbsp;<Strong>6</Strong>&nbsp;</a>&nbsp;&nbsp;
 <a><Strong>7</Strong></a>&nbsp;&nbsp;

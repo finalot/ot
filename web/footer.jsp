@@ -126,7 +126,7 @@
 					</li>
 
 					<li class="p-b-9">
-						<a href="#" class="s-text7">
+						<a href="review.jsp" class="s-text7">
 							REVIEW
 						</a>
 					</li>
