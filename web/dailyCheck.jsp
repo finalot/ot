@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+</style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 	<link rel="stylesheet" href="./css/dailyCheck.css">
@@ -10,24 +12,27 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
-		<div align="center" style="margin-top: 20%;background: #f9f9f9;padding: 5%;">
-		<img src="./images/icons/ot.png" alt="로고" style="margin-bottom: 5%;height: 100px;width: 200px;">
+		<div align="center" style="margin-top: 5%;background: #f9f9f9;padding: 5%;">
 		<h2 style="font-size: 70px;font-weight: bold;">Daily Check Event!!</h2><br><br>
 		<p style="font-size: 22px;color: black;">하단의 출석체크 버튼을 눌러주세요! <br>
 		누적 7일이상 출석하시면 Ot.에서 사용하실수 있는 쿠폰을 드립니다!
 		</p>
 		</div>
 		
-<div class="container" style="max-width: 100%; padding-right: 35px;" align="center">
+<div class="container" style="margin-top: -5%;max-width: 80%; padding-right: 35px;" align="center">
+
   <div class="my-calendar clearfix">
+  
     <div class="clicked-date">
       <div class="cal-day"></div>
       <div class="cal-date"></div>
     </div>
-    <div class="calendar-box">
-      <div class="ctr-box clearfix">
+    
+    <div class="calendar-box" >
+      <div class="ctr-box clearfix" >
         <button type="button" title="prev" class="btn-cal prev">
         </button>
+
         <span class="cal-year"style="font-size: 30px;"></span>
         <span style="font-size: 30px;">-</span>
         <span class="cal-month" style="font-size: 30px;"></span>
@@ -35,16 +40,17 @@
         <button type="button" title="next" class="btn-cal next">
         </button>
       </div>
+        	<button id="dailyCheck" class="btn_3" style="margin-bottom: 4%;">출석체크</button>
       <table class="cal-table">
-        <thead>
+        <thead  style="border-top:1px solid lightgray;">
           <tr>
-            <th style="color: red">일</th>
-            <th>월</th>
-            <th>화</th>
-            <th>수</th>
-            <th>목</th>
-            <th>금</th>
-            <th>토</th>
+            <th style="color: red;text-align:center;">일</th>
+            <th style="text-align:center;">월</th>
+            <th style="text-align:center;">화</th>
+            <th style="text-align:center;">수</th>
+            <th style="text-align:center;">목</th>
+            <th style="text-align:center;">금</th>
+            <th style="text-align:center;">토</th>
           </tr>
         </thead>
         <tbody class="cal-body"></tbody>
@@ -53,9 +59,7 @@
   </div>
   <!-- // .my-calendar -->
 </div>
-	<div	align="center">
-	<button id="dailyCheck" class="btn_3" style="margin-bottom: 10%;">출석체크</button>
-</div>
+	
 <jsp:include page="footer.jsp"/>
 	<script type="text/javascript" src="./js/dailyCheck.js"></script>
 
@@ -71,7 +75,7 @@ $(function(){
 $('#dailyCheck').click(function(){
 	if($('#checkmark').text() == ""){
 		
-	$('.cal-table td.today').append('<p id="checkmark">Ot.</p>')
+	$('.cal-table td.today').append('<img src="./images/icons/ot.png" alt="로고" style="position:relative;left: 20%;height: auto;width: 60px;">')
 	}else{
 		alert('이미출석체크 하였습니다')
 	};
