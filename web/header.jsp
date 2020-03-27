@@ -245,7 +245,7 @@
 
 				<!-- Logo2 -->
 				<a href="index.jsp" class="logo2"> <img
-					src="images/icons/ot.png" alt="IMG-LOGO" style="max-height: 35px;">
+					src="images/icons/ot.png" alt="IMG-LOGO" style="max-height: 40px;position:relative;left:20%;">
 				</a>
 
 
@@ -724,7 +724,7 @@
 					</div>
 					<div>
 						<h4 class="helve">
-							<a href="/board/product/list.html?board_no=4">REVIEW</a>
+							<a href="review.jsp">REVIEW</a>
 						</h4>
 					</div>
 				</div>
