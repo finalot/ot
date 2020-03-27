@@ -156,7 +156,7 @@ th, td {
         				</span>
         				
 				        <span class="gRight">
-				            <a href="register.html" class="yg_btn yg_btn1 yg_btn_border_444" alt="배송지 등록">배송지등록</a>
+				            <a href="/ot/mypage_address_register.jsp" class="yg_btn yg_btn1 yg_btn_border_444" alt="배송지 등록">배송지등록</a>
 				        </span>
     				</div>
 				</div>

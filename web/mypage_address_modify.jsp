@@ -65,7 +65,7 @@ input {
 			</div>
 			
 			<form id="frmAddr" name="" action="/exec/front/Myshop/Addr/?mode=Update&amp;ma_idx=843124&amp;return_url=%2Fmyshop%2Faddr%2Flist.html" method="post" target="_self" enctype="multipart/form-data">
-<input id="__address_addr1" name="__address_addr1" value="경기도 고양시 일산서구 덕이동 730-3" type="hidden">
+<input id="__address_addr1" name="__address_addr1" value="" type="hidden">
 <input id="__city_name" name="__city_name" value="" type="hidden">
 <input id="__state_name" name="__state_name" value="" type="hidden">
 <input id="__use_foreign_country_list" name="__use_foreign_country_list" value="F" type="hidden">
