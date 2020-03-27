@@ -3,6 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+
+
+
+
+</style>
 <title>Product Detail</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,7 +64,7 @@
 	</div>
 <br>
 	<!-- Product Detail -->
-	<div class="container bgwhite p-t-35 p-b-80">
+	<div class="container bgwhite p-t-35 p-b-80" style="padding-bottom:0px;padding-left:0px;padding-right:0px;width:1500px;">
 		<div class="flex-w flex-sb">
 			<div class="w-size13 p-t-30 respon5">
 				<div class="wrap-slick3 flex-sb flex-w">
@@ -98,64 +104,13 @@
 
 				<p class="s-text8 p-t-10">핏한 착용감과 세련된 색감으로 간편히 입을 수 있는 크롭 나시입니다.
 				</p>
-				<br> <br>
-				<!--  -->
-
-				<div class="p-t-33 p-b-60"
-					style="margin-left: -10%; height: 400px; overflow-y: scroll;">
-					<!-- 셀렉트시작 -->
-					<div id="select1o" >
-					<div class="flex-m flex-w p-b-10">
-						<div class="s-text15 w-size15 t-center">Size</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-							<select class="selection-2" name="size">
-								<option>1.--------</option>
-								<option>1.XS</option>
-								<option>1.S</option>
-								<option>1.M</option>
-								<option>1.L</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flex-m flex-w">
-						<div class="s-text15 w-size15 t-center">Color</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-
-							<select class="selection-2" name="color">
-								<option>1.--------</option>
-								<option>1.블랙</option>
-								<option>1.그레이</option>
-								<option>1.그린</option>
-								<option>1.네온옐로우</option>
-							</select>
-
-							<div
-								style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
-						</div>
-					</div>
-					</div>
-					<br>
-					<!-- 셀렉트끝 -->
-					
-
-
-
-					<hr style="margin-left: 9.8%;">
-					<span class="m-text17" style="margin-left: 10%;">total&nbsp;:&nbsp;&nbsp;
-						<small id="total" class="format-money">7000</small>&nbsp;WON
+				
+				<hr>
+				
+				<span class="m-text17" ><small>total</small>&nbsp;:&nbsp;&nbsp;
+						<font id="total" class="format-money">7000</font>&nbsp;<small>WON</small>
 					</span> <br>
-					<div class="flex-r-m flex-w p-t-10">
+					<div class="flex-r-m flex-w p-t-10" style="margin-left:-39%;">
 						<div class="w-size16 flex-m flex-w">
 							<div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
 								<button onclick="optionDel();"class="num-product-down color1 flex-c-m size7 bg8 eff2">
@@ -175,77 +130,12 @@
 							<!-- 토탈계산을 위한 프로덕트 price -->
 							<input class="num-price" type="hidden" value="7000">
 
-<script>
-    var count = 2;
-function option1Add(){
-    const str = 
-  `
-      <!-- 셀렉트시작 -->
-    	<div id="select`+count+`o">
-					<div class="flex-m flex-w p-b-10">
-						<div class="s-text15 w-size15 t-center">Size</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-							<select class="selection-2" name="size">
-								<option>`+count+`.--------</option>
-								<option>`+count+`.XS</option>
-								<option>`+count+`.S</option>
-								<option>`+count+`.M</option>
-								<option>`+count+`.L</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="flex-m flex-w">
-						<div class="s-text15 w-size15 t-center">Color</div>
-
-						<div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-
-							<select class="selection-2" name="color">
-								<option>`+count+`.--------</option>
-								<option>`+count+`.블랙</option>
-								<option>`+count+`.그레이</option>
-								<option>`+count+`그린</option>
-								<option>`+count+`네온옐로우</option>
-							</select>
-
 							<div
-								style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
-							<div
-								style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
-						</div>
-					</div>
-					</div>
-					<br>
-					<!-- 셀렉트끝 -->
-      
- `;
- 
-    $("#select1o").append(str); 
-    count++;
-}
-
-
-function optionDel(){
-    $("#select"+(count-1)+"o").remove();
-    count--;
-}
-</script>
-
-
-
-							<div
-								class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
+								class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10"
+								style="width:18%;height:50px;margin-left: 12%">
 								<!-- Button -->
 								<button
-									class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
-									style="width: 60%; margin-left: 50%">
+									class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 									<small>장바구니 담기</small>
 								</button>
 							</div>
@@ -253,18 +143,154 @@ function optionDel(){
 
 							<br>
 							<br>
-
 						</div>
+						</div>
+					<br>
+					
+				<div class="p-t-33 p-b-60" 
+					style="margin-left: -10%;margin-top:-20px; height: 300px; overflow-y: scroll;">
+					
+					
+					
+					
+					<!-- 셀렉트시작 -->
+					
+					<div id="select1o">
+					<!-- 셀렉 -->
+    	
+						<div
+							style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">1.Size</div>
+
+							<div 
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 45px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								<select id="select1" style="border:none;background:none;outline: 0;width:98%;" name="size" >
+									<option>--------</option>
+									<option>XS</option>
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+								</select>
+							</div>
+						</div>
+						<div style="height: 3px;"></div>
+						<div style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">1.Color</div>
+
+							<div
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 57px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+
+								<select id="select2" style="border:none;background:none;outline: 0;width:98%;hover:black;" name="color">
+									<option>--------</option>
+									<option>블랙</option>
+									<option>그레이</option>
+									<option>그린</option>
+									<option>네온옐로우</option>
+								</select><div/>
+
+								<div
+									style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
+							</div>
+						
+					</div>
+					
+						</div>
+						<!-- 셀렉 -->
+						<br>
+					<!-- 셀렉트끝 -->
+
+					
 					</div>
 
 				</div>
+<script>
+    var count = 2;
+    
+function option1Add(){
+    
+    const str = 
+   	 `
+    <!-- 셀렉2 -->
+    	<div id="select`+count+`o">
+						<div
+							style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">`+count+`.Size</div>
+
+							<div 
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 45px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+								<select id="select1" style="border:none;background:none;outline: 0;width:98%;" name="size" >
+									<option mouseover="background:black">--------</option>
+									<option>XS</option>
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+								</select>
+							</div>
+						</div>
+						<div style="height: 3px;"></div>
+						<div style="display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -ms-align-items: center; align-items: center;">
+							<div
+								style="font-family: Montserrat-Regular; font-size: 15px; color: #666666; line-height: 1.8; width: 21%; text-align: center;">`+count+`.Color</div>
+
+							<div
+								style="padding-top: 10px; background-color: white; line-height: 20px; color: #555555; padding-left: 22px; right: 10px; height: 57px; display: block; border: 1px solid #e6e6e6; border-radius: 2px; overflow: hidden; width: 79%;">
+
+								<select id="select2" style="border:none;background:none;outline: 0;width:98%;hover:black;" name="color">
+									<option>--------</option>
+									<option>블랙</option>
+									<option>그레이</option>
+									<option>그린</option>
+									<option>네온옐로우</option>
+								</select><div/>
+
+								<div
+									style="width: 17px; height: 17px; background: black; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: gray; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #39761F; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: #E4F650; margin-left: 3px; float: left; border: 1px solid black;"></div>
+								<div
+									style="width: 17px; height: 17px; background: none; margin-left: 3px;"></div>
+							</div>
+						</div>
+						<!-- 셀렉2 -->
+						</div>
+<br id="select`+count+`a">`;
+	
+    $("#select1o").append(str); 
+    count++;
+    
+}
+
+
+function optionDel(){
+	if(count>2){
+    $("#select"+(count-1)+"o").remove();
+    $("#select"+(count-1)+"a").remove();
+    count--;}
+}
+</script>
+
 
 				<div class="p-b-45">
 					<span class="s-text8 m-r-35">oT: n-01</span> <span class="s-text8">Categories:
 						나시</span>
 				</div>
 
-				<!--  -->
+				
 				<!-- <div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
 					<h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
 						Description
@@ -417,14 +443,16 @@ function washing_tip(){
     </div>
     					<button class="flex-c-m bg4 bo-rad-23 hov1 s-text1 trans-0-4" onclick="reviewOn();" 
 						style="position: relative; left: 55%; width: 7%; height: 20px; font-size: 12px; float:left;background:#c3b798; ">리뷰 작성하기</button>
-    					<button class="flex-c-m bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+    					<button class="flex-c-m bg4 bo-rad-23 hov1 s-text1 trans-0-4" onclick="location.href='review.jsp'"
 						style="position: relative; left: 56%; width: 7%; height: 20px; font-size: 12px; ">리뷰 게시판</button>
     								<hr>
 									<br>
 									<!-- 리뷰 작성하기부분 -->
 
 								<div id="reviewWrite"
-									style="display: none; padding: 20px 0px 20px 29px; border-width: 1px; border-style: solid; border-color: rgb(218, 218, 218); border-image: initial; height: 22%; background: white; margin-bottom: 3%;">
+									style="display: none; -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;padding: 20px 0px 20px 29px; border-width: 1px; border-style: solid; border-color: rgb(218, 218, 218); border-image: initial; height: 22%; background: white; margin-bottom: 3%;">
 
 									<form action="#">
 										<label>키 : <input type="text"
@@ -772,7 +800,9 @@ function washing_tip(){
     background-position: -35px -88px;
 }
 </style>
-									<div  style="margin-bottom:5%;"class="products_reviews_summary
+									<div  style="margin-bottom:5%;-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;"class="products_reviews_summary
            products_reviews_summary--small_with_score
            products_reviews_summary--without_write_form" data-url="/black-up.kr/products/reviews?app=0&amp;atarget=reviews&amp;iframe=1&amp;iframe_id=crema-product-reviews-1&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fproduct%2Fblack-up-%25EB%25B2%25A0%25EC%259D%25B4%25EC%25A7%2581-%25ED%2581%25AC%25EB%25A1%25AD-%25EC%25BB%25AC%25EB%259F%25AC%25EB%2582%2598%25EC%258B%259C%2F12124%2Fcategory%2F97%2Fdisplay%2F1%2F%3F&amp;product_code=12124&amp;widget_env=100">
     <div class="products_reviews_summary__inner">
@@ -983,6 +1013,250 @@ function washing_tip(){
     </div>
   </div>
 									<!-- 리뷰평점부분끝 -->
+									<!-- 정렬 부분 버튼 -->
+						<div id=sortButton>
+									
+								<!-- Button -->
+								<button id="scoreSort" class=" bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style=" width: 7%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>평점순</Strong> <small>(100)</small></button>
+									
+									&nbsp;|
+									
+								<!-- Button -->
+								<button id="recommandSort"class="bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>추천순</Strong></button>
+									
+									&nbsp;|
+									
+								<!-- Button -->
+								<button id="newSort"class=" bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
+						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>최신순</Strong></button>
+									
+						</div>
+						<!-- 정렬 부분 버튼 -->
+						
+						
+						<div class="products_reviews_header__lower" >
+      
+  <div class="review_options_search js-review-options-search">
+    
+    <ul class="review_options_search__option_types"style="border:2px solid lightgray;margin-top:17px;color:#c3b798;">
+      <br>
+        <li class="review_options_search__option_type">
+          <a class="review_options_search__option_type_link js-link-review-option-type">
+            <div class="review_options_search__option_type_name" title="키"><small><strong>키</strong></small></div>
+            <div class="review_options_search__option_type_dropdown_button">
+              <i class="review_options_search__option_type_icon sprites-icon-drop-down-s"></i>
+            </div>
+          </a>
+          <div class="review_options_search__dropdown_menu js-dialog-iframe-height">
+            
+              <ul class="review_options_search__values"style="margin-left:10px;">
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="-150" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_0">
+                    <label for="review_option_type_3_0">149 cm 이하</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="150-153" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_1">
+                    <label for="review_option_type_3_1">150 - 152 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="153-156" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_2">
+                    <label for="review_option_type_3_2">153 - 155 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="156-159" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_3">
+                    <label for="review_option_type_3_3">156 - 158 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="159-162" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_4">
+                    <label for="review_option_type_3_4">159 - 161 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="162-165" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_5">
+                    <label for="review_option_type_3_5">162 - 164 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="165-168" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_6">
+                    <label for="review_option_type_3_6">165 - 167 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="168-171" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_7">
+                    <label for="review_option_type_3_7">168 - 170 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="171-174" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_8">
+                    <label for="review_option_type_3_8">171 - 173 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="174-177" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_9">
+                    <label for="review_option_type_3_9">174 - 176 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="177-180" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_10">
+                    <label for="review_option_type_3_10">177 - 179 cm</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_3" value="180" class="checkbox-review-option-search" style="border:none;" id="review_option_type_3_11">
+                    <label for="review_option_type_3_11">180 cm 이상</label>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </li>
+      <br><br>
+        <li class="review_options_search__option_type">
+          <a class="review_options_search__option_type_link js-link-review-option-type">
+            <div class="review_options_search__option_type_name" title="몸무게"><small><strong>몸무게</strong></small></div>
+            <div class="review_options_search__option_type_dropdown_button">
+              <i class="review_options_search__option_type_icon sprites-icon-drop-down-s"></i>
+            </div>
+          </a>
+          <div class="review_options_search__dropdown_menu js-dialog-iframe-height">
+            
+              <ul class="review_options_search__values"style="margin-left:11px;">
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="-45" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_0">
+                    <label for="review_option_type_4_0">44 kg 이하</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="45-48" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_1">
+                    <label for="review_option_type_4_1">45 - 47 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="48-51" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_2">
+                    <label for="review_option_type_4_2">48 - 50 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="51-54" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_3">
+                    <label for="review_option_type_4_3">51 - 53 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="54-57" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_4">
+                    <label for="review_option_type_4_4">54 - 56 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="57-60" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_5">
+                    <label for="review_option_type_4_5">57 - 59 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="60-63" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_6">
+                    <label for="review_option_type_4_6">60 - 62 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="63-66" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_7">
+                    <label for="review_option_type_4_7">63 - 65 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="66-69" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_8">
+                    <label for="review_option_type_4_8">66 - 68 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="69-72" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_9">
+                    <label for="review_option_type_4_9">69 - 71 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="72-75" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_10">
+                    <label for="review_option_type_4_10">72 - 74 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="75-78" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_11">
+                    <label for="review_option_type_4_11">75 - 77 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="78-81" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_12">
+                    <label for="review_option_type_4_12">78 - 80 kg</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_4" value="81" class="checkbox-review-option-search" style="border:none;" id="review_option_type_4_13">
+                    <label for="review_option_type_4_13">81 kg 이상</label>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </li>
+      <br><br>
+        <li class="review_options_search__option_type">
+          <a class="review_options_search__option_type_link js-link-review-option-type">
+            <div class="review_options_search__option_type_name" title="평소사이즈-상의"><small><strong>평소사이즈</strong></small></div>
+            <div class="review_options_search__option_type_dropdown_button">
+              <i class="review_options_search__option_type_icon sprites-icon-drop-down-s"></i>
+            </div>
+          </a>
+          <div class="review_options_search__dropdown_menu js-dialog-iframe-height">
+            
+              <ul class="review_options_search__values"style="margin-left:12px;">
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="XS" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_0">
+                    <label for="review_option_type_5_0">XS</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="S" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_1">
+                    <label for="review_option_type_5_1">S</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="M" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_2">
+                    <label for="review_option_type_5_2">M</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="L" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_3">
+                    <label for="review_option_type_5_3">L</label>
+                  </li>
+                
+                  <li class="review_options_search__value">
+                    <input type="checkbox" name="option_5" value="XL" class="checkbox-review-option-search" style="border:none;" id="review_option_type_5_4">
+                    <label for="review_option_type_5_4">XL</label>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </li>
+      <br>
+    </ul>
+  </div>
+
+
+    </div>
+						
+						
+						
+							<!-- 정렬 부분 버튼 -->
+									
+									<hr style="border:1px solid lightgray;margin-top:2px;">
+									<br><br>
 								<div class="reviews_index__no_data_message">아직 작성한 리뷰가
 									없습니다.</div>
 								<ul class="reviews_index__reviews reviews">
@@ -990,7 +1264,9 @@ function washing_tip(){
 									<!-- 리뷰1줄 시작 -->
 									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1064,9 +1340,11 @@ function washing_tip(){
 										</div>
 									</li>
 									<!-- 리뷰1 끝 -->
-									<!-- 리뷰2 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1139,10 +1417,12 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰2 끝 -->
-									<!-- 리뷰3 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1215,10 +1495,12 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰3 끝 -->
-									<!-- 리뷰4 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1291,10 +1573,12 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰4 끝 -->
-									<!-- 리뷰5 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1367,15 +1651,14 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰5 끝 -->
-									
+									<!-- 리뷰1 끝 -->
 									<!-- 리뷰1줄 끝 -->
-									<br><br>
-									<!-- 리뷰2줄 시작 -->
-									
-									<!-- 리뷰6 -->
+									<!-- 리뷰2줄 시작-->
+									<!-- 리뷰1 -->
 									<li class="reviews_index_gallery_review"
-										style="width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 3.8%; margin-top: -1%;">
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
 										<div class="photo_review_thumbnail js-link-fullscreen-popup"
 											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
 											<div class="photo_review_thumbnail__thumbnail_container">
@@ -1448,24 +1731,339 @@ function washing_tip(){
 											</div>
 										</div>
 									</li>
-									<!-- 리뷰6 끝 -->
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
+									<li class="reviews_index_gallery_review"
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
+										<div class="photo_review_thumbnail js-link-fullscreen-popup"
+											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
+											<div class="photo_review_thumbnail__thumbnail_container">
+												<ul>
+													<li class="photo_review_thumbnail__review_image_thumbnail">
+														<img class="js-review-image"
+														alt="그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했"
+														src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/18/07/83/image1/portrait_cb3ba3c75d217685.jpg"
+														style="width: 100%; opacity: 1; border-bottom: 2px solid lightgray;">
+													</li>
+												</ul>
+												<div class="photo_review_thumbnail__review_info">
+													<div
+														class="
+            photo_review_thumbnail__media_count_indicator
+            photo_review_thumbnail__media_count_indicator--total_count_1
+          ">
+														<div
+															class="photo_review_thumbnail__media_count_indicator_dot"></div>
+													</div>
+												</div>
+											</div>
+											<div style="border-radius: 2%; width: 90%; margin-left: 5%;"
+												class="photo_review_thumbnail__review_author_info">
+
+												<div style="margin-top: 2%; border-radius: 2%;"
+													class="photo_review_thumbnail__review_title js-translate-review-message">
+
+													그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했어요! 키가 큰편....</div>
+												<br>
+												<div style="margin-top: -2%; color: gray;"
+													class="photo_review_thumbnail__date_name_container photo_review_thumbnail__date_name_container--show_created_at">
+													<div class="photo_review_thumbnail__author_name"
+														style="float: left;">
+														<strong>이채*</strong>
+													</div>
+
+													<div class="photo_review_thumbnail__created_at"
+														style="position: relative; left: 5%;">2020. 03. 18</div>
+													<hr>
+												</div>
+											</div>
+										</div>
+
+										<div style="position: relative; top: -6%;"
+											class="reviews_index_gallery_review__review_product js-link-iframe "
+											data-url="http://www.black-up.kr/product/detail.html?cate_no=1&amp;product_no=10550">
+											<div
+												class="reviews_index_gallery_review__review_product_thumbnail">
+												<img class="" alt="(BLACK UP) 호딘 트레이닝 팬츠" width="33"
+													height="33"
+													src="//assets6.cre.ma/p/black-up-kr/products/00/00/00/20/53/image/extra_small_9743a898d5f04dba.jpg"
+													style="padding-right: 3%; opacity: 1; float: left;">
+
+											</div>
+											<div
+												class="reviews_index_gallery_review__review_product_info">
+												<div
+													class="reviews_index_gallery_review__product_info_title">
+													(BLACK UP) 호딘 트레이닝 팬츠</div>
+												<div
+													class="reviews_index_gallery_review__product_info_feedbacks">
+													<span class="reviews_index_gallery_review__reviews_count"
+														style="color: #c3b798;">리뷰<strong
+														style="color: black;">1,841</strong></span> <span
+														class="reviews_index_gallery_review__display_score"
+														style="color: #c3b798;">평점<strong
+														style="color: black;">4.9</strong></span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
+									<li class="reviews_index_gallery_review"
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
+										<div class="photo_review_thumbnail js-link-fullscreen-popup"
+											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
+											<div class="photo_review_thumbnail__thumbnail_container">
+												<ul>
+													<li class="photo_review_thumbnail__review_image_thumbnail">
+														<img class="js-review-image"
+														alt="그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했"
+														src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/18/07/83/image1/portrait_cb3ba3c75d217685.jpg"
+														style="width: 100%; opacity: 1; border-bottom: 2px solid lightgray;">
+													</li>
+												</ul>
+												<div class="photo_review_thumbnail__review_info">
+													<div
+														class="
+            photo_review_thumbnail__media_count_indicator
+            photo_review_thumbnail__media_count_indicator--total_count_1
+          ">
+														<div
+															class="photo_review_thumbnail__media_count_indicator_dot"></div>
+													</div>
+												</div>
+											</div>
+											<div style="border-radius: 2%; width: 90%; margin-left: 5%;"
+												class="photo_review_thumbnail__review_author_info">
+
+												<div style="margin-top: 2%; border-radius: 2%;"
+													class="photo_review_thumbnail__review_title js-translate-review-message">
+
+													그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했어요! 키가 큰편....</div>
+												<br>
+												<div style="margin-top: -2%; color: gray;"
+													class="photo_review_thumbnail__date_name_container photo_review_thumbnail__date_name_container--show_created_at">
+													<div class="photo_review_thumbnail__author_name"
+														style="float: left;">
+														<strong>이채*</strong>
+													</div>
+
+													<div class="photo_review_thumbnail__created_at"
+														style="position: relative; left: 5%;">2020. 03. 18</div>
+													<hr>
+												</div>
+											</div>
+										</div>
+
+										<div style="position: relative; top: -6%;"
+											class="reviews_index_gallery_review__review_product js-link-iframe "
+											data-url="http://www.black-up.kr/product/detail.html?cate_no=1&amp;product_no=10550">
+											<div
+												class="reviews_index_gallery_review__review_product_thumbnail">
+												<img class="" alt="(BLACK UP) 호딘 트레이닝 팬츠" width="33"
+													height="33"
+													src="//assets6.cre.ma/p/black-up-kr/products/00/00/00/20/53/image/extra_small_9743a898d5f04dba.jpg"
+													style="padding-right: 3%; opacity: 1; float: left;">
+
+											</div>
+											<div
+												class="reviews_index_gallery_review__review_product_info">
+												<div
+													class="reviews_index_gallery_review__product_info_title">
+													(BLACK UP) 호딘 트레이닝 팬츠</div>
+												<div
+													class="reviews_index_gallery_review__product_info_feedbacks">
+													<span class="reviews_index_gallery_review__reviews_count"
+														style="color: #c3b798;">리뷰<strong
+														style="color: black;">1,841</strong></span> <span
+														class="reviews_index_gallery_review__display_score"
+														style="color: #c3b798;">평점<strong
+														style="color: black;">4.9</strong></span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
+									<li class="reviews_index_gallery_review"
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
+										<div class="photo_review_thumbnail js-link-fullscreen-popup"
+											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
+											<div class="photo_review_thumbnail__thumbnail_container">
+												<ul>
+													<li class="photo_review_thumbnail__review_image_thumbnail">
+														<img class="js-review-image"
+														alt="그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했"
+														src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/18/07/83/image1/portrait_cb3ba3c75d217685.jpg"
+														style="width: 100%; opacity: 1; border-bottom: 2px solid lightgray;">
+													</li>
+												</ul>
+												<div class="photo_review_thumbnail__review_info">
+													<div
+														class="
+            photo_review_thumbnail__media_count_indicator
+            photo_review_thumbnail__media_count_indicator--total_count_1
+          ">
+														<div
+															class="photo_review_thumbnail__media_count_indicator_dot"></div>
+													</div>
+												</div>
+											</div>
+											<div style="border-radius: 2%; width: 90%; margin-left: 5%;"
+												class="photo_review_thumbnail__review_author_info">
+
+												<div style="margin-top: 2%; border-radius: 2%;"
+													class="photo_review_thumbnail__review_title js-translate-review-message">
+
+													그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했어요! 키가 큰편....</div>
+												<br>
+												<div style="margin-top: -2%; color: gray;"
+													class="photo_review_thumbnail__date_name_container photo_review_thumbnail__date_name_container--show_created_at">
+													<div class="photo_review_thumbnail__author_name"
+														style="float: left;">
+														<strong>이채*</strong>
+													</div>
+
+													<div class="photo_review_thumbnail__created_at"
+														style="position: relative; left: 5%;">2020. 03. 18</div>
+													<hr>
+												</div>
+											</div>
+										</div>
+
+										<div style="position: relative; top: -6%;"
+											class="reviews_index_gallery_review__review_product js-link-iframe "
+											data-url="http://www.black-up.kr/product/detail.html?cate_no=1&amp;product_no=10550">
+											<div
+												class="reviews_index_gallery_review__review_product_thumbnail">
+												<img class="" alt="(BLACK UP) 호딘 트레이닝 팬츠" width="33"
+													height="33"
+													src="//assets6.cre.ma/p/black-up-kr/products/00/00/00/20/53/image/extra_small_9743a898d5f04dba.jpg"
+													style="padding-right: 3%; opacity: 1; float: left;">
+
+											</div>
+											<div
+												class="reviews_index_gallery_review__review_product_info">
+												<div
+													class="reviews_index_gallery_review__product_info_title">
+													(BLACK UP) 호딘 트레이닝 팬츠</div>
+												<div
+													class="reviews_index_gallery_review__product_info_feedbacks">
+													<span class="reviews_index_gallery_review__reviews_count"
+														style="color: #c3b798;">리뷰<strong
+														style="color: black;">1,841</strong></span> <span
+														class="reviews_index_gallery_review__display_score"
+														style="color: #c3b798;">평점<strong
+														style="color: black;">4.9</strong></span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰1 -->
+									<li class="reviews_index_gallery_review"
+										style="-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
+										<div class="photo_review_thumbnail js-link-fullscreen-popup"
+											data-url="/black-up.kr/reviews/180783/photo_review_popup?app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=http%3A%2F%2Fblack-up.kr%2Fboard%2Fproduct%2Flist.html%3Fboard_no%3D4&amp;parent_widget_id=29&amp;widget_env=100">
+											<div class="photo_review_thumbnail__thumbnail_container">
+												<ul>
+													<li class="photo_review_thumbnail__review_image_thumbnail">
+														<img class="js-review-image"
+														alt="그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했"
+														src="//assets6.cre.ma/p/black-up-kr/reviews/00/00/18/07/83/image1/portrait_cb3ba3c75d217685.jpg"
+														style="width: 100%; opacity: 1; border-bottom: 2px solid lightgray;">
+													</li>
+												</ul>
+												<div class="photo_review_thumbnail__review_info">
+													<div
+														class="
+            photo_review_thumbnail__media_count_indicator
+            photo_review_thumbnail__media_count_indicator--total_count_1
+          ">
+														<div
+															class="photo_review_thumbnail__media_count_indicator_dot"></div>
+													</div>
+												</div>
+											</div>
+											<div style="border-radius: 2%; width: 90%; margin-left: 5%;"
+												class="photo_review_thumbnail__review_author_info">
+
+												<div style="margin-top: 2%; border-radius: 2%;"
+													class="photo_review_thumbnail__review_title js-translate-review-message">
+
+													그레이 사고 너무 잘 입어서 블랙 롱 버전으로 재구매했어요! 키가 큰편....</div>
+												<br>
+												<div style="margin-top: -2%; color: gray;"
+													class="photo_review_thumbnail__date_name_container photo_review_thumbnail__date_name_container--show_created_at">
+													<div class="photo_review_thumbnail__author_name"
+														style="float: left;">
+														<strong>이채*</strong>
+													</div>
+
+													<div class="photo_review_thumbnail__created_at"
+														style="position: relative; left: 5%;">2020. 03. 18</div>
+													<hr>
+												</div>
+											</div>
+										</div>
+
+										<div style="position: relative; top: -6%;"
+											class="reviews_index_gallery_review__review_product js-link-iframe "
+											data-url="http://www.black-up.kr/product/detail.html?cate_no=1&amp;product_no=10550">
+											<div
+												class="reviews_index_gallery_review__review_product_thumbnail">
+												<img class="" alt="(BLACK UP) 호딘 트레이닝 팬츠" width="33"
+													height="33"
+													src="//assets6.cre.ma/p/black-up-kr/products/00/00/00/20/53/image/extra_small_9743a898d5f04dba.jpg"
+													style="padding-right: 3%; opacity: 1; float: left;">
+
+											</div>
+											<div
+												class="reviews_index_gallery_review__review_product_info">
+												<div
+													class="reviews_index_gallery_review__product_info_title">
+													(BLACK UP) 호딘 트레이닝 팬츠</div>
+												<div
+													class="reviews_index_gallery_review__product_info_feedbacks">
+													<span class="reviews_index_gallery_review__reviews_count"
+														style="color: #c3b798;">리뷰<strong
+														style="color: black;">1,841</strong></span> <span
+														class="reviews_index_gallery_review__display_score"
+														style="color: #c3b798;">평점<strong
+														style="color: black;">4.9</strong></span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- 리뷰1 끝 -->
+									<!-- 리뷰 2줄 끝 -->
 									
 
 								</ul>
 							</div>
-<font align="center"style>
-1&nbsp;&nbsp;...&nbsp;
-<a style="border-radius:5px; border:1px solid black;background:black;color:white;">&nbsp;6&nbsp;</a>&nbsp;&nbsp;
-<a>7</a>&nbsp;&nbsp;
-<a>8</a>&nbsp;&nbsp;
-<a>9</a>&nbsp;&nbsp;
-<a>10</a>&nbsp;&nbsp;
-&nbsp;...&nbsp;&nbsp;13
+							<br><hr><br>
+<font align="center">
+<Strong>1</Strong>&nbsp;&nbsp;...&nbsp;
+<a style="border-radius:5px; border:1px solid black;background:black;color:white;">&nbsp;<Strong>6</Strong>&nbsp;</a>&nbsp;&nbsp;
+<a><Strong>7</Strong></a>&nbsp;&nbsp;
+<a><Strong>8</Strong></a>&nbsp;&nbsp;
+<a><Strong>9</Strong></a>&nbsp;&nbsp;
+<a><Strong>10</Strong></a>&nbsp;&nbsp;
+&nbsp;...&nbsp;&nbsp;<Strong>13</Strong>
 </font>
-						</div>
+						
 					</div>
 				</div>
 			</div>
+		
 		</div>
 	</div>
 	<style>
@@ -1536,7 +2134,7 @@ function washing_tip(){
 	<style>
 .detail_pic {
 	position: relative;
-	left: 23%;
+	left: 8.4%;
 }
 </style>
 	<img class="detail_pic"
@@ -1615,7 +2213,7 @@ function washing_tip(){
                 fit_product_basic__size_table--free-size
                 "
 						border="0" cellspacing="0" cellpadding="0"
-						style="border-top: 1px solid gray; border-bottom: 1px solid gray; font-size: 15px; width: 800px; margin-left:29.15%;">
+						style="border-top: 1px solid gray; border-bottom: 1px solid gray; font-size: 15px; width: 800px; margin-left:17%;">
 						<thead>
 							<tr class="fit_product_basic__size_table_title_row"
 								style="background: ivory;">
@@ -1671,7 +2269,7 @@ function washing_tip(){
 					</table>
 
 				</div>
-				<div class="fit_product_basic__size_unit" style="margin-left: 38%;"><small>단위:
+				<div class="fit_product_basic__size_unit" style="margin-left: 63%;"><small>단위:
 					cm</small></div>
 				<br>
 				<br>
@@ -2067,29 +2665,21 @@ function washing_tip(){
 					</div>
 				</div>
 			</div>
+</div>
+</section>
+	
 
 
-		</div>
-	</section>
+<div style="width:159.3%;margin-left:-30%;">
+<!-- Footer -->
+<%@include file="footer.jsp"%>
 
-
-	<!-- Footer -->
-	<%@include file="footer.jsp"%>
-
-
-
-	<!-- Back to top -->
-	<div class="btn-back-to-top bg0-hov" id="myBtn">
-		<span class="symbol-btn-back-to-top"> <i
-			class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</span>
-	</div>
-
+</div>
 	<!-- Container Selection -->
 	<div id="dropDownSelect1"></div>
 	<div id="dropDownSelect2"></div>
 
-
+	
 
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -2112,6 +2702,8 @@ function washing_tip(){
 			minimumResultsForSearch : 20,
 			dropdownParent : $('#dropDownSelect2')
 		});
+		
+		
 	</script>
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
@@ -2183,6 +2775,7 @@ function washing_tip(){
 
 	</script>
 	
-	
 </body>
+		
+
 </html>

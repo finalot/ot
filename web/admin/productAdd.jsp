@@ -104,32 +104,49 @@ label{
     margin-bottom: 4%;
 
 }
-td{
+ td{
     padding: 13px 11px 12px !important;
-       border:1px solid #d9dadc;
-          font-weight:normal;
           height: 80px
+             font-weight:normal;
+               border:2px solid #d9dadc;
 }
 th{
 	padding: 13px 11px 12px !important;
 	text-align:center;
-	border:1px solid #d9dadc;
-}
+	background-color:#f5f4f4;
+	   font-weight:normal;
+	     border:2px solid #d9dadc;
+} 
 .first{
       width: 135px;
       border:1px solid #d9dadc;
 	  background-color:#f5f4f4 !important;
 
 }
+#product-count td,th{
+	width: 16%;
+	
+}
+#product-count td{
+	background: white;
+	border: none;
+	border-bottom: 1px solid #d9dadc;
+}
+#product-count th{
+	    background: #dfe3e6;
+	    }
+.input-group span{
+	margin-bottom: 2%;
+}
 </style>
 
 </head>
-<body class="animsition">
+<body class="animsition" style="background: rgb(243, 243, 243);">
 
-    <div class="page-wrapper">
+    
     
     <%@ include file="a_header.jsp" %>
-  <!-- MENU SIDEBAR-->
+ <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="todaymain.jsp">
@@ -155,7 +172,22 @@ th{
                                 </li>
                             </ul>
                         </li>
-                        <li class="active has-sub">
+                        
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-truck"></i>회원 &nbsp;/&nbsp;주문</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="customer.jsp">회원 관리</a>
+                                </li>
+                                <li>
+                                    <a href="order.jsp">주문 관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -168,43 +200,48 @@ th{
                                 <li>
                                     <a href="productList.jsp">상품관리</a>
                                 </li>
-                                <li>
-                                    <a href="">재고관리</a>
-                                </li>
                             </ul>
                         </li>
-                        <li class="has-sub">
+                        
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fa fa-tasks"></i>관리</a>
+                                <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="">회원관리</a>
+                                    <a href="eventAdd.jsp">이벤트/쿠폰 등록</a>
                                 </li>
                                 <li>
-                                    <a href="">주문관리</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="">쿠폰/이벤트 등록</a>
-                                </li>
-                                <li>
-                                    <a href="">쿠폰/이벤트 관리</a>
-                                </li>
-                                <li>
-                                    <a href="">이벤트관리</a>
-                                </li>
-                                <li>
-                                    <a href="">교환신청관리</a>
+                                    <a href="eventList.jsp">이벤트/쿠폰 관리</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-truck"></i>반품</a>
-                        </li>
-                        <li>
-                            <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>Q & A</a>
+                        
+                        
+                                <li>
+                                    <a class="js-arrow" href="productReturnList.jsp">
+                                <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
+                                </li>
+                 		<li>
+                           <a href="DesignEdit.jsp">
+                               <i class="fa fa-desktop"></i>디자인</a>
+                       </li>
+                         <li class="active has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-shopping-cart"></i>Q & A</a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            	<li>
+                                    <a href="">상품문의</a>
+                                </li>
+                                <li>
+                                    <a href="productAdd.jsp">배송전 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">입금확인/입급자 변경 문의</a>
+                                </li>
+                                 <li>
+                                    <a href="productList.jsp">상품불량 및 오배송 문의</a>
+                                </li>
+                            </ul>
                         </li>
                         
                     </ul>
@@ -217,7 +254,7 @@ th{
     <div style="padding-left:300px">
      <!-- WELCOME-->
      <section class="welcome p-t-10">
-        <div class="container">
+        <div class="container" style="margin-left: 3%;">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="title-4"> 
@@ -237,15 +274,15 @@ th{
     <!-- 이벤트 내용 -->
    <table id="addlist" style="border: 1px dotted; background: white; font-size:13pt;">
         <tr colspan="2">
-        	<td colspan="2" style="background: black; margin-bottom: 2%;padding-bottom: 2%;">
-        	<h3 style="color: white;;margin-left: 5%;"> 상품 상세내용</h3></td>
+        	<td colspan="2" style="background:#dfe3e6; margin-bottom: 2%;padding-bottom: 2%;">
+        	<h3 style="color: black;margin-left: 5%;"> 상품 상세내용</h3></td>
         </tr>
         <tr>
-        	<th>분류</th>
+        	<th><span style="color:red">*</span> 분류</th>
         	<td>
 	       		대(大) : &nbsp;&nbsp;
-                   <select onchange="categoryChange(this)">
-                       <option>선택1(대분류)</option>
+                   <select id="select-category" onchange="categoryChange(this)">
+                       <option value="select">선택1(대분류)</option>
                        <option value="a">탑</option>
                        <option value="b">아우터</option>
                        <option value="c">하의</option>
@@ -263,31 +300,25 @@ th{
         	</td>
         </tr>
         <tr>
-        	<th>상품코드</th>
+        	<th><span style="color:red">*</span> 상품코드</th>
         	<td>
         		<input type="text" id="product_code">
         	</td>
         </tr>
         <tr>
-        	<th>상품명</th>
+        	<th><span style="color:red">*</span> 상품명</th>
         	<td>
         		<input type="text" id="product_name">
         	</td>
         </tr>
         <tr>
-        	<th>수량</th>
-        	<td>
-        		<input type="number" id="product_quality" style="width: 15%;">
-        	</td>
-        </tr>
-        <tr>
-        	<th>가격</th>
+        	<th><span style="color:red">*</span> 가격</th>
         	<td>
         		<input type="number" id="product_price" min="5,000" step="500" style="width:20%;">
         	</td>
         </tr>
-        <tr>
-        	<th>색상</th>
+       <!--  <tr>
+        	<th><span style="color:red">*</span> 색상</th>
         	<td>
         		 <div id="color-area" style="display: block;">
                     <div id="color-div" class="col-sm-12 col-md-6">
@@ -304,64 +335,114 @@ th{
                 
                 </div>
         	</td>
-        </tr>
+        </tr> -->
         <tr>
-        	<th>할인가</th>
+        	<th><span style="color:red">*</span> 할인가</th>
         	<td>
         		<input type="number" id="product_sale" style="width:20%;"> &nbsp; &nbsp; %
         	</td>
         </tr>
         <tr>
-        	<th>대표이미지</th>
+        	<th><span style="color:red">*</span> 대표이미지</th>
         	<td>
-        		<input type="file" id="titleImg" style="border:white 1px;">
+        		<div id="titleImgArea">
+			<img id="titleImg" width="177px" height="200">
+			</div>
+			<div class="fileArea" id="fileArea">
+		      				<input type="file" id="thumbnailImg1"
+		      				name="thumbnailImg1" onchange="loadImg(this, 1);" />
+		     			 </div>
         	</td>
         </tr>
         <tr>
-        	<th>상세설명</th>
+        	<th><span style="color:red">*</span> 상세설명</th>
         	<td>
         		<input type="file" id="descrptionImg" style="border:white 1px;">
         	</td>
         </tr>
         <tr>
-        	<th>옵션설정</th>
+        	<th><span style="color:red">*</span> 색상설정</th>
         	<td>
-        		<input type="text" id="mdivide_value" style="width:20%;">
-        		
-        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                
-                <select>
-                       <option>선택</option>
-                       <option>FREE</option>
-                       <option>상의(XS,S,M,L,XL)</option>
-                       <option>하의(25,26~38)</option>
-                       <option>신발(225~290)</option>
-                       <option>모자(S,M,L)</option>
-                </select>
-        		
+        	
+        		 <div id="color-area" style="display: block;" >
+                    <div id="color-div" class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <div class="input-group" style="    width: 105px" >
+                                <input type="text" style=" padding-right: 0%;;padding-left: 36%;"  id="input-group" class="form-control demo" value="#ff0000" />
+								
+                                  <span>등록 색상명 </span> <input type="text" id="color-name">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
          	</td>
         </tr>
+        <tr>
+        	<th><span style="color:red">*</span>사이즈 설정</th>
+        	<td>상의/모자
+        	 <select id="top-select" style="background:rgba(190, 181, 181, 0.24);margin-left: 10px;margin-right: 10px" disabled>
+                       <option></option>
+                       <option>FREE</option>
+                       <option>XS</option>
+                       <option>S</option>
+                       <option>M</option>
+                       <option>L</option>
+                       <option>XL</option>
+                </select>
+				하의/신발        	
+        		<input id="bottom-select" type="number" style="background:rgba(190, 181, 181, 0.24);border: 1px solid #333330; margin-left: 10px;width: 75px;" readonly>
+        	
+        	</td>
+        </tr>
     </table>
+  <div style="height: 130px;">
+          <div align="center" style="margin-bottom:3%">
+    <button id="product-info-add" style="width: 100px; height: 40px;border-radius: 10px;;background: black; color: white">상품추가</button>
+    </div>
+    </div>
+    <div style="border: 1px solid #dfe3e6;margin-left: 5%;margin-right: 5%;padding-left: 1%;">
+    <h4 > <span style="color:red">*</span>재고설정</h4>
+    </div>
+    <div align="center" id="product-count">
+    <table style="width: 90%;">
+    	<thead>
+    		<tr>
+    		<th>상품코드</th>
+    		<th>상품명</th>
+    		<th>이미지</th>
+    		<th>사이즈</th>
+    		<th>색상</th>
+    		<th>수량</th>
+    		<th>삭제</th>
+    		</tr>
+    	</thead>
+    </table>
+   <div  style="height: 200px; overflow: scroll ; width: 90%;">
+    <table  style="width:100%;">	
+    	<tbody id="product-add-count" style="text-align: center;">
+    	</tbody>
+    </table>
+    </div>
+    </div>
     
 
     <div style="height: 130px;">
         <div align="center">
             <button style="background: black;
             color: white;
-          
             font-size: 20px;
             padding: 10px;
             height: 65px;
             width: 135px;
-            border-radius: 10px;
-            "><b>등록</b></button>
+            border-radius: 10px;">
+            <b>등록</b></button>
         </div>
     </div>
    
     
-</div></div>
-    <br><br>
+	</div>
+<div class="page-wrapper">
+</div>
 
 
 
@@ -370,6 +451,8 @@ th{
 
 	<!-- 옵션설정 select -->
 	<script>
+	
+	
 	function test1(){
 		var mtext = document.getElementById("mdivide_value");
 		var moption = document.getElementById("mdivide");
@@ -379,6 +462,22 @@ th{
 		console.log(mtext);
 		console.log(moption);
 	}
+	</script>
+	<script>
+	$('#select-category').click(function(){
+		
+		if($('#select-category').val()=='a' ||$('#select-category').val()=='b'){
+			$('#top-select').removeAttr('disabled').css('background','white').focus();
+		}else{
+			$('#top-select').css('background','rgba(190, 181, 181, 0.24)').attr("disabled",true).val('선택');
+		}
+		if($('#select-category').val() != 'a' &&  $('#select-category').val() !='b' && $('#select-category').val() != 'select'){
+			$('#bottom-select').removeAttr('readonly').css('background','white').focus();
+		}else{
+			$('#bottom-select').css('background','rgba(190, 181, 181, 0.24)').attr("readonly",true).val('선택');
+		}
+	})
+	
 	</script>
 	
 
@@ -412,12 +511,74 @@ th{
                 },
                 theme: 'bootstrap'
             });
-    
         });
         </script>
 
 
   <script>
+  
+	// 사진 게시판 미리보기 기능 지원 스크립트
+	$(function(){
+		$('#fileArea').hide();
+		
+		$('#titleImgArea').click(() => {
+			$('#thumbnailImg1').click();
+		});
+	});
+	
+	
+	function loadImg(value, num){
+		
+		if(value.files && value.files[0])  {
+			
+			var reader = new FileReader();
+			
+			reader.onload = function(e){
+				switch(num) {
+				case 1 : $('#titleImg').attr('src', e.target.result);
+					break;
+				
+				}
+			}
+			reader.readAsDataURL(value.files[0]);
+		}
+	}
+
+  		$('#product-info-add').click(function(){
+  			var src = $('#titleImg').attr('src')
+  			var colorname=$('#color-name').val();
+  			var color = $('.minicolors-swatch-color').css('background-color');
+  			var topselect = $('#top-select').val();
+  			var bottomselect = $('#bottom-select').val();
+  			var imgsrc= $('#titleImg').val();
+  			if(topselect == null){
+  				topselect = "";
+  			}
+  			if(bottomselect == null){
+  				bottomselect = "";
+  			}
+  			
+  			$('#product-add-count').append('<tr>'+
+  		    		'<td style="width: 16.3%;">12312312</td>'+
+  		    		'<td>이뿐옷</td>'+
+  		    		'<td>'+
+  		    		'<div id="titleImgArea">'+
+  					'<div id="titleImgArea"><img src="'+src+'" width="100px" height="50"></div>'+
+  					'</div>'+
+  		    		'</td>'+
+  		    		'<td>'+topselect+bottomselect+'</td>'+
+  		    		'<td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">'+colorname+'</div><div style="width:20px;height:15px;margin-left: 10%;;background:'+color+'"></div></div></td>'+
+  		    		'<td><input type="number" min="0" style="border:1px solid #333330;width: 50%">'+
+  		    		'</td>'+
+  		    		'<td>'+
+    				'<button onclick="closeBtn(this)" style="margin-left: 1%;">X</button>'+
+    				'</td>'+
+  		    		'</tr>')
+  		});
+  		function closeBtn(en){
+  			$(en).parents('tr').remove('tr');
+  		}
+  
         $('#color_add').click(function(){
             $('#line').before(
             '<div id="color-div" class="col-sm-12 col-md-6">'+
@@ -452,8 +613,9 @@ th{
     
         });
     });
-    
+  		
         </script>
+
 
         <script>
         function categoryChange(e) {
@@ -485,11 +647,7 @@ th{
             }   
         }
         </script>
-        
-    
 
-
-    </script>
      <!-- Bootstrap JS-->
      <script src="vendor/bootstrap-4.1/popper.min.js"></script>
      <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>

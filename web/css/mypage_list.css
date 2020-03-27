@@ -1231,3 +1231,161 @@ span.ec-base-help, p.ec-base-help, ul.ec-base-help li {
 .ec-base-table .right {
     text-align: right;
 }
+
+/* 내가 쓴 게시글 뷰*/
+.xans-board-title .title {
+    min-height: 30px;
+    margin: 10px 0 40px;
+    text-align: center;
+}
+
+.xans-board-title .title h2 {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.ec-base-table table:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #d7d5d5;
+}
+
+.xans-board .ec-base-table tbody th {
+    padding: 15px 10px 14px 18px;
+    border-right: 0;
+    border-left: 0;
+    background: 0;
+    font-weight: 400;
+    color: #666;
+}
+
+.xans-board .ec-base-table tbody td {
+    padding: 15px 0 14px 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.txtInfo {
+    color: #707070;
+}
+
+.xans-board-read .ec-base-button {
+    margin: 14px 0 60px;
+    padding: 0;
+}
+
+.xans-board-commentform {
+    margin: 10px 20px;
+    padding: 5px 20px 20px;
+    border: 1px solid #e9e9e9;
+    background-color: #fbfafa;
+    color: #353535;
+}
+
+.xans-board-commentform legend {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.xans-board-commentform p {
+    margin: 10px 0 0;
+}
+
+.xans-board-commentform input[type=text], .xans-board-commentform input[type=password] {
+    width: 135px;
+    margin: 0 10px 0 9px;
+}
+
+.xans-board-commentform .secret {
+    margin: 0 20px 0 10px;
+}
+
+.xans-board-commentform .view {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0 180px 0 0;
+}
+
+.xans-board-commentform textarea {
+    width: 100%;
+    height: 44px;
+    padding: 2px 2px 2px 4px;
+}
+
+.xans-board-commentform .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.xans-board-commentform .submit a {
+    width: 32px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.xans-board-commentformsecret {
+    margin: 10px 25px 0 0;
+    padding: 10px 15px;
+    border: 1px solid #e9e9e9;
+    background-color: #fbfafa;
+    color: #353535;
+}
+
+.xans-board-movement {
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-left: 0;
+    margin: 70px 0;
+}
+
+.xans-board-movement li {
+    overflow: hidden;
+    border-bottom: 1px solid #e9e9e9;
+    line-height: 1.6;
+    color: #353535;
+}
+
+.xans-board-movement li strong {
+    width: 150px;
+    padding: 15px 10px 14px 18px;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.xans-board-movement li strong, .xans-board-movement li a {
+    float: left;
+}
+
+.xans-board-movement li a {
+    min-width: 860px;
+    padding: 15px 0 14px 0;
+}
+
+.xans-board-movement li.next {
+    border: 0;
+}
+
+.xans-board-read .ec-base-table .etcArea {
+    text-align: right;
+}
+.xans-board-read .ec-base-table .etcArea li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 8px 0 10px;
+    vertical-align: top;
+    line-height: 22px;
+    color: #666;
+}
