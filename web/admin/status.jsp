@@ -1,47 +1,50 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>oT. ADMIN</title>
+        <link rel="icon" type="image/png" href="images/icon/favicon.png"/>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link href="./assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/libs/css/style.css">
+        <link rel="stylesheet" href="./assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+        <link rel="stylesheet" type="text/css" href="./assets/vendor/datatables/css/dataTables.bootstrap4.css">
+        <link rel="stylesheet" type="text/css" href="./assets/vendor/datatables/css/buttons.bootstrap4.css">
+        <link rel="stylesheet" type="text/css" href="./assets/vendor/datatables/css/select.bootstrap4.css">
+        <link rel="stylesheet" type="text/css" href="./assets/vendor/datatables/css/fixedHeader.bootstrap4.css">
+         <link href="css/theme.css" rel="stylesheet" media="all">
+    </head>
+    <style>
+    .btn-outline-light {
+    color: #7171a6 !important;
+    background-color: transparent !important;
+    border-color: #e6e6f2 !important;
+	}
+	.table table-striped table-bordered second tbody td.process {
+    color: #00ad5f;
+	}
 
-    <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icon/favicon.png"/>
+	td.process {
+    color: #00ad5f;
+	}
+	td.denied {
+    color: #fa4251;
+	}
+    </style>
+    
+    
+    
+<body class="animsition" style="background: #f3f3f3;">
+<%@ include file="a_header.jsp" %>
 
-    <!-- Title Page-->
-    <title>oT. ADMIN</title>
-
-    <!-- Fontfaces CSS-->
-    <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-
-    <!-- Bootstrap CSS-->
-    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="css/theme.css" rel="stylesheet" media="all">
-</head>
-<body class="animsition">
-	<div class="page-wrapper">
-
-      <%@ include file="a_header.jsp" %>
-  <!-- MENU SIDEBAR-->
+<div style="padding-left:300px;">
+<!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="todaymain.jsp">
@@ -51,7 +54,7 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="has-sub"> 
+                        <li class="active has-sub"> 
                             <!-- active has-sub 파란색 -->
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bar-chart-o"></i>통계</a>
@@ -98,7 +101,7 @@
                             </ul>
                         </li>
                         
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -120,7 +123,7 @@
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                         <li class="active has-sub">
+                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>Q & A</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -129,9 +132,6 @@
                                 </li>
                                 <li>
                                     <a href="productAdd.jsp">배송전 문의</a>
-                                </li>
-                                <li>
-                                    <a href="productList.jsp">배송후 문의</a>
                                 </li>
                                  <li>
                                     <a href="productList.jsp">입금확인/입급자 변경 문의</a>
@@ -148,10 +148,7 @@
         </aside>
         <!-- END MENU SIDEBAR-->
         
-        
-
-      <!-- WELCOME-->
-      <div style="padding-left:300px">
+         <!-- WELCOME-->
       <section class="welcome p-t-10">
           <div class="container">
               <div class="row">
@@ -165,16 +162,13 @@
           </div>
        </section>
        <!-- END WELCOME-->
-       
-       
-       <!-- 쇼핑몰현황 table 시작 -->
-       
-       <div class="row m-t-30">
-        <div class="col-md-12">
-            <!-- DATA TABLE-->
-            <div class="table-responsive m-b-40">
-                <table class="table table-borderless table-data3">
-                    <thead>
+        
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="example" class="table table-striped table-bordered second" style="text-align: center;">
+                <thead>
                         <tr>
                             <th>날짜</th>
                             <th>입금전</th>
@@ -187,10 +181,22 @@
                             <th>반품</th>
                             <th>주문합계</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>03월 21일</td>
+                 </thead>
+                <tbody>
+                 <tr>
+                        <td>03월 21일</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                        <td>1 건</td>
+                  </tr>
+                 <tr>
+                            <td>03월 22일</td>
                             <td>1 건</td>
                             <td>1 건</td>
                             <td>1 건</td>
@@ -200,137 +206,195 @@
                             <td>1 건</td>
                             <td>1 건</td>
                             <td>1 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 19일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 18일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 17일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 16일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 15일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 14일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 13일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 12일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 11일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                        <tr>
-                            <td>03월 10일</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                            <td>2 건</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- END DATA TABLE-->
+               	</tr>
+               	<tr>
+                            <td>03월 23일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 24일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 25일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 26일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 27일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 28일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 29일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 30일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>03월 31일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>04월 1일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>04월 2일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+               	<tr>
+                            <td>04월 3일</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+                            <td>1 건</td>
+               	</tr>
+                </tbody>
+            </table>
+        </div>
         </div>
     </div>
-      </div></div>
-       
-       
-           <!-- Jquery JS-->
+    </div>
+    </div>
+    <div class="page-wrapper">
+</div>
+	
+	
+	<!-- // td(class=next) 클릭시 페이지 이동 -->
+	<script>
+     $("td").click(function(){
+    	 location.href='productListDetail.jsp';
+  	 <%-- var userId = $(this).parent().find('input').val();
+  	 
+  	 console.log("선택한 유저 ID : "+userId);
+  	 
+     location.href="<%= request.getContextPath() %>/sone.rp?userId=" + userId; --%>
+    }); 
+    </script>
+
+    <script src="./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="./assets/vendor/multi-select/js/jquery.multi-select.js"></script>
+    <script src="./assets/libs/js/main-js.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="./assets/vendor/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+    <script src="./assets/vendor/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="./assets/vendor/datatables/js/data-table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/rowgroup/1.0.4/js/dataTables.rowGroup.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+  
+  	<!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="vendor/bootstrap-4.1/popper.min.js"></script>
@@ -348,11 +412,7 @@
     <script src="vendor/circle-progress/circle-progress.min.js"></script>
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
-
-    <!-- Main JS-->
-    <script src="js/main.js"></script>
-
+    <script src="vendor/select2/select2.min.js"></script>
+      <script src="js/main.js"></script>
 </body>
 </html>
