@@ -3,125 +3,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-
-    <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icon/favicon.png"/>
-   
-    <!-- Title Page-->
-    <title>oT. ADMIN</title>
-
-    <!-- Fontfaces CSS-->
-    <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-
-    <!-- Bootstrap CSS-->
-    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="css/theme.css" rel="stylesheet" media="all">
-    
-  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>상품문의</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
+<link rel="stylesheet" href="../css/mypage_list.css">
+<link rel="stylesheet" href="../css/mypage_basic.css">
+<link rel="icon" type="image/png" href="../images/icons/favicon.png"/>
 </head>
 <style>
-.top_info{
-	display: flex;
-	 margin-bottom: 3%;
+.ec-base-table td{
+  border-top: 1px solid #EEE !important;
+  font-size:13px;
+}
+.ec-base-table.typeList .center td.left {
+    padding-left: 3px;
+    text-align: left !important;
+ }
+ .xans-board .ec-base-table tbody th {
+    padding: 15px 10px 14px 18px;
+    border-right: 0;
+    border-left: 0;
+    background: 0;
+    font-weight: 400;
+    color: #666;
+     border-top: 1px solid #EEE !important;
+    font-size: 13px;
+  
+    }
 
+ 
+.thumb{
+ text-align: left !important;
+	padding-left: 1% !important;
 }
-.bottom_info{
-	display: flex;
+.ec-base-table.typeWrite td {
+    padding: 0px 0px 0px !important;
 }
-.member_info{
-	width: 50%;
-		border-style: outset;
-	    padding: 2%;
-	    background: white;
-	
+.ec-base-table.typeWrite{
+	border: none;
 }
-.product_info{
-	width: 50%;
-	border-style: outset;
-	  padding: 2%;
-	 background: white;
-	 
+.title-text{
+margin-left: 15%;
+margin-top: 5%;
+font-weight: bold;
 }
-#pay-table th{
-	width: 215px;
-	
+.yg_btn4{
+	height: 30px !important;
+    width: 100px !important;
+        padding-top: 3%;
 }
-#product-table,#member-table,#pay-table{
-	width: 100%;
-
-
-}
-
-
-.menu-sidebar {
-   
-     overflow-y: none;
-}
-th,td{
+th,td {
     padding: 13px 11px 12px !important;
-       border:1px solid #d9dadc;
-          font-weight:normal;
+       border:1px solid #d9dadc !impotant;
+          font-weight:normal !impotant;
 }
 th{
-      width: 135px;
-      border:1px solid #d9dadc;
+      width: 135px !impotant;
+      border:1px solid #d9dadc !impotant;
    
-background-color:#f5f4f4;
+	background:#f5f4f4 !impotant;
 
 }
-td{
-    color: black;
-   
-}
-.info-title{
-margin-bottom:3%;
-    border-bottom: 1px solid;
-    padding-bottom: 1%;
-}
-
-span{
-color: red;
-}
-#pay-calcel{
-	margin-left: 3%;
-	background: black;
-	color: white;
-	width: 65px;
-	height: 20px;
-	border-radius: 10px
-}
-.yg_btn_30{
-    background: #f4f4f4;
-    color: #444!important;
-    border-color: #ddd!important;
-}
-
 </style>
-<body class="animsition" style="background: #f3f3f3;">
-	
-	
-      <%@ include file="a_header.jsp" %>
-     <!-- MENU SIDEBAR-->
+<body style="background: rgb(243, 243, 243)">
+ 	
+	<%@ include file="a_header.jsp" %>
+
+<div style="padding-left:300px;">
+<!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="todaymain.jsp">
@@ -225,44 +177,13 @@ color: red;
         </aside>
         <!-- END MENU SIDEBAR-->
         
-        
-      <!-- WELCOME-->
-   <div style="padding-left:300px; padding-right: 15px;background: #f3f3f3; padding-top:1%">
-   <h2 style="margin-left: 3%;">교환/반품관리</h2>
-  	<div class="top_info">
-  	<div class="member_info" style="margin-left: 3%">
-  	<h4 class="info-title">회원정보</h4> 
-  	<table id="member-table">
-  		<tr>
-  			<th><span>*</span> 주문자 </th>
-  			<td>문태환</td>
-  	    </tr>
-  	    <tr>
-  			<th><span>*</span> 주문자 번호</th>
-  			<td>010-0101-0101</td>
-  	    </tr>
-  		<tr>
-  			<th><span>*</span> 고객 아이디</th>
-  			<td>moon77</td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 고객 이메일</th>
-  			<td>moon77@kakao.com</td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 주문번호  </th>
-  			<td>12121212  </td>
-  		</tr>	
-  		<tr>
-  			<th><span>*</span> 배송지 </th>
- 			<td>성남시 수정구 태평동 5380 501호</td>
-  		</tr>
-  	</table>
-  	</div>
-  	<div class="member_info" style="    margin-left: 1.5%;">
-  	<h4 class="info-title">문의내용</h4> 
-  <div id="contents" style="margin-top:.5%; background: white;padding: 3%;    border-style: outset;">
-      
+			
+    <div id="container">
+   				 <div class=title-text>
+    			<h2 style="font-weight: bold;">상품문의</h2>
+    			</div>
+        <div id="contents" style="margin-top:.5%; background: white;padding: 3%;    border-style: outset;">
+      	<h3 style="font-weight: bold; border-bottom: 1px solid">문의내용</h3>
 			<div class="mypage_top_outer">
 			</div>
 
@@ -305,6 +226,7 @@ color: red;
         -->
 	<div class="ec-base-table typeWrite ">
             <table border="1" summary="">
+		<caption>글쓰기 폼</caption>
             <colgroup>
 				<col style="width:150px;">
 				<col style="width:auto;">
@@ -326,13 +248,64 @@ color: red;
 		   </td>
     </tr>
     
+	<tr class="displaynone">
+		<th scope="row">WRITER</th>
+           <td></td>
+    </tr>
+    
+	<tr class="displaynone">
+		<th scope="row">EMAIL</th>
+           <td></td>
+    </tr>
+    
+	<tr class="displaynone">
+		<th scope="row">POINT</th>
+           <td></td>	
+    <tr>
     
 	<td colspan="2" class="clear">           
-            <script type="text/javascript" src="//editor.cafe24.com/js/nneditor.js?c=ko"></script>
+                     <script type="text/javascript" src="//editor.cafe24.com/js/nneditor.js?c=ko"></script>
             <style type="text/css">@import "http://editor.cafe24.com/css/style.css?ver=r3.4.0.20191127.1";@import "http://editor.cafe24.com/css/styleie8.css?ver=r3.4.0.20191127.1";		</style>		<script type="text/javascript" src="http://editor.cafe24.com/lang/ko.js?version=r3.4.0.20191127.1" charset="UTF-8"></script><script type="text/javascript" src="http://editor.cafe24.com/js/nneditorUtils.dev.js?version=r3.4.0.20191127.1" charset="UTF-8"></script><script type="text/javascript" src="http://editor.cafe24.com/js/nneditorRange.dev.js?version=r3.4.0.20191127.1" charset="UTF-8"></script><script type="text/javascript" src="http://editor.cafe24.com/js/nneditorCore.dev.js?version=r3.4.0.20191127.1" charset="UTF-8"></script>
-            <script type="text/javascript">
+              <script src="./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="./assets/vendor/multi-select/js/jquery.multi-select.js"></script>
+    <script src="./assets/libs/js/main-js.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="./assets/vendor/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+    <script src="./assets/vendor/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="./assets/vendor/datatables/js/data-table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/rowgroup/1.0.4/js/dataTables.rowGroup.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+  
+  <!--   <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    Vendor JS      
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script> -->
+      <script src="js/main.js"></script>
             NN.Config.instanceID = "content";
-            NN.Config.value = "▶ 교환/반품/불량건교환 상품명을 기재해주셔야 더 정확한 안내 해드릴 수 있습니다.<br />\n<br />\n 배송 후 교환 / 반품 글 남겨주시면 기사님 방문 회수신청 자동으로 처리됩니다.<br />\n(기사님 방문시 경비실이나 전화 연락후 방문 해달라는 메모 등 배송메세지 같이 기재해주시면 메모해서 처리 해드립니다.)<br />\n 타 택배사 이용하실경우 미리 말씀해주셔야 방문 회수신청처리 안해드립니다.<br />\n<br />\n* 배송전 교환/취소시 [배송전 부분취소/변경] 제목선택을 안해주시면 상품교환/주문취소는 당일 처리되지 않습니다 *<br />\n<br />\n비회원으로 문의주실 경우엔 동명이인으로 인해 주문정보와 함께 남겨주셔야 바로 처리 가능합니다.<br />\n<br />\n----------------------------------------------------------------------<br>";
+            NN.Config.value = "▶ 상품명을 기재해주셔야 더 정확한 안내 해드릴 수 있습니다.<br />\n<br />\n 배송 후 교환 / 반품 글 남겨주시면 기사님 방문 회수신청 자동으로 처리됩니다.<br />\n(기사님 방문시 경비실이나 전화 연락후 방문 해달라는 메모 등 배송메세지 같이 기재해주시면 메모해서 처리 해드립니다.)<br />\n 타 택배사 이용하실경우 미리 말씀해주셔야 방문 회수신청처리 안해드립니다.<br />\n<br />\n* 배송전 교환/취소시 [배송전 부분취소/변경] 제목선택을 안해주시면 상품교환/주문취소는 당일 처리되지 않습니다 *<br />\n<br />\n비회원으로 문의주실 경우엔 동명이인으로 인해 주문정보와 함께 남겨주셔야 바로 처리 가능합니다.<br />\n<br />\n----------------------------------------------------------------------<br>";
             NN.Config.toolbarType = "simple";
                 
                 
@@ -380,145 +353,23 @@ color: red;
 	</table>
 </div>
 		<div class="ec-base-button ">
+            <span class="gLeft">
+                <span class="displaynone"><a href="#none" onclick="" class="yg_btn_30 yg_btn4" alt="관리자답변보기">관리자답변보기</a></span>
+                <a href="product_change.jsp" class="yg_btn_30 yg_btn4" alt="목록">LIST</a>
+            </span>
+            <span class="gRight">
+                <a href="#none" onclick="BOARD_WRITE.form_submit('boardWriteForm');" class="yg_btn_30 yg_btn4" alt="등록">OK</a>
+                <a href="product_change.jsp" class="yg_btn_30 yg_btn4" alt="취소">CANCEL</a>
+            </span>
         </div>
 	</div>
 </form>
 </div>
 </div>
-  	</div>	
-  	</div>
-    	<div class="bottom_info">
-  		<div class="product_info" style="margin-left: 3%">
-  		<h4 class="info-title">상품정보</h4>
-  		<table id="product-table">
-  			<tr>
-  				<th><span>*</span> 주문번호 </th>
-  				<td>23239239a</td>
-  			</tr>
-  			<tr>
-  				<th><span>*</span> 상품번호 </th>
-  				<td>1232932</td>
-  			</tr>
-  			<tr>
-  				<th><span>*</span> 구매상품명 </th>
-  				<td>짱이뿐 옷</td>
-  			</tr>
-  			<tr>
-  				<th><span>*</span> 구매상품옵션 </th>
-  				<td>사이즈 : XXL / 색상 : 검정</td>
-  			</tr>
-  			<tr>
-  				<th><span>*</span> 반품/교환사유 </th>
-  				<td>불량</td>
-  			</tr>
-  			<tr>
-  				<th><span>*</span> 제품수령여부 </th>
-  				<td>
-  				<label for="Y" style="margin-right: 2%">수령</label><input style="margin-right: 2%;" type="radio" class="product-check" name="product-check" id="Y"value="Y">
-  				<label for="N" style="margin-right: 2%">미수령</label><input type="radio" name="product-check" class="product-check" id="N"value="N">
-  				</td>
-  			</tr>
-  			<tr>
-  				<th><span>*</span> 실제품상태 </th>
-  				<td>
-  				<select >
-  					<option value="정상">정상</option>
-  					<option value="손상">손상</option>
-  					<option value="오염">오염</option>
-  					<option value="불량">불량</option>
-  				</select>
-  				<button style="margin-left:10px;background: black;color: white; border-radius: 10px;width: 90px;height: 30px;">검수등록</button>
-  				</td>
-  			</tr>
-  			
-  		</table>
-  		</div>
-  	<div class="product_info" style="    margin-left: 1.5%;">
-  	<h4 class="info-title">결제내용</h4>
-  	<table id="pay-table">
-  		<tr>
-  			<th><span>*</span> 상품금액 </th>
-  			<td>30,000원</td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 쿠폰/적립금 </th>
-  			<td> 3000원</td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 실구매가(반환금액)</th>
-  			<td>27,000원
-  				<button id="pay-calcel">결제취소</button>
-  				
-  			</td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 결제일  </th>
-  			<td>2020-03-16</td>
-  		</tr>
-  		 
-  		<tr>
-  			<th><span>*</span> 반품 신청일  </th>
-  			<td>2020-03-20</td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 결제 방법  </th>
-  			<td>카드 </td>
-  		</tr>
-  		<tr>
-  			<th><span>*</span> 반품 승인/반려 메모</th>
-  			<td><input type="text" style="border: 1px solid;margin-right: 10px"><button style="background: black;color: white; border-radius: 10px;width: 90px;height: 30px;">메모저장</button></td>
-  		</tr>
-  	</table>
-  	</div>
-  		</div>
-  	<div align="right" style="margin-top: 5%;margin-bottom: 5%;margin-right: 5%;">
-  	<button id="return-ok" style="background: black;color: white; border-radius: 10px;width:90px;height: 30px;margin-right: 2%;">승인</button>
-  	<button style="background: black;color: white; border-radius: 10px;width:90px;height: 30px;">반려</button>
-  	</div>	
-	
-    <!-- Jquery JS-->
-    <!-- Bootstrap JS-->
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <!-- Vendor JS -->
-    <script src="vendor/slick/slick.min.js">
-    </script>
-    <script src="vendor/wow/wow.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
+</div>
 
-    <!-- Main JS-->
-    <script src="js/main.js"></script>
-    </div>
-    
+</div>
    <div class="page-wrapper">
 </div>
-<script>
-$('#return-ok').click(function(){
-	
-	if($('#N').prop('checked')==true){
-		alert('상품 미수령시 반품승인을 할수 없습니다!');
-	}else if($('#Y').prop('checked')==true){
-		alert('제출');
-	}
-	else if($('.product-check').prop('checked')==false){
-		alert('상품수령 여부를 확인하세요');
-	}
-});
-$('#pay-calcel').click(function(){
-	
-	confirm('취소 하시겠습니까?')
-})
-
-</script>
 </body>
 </html>

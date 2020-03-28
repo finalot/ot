@@ -60,7 +60,9 @@
 .thumb{
  text-align: left !important;
 	padding-left: 1% !important;
+	
 }
+
 </style>
 <body>
 	<%@include file="header.jsp" %>	
