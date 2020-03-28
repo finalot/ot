@@ -439,7 +439,7 @@
 		</div>
 		<div
 			class="xans-element- xans-product xans-product-action ec-base-button ">
-			<a href="#none" class="first  yg_btn_30"
+			<a href="/ot/order.jsp" class="first  yg_btn_30"
 				onclick="product_submit(1, '/exec/front/order/basket/', this)"
 				alt="바로구매하기">바로구매하기</a> <a href="#none" class=" yg_btn_30 yg_btn3"
 				onclick="product_submit(2, '/exec/front/order/basket/', this)"
