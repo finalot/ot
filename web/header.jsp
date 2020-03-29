@@ -49,6 +49,16 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
+<style>
+select{
+background:none;outline: 0;width:80px;
+}
+
+.fa-star{
+font-size: 9px !important;
+    color: #ffa811;
+}
+</style>
 <body class="animsition">
 
 	<!-- header fixed -->
@@ -141,13 +151,17 @@
 			<!-- 검색창 인풋 부분 -->
 
 			<form class="submitSearch" action="#">
-				<input type="text" ;  name="search"
-					; style="border: 1px solid black !important; border-radius: 5px; background: none;"
+				<input type="text"   name="search"
+					 style="border: 1px solid black !important; border-radius: 5px; background: none;"
 					placeholder="Search..">
 				<button type="submit">
 					<i class="fa fa-search"></i>
 				</button>
 			</form>
+			
+			&nbsp; <span
+						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar"
+						class="topbar-social-item fa fa-bars"></a>
 			<!-- 
 			<div class="header-wrapicon2">
 				<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
@@ -218,7 +232,7 @@
 	<!-- top noti -->
 	<div class="flex-c-m size22 bg0 s-text21 pos-relative"
 		style="background: black;">
-		출석체크 EVENT! <a href="product.jsp" class="s-text22 hov6 p-l-5">
+		출석체크 EVENT! <a href="dailyCheck.jsp" class="s-text22 hov6 p-l-5">
 			바로가기 </a>
 
 		<button
@@ -261,7 +275,7 @@
 						href="/ot/mypage.jsp" class="topbar-email"> MyPage </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a
 						href="#" class="topbar-email"> Noitce </a> &nbsp;&nbsp; <span
-						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar"
+						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar1"
 						class="topbar-social-item fa fa-bars"></a> &nbsp; <span
 						class="topbar-email"> . </span>
 				</div>
@@ -342,8 +356,8 @@
 						<!-- 검색창 인풋 부분 -->
 
 						<form class="submitSearch" action="#">
-							<input type="text" ;  name="search"
-								; style="border: 1px solid black !important; border-radius: 5px; background: none;"
+							<input type="text"  name="search"
+								 style="border: 1px solid black !important; border-radius: 5px; background: none;"
 								placeholder="Search..">
 							<button type="submit">
 								<i class="fa fa-search"></i>
@@ -788,12 +802,17 @@
 	<!-- All Menu End -->
 
 	<script>
-	
 	$('#allmenubar').click(function(){
 		$('.animsition').css('overflow','hidden');
 		$('.allMenuOuter').fadeIn(500);
 		
 	});
+	$('#allmenubar1').click(function(){
+		$('.animsition').css('overflow','hidden');
+		$('.allMenuOuter').fadeIn(500);
+		
+	});
+	
 	$('.close').click(function(){
 		$('.allMenuOuter').fadeOut(500);
 		$('.animsition').css('overflow','visible');

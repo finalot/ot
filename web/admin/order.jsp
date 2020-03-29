@@ -30,11 +30,32 @@
     color: #00ad5f;
 	}
 
-	td.process {
+
+	/*
+	one : 주문확인
+	two : 배송대기
+	three : 배송중
+	four : 배송완료
+	 */
+	
+	td{
+	cursor: pointer;
+	}
+	td.one {
+	weight:bold;
+    color: #fa4251;
+	}
+	td.two {
+    color: black;
+	}
+	td.three {
+    color: blue;
+	}
+	td.four {
     color: #00ad5f;
 	}
-	td.denied {
-    color: #fa4251;
+	.btn-danger{
+	    margin-left: 40%;
 	}
     </style>
     
@@ -54,7 +75,7 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub"> 
+                        <li class="has-sub"> 
                             <!-- active has-sub 파란색 -->
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bar-chart-o"></i>통계</a>
@@ -71,7 +92,7 @@
                             </ul>
                         </li>
                         
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-truck"></i>회원 &nbsp;/&nbsp;주문</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -154,7 +175,7 @@
               <div class="row">
                   <div class="col-md-12">
                       <h1 class="title-4">
-                       &nbsp; &nbsp; &nbsp; 쇼핑몰 현황
+                       &nbsp; &nbsp; &nbsp; 고객 관리
                       </h1>
                       <hr class="line-seprate">
                   </div>
@@ -167,191 +188,151 @@
         <div class="card">
     <div class="card-body">
         <div class="table-responsive">
-            <table id="example" class="table table-striped table-bordered second" style="text-align: center;">
+            <table id="example" class="table table-striped table-bordered second" style="width:100%; text-align:center;">
                 <thead>
-                        <tr>
-                            <th>날짜</th>
-                            <th>입금전</th>
-                            <th>배송준비중</th>
-                            <th>배송대기중</th>
-                            <th>배송중</th>
-                            <th>배송완료</th>
-                            <th>취소</th>
-                            <th>교환</th>
-                            <th>반품</th>
-                            <th>주문합계</th>
-                        </tr>
-                 </thead>
-                <tbody>
-                 <tr>
-                        <td>03월 21일</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                        <td>1 건</td>
-                  </tr>
-                 <tr>
-                            <td>03월 22일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 23일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 24일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 25일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 26일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 27일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 28일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 29일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 30일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>03월 31일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>04월 1일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>04월 2일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-               	<tr>
-                            <td>04월 3일</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-                            <td>1 건</td>
-               	</tr>
-                </tbody>
+                    <tr>
+                       <th>주문번호</th>
+                       <th>상품명</th>
+                       <th>주문 상태</th>
+                       <th>주문 금액</th>
+                       <th>배송지</th>
+                       <th>주문일</th>
+                       <th>도착예정일</th>          
+                       <th>사용한 쿠폰</th>
+                    </tr>
+               </thead>
+               <tbody>
+               		<tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="two">배송대기</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="three">배송중</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시</td>
+                    	<td class="four">배송완료</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td> - </td>
+                    </tr>
+               </tbody>
             </table>
         </div>
         </div>
@@ -366,6 +347,7 @@
 	<script>
      $("td").click(function(){
     	 location.href='productListDetail.jsp';
+    	 
   	 <%-- var userId = $(this).parent().find('input').val();
   	 
   	 console.log("선택한 유저 ID : "+userId);

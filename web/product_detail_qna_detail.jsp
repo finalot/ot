@@ -60,9 +60,7 @@
 .thumb{
  text-align: left !important;
 	padding-left: 1% !important;
-	
 }
-
 </style>
 <body>
 	<%@include file="header.jsp" %>	
@@ -75,7 +73,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>상품 문의</h2>
+    			<h2>문의</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">
@@ -140,7 +138,7 @@
 					<li class="displaynone">
                                 <span>POINT</span> <img src="/web/upload/yangji_pc_crumb/ico_point0.gif" alt="0점">
                             &nbsp;</li>
-                            <li class="" style="text-align: right;position: relative;top: -49px;font-weight:600;">
+                            <li class="" style="text-align: right;">
                                 <span>DATE</span> <span class="txtNum">2020-03-26</span>
                             </li>
                             <li class="displaynone">
@@ -165,7 +163,7 @@
 ----------------------------------------------------------------------<br>			
 
 <div class="detail_text">
-배송이 바로 가능한가요?
+이옷 개이쁜데 하나주면 안됨?
 </div>
 </div>
                     </td>

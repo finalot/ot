@@ -146,7 +146,7 @@ th{
                             </ul>
                         </li>
                         
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -164,11 +164,11 @@ th{
                                     <a class="js-arrow" href="productReturnList.jsp">
                                 <i class="fa fa-credit-card"></i>교환 &nbsp;/&nbsp;반품</a>
                                 </li>
-                 		<li>
+                 		<li class="active has-sub">
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                         <li class="active has-sub">
+                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>Q & A</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
