@@ -287,7 +287,7 @@ th{
     <script src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
   
   <!--   <!-- Bootstrap JS-->
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+   <script src="vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
     Vendor JS      
     <script src="vendor/slick/slick.min.js">
@@ -304,6 +304,7 @@ th{
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script> -->
       <script src="js/main.js"></script>
+            <script type="text/javascript">
             NN.Config.instanceID = "content";
             NN.Config.value = "▶ 교환/반품/불량건교환 상품명을 기재해주셔야 더 정확한 안내 해드릴 수 있습니다.<br />\n<br />\n 배송 후 교환 / 반품 글 남겨주시면 기사님 방문 회수신청 자동으로 처리됩니다.<br />\n(기사님 방문시 경비실이나 전화 연락후 방문 해달라는 메모 등 배송메세지 같이 기재해주시면 메모해서 처리 해드립니다.)<br />\n 타 택배사 이용하실경우 미리 말씀해주셔야 방문 회수신청처리 안해드립니다.<br />\n<br />\n* 배송전 교환/취소시 [배송전 부분취소/변경] 제목선택을 안해주시면 상품교환/주문취소는 당일 처리되지 않습니다 *<br />\n<br />\n비회원으로 문의주실 경우엔 동명이인으로 인해 주문정보와 함께 남겨주셔야 바로 처리 가능합니다.<br />\n<br />\n----------------------------------------------------------------------<br>";
             NN.Config.toolbarType = "simple";

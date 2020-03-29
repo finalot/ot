@@ -200,14 +200,15 @@ text-overflow:ellipsis;
                     <tr>
                         <td>300</td>
                         <td>반품해줘</td>
-                        <td ><p class="conment-line">어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
+                        <td><p class="conment-line">어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
                         어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
                         어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
                        	</p>
                         <p class="conment-content">어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
                         어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
-                        어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁</p></td>
-                        <td>문태환</td>
+                        어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁</p>
+                        </td>
+                         <td>문태환(180,80,L)</td>
                         <td>2020-02-02</td>
                         <td><input type="text" class="admin-coment"name="admin-coment"></td>
                         <td><button class="coment-Btn">등록</button></td>
@@ -222,7 +223,7 @@ text-overflow:ellipsis;
                         <p class="conment-content">어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
                         어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁
                         어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁어쩌구저쩌구 꿍시렁</p></td>
-                        <td>문태환</td>
+                        <td>문태환(180,80,L)</td>
                         <td>2020-02-02</td>
                         <td><input type="text" class="admin-coment"name="admin-coment"></td>
                         <td><button class="coment-Btn">등록</button></td>
@@ -416,9 +417,10 @@ text-overflow:ellipsis;
       <script>
       $(".conment-content").slideUp();
       
-	$('.conment-line').click(function(){
-		$(this).next('p').slideToggle(500,function(){
+		$('.conment-line').click(function(){
+		$(this).next('.conment-content').slideToggle(500,function(){
         });
+	
 	})	
     </script>
 </body>

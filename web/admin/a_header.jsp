@@ -370,7 +370,7 @@ a:cursor{
                              <textarea onkeyPress="keyevent();" style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
                              border-radius:4%;width: 89%;" id="chatContent" class="form-control"  
                              placeholder="메세지를 입력하세요." maxlength="100" ></textarea>
-                 <button id="sendChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
+                 <button id="addChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
                  type="button" class="btn btn-default pull-right" onclick="addChat();" >전송</button>
                          </div>
                          <div class="form-group col-xs-2">
@@ -447,7 +447,8 @@ a:cursor{
     </script>
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="http://localhost:82/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<script>
 	
 	var check = true
@@ -477,37 +478,6 @@ a:cursor{
 		
 	});
 	
-	 function addChat(chatContent){
-		 
-			if(!$('#chatContent').val()==""){
-   	 
-		var today = new Date();   
-		var hours = today.getHours(); // 시
-		var minutes = today.getMinutes();  // 분
-		  var ampm = hours >= 12 ? 'pm' : 'am';
-		  hours = hours % 12;
-		  hours = hours ? hours : 12; // the hour '0' should be '12'
-		  minutes = minutes < 10 ? '0'+minutes : minutes;
-		  var strTime = ampm + ' '+hours + ' : ' + minutes;
-		
-		var content = document.getElementById('chatContent').value;
-		
-         $('#chat-box').append('<div>'+ 
-         '<span style="font-size:12px; margin-left: 18px">상담사</span>'+
-         '<div style="display:flex">'+
-         '<div style="color:black;width:270px;border-radius: 10px;background:white;margin-left:3.5%;margin-top:1%;">'+
-         '<pre  style="resize:none; font-size:12px;background:none;'+
-         'margin-left:3%;margin-top:3%;border:none;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;">'+content+'</pre>'+
-         '</div>'+
-         '<span style="font-size:7px;margin-left:15px;margin-top: auto;">'+strTime+'</span>'+
-         '</div>'+
-         '</div>')
-                  $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight)
-                          
-                  document.getElementById('chatContent').value = "";
-			}
-          }
-	
 	</script>
 	
  <script>
@@ -527,7 +497,61 @@ a:cursor{
 
   
    </script>	
-
+<script>
+$(document).ready(function(){
+	var socket = io("http://localhost:82");
+	
+	 $('#addChat').click(function(){
+	 
+		if(!$('#chatContent').val()==""){
+	 
+	var today = new Date();   
+	var hours = today.getHours(); // 시
+	var minutes = today.getMinutes();  // 분
+	  var ampm = hours >= 12 ? 'pm' : 'am';
+	  hours = hours % 12;
+	  hours = hours ? hours : 12; // the hour '0' should be '12'
+	  minutes = minutes < 10 ? '0'+minutes : minutes;
+	  var strTime = ampm + ' '+hours + ' : ' + minutes;
+	
+	var content = document.getElementById('chatContent').value;
+	//내가 보내는 내용 + 서버로 보내기
+     $('#chat-box').append('<div>'+ 
+     '<span style="font-size:12px; margin-left: 18px">상담사</span>'+
+     '<div style="display:flex">'+
+     '<div style="color:black;width:270px;border-radius: 10px;background:white;margin-left:3.5%;margin-top:1%;">'+
+     '<pre  style="resize:none; font-size:12px;background:none;'+
+     'margin-left:3%;margin-top:3%;border:none;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;">'+content+'</pre>'+
+     '</div>'+
+     '<span style="font-size:7px;margin-left:15px;margin-top: auto;">'+strTime+'</span>'+
+     '</div>'+
+     '</div>')
+              $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight)
+                      
+     socket.emit("send_msg", {id:"userId",msg:content,Time:strTime,type:"admin"});
+		 document.getElementById('chatContent').value = "";
+		}
+		
+     });
+	 socket.on('send_msg', function(data){
+		 
+		 if(data.type == "user"){
+			 // 타입이 user인 data만 받아오기
+			 $('#chat-box').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
+                     '<div style="display:flex; margin-left:4.5%;">'+
+                     '<span style="font-size:7px;margin-left:55px;margin-top: auto;">'+data.Time+'</span>'+
+                     '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
+                     '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
+                     'margin-left:3%;margin-top:3%;border:none;">'+data.msg+'</pre>'+
+                     '</div>'+
+                     '</div>' + 
+                     '</div>'); 
+			    $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight)
+		 }
+	 });		 
+	 
+});
+</script>
 
 </body>
 </html>
