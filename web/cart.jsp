@@ -38,7 +38,13 @@
 <!--===============================================================================================-->
 <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
 <style>
+.mycoupon{
+margin-right: 3%;
 
+}
+#coupon-list li{
+	    padding-bottom: 5%;
+}
 </style>
 </head>
 <body class="animsition">
@@ -607,10 +613,28 @@
         <a href="#none" class="close" onclick="OrderLayer.offDiv('order_layer_detail');">
         <img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기"
         style="position: relative;left: -14px;top: -33px;"></a>
+        <div style="border-bottom: 1px solid;margin-left: 3%;margin-right: 4%;">
+   		 <p style="margin-left: 5%;margin-top: 3%;margin-bottom: 3%;color: black;font-weight: bold;">할인 쿠폰 선택</p>
+		</div>
+		<div style="margin-left: 3%;margin-left: 5%; margin-top: 6%;height: 65%;">
+		<ul id="coupon-list">
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+		</ul>
+		
+		</div>
+		<div style="display: flex;background: #f3f3f3;height: 8%;color: black;font-weight: bold;">
+		<span style="margin-left: 4%;margin-top: 4%;">총 할인금액</span> <span style="margin-top:5%;margin-left: 40%;">1000원</span>
+		</div>
+		<div align="center" style="margin-top: 6%;">
+		<button style="margin-right:5%; border: 1px solid;height: 35px;width: 100px;">쿠폰 적용</button>
+		<button style="border: 1px solid;height: 35px;width: 100px;">취소</button>
+		</div>
     </div>
-	
-
-
 
 	<!-- Footer -->
 	<%@include file="footer.jsp" %>
