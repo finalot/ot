@@ -228,97 +228,6 @@ a:cursor{
 					  	  </div>
 					  	</div>
 					 </li>
-					  <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style=" background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					  <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					   <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					   <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					   <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					   <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
-					   <li style="padding: 2%;">
-                 	   <div style="display:flex">
-						  <img src="../images/icons/user.png" alt="회원사진" style="border: 1px solid black;border-radius: 44px;height: 70px;">
-						  <div style="width: 70%;">                
-					  	  <h4 style="margin-left: 4%; font-weight: bold;">고객명</h4>
-					  	  <p style="margin-left: 5%;">안녕하세요~~!! 문의드립니다...</p>
-					  	  </div>
-					  	  <div>
-					  	  	<p style="margin-bottom: 22%;">오후 12:30</p>
-					  	  	<p style="    background: orangered;color: white; border-radius: 100%;text-align: center;width: 38%;">1</p>	
-					  	  </div>
-					  	</div>
-					 </li>
 				 </ul>
                   </div>
                     <div class="portlet-footer" style="background: #333330;height: 80px;">
@@ -449,7 +358,46 @@ a:cursor{
     <!-- Main JS-->
     <script src="http://localhost:82/socket.io/socket.io.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-	<script>
+<script>
+   $(document).ready(function(){
+	   var socket = io("http://localhost:82");	
+	   
+	   socket.on('chats', function(data){
+		   console.log(data);
+	var userList="";	   
+		   
+	for(var i=0;i<data.length;i++){
+		for(var j=-1;j<=i;j++){
+			if(i == 0 || j > 0  && data[j].userId != data[i].userId ){
+				if(data[i].type == "user"){
+		   
+ 		 var user = '<li style="padding: 2%;">'+
+				   '<div style="display:flex">'+
+				  '<img src="../images/icons/user.png" alt="회원사진" class="user-icon">'+
+				  '<div style="width: 70%;">'+                
+			  	  '<button  onclick="chatBtn(this)" style="margin-left: 4%; font-weight: bold;">'+data[i].userId+'</button>'+
+			  	  '<p class="user-text"  style="margin-left: 5%;">'+data[i].message+'</p>'+
+			  	  '</div>'+
+			  	  '<div>'+
+			  	  	'<p style="margin-bottom: 22%;">'+data[i].Time+'</p>'+
+			  	  	'<p class="massege-count">'+data[i].Count+'</p>'+
+			  	  '</div>'+
+			  	'</div>'+
+			 	'</li>';
+ 		 userList += user;
+ 		 break;
+				}	 
+	    	}
+		}
+	}
+		$('#chat-user').html(userList)   
+	
+	 	 });
+   });
+   
+  </script>
+	
+<script>
 	
 	var check = true
 	
@@ -478,28 +426,55 @@ a:cursor{
 		
 	});
 	
-	</script>
+</script>
 	
  <script>
-   $('#chat-user li').mouseenter(function(){
-	   $(this).css('background','gray');
-   });
-   $('#chat-user li').mouseleave(function(){
-	   $(this).css('background','white');
-   });
    
-   $('#chat-user li').click(function(){
+   //아이디별 채팅 리스트 가져오기
+   function chatBtn(en){
 	   $('#chat_container').css('display','block');
-   });
+	   
+		var socket = io("http://localhost:82");
+	   
+		var userId = $(en).text();
+		//클리한 아이디 서버로 보내기
+		socket.emit("userId",userId);
+		//몽고디비에서 find한 값 가져오기
+		socket.on("chatOne",function(chatOne){
+			console.log("chatOne : "+chatOne)
+			
+		var chatList="";
+		for(var i=0;i<chatOne.length;i++){
+			
+			 var chat='<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">'+chatOne[i].userId+'</span>'+
+                     '<div style="display:flex; margin-left:4.5%;">'+
+                     '<span style="font-size:7px;margin-left:55px;margin-top: auto;">'+chatOne[i].Time+'</span>'+
+                     '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
+                     '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
+                     'margin-left:3%;margin-top:3%;border:none;">'+chatOne[i].message+'</pre>'+
+                     '</div>'+
+                     '</div>' + 
+                     '</div>'; 
+			 
+                  chatList += chat;
+		}
+		   $('#chat-box').html(chatList);
+	 $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight)
+		});
+   };
+   
   $('#chat_exit').click(function(){
 	  $('#chat_container').css('display','none');
   });
 
   
-   </script>	
+ </script>	
+ 
+   
 <script>
 $(document).ready(function(){
 	var socket = io("http://localhost:82");
+	
 	
 	 $('#addChat').click(function(){
 	 

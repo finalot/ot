@@ -329,8 +329,6 @@
 		
 	</div>
 	
-	
-
 	<!-- Container Selection1 -->
 	<div  id="dropDownSelect1" >
 	<div class="btn-back-to-top bg0-hov" id="chat_container" style="cursor:default;">
