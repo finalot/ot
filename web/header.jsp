@@ -737,7 +737,7 @@
 						<ul>
 							<li><a href="/myshop/order/list.html">주문내역</a></li>
 							<li></li>
-							<li><a href="/order/basket.html"
+							<li><a href="cart.jsp"
 								class="xans-element- xans-layout xans-layout-statelogoff ">장바구니
 									<span class="">(<span class="EC-Layout-Basket-count"></span>)
 								</span>

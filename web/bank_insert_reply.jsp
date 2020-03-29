@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<title>상품문의상세보기</title>
+<title>입금확인/입금자변경</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
 <link rel="stylesheet" href="./css/mypage_list.css">
@@ -73,7 +73,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>상품 문의</h2>
+    			<h2>입금확인/입금자변경</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">
@@ -123,7 +123,7 @@
 		
 	<tr>
 		<th scope="row">SUBJECT</th>
-           <td>[상품문의]	
+           <td>[입금확인/입금자변경]	
 		   </td>
     </tr>
     
@@ -138,7 +138,7 @@
 					<li class="displaynone">
                                 <span>POINT</span> <img src="/web/upload/yangji_pc_crumb/ico_point0.gif" alt="0점">
                             &nbsp;</li>
-                            <li class="" style="text-align: right;position: relative;top: -49px;font-weight:600;">
+                            <li class="" style="text-align: right;position: relative;top: 9px;font-weight:600;">
                                 <span>DATE</span> <span class="txtNum">2020-03-26</span>
                             </li>
                             <li class="displaynone">
@@ -148,8 +148,27 @@
                                 <span>VIEWED</span> <span class="txtNum">1</span>
                             </li>
                         </ul>
-<div class="detail">
+<div class="detail" style="height: 615px;">
 <div style="font-weight:600;">
+<p><br></p>
+<p><br></p>
+<!-- 답변받을 내용이 들어갈곳 관리자 -->
+안녕하세요 고객님 ot 입니다.
+<br>문의주신 상품 현재 여유재고 있는 상품이라<br>
+월~목 3시, 금요일 오후2시 이전으로 결제완료시 빠른 발송 가능합니다.
+<br>무통장입금의 입금확인은 소요시간이 최대 2시간 가량 소요될 수 있으며,<br>
+ot 외 타사이트 구매시 연동되는 시간이 소요되니<br>
+이 점 참고 하셔서 여유있게 구매 부탁 드립니다!<br>
+출고시 수령까지 1~3일 정도 소요되나 택배사 물량에 따라 배송지연이 있을 수 있어
+<br>수령일까지 확답은 어려우니 여유있게 주문 부탁드리며,
+<br>주문건 넘어오는대로 순차발송 해드리고 있어 여유재고 소진시<br>
+상품 준비기간이 소요될 수 있으니 이 점 참고 후 구매 부탁드리겠습니다.
+<br>오늘도 즐거운 하루 되시길 바라며 저는 CS팀 홍길동이였습니다. 감사합니다.
+<br>
+<br>
+<br>
+<br>
+[ Original Message ] <br>
 ▶ 상품 기본 설명은 상품 페이지 하단에 기재되어있습니다. <br>
 사이즈는 잘 맞는 상품의 상세사이즈와 저희가 올려드린 상세사이즈를 비교 해주시는게 좋습니다.<br>
 <br>

@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<title>상품문의상세보기</title>
+<title>배송전취소/변경 상세보기</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
 <link rel="stylesheet" href="./css/mypage_list.css">
@@ -73,7 +73,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>상품 문의</h2>
+    			<h2>배송전 주문취소/변경</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">
@@ -123,7 +123,7 @@
 		
 	<tr>
 		<th scope="row">SUBJECT</th>
-           <td>[상품문의]	
+           <td>[배송전 주문취소/변경]	
 		   </td>
     </tr>
     
@@ -163,14 +163,13 @@
 ----------------------------------------------------------------------<br>			
 
 <div class="detail_text">
+<!-- 문의할 내용 -->
 배송이 바로 가능한가요?
 </div>
 </div>
                     </td>
                 </tr>
-	
-            	
-		
+
 	</tbody>
 	
 		<tbody class="">

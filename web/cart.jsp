@@ -145,7 +145,7 @@
 			
 
 			<!-- Total -->
-			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:63px;left:-48px;">
+			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:70px;left:-48px;">
 			결제 예정 금액</h3><br>
  
 			<div class="totalArea"style="display:flex;margin-top: 3%;">
@@ -237,6 +237,24 @@
 							0 won</span>
 						</td>	
 					</tr>
+					
+					<tr class="txt14">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<strong>쿠폰</strong></th>
+						<td style="border-top: 1px solid #ddd;">
+						<input type="text" name="point" id="point" size="20px;" style="margin-left: 8px; margin-top:2px;">
+						<button id="infodetail" 
+						class="more yg_btn_24 yg_btn3" style="top:-1px;">쿠폰사용</button>
+						<br>
+						</td>	
+					</tr>
+					
 					
 					
 					<tr class="txt14">
@@ -576,6 +594,29 @@
 	</form>
 	</div>
 	</section>
+	
+	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:704px; left: 580.906px; display:none;position:absolute;
+	border:1px solid #000;height:159px;">
+        <div class="header">
+            <h3 style="font-size: 14px;position: relative;top: 1px;">총 주문금액 상세내역</h3>
+        </div>
+        <div class="content">
+            <p>21,500 won</p>
+            <ul class="ec-base-desc typeDot gLarge rightDD">
+<li>
+<strong class="term">상품금액</strong><span class="desc">19,000 won</span>
+</li>
+                
+                <li style="position: relative;top: 16px;">
+<strong class="term">배송비</strong><span class="desc" style="padding-left:19px;">2,500 won</span>
+</li>
+            </ul>
+</div>
+        <a href="#none" class="close" onclick="OrderLayer.offDiv('order_layer_detail');">
+        <img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기"
+        style="position: relative;left: -14px;top: -151px;"></a>
+    </div>
+	
 
 
 
@@ -781,6 +822,8 @@
 
 			    });
 	
+
+				
 		 
 	</script>
 			<script>
@@ -798,6 +841,16 @@
        var numProduct = Number($(this).prev().val());
        $(this).prev().val(numProduct + 1);
    });
+</script>
+
+<script>
+$('#infodetail').click(function(){
+	$('#orderdetail').css('display','block');
+	
+});
+$('.close').click(function(){
+	$('#orderdetail').css('display','none');
+})
 </script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>

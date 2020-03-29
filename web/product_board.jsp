@@ -136,7 +136,7 @@
           				<tr class="xans-record-">
 							<td>
 								<!-- no 공지번호 들어갈 곳 -->
-									<span id="idMsg4">141261</span>
+									<span id="idMsg4">141262</span>
 							</td>
                				<td class="thumb" >
                					<!-- subject 내용 들어갈 곳 -->
@@ -150,9 +150,10 @@
        							<span id="prd_name">러트 세미 부츠컷 슬랙스</span>
        							<br>
        							<div class="ppro">
-       							<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
-                       			 <a id="idMsg10" style="color:#555555;" href="product_board_detail.jsp">
-                      			  [상품문의]</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
+       							<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_re.gif" alt="답변" class="ec-common-rwd-image">
+       							<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image">
+                       			 <a id="idMsg10" style="color:#555555;" href="product_board_reply.jsp">
+                      			  답변완료 :)</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
        							</div>
        						</td>
                				<td class="left">

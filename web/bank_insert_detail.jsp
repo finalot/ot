@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<title>상품문의상세보기</title>
+<title>입금확인/입금자변경</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!--    <link rel="stylesheet" href="./css/Login_style.css"> -->
 <link rel="stylesheet" href="./css/mypage_list.css">
@@ -73,7 +73,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>상품 문의</h2>
+    			<h2>입금확인/입금자변경</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">
@@ -123,7 +123,7 @@
 		
 	<tr>
 		<th scope="row">SUBJECT</th>
-           <td>[상품문의]	
+           <td>[입금확인/입금자변경]	
 		   </td>
     </tr>
     
