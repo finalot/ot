@@ -37,6 +37,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+<style>
+
+</style>
 </head>
 <body class="animsition">
 
@@ -249,8 +252,8 @@
 						<strong>쿠폰</strong></th>
 						<td style="border-top: 1px solid #ddd;">
 						<input type="text" name="point" id="point" size="20px;" style="margin-left: 8px; margin-top:2px;">
-						<button id="infodetail" 
-						class="more yg_btn_24 yg_btn3" style="top:-1px;">쿠폰사용</button>
+						<a id="infodetail" 
+						class="more yg_btn_24 yg_btn3" style="top:-1px; cursor: pointer;">쿠폰사용</a>
 						<br>
 						</td>	
 					</tr>
@@ -844,7 +847,9 @@
 </script>
 
 <script>
-$('#infodetail').click(function(){
+
+ $('#infodetail').click(function(e){
+	e.stopPropagation();
 	$('#orderdetail').css('display','block');
 	
 });
