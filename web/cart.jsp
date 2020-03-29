@@ -598,26 +598,15 @@
 	</div>
 	</section>
 	
-	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:704px; left: 580.906px; display:none;position:absolute;
-	border:1px solid #000;height:159px;">
+	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:888px; left: 636.906px; display:none;position:absolute;
+	border:1px solid #000;height:600px; background-color:#fff;">
         <div class="header">
             <h3 style="font-size: 14px;position: relative;top: 1px;">총 주문금액 상세내역</h3>
         </div>
-        <div class="content">
-            <p>21,500 won</p>
-            <ul class="ec-base-desc typeDot gLarge rightDD">
-<li>
-<strong class="term">상품금액</strong><span class="desc">19,000 won</span>
-</li>
-                
-                <li style="position: relative;top: 16px;">
-<strong class="term">배송비</strong><span class="desc" style="padding-left:19px;">2,500 won</span>
-</li>
-            </ul>
-</div>
+        
         <a href="#none" class="close" onclick="OrderLayer.offDiv('order_layer_detail');">
         <img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기"
-        style="position: relative;left: -14px;top: -151px;"></a>
+        style="position: relative;left: -14px;top: -33px;"></a>
     </div>
 	
 

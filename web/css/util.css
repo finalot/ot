@@ -4571,6 +4571,7 @@ input[type=radio], input[type=checkbox] {
 select {
 	height: 26px;
     border: 1px solid #ddd;
+    width: 191px;
 }
 
 .join_agree {
@@ -4779,7 +4780,7 @@ table td, table th {
 
 .totalDetail {
     display: none;
-    width: 300px;
+    width: 700px;
     color: #757575;
 }
 
