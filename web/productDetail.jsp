@@ -11,6 +11,460 @@
 <link rel="stylesheet" href="./css/mypage_basic.css">
 <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <style>
+
+            #container{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                position: absolute;
+                left: 0px;
+            }
+
+            #profile{
+                width: 850px;
+                height: 280px;
+                padding: 10px;
+                padding-top: 25px;
+                border: none;
+                display: inline-block;
+                margin-bottom: 0px;
+            }
+
+            .post{
+                width: 260px;
+                margin: 7px;
+            }
+
+
+            #show-profile{
+                width: 850px;
+                height: 280px;
+                border-radius: 9px;
+                position: absolute;
+                background: none;
+            }
+            
+            #profilebackgound{
+                width: 850px;
+                height: 280px;
+                background-color: lightgrey;
+                border-radius: 9px;
+                display: inline-block;
+                position:absolute;
+				margin-left: -425px; 
+				z-index: -1;
+                
+                -webkit-box-shadow: 0 5px 10px -6px #222;
+                -moz-box-shadow: 0 5px 10px -6px #222;
+                box-shadow: 0 5px 10px -6px #222;
+            }
+            
+
+            #profileimgbox{
+                width: 170px;
+                height: 165px;
+                border-radius: 100%;
+                float: left;
+                margin-top: 110px;
+                margin-left: 60px;  
+                text-align: center;
+                background-color: white;
+                box-shadow: 1px 3px 6px 0px #222;
+
+            }
+            #profileimg{
+                border-radius: 100%;
+                width: 160px;
+                height: 155px;
+                float: left;
+                padding: 5px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+
+            .profile{
+                font-size: 25px;
+                margin: 10px;
+                margin-top: 1px;
+
+            }
+
+			#hr1{
+			 margin: 0px 0px 5px 0px; 
+			 width: 850px;
+			 display: inline-block;
+			 }
+
+            #settingimg{
+                width: 50px;
+                height: 50px;
+            }
+
+            #profilename{
+                width: 300px;
+                height: 140px;
+                margin-top: 130px;
+                border: none;
+                border-radius: 6px;
+                padding: 5px;
+                float: left;
+                margin-left: 10px;
+                text-align: left;
+                padding-left: 10px;
+                color: white;
+            }
+
+            #name{
+                font-size: 50px;
+            }
+
+            #memo{
+                font-size: 25px;
+            }
+
+            #profileright{
+                width: 130px;
+                height: 280px;
+                float: right;
+                border-radius: 15px;
+                text-align: left;
+                font-size: 18px;
+                color: white;
+                padding: 10px;
+               
+            }
+
+            #profileSetbtn{
+                font-family: 'Jua', sans-serif;
+                margin-top: 10px;
+                font-size: 15px;
+                border: none;
+                border-radius: 10px;
+                width: 100px;
+                height: 28px;
+                opacity: 70%;
+            }
+
+            #settingbtn{
+                font-family: 'Jua', sans-serif;
+                font-size: 15px;
+                width: 70px;
+                height: 27px;
+                border: none;
+                border-radius: 10px;
+                margin-left: 25px;
+                opacity: 70%;
+            }
+
+            #userprofilshow{
+                background-color: whitesmoke;
+                border: none;
+                width: 300px;
+                height: 50px;
+                
+
+            }
+            #modal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+
+            #modalcontent{
+                width: 900px;
+                height: 500px;
+                font-size: 25px;
+                margin-top: 4%;
+                display: inline-block;
+            }
+
+			.contentimgs{
+				width: auto;
+                height: 800px;
+                float: left;
+			 
+			}
+			
+			#dotbox{
+				position: absolute;
+                background-color: rgba(0,0,0,0.4);
+				bottom: 0px;
+				left: 200px;
+			}
+
+            #modalimg{
+            	width:auto;
+                height:100%;
+                float: left;
+            }
+
+            #coments{
+                background-color: white;
+                width: 400px;
+                height: 800px;
+                float: left;
+                padding: 20px;
+                overflow: hidden;
+            }
+            .coments{
+                float: left;
+            }
+
+            #innercoment{
+                height: 150px;
+            }
+
+            #closebtn{
+                margin-left: 1050px;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: 1px solid transparent;
+                font-size: 45px;
+            }
+
+            #comentarea{
+                margin-top: 10px;
+            }
+
+            #comentinput{
+                width: 245px;
+                height: 25px;
+                float: left;
+            }
+
+            #comentsend{
+                height: 25px;
+                background-color: lightslategray;
+                border: 0px;
+                font-size:18px;
+            }
+
+            #setting{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+
+            #settinglist{
+                height: 490px;
+                width: 250px;
+                border:none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 20.5px;
+                margin: 120px auto;
+                padding-top: 2px;
+                display: inline-block;
+            }
+
+            #profileModal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+            #profileSet{
+                height: 530px;
+                width: 260px;
+                border:none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 18px;
+                margin: 85px auto;
+                padding-top: 2px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #Public_scope{
+                height: 320px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #Public_Scope_Modal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+            }
+
+            #comentSet{
+                height: 320px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #comentSetModal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+            }
+
+            #comenttextarea{
+                height: 100px;
+                width: 230px;
+            }
+
+            #nameSet{
+                height: 250px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            #nameSetModal{
+                display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+                /* display: inline-block; */
+            }
+
+            #nametextarea{
+                height: 25px;
+                width: 230px;
+            }
+
+            .checkBox{
+               border-radius: 100%;
+               width: 15px;
+               height: 15px; 
+            }
+            
+            #proImgSet{
+             	height: 250px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+            #proImgModal{
+             display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+                /* display: inline-block; */
+            }
+            
+              #proimgarea{
+                height: 25px;
+                width: 230px;
+            }
+            
+             #proBackSet{
+             	height: 250px;
+                width: 250px;
+                border: none;
+                background-color: white;
+                border-radius: 15px;
+                font-size: 23px;
+                margin: 150px auto;
+                padding-top: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+            
+            #proBackModal{
+             display: none;
+                position: fixed;
+                z-index: 10; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4); 
+                text-align: center;
+                /* display: inline-block; */
+            }
+            
+              #probackarea{
+                height: 25px;
+                width: 230px;
+            }
+
 .ec-base-table td{
   border-top: 1px solid #EEE !important;
 }
@@ -398,11 +852,13 @@ function optionDel(){
 						 onclick="washing_tip();" style="width: 40%; float: left;"><small>sizeInfo & wasingTip</small></button>
 						 
 					<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
-						style="position: relative; left: 10%; width: 40%;">Buy Now</button>
+						onclick="order();" style="position: relative; left: 10%; width: 40%;">Buy Now</button>
 
 <script>
 
-
+function order(){
+	location.href="order.jsp";
+}
 function washing_tip(){
 	location.href="#washing_tip";
 }
@@ -1016,7 +1472,7 @@ function qna(){
 									
 								<!-- Button -->
 								<button id="recommandSort"class="bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
-						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>추천순</Strong></button>
+						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>좋아요순</Strong></button>
 									
 									&nbsp;|
 									
@@ -1245,7 +1701,127 @@ function qna(){
 						
 						
 						
-							<!-- 정렬 부분 버튼 -->
+						<!-- modal시작!!!!!!!!!!!!!!!!!!!!!!!! -->
+									<div id="modal" style="overflow-y:hidden;">
+								<div id="modalcontent" style="width:100%;height:100%;margin-left:18.5%;margin-top:80px !important;">
+                
+               
+                
+                <div id="modalpost" >
+                    <div id="modalimg" class="slideshow-container" style="position:relative;top:-20px;" >
+                        
+                         <div style="width:10px;height:10px;position:relative;top:400px;left:5px;">
+                         <a class="prev" onclick="plusSlides(-1);"style="font-size:25px;background:gray;opacity: 0.6;" ><strong>&#10094;</strong></a>
+                         </div>
+                        <div style="width:10px;height:10px;position:relative;top:390px;left:780px;">
+                        <a class="next" onclick="plusSlides(1);" style="font-size:25px;background:gray;opacity: 0.6;"><strong>&#10095;</strong></a>
+                        </div>
+                        
+                        <div class="mySlides" style="display: block;">
+                            <div class="numbertext" ><font style="font-size:14px;">1 / 2</font></div>
+                            <img class="contentimgs" src="images/oT/review/review_sample1.jpg" alt="sample1" style="margin-top:-5%;">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <div class="numbertext"><font style="font-size:14px;">2 / 2</font></div>
+                            <img class="contentimgs" src="images/oT/review/review_sample2.jpg" alt="sample2" style="margin-top:-5%;" >
+                        </div>
+                        
+               
+                       
+                       
+                        
+                        <div id="dotbox" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1);"></span> 
+                            <span class="dot" onclick="currentSlide(2);"></span> 
+                           
+                        </div>      
+                        
+                                    
+                   </div>
+            
+               </div>
+<button class="close1" onclick="modalclose();"style="position: relative;right: 365px;bottom: 37px;color:ivory;">&times;</button>
+                    <div id="coments"style="margin-top:-3px;overflow-y:scroll;" >
+								<br>
+								<div style="position: relative; top: -6%; font-size:14px;margin:0px 0px -20px 0px;"
+											class="reviews_index_gallery_review__review_product js-link-iframe "
+											data-url="http://www.black-up.kr/product/detail.html?cate_no=1&amp;product_no=10550">
+											<div
+												class="reviews_index_gallery_review__review_product_thumbnail">
+												<img class="" alt="(BLACK UP) 호딘 트레이닝 팬츠" width="33"
+													height="33"
+													src="//assets6.cre.ma/p/black-up-kr/products/00/00/00/20/53/image/extra_small_9743a898d5f04dba.jpg"
+													style="padding-right: 3%; opacity: 1; float: left;">
+
+											</div>
+											<div
+												class="reviews_index_gallery_review__review_product_info" >
+												<div
+													class="reviews_index_gallery_review__product_info_title">
+													(BLACK UP) 호딘 트레이닝 팬츠</div>
+												<div
+													class="reviews_index_gallery_review__product_info_feedbacks" >
+	<i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i>
+													<span class="reviews_index_gallery_review__reviews_count" style="color:gray;">
+													<small>이대*</small>
+													</span>
+												</div>
+											</div>
+										</div>
+										<hr>
+                        <div style="color:gray; border:1px solid lightgray; font-size:16px;">
+                          	<small>이 리뷰를 <strong style="color:black;">2</strong>명이 좋아합니다.</small>
+                        </div><hr>
+                         <div style="color:gray; border:2px dotted lightgray; font-size:16px;">
+                          	선택한 옵션 <br> <small>color : <strong style="color:black;">그레이</strong></small><br>
+                          				<small>size : <strong style="color:black;">M</strong></small>	
+                        </div><hr>
+                        <div id="innercoment">
+                            <div class="coments" style="font-size:12px;text-align:left;padding:10px;letter-spacing: 1px;">이런 기본템일수록 핏을 되게 중요하게 생각하는데 이거는 진짜 핏 장난 아닙니다 후후
+편하게 입는 꾸안꾸룩 좋아하는데 맨투맨이나 기본 티셔츠에 입어도 편해보이면서 예뻐요! 출근 복장이 자유로운 편이라 자주 입을 것 같습니다ㅎㅎ</div><br>
+                            
+                           
+                        </div>
+                         <div style="color:lightgray;font-size:12px;float:right;">2020-03-30</div>
+                        <div><hr>
+                            <div style="margin-top:-4px;">
+                            <font style="font-size:15px;color:gray;">이  리뷰가</font> &nbsp;
+                            <button onclick="#" style="font-size: 12px; border: none; border-radius: 10px; background-color: lightgray; color:white; width:60px;height:30px;">좋아요</button>         
+                            </div>
+                        </div><hr>
+                        <div id="comentarea">
+                        	<div>
+                            <input onkeyPress="reviewReply();" type="text" id="comentinput" placeholder="댓글을 작성해주세요 :)" maxlength="80" style="resize:none; border-radius: 5px 0px 0px 5px; 
+                            border: 0.5px solid lightgray; background-color: whitesmoke; padding: 2px; height:40px;width:85%;">
+                            <button onclick="" id="comentsend" style=" font-size: 15px;
+                             background: white; border: 1px solid lightgray; border-radius:0px 5px 5px 0px; width:50px;height: 40px;position:relative;bottom:2px;">등록</button>
+                             </div><br>
+                             
+                             <div style="color:gray; border:1px solid lightgray; border-radius:5px; font-size:16px;">
+                          	<small>우왕 이쁘게입으셧네요오~!</small>
+                          	<button style="float:right;">&times;</button><br>
+                          	<button style="float:right;font-size:10px;color:#e65540;">&nbsp;&nbsp;신고하기</button>
+                          	 <div style="color:lightgray;font-size:11px;float:right;"><font>이대*</font>&nbsp;&nbsp;2020-03-31</div></div><br>
+                          	 
+                          	 <div style="color:gray; border:1px solid lightgray; border-radius:5px; font-size:16px;">
+                          	<small>우왕 야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액~!</small>
+                          	<button style="float:right;">&times;</button><br>
+                          	<button style="float:right;font-size:10px;color:#e65540;">&nbsp;&nbsp;신고하기</button>
+                          	 <div style="color:lightgray;font-size:11px;float:right;"><font>박주*</font>&nbsp;&nbsp;2020-03-31</div></div><br>
+                          	 
+                          	 <div style="color:gray; border:1px solid lightgray; border-radius:5px; font-size:16px;">
+                          	<small style="margin:5px 5px 5px 5px;">우왕 아주 사고십구만요 이야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액</small>
+                          	<button style="float:right;">&times;</button><br>
+                          	<button style="float:right;font-size:10px;color:#e65540;">&nbsp;&nbsp;신고하기</button>
+                          	 <div style="color:lightgray;font-size:11px;float:right;"><font>이대*</font>&nbsp;&nbsp;2020-03-31</div></div><br>
+                        
+                        </div>
+                    </div>
+                            
+                </div>
+                </div>
+                <!-- modal끝!!!!!!!!!!!!!!!!!!!!!!!! -->
 									
 									<hr style="border:1px solid lightgray;margin-top:2px;">
 									<br><br>
@@ -1255,7 +1831,7 @@ function qna(){
 								
 									<!-- 리뷰1줄 시작 -->
 									<!-- 리뷰1 -->
-									<li class="reviews_index_gallery_review"
+									<li class="reviews_index_gallery_review" id="review1"
 										style="-webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 6px -6px #222;width: 15%; height: 370px; font-size: 11px; border: 2px solid lightgray; border-radius: 2%; margin-left: 2%; margin-top: -1%;">
@@ -2898,6 +3474,48 @@ function qna(){
 	<script src="js/main.js"></script>
 	<script>
 	
+
+	$('#review1').on('click',function modalOpen(){
+        var ulr = $(this).attr("src");
+        $("#modalimg").attr("src", ulr);            
+        $('#modal').show();
+
+        
+    });
+	  
+
+      function modalclose(){
+          $('#modal').css("display","none");
+      }
+	
+      var slideIndex = 1;
+
+
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+          showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+      }
 	
 	
 		/*[ +/- num product ]

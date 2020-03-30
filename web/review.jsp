@@ -185,7 +185,7 @@
 
 			.contentimgs{
 				width: auto;
-                height: 700px;
+                height: 800px;
                 float: left;
 			 
 			}
@@ -206,8 +206,8 @@
             #coments{
                 background-color: white;
                 width: 400px;
-                height: 700px;
-                float: right;
+                height: 800px;
+                float: left;
                 padding: 20px;
                 overflow: hidden;
             }
@@ -216,7 +216,7 @@
             }
 
             #innercoment{
-                height: 280px;
+                height: 150px;
             }
 
             #closebtn{
@@ -870,6 +870,7 @@
     background-repeat: no-repeat;
     background-position: -35px -88px;
 }
+
 </style>
 									<br>
 									
@@ -907,7 +908,7 @@
 									
 								<!-- Button -->
 								<button id="recommandSort"class="bg4 bo-rad-23 hov1 s-text1 trans-0-4" href="review.jsp"
-						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>추천순</Strong></button>
+						style=" width: 4%; height: 20px; font-size: 12px; background:white;color:gray;"><Strong>좋아요순</Strong></button>
 									
 									&nbsp;|
 									
@@ -1138,30 +1139,35 @@
 						
 									<hr style="border:1px solid lightgray;margin-top:2px;">
 									<br><br>
-									
-									<div id="modal">
-								<div id="modalcontent" style="width:80%;height:80%;">
+									<!-- modal시작!!!!!!!!!!!!!!!!!!!!!!!! -->
+									<div id="modal" style="overflow-y:hidden;">
+								<div id="modalcontent" style="width:100%;height:100%;margin-left:18.5%;margin-top:80px !important;">
                 
-                <button class="close1" onclick="modalclose();"
-								style="position: relative; left: 49.5%; top: -2%;">&times;</button>
+               
                 
                 <div id="modalpost" >
-                    <div id="modalimg" class="slideshow-container"  >
+                    <div id="modalimg" class="slideshow-container" style="position:relative;top:-20px;" >
+                        
+                         <div style="width:10px;height:10px;position:relative;top:400px;left:5px;">
+                         <a class="prev" onclick="plusSlides(-1);"style="font-size:25px;background:gray;opacity: 0.6;" ><strong>&#10094;</strong></a>
+                         </div>
+                        <div style="width:10px;height:10px;position:relative;top:390px;left:780px;">
+                        <a class="next" onclick="plusSlides(1);" style="font-size:25px;background:gray;opacity: 0.6;"><strong>&#10095;</strong></a>
+                        </div>
+                        
                         <div class="mySlides" style="display: block;">
-                            <div class="numbertext">1 / 2</div>
-                            <img class="contentimgs" src="images/oT/review/review_sample1.jpg" alt="sample1" >
+                            <div class="numbertext" ><font style="font-size:14px;">1 / 2</font></div>
+                            <img class="contentimgs" src="images/oT/review/review_sample1.jpg" alt="sample1" style="margin-top:-5%;">
                         </div>
                         
                         <div class="mySlides">
-                            <div class="numbertext">2 / 2</div>
-                            <img class="contentimgs" src="images/oT/review/review_sample2.jpg" alt="sample2" >
+                            <div class="numbertext"><font style="font-size:14px;">2 / 2</font></div>
+                            <img class="contentimgs" src="images/oT/review/review_sample2.jpg" alt="sample2" style="margin-top:-5%;" >
                         </div>
                         
-                     
-                        <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1);">&#10095;</a>
-                        
-                        
+               
+                       
+                       
                         
                         <div id="dotbox" style="text-align:center">
                             <span class="dot" onclick="currentSlide(1);"></span> 
@@ -1173,31 +1179,88 @@
                    </div>
             
                </div>
+ <button class="close1" onclick="modalclose();"style="position: relative;right: 365px;bottom: 37px;color:ivory;">&times;</button>
+                    <div id="coments"style="margin-top:-3px;overflow-y:scroll;" >
+                    
+								<br>
+								<div style="position: relative; top: -6%; font-size:14px;margin:0px 0px -20px 0px;"
+											class="reviews_index_gallery_review__review_product js-link-iframe "
+											data-url="http://www.black-up.kr/product/detail.html?cate_no=1&amp;product_no=10550">
+											<div
+												class="reviews_index_gallery_review__review_product_thumbnail">
+												<img class="" alt="(BLACK UP) 호딘 트레이닝 팬츠" width="33"
+													height="33"
+													src="//assets6.cre.ma/p/black-up-kr/products/00/00/00/20/53/image/extra_small_9743a898d5f04dba.jpg"
+													style="padding-right: 3%; opacity: 1; float: left;">
 
-                    <div id="coments">
-                        <div id="userprofilshow">
-                            [사진]
-                            Juwan_P
-                        </div><hr style="margin: 5px;">
+											</div>
+											<div
+												class="reviews_index_gallery_review__review_product_info" >
+												<div
+													class="reviews_index_gallery_review__product_info_title">
+													(BLACK UP) 호딘 트레이닝 팬츠</div>
+												<div
+													class="reviews_index_gallery_review__product_info_feedbacks" >
+	<i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i>
+													<span class="reviews_index_gallery_review__reviews_count" style="color:gray;">
+													<small>이대*</small>
+													</span>
+												</div>
+											</div>
+										</div>
+										<hr>
+                        <div style="color:gray; border:1px solid lightgray; font-size:16px;">
+                          	<small>이 리뷰를 <strong style="color:black;">2</strong>명이 좋아합니다.</small>
+                        </div><hr>
+                         <div style="color:gray; border:2px dotted lightgray; font-size:16px;">
+                          	선택한 옵션 <br> <small>color : <strong style="color:black;">그레이</strong></small><br>
+                          				<small>size : <strong style="color:black;">M</strong></small>	
+                        </div><hr>
                         <div id="innercoment">
-                            <div class="coments">댓글1</div><br>
-                            <div class="coments">댓글2</div><br>
-                            <div class="coments">댓글3</div><br>
+                            <div class="coments" style="font-size:12px;text-align:left;padding:10px;letter-spacing: 1px;">이런 기본템일수록 핏을 되게 중요하게 생각하는데 이거는 진짜 핏 장난 아닙니다 후후
+편하게 입는 꾸안꾸룩 좋아하는데 맨투맨이나 기본 티셔츠에 입어도 편해보이면서 예뻐요! 출근 복장이 자유로운 편이라 자주 입을 것 같습니다ㅎㅎ</div><br>
                             
+                           
                         </div>
-                        <div><hr style="margin: 5px;">
-                            <button style="font-size: 15px; float: left; border: none; border-radius: 10px; background-color: pink; margin-top: 4px; margin-right: 6px;">좋아요</button>
-                            <p style="font-size: 12px; margin-left: 10px;">sakun 님외 2.1k명이 좋아합니다.</p>
-                            <p style="font-size: 10px; margin-left: 10px;">1월 13일</p>          
-                        </div><hr style="margin: 5px;">
+                         <div style="color:lightgray;font-size:12px;float:right;">2020-03-30</div>
+                        <div><hr>
+                            <div style="margin-top:-4px;">
+                            <font style="font-size:15px;color:gray;">이  리뷰가</font> &nbsp;
+                            <button onclick="#" style="font-size: 12px; border: none; border-radius: 10px; background-color: lightgray; color:white; width:60px;height:30px;">좋아요</button>         
+                            </div>
+                        </div><hr>
                         <div id="comentarea">
-                            <input type="text" id="comentinput" style="border-radius: 5px; border: 0.5px solid lightgray; background-color: whitesmoke; padding: 2px;">
-                            <button onclick="" id="comentsend" style="margin-top: -5px; font-size: 15px; background-color: royalblue; border: none; border-radius: 5px; height: 28px;">게시</button>
+                        	<div>
+                            <input onkeyPress="reviewReply();" type="text" id="comentinput" placeholder="댓글을 작성해주세요 :)" maxlength="80" style="resize:none; border-radius: 5px 0px 0px 5px; 
+                            border: 0.5px solid lightgray; background-color: whitesmoke; padding: 2px; height:40px;width:85%;">
+                            <button onclick="" id="comentsend" style=" font-size: 15px;
+                             background: white; border: 1px solid lightgray; border-radius:0px 5px 5px 0px; width:50px;height: 40px;position:relative;bottom:2px;">등록</button>
+                             </div><br>
+                             
+                             <div style="color:gray; border:1px solid lightgray; border-radius:5px; font-size:16px;">
+                          	<small>우왕 이쁘게입으셧네요오~!</small>
+                          	<button style="float:right;">&times;</button><br>
+                          	<button style="float:right;font-size:10px;color:#e65540;">&nbsp;&nbsp;신고하기</button>
+                          	 <div style="color:lightgray;font-size:11px;float:right;"><font>이대*</font>&nbsp;&nbsp;2020-03-31</div></div><br>
+                          	 
+                          	 <div style="color:gray; border:1px solid lightgray; border-radius:5px; font-size:16px;">
+                          	<small>우왕 야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액~!</small>
+                          	<button style="float:right;">&times;</button><br>
+                          	<button style="float:right;font-size:10px;color:#e65540;">&nbsp;&nbsp;신고하기</button>
+                          	 <div style="color:lightgray;font-size:11px;float:right;"><font>박주*</font>&nbsp;&nbsp;2020-03-31</div></div><br>
+                          	 
+                          	 <div style="color:gray; border:1px solid lightgray; border-radius:5px; font-size:16px;">
+                          	<small style="margin:5px 5px 5px 5px;">우왕 아주 사고십구만요 이야아 으아앙 우오애애애 옿어뺘액애ㅐㄱ빼애애액</small>
+                          	<button style="float:right;">&times;</button><br>
+                          	<button style="float:right;font-size:10px;color:#e65540;">&nbsp;&nbsp;신고하기</button>
+                          	 <div style="color:lightgray;font-size:11px;float:right;"><font>이대*</font>&nbsp;&nbsp;2020-03-31</div></div><br>
+                        
                         </div>
                     </div>
                             
                 </div>
                 </div>
+                <!-- modal끝!!!!!!!!!!!!!!!!!!!!!!!! -->
 									
 								<div class="reviews_index__no_data_message">아직 작성한 리뷰가
 									없습니다.</div>
@@ -2824,6 +2887,7 @@
 	font-size: 28px;
 	font-weight: bold;
 }
+
 
 .close:hover, .close:focus {
 	color: black;

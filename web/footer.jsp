@@ -481,6 +481,11 @@
 		if(event.keyCode==13){addChat();}
 
 	}
+	function reviewReply(){
+		
+		if(event.keyCode==13){addChat();}
+
+	}
 	
 	</script>
 
