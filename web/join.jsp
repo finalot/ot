@@ -150,25 +150,13 @@
         <form method="POST" name="inputForm">
         <table class="jointype">
         <tbody>
-            <tr>
-                <th style="border-top:1px solid #ddd;">
-                      성별<img src="/ot/images/red.png" style="position:relative;left:8px;">
-                </th>
-               
-                <td style="border-top:1px solid #ddd;">
-                    <input id="is_sex0" name="is_sex" value="M" type="radio">
-                    <label id="is_sex0" style="position: relative; left: -6px;top: -2px;">남자</label>
-                    <input id="is_sex1" name="is_sex" value="F" type="radio"
-                    style="position: relative;left: -10px;">
-                    <label id="is_sex1" style="position: relative;left: -15px;top: -2px;">여자</label>
-                </td>
-            </tr>
+          
             
             <tr>
-                   <th>
+                   <th style="border-top: 1px solid #ddd;">
                          생년월일<img src="/ot/images/red.png" style="position:relative;left:8px;">
                     </th>
-                    <td>
+                    <td style="border-top: 1px solid #ddd;">
                    <input id="birth_year"  name="birth_year" class="inputTypeText" placeholder="" maxlength="4" value="" type="text"
                    style="position: relative;width: 60px;">
                       <span id="idMsg">년</span>

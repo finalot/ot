@@ -4736,6 +4736,14 @@ textarea {
     left:-4px;
 }
 
+#idMsg13 {
+	    color: #000;
+    position: relative;
+    font-size:12px;
+    font-weight:600;
+    left:11px;
+}
+
 .info li {
 	padding: 0 0 0 9px;
 }

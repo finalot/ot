@@ -5,9 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>결제완료창</title>
+
  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
 <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
@@ -35,7 +37,14 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<style>
+.totalDetail {
+    display: none;
+    width: 300px !important;
+ }
+</style>
 </head>
+
 <body class="animsition">
 
 
@@ -267,7 +276,7 @@
 								</div>
 							</td>
 							<td class="column-2">Men Tshirt
-							<br><span id="idMsg7" style="margin-left:-10px;">[옵션 : 블루/S/1개]</span></td>
+							<br><span id="idMsg7" >[옵션 : 블루/S/1개]</span></td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
@@ -293,7 +302,7 @@
 								</div>
 							</td>
 							<td class="column-2">Mug Adventure
-							<br><span id="idMsg7" style="margin-left:-10px;">[옵션 : 베이지/S/1개]</span></td>
+							<br><span id="idMsg7">[옵션 : 베이지/S/1개]</span></td>
 							<td class="column-3">29,000 won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
@@ -338,7 +347,7 @@
     					background-color: #fafafa;">
 						<span id="idMsg4">받으시는분</span></th>
 						<td>
-						<span id="idMsg7">홍길동</span>
+						<span id="idMsg13">홍길동</span>
 						</td>	
 					</tr>
 					
@@ -353,7 +362,7 @@
     					background-color: #fafafa;">
 						<span id="idMsg4">우편번호</span></th>
 						<td style="border-top: 1px solid #ddd;">
-							<span id="idMsg7">10115</span>
+							<span id="idMsg13">10115</span>
 						</td>	
 					</tr>
 					
@@ -367,7 +376,7 @@
     					background-color: #fafafa;">
 						<span id="idMsg4">주소</span></th>
 						<td style="border-top: 1px solid #ddd;">
-						<span id="idMsg7">서울시 강남구 테헤란로</span>
+						<span id="idMsg13">서울시 강남구 테헤란로</span>
 						</td>	
 					</tr>
 					
@@ -381,7 +390,7 @@
     					background-color: #fafafa;">
 						<span id="idMsg4">휴대전화</span></th>
 						<td style="border-top: 1px solid #ddd;">
-						<span id="idMsg7">010-1234-5678</span>
+						<span id="idMsg13">010-1234-5678</span>
 						</td>	
 					</tr>
 					
@@ -414,7 +423,7 @@
 	</section>
 	
 	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:704px; left: 580.906px; display:none;position:absolute;
-	border:1px solid #000;height:159px;">
+	border:1px solid #000;height:159px; background-color:#fff;">
         <div class="header">
             <h3 style="font-size: 14px;position: relative;top: 1px;">총 주문금액 상세내역</h3>
         </div>
