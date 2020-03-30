@@ -95,15 +95,15 @@ margin-right: 3%;
 							<td class="column-3"><font class="format-money">29000</font> won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
-									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
-										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-									</button>
+									<!-- <button class="num-product-down1 color1 flex-c-m size7 bg8 eff2"> -->
+										<!-- <i class="fs-12 fa fa-minus" aria-hidden="true"></i> -->
+									<!-- </button> -->
 
-									<input class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
+									<input style="margin-left: 22%;" class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
 
-									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2">
-										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-									</button>
+									<!-- <button class="num-product-up1 color1 flex-c-m size7 bg8 eff2"> -->
+										<!-- <i class="fs-12 fa fa-plus" aria-hidden="true"></i> -->
+									<!-- </button> -->
 									
 							
 								</div>
@@ -128,15 +128,15 @@ margin-right: 3%;
 							<td class="column-3"><font class="format-money">29000</font> won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
-									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
+									<!-- <button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-									</button>
+									</button> -->
 
-									<input class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
-
+									<input style="margin-left: 22%;" class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
+<!-- 
 									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-									</button>
+									</button> -->
 								</div>
 						</td>
 							<td class="column-6"><img src="/ot/images/icons/icon-point.png" width="15px;height:15px;" 
@@ -605,7 +605,7 @@ margin-right: 3%;
 	</section>
 	
 	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:888px; left: 636.906px; display:none;position:absolute;
-	border:1px solid #000;height:600px; background-color:#fff;">
+	border:1px solid #000;height:640px; background-color:#fff;">
         <div class="header">
             <h3 style="font-size: 14px;position: relative;top: 1px;">총 주문금액 상세내역</h3>
         </div>
@@ -616,7 +616,7 @@ margin-right: 3%;
         <div style="border-bottom: 1px solid;margin-left: 3%;margin-right: 4%;">
    		 <p style="margin-left: 5%;margin-top: 3%;margin-bottom: 3%;color: black;font-weight: bold;">할인 쿠폰 선택</p>
 		</div>
-		<div style="margin-left: 3%;margin-left: 5%; margin-top: 6%;height: 65%;">
+		<div style="margin-left: 3%;margin-left: 5%; margin-top: 6%;height: 52%;">
 		<ul id="coupon-list">
 			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
 			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
@@ -627,8 +627,8 @@ margin-right: 3%;
 		</ul>
 		
 		</div>
-		<div style="display: flex;background: #f3f3f3;height: 8%;color: black;font-weight: bold;">
-		<span style="margin-left: 4%;margin-top: 4%;">총 할인금액</span> <span style="margin-top:5%;margin-left: 40%;">1000원</span>
+		<div style="margin-left: 1px;display: flex;background: #f3f3f3;height: 8%;color: black;font-weight: bold;">
+		<span style="margin-left: 4%;margin-top: 2%;">총 할인금액</span> <span style="margin-top:3%;margin-left: 40%;">1000원</span>
 		</div>
 		<div align="center" style="margin-top: 6%;">
 		<button style="margin-right:5%; border: 1px solid;height: 35px;width: 100px;">쿠폰 적용</button>

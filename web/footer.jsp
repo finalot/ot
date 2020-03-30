@@ -479,8 +479,8 @@
 	function keyevent(){
 	
 		if(event.keyCode==13){addChat();}
+
 	}
-	
 	
 	</script>
 
