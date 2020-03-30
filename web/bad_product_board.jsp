@@ -98,7 +98,7 @@
                					<!-- subject 내용 들어갈 곳 -->
                					
                         <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
-                        <a id="idMsg10" style="color:#555555;">
+                        <a id="idMsg10" style="color:#555555;" href="bad_product_detail.jsp">
                         [상품불량 및 오배송접수]</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
                     </td>
                				
@@ -122,7 +122,7 @@
                				<td class="subject left txtBreak">
                         &nbsp;&nbsp;&nbsp;<img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_re.gif" alt="답변" class="ec-common-rwd-image"> 
                         <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_lock.gif" alt="비밀글" class="ec-common-rwd-image"> 
-                        <a id="idMsg10" style="color:#555555;">답변완료:)</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
+                        <a id="idMsg10" style="color:#555555;" href="bad_product_reply.jsp">답변완료 :)</a> <img src="//img0001.echosting.cafe24.com/front/type_b/image/common/icon_new.gif" alt="NEW" class="ec-common-rwd-image"><span class="txtEm"></span>
                     </td>
                				
        						</td>

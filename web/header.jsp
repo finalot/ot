@@ -49,6 +49,16 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
+<style>
+select{
+background:none;outline: 0;width:80px;
+}
+
+.fa-star{
+font-size: 9px !important;
+    color: #ffa811;
+}
+</style>
 <body class="animsition">
 
 	<!-- header fixed -->
@@ -141,13 +151,17 @@
 			<!-- 검색창 인풋 부분 -->
 
 			<form class="submitSearch" action="#">
-				<input type="text" ;  name="search"
-					; style="border: 1px solid black !important; border-radius: 5px; background: none;"
+				<input type="text"   name="search"
+					 style="border: 1px solid black !important; border-radius: 5px; background: none;"
 					placeholder="Search..">
 				<button type="submit">
 					<i class="fa fa-search"></i>
 				</button>
 			</form>
+			
+			&nbsp; <span
+						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar"
+						class="topbar-social-item fa fa-bars"></a>
 			<!-- 
 			<div class="header-wrapicon2">
 				<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
@@ -218,7 +232,7 @@
 	<!-- top noti -->
 	<div class="flex-c-m size22 bg0 s-text21 pos-relative"
 		style="background: black;">
-		출석체크 EVENT! <a href="product.jsp" class="s-text22 hov6 p-l-5">
+		출석체크 EVENT! <a href="dailyCheck.jsp" class="s-text22 hov6 p-l-5">
 			바로가기 </a>
 
 		<button
@@ -261,7 +275,7 @@
 						href="/ot/mypage.jsp" class="topbar-email"> MyPage </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a
 						href="#" class="topbar-email"> Noitce </a> &nbsp;&nbsp; <span
-						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar"
+						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar1"
 						class="topbar-social-item fa fa-bars"></a> &nbsp; <span
 						class="topbar-email"> . </span>
 				</div>
@@ -342,8 +356,8 @@
 						<!-- 검색창 인풋 부분 -->
 
 						<form class="submitSearch" action="#">
-							<input type="text" ;  name="search"
-								; style="border: 1px solid black !important; border-radius: 5px; background: none;"
+							<input type="text"  name="search"
+								 style="border: 1px solid black !important; border-radius: 5px; background: none;"
 								placeholder="Search..">
 							<button type="submit">
 								<i class="fa fa-search"></i>
@@ -692,10 +706,10 @@
 					<h3 class="helve">Board</h3>
 					<div>
 						<h4 class="helve">
-							<a href="/board/qna_index.html">Q&amp;A</a>
+							<a href="FaQ.jsp">Q&amp;A</a>
 						</h4>
 						<ul>
-							<li><a href="/board/qna_index.html">자주하는 질문</a></li>
+							<li><a href="FaQ.jsp">자주하는 질문</a></li>
 							<li><a href="product_board.jsp">상품문의</a></li>
 							<li><a href="delivery_board.jsp">배송문의</a></li>
 							<li><a href="delivery_cancel.jsp">배송전취소/변경</a></li>
@@ -737,7 +751,7 @@
 						<ul>
 							<li><a href="/myshop/order/list.html">주문내역</a></li>
 							<li></li>
-							<li><a href="/order/basket.html"
+							<li><a href="cart.jsp"
 								class="xans-element- xans-layout xans-layout-statelogoff ">장바구니
 									<span class="">(<span class="EC-Layout-Basket-count"></span>)
 								</span>
@@ -788,12 +802,17 @@
 	<!-- All Menu End -->
 
 	<script>
-	
 	$('#allmenubar').click(function(){
 		$('.animsition').css('overflow','hidden');
 		$('.allMenuOuter').fadeIn(500);
 		
 	});
+	$('#allmenubar1').click(function(){
+		$('.animsition').css('overflow','hidden');
+		$('.allMenuOuter').fadeIn(500);
+		
+	});
+	
 	$('.close').click(function(){
 		$('.allMenuOuter').fadeOut(500);
 		$('.animsition').css('overflow','visible');

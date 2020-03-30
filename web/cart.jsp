@@ -37,6 +37,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+<style>
+.mycoupon{
+margin-right: 3%;
+
+}
+#coupon-list li{
+	    padding-bottom: 5%;
+}
+</style>
 </head>
 <body class="animsition">
 
@@ -86,15 +95,15 @@
 							<td class="column-3"><font class="format-money">29000</font> won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
-									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
-										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-									</button>
+									<!-- <button class="num-product-down1 color1 flex-c-m size7 bg8 eff2"> -->
+										<!-- <i class="fs-12 fa fa-minus" aria-hidden="true"></i> -->
+									<!-- </button> -->
 
-									<input class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
+									<input style="margin-left: 22%;" class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
 
-									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2">
-										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-									</button>
+									<!-- <button class="num-product-up1 color1 flex-c-m size7 bg8 eff2"> -->
+										<!-- <i class="fs-12 fa fa-plus" aria-hidden="true"></i> -->
+									<!-- </button> -->
 									
 							
 								</div>
@@ -119,15 +128,15 @@
 							<td class="column-3"><font class="format-money">29000</font> won</td>
 							<td class="column-4">
 								<div class="flex-w bo5 of-hidden w-size17">
-									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
+									<!-- <button class="num-product-down1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-									</button>
+									</button> -->
 
-									<input class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
-
+									<input style="margin-left: 22%;" class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
+<!-- 
 									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2">
 										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-									</button>
+									</button> -->
 								</div>
 						</td>
 							<td class="column-6"><img src="/ot/images/icons/icon-point.png" width="15px;height:15px;" 
@@ -145,7 +154,7 @@
 			
 
 			<!-- Total -->
-			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:63px;left:-48px;">
+			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:70px;left:-48px;">
 			결제 예정 금액</h3><br>
  
 			<div class="totalArea"style="display:flex;margin-top: 3%;">
@@ -237,6 +246,24 @@
 							0 won</span>
 						</td>	
 					</tr>
+					
+					<tr class="txt14">
+						<th scope="row" style="padding: 11px 0 10px 18px;
+   						 border: 1px solid #ddd;
+    					 border-bottom-width: 0;
+   						 color: #353535;
+   					     text-align: left;
+    					font-weight: normal;
+    					background-color: #fafafa;">
+						<strong>쿠폰</strong></th>
+						<td style="border-top: 1px solid #ddd;">
+						<input type="text" name="point" id="point" size="20px;" style="margin-left: 8px; margin-top:2px;">
+						<a id="infodetail" 
+						class="more yg_btn_24 yg_btn3" style="top:-1px; cursor: pointer;">쿠폰사용</a>
+						<br>
+						</td>	
+					</tr>
+					
 					
 					
 					<tr class="txt14">
@@ -576,8 +603,38 @@
 	</form>
 	</div>
 	</section>
-
-
+	
+	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:888px; left: 636.906px; display:none;position:absolute;
+	border:1px solid #000;height:640px; background-color:#fff;">
+        <div class="header">
+            <h3 style="font-size: 14px;position: relative;top: 1px;">총 주문금액 상세내역</h3>
+        </div>
+        
+        <a href="#none" class="close" onclick="OrderLayer.offDiv('order_layer_detail');">
+        <img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기"
+        style="position: relative;left: -14px;top: -33px;"></a>
+        <div style="border-bottom: 1px solid;margin-left: 3%;margin-right: 4%;">
+   		 <p style="margin-left: 5%;margin-top: 3%;margin-bottom: 3%;color: black;font-weight: bold;">할인 쿠폰 선택</p>
+		</div>
+		<div style="margin-left: 3%;margin-left: 5%; margin-top: 6%;height: 52%;">
+		<ul id="coupon-list">
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+		</ul>
+		
+		</div>
+		<div style="margin-left: 1px;display: flex;background: #f3f3f3;height: 8%;color: black;font-weight: bold;">
+		<span style="margin-left: 4%;margin-top: 2%;">총 할인금액</span> <span style="margin-top:3%;margin-left: 40%;">1000원</span>
+		</div>
+		<div align="center" style="margin-top: 6%;">
+		<button style="margin-right:5%; border: 1px solid;height: 35px;width: 100px;">쿠폰 적용</button>
+		<button style="border: 1px solid;height: 35px;width: 100px;">취소</button>
+		</div>
+    </div>
 
 	<!-- Footer -->
 	<%@include file="footer.jsp" %>
@@ -781,6 +838,8 @@
 
 			    });
 	
+
+				
 		 
 	</script>
 			<script>
@@ -798,6 +857,18 @@
        var numProduct = Number($(this).prev().val());
        $(this).prev().val(numProduct + 1);
    });
+</script>
+
+<script>
+
+ $('#infodetail').click(function(e){
+	e.stopPropagation();
+	$('#orderdetail').css('display','block');
+	
+});
+$('.close').click(function(){
+	$('#orderdetail').css('display','none');
+})
 </script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>

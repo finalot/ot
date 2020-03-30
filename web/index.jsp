@@ -1401,6 +1401,8 @@
 			</div>
 		</div>
 	</section>
+	 <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
 <!-- footer -->
 
 <%@include file="footer.jsp" %>

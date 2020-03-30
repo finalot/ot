@@ -29,7 +29,9 @@
 	.table table-striped table-bordered second tbody td.process {
     color: #00ad5f;
 	}
-
+	td{
+	cursor: pointer;
+	}
 	td.process {
     color: #00ad5f;
 	}
@@ -123,7 +125,7 @@
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                         <li class="active has-sub">
+                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>Q & A</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">

@@ -88,7 +88,7 @@
                         </li>
                         
                         
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -104,7 +104,7 @@
                             </ul>
                         </li>
                         
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -126,7 +126,7 @@
                            <a href="DesignEdit.jsp">
                                <i class="fa fa-desktop"></i>디자인</a>
                        </li>
-                         <li class="active has-sub">
+                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>Q & A</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">

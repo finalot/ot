@@ -125,12 +125,28 @@
 												<h4>상품옵션</h4>
 												<ul class="ec-base-desc typeDot gLarge rightDD">
 													<li>
+														<strong class="optiontype">QUANTITY</strong>
+														
+														<div class="flex-w bo5 of-hidden w-size17" style="left:24%;">
+									<button class="num-product-down1 color1 flex-c-m size7 bg8 eff2" onclick="optiondel();" style="border-radius:5px;">
+										<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+									</button>
+
+									<input class="size8 m-text18 t-center num-product" type="number" name="num-product2" value="1">
+
+									<button class="num-product-up1 color1 flex-c-m size7 bg8 eff2" onclick="optionadd();" style="border-radius:5px;">
+										<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+													</li>
+													<div class="option_scroll" style="overflow-y: scroll; position: relative; top: 5px; margin: 5px 0 0 0; height:230px; width:105%;">
+													<div id="option1o" style=" margin: 5px 0 0 0; border-top: 1px solid #ddd; ">
+													<li>
 														<strong class="optiontype">COLOR</strong> 
 														<select>
 																<option value="블랙">블랙</option>
 																<option value="그레이">그레이</option>
 																<option value="화이트">화이트</option>
-	
 														</select>
 													</li>
 													<li>
@@ -144,6 +160,10 @@
 	
 														</select>
 													</li>
+
+													</div>
+													</div>
+													
 												</ul>
 											</div>
 											<div class="option_btn">
@@ -197,7 +217,8 @@
 								<ul
 									class="xans-element- xans-myshop xans-myshop-optionall option">
 									<li class="xans-record-"><strong class="displaynone"></strong>
-										[옵션: 블랙 / S]
+										[옵션: 블랙 / S / 1]<br>
+										[옵션: 그레이 / M / 1]
 										<span class="displaynone">(개)</span> <br> <a href="#none"
 										id="optionchange_1" class=" yg_btn_80 yg_btn3 optionclose"
 										alt="옵션변경">옵션변경하기</a> <!-- 참고 : 옵션변경 레이어 -->
@@ -313,12 +334,12 @@
 	<div
 		class="xans-element- xans-product xans-product-optionselectlayer ec-base-layer add-cart">
 		<div class="header">
-			<h1>옵션 선택</h1>
+			<h1>옵션 확인</h1>
 		</div>
 		<div class="content">
 			<div class="xans-element- xans-product xans-product-detail inner ">
 				<h2 class="name">
-					<span>(BLACK UP) 호딘 트레이닝 팬츠</span>
+					<span>ADD TO CART</span>
 				</h2>
 				<div class="productNormal ">
 					<div class="xans-element- xans-product xans-product-image imgArea ">
@@ -332,9 +353,9 @@
 						</colgroup>
 						<tbody
 							class="xans-element- xans-product xans-product-option xans-record-">
-							<tr class="xans-element- xans-product xans-product-option xans-record-"><th scope="row" style="font-size:12px;">COLOR</th>
-<td><select option_product_no="10550" option_select_element="ec-option-select-finder" option_sort_no="1" option_type="T" item_listing_type="S" option_title="COLOR" product_type="product_option" product_option_area="product_option_10550_0" name="option1" id="product_option_id1" class="ProductOption0" option_style="select" required="true"><option value="*" selected="" link_image="">- [필수] 옵션을 선택해 주세요 -</option><option value="**" disabled="" link_image="">-------------------</option><option value="그레이" link_image="">그레이</option><option value="블랙" link_image="">블랙</option><option value="그레이(Long)" link_image="">그레이(Long) (+2,000 won)</option><option value="블랙(Long)" link_image="">블랙(Long) (+2,000 won)</option></select><p class="value"></p>
-</td>
+							<tr class="xans-element- xans-product xans-product-option xans-record-">
+					<span>(BLACK UP) 호딘 트레이닝 팬츠</span>
+
 </tr>
 							<!-- <tr
 								class="xans-element- xans-product xans-product-option xans-record-">
@@ -376,8 +397,7 @@
 				<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
 				<div id="totalProducts" class="">
 					<p class="ec-base-help txtWarn txt11 displaynone">수량을 선택해주세요.</p>
-					<p class="ec-base-help txtWarn txt11 ">위 옵션선택 박스를 선택하시면 아래에 상품이
-						추가됩니다.</p>
+					<p class="ec-base-help txtWarn txt11 ">상품 옵션을 확인해주세요.</p>
 					<table border="0" summary="">
 						<caption>상품 목록</caption>
 						<colgroup>
@@ -419,10 +439,30 @@
 									data-item-add-option="" data-item-reserved="N"
 									data-option-id="'+sOptionId+'">
 								<p class="product" style="font-size:12px;">
-										(BLACK UP) 호딘 트레이닝 팬츠<br> - <span>블랙</span>
+										(BLACK UP) 호딘 트레이닝 팬츠<br> - <span>블랙 / S / 1</span>
 									</p></td>
-<td><span class="quantity" style="width:65px;"><input type="text" id="option_box1_quantity" name="quantity_opt[]" class="quantity_opt eProductQuantityClass" value="1" product-no="9017"><a href="#none" class="up eProductQuantityUpClass" "="" data-target="option_box1_up"><img src="//img.echosting.cafe24.com/design/skin/default/product/btn_count_up.gif" id="option_box1_up" class="option_box_up" alt="수량증가"></a><a href="#none" class="down eProductQuantityDownClass" data-target="option_box1_down"><img src="//img.echosting.cafe24.com/design/skin/default/product/btn_count_down.gif" id="option_box1_down" class="option_box_down" alt="수량감소"></a></span><a href="#none" class="delete"><img src="//img.echosting.cafe24.com/design/skin/default/product/btn_price_delete.gif" alt="삭제" id="option_box1_del" class="option_box_del"></a></td>
-								<td class="right"><span id="option_box1_price"><input type="hidden" class="option_box_price" value="19000" product-no="10550" item_code="P0000PPU000F"><span class="ec-front-product-item-price" code="P0000PPU000F" product-no="10550">19,000 won</span></span><span class="mileage">(<img src="/ot/images/point.png" alt="적립금"> <span id="option_box1_mileage" class="mileage_price" code="P0000PPU000F">100원</span>)</span></td>
+<td><span class="quantity" style="width:65px;"><input type="text" id="option_box1_quantity" name="quantity_opt[]" class="quantity_opt eProductQuantityClass" value="1" product-no="9017"><a href="#none" class="up eProductQuantityUpClass" "="" data-target="option_box1_up">
+<img src="//img.echosting.cafe24.com/design/skin/default/product/btn_count_up.gif" id="option_box1_up" class="option_box_up" alt="수량증가"></a><a href="#none" class="down eProductQuantityDownClass" data-target="option_box1_down">
+<img src="//img.echosting.cafe24.com/design/skin/default/product/btn_count_down.gif" id="option_box1_down" class="option_box_down" alt="수량감소"></a></span><a href="#none" class="delete">
+<!-- <img src="//img.echosting.cafe24.com/design/skin/default/product/btn_price_delete.gif" alt="삭제" id="option_box1_del" class="option_box_del"> --></a></td>
+								<td class="right"><span id="option_box1_price"><input type="hidden" class="option_box_price" value="19000" product-no="10550" item_code="P0000PPU000F">
+								<span class="ec-front-product-item-price" code="P0000PPU000F" product-no="10550">19,000 won</span></span><span class="mileage">(<img src="/ot/images/point.png" alt="적립금"> <span id="option_box1_mileage" class="mileage_price" code="P0000PPU000F">100원</span>)</span></td>
+							</tr>
+							<tr class="option_product " data-option-index="1"
+								target-key="9017">
+								<td><input type="hidden" class="option_box_id"
+									id="option_box1_id" value="P0000NIU000Q" name="item_code[]"
+									data-item-add-option="" data-item-reserved="N"
+									data-option-id="'+sOptionId+'">
+								<p class="product" style="font-size:12px;">
+										(BLACK UP) 호딘 트레이닝 팬츠<br> - <span>그레이 / M / 1</span>
+									</p></td>
+<td><span class="quantity" style="width:65px;"><input type="text" id="option_box1_quantity" name="quantity_opt[]" class="quantity_opt eProductQuantityClass" value="1" product-no="9017"><a href="#none" class="up eProductQuantityUpClass" "="" data-target="option_box1_up">
+<img src="//img.echosting.cafe24.com/design/skin/default/product/btn_count_up.gif" id="option_box1_up" class="option_box_up" alt="수량증가"></a><a href="#none" class="down eProductQuantityDownClass" data-target="option_box1_down">
+<img src="//img.echosting.cafe24.com/design/skin/default/product/btn_count_down.gif" id="option_box1_down" class="option_box_down" alt="수량감소"></a></span><a href="#none" class="delete">
+<!-- <img src="//img.echosting.cafe24.com/design/skin/default/product/btn_price_delete.gif" alt="삭제" id="option_box1_del" class="option_box_del"> --></a></td>
+								<td class="right"><span id="option_box1_price"><input type="hidden" class="option_box_price" value="19000" product-no="10550" item_code="P0000PPU000F">
+								<span class="ec-front-product-item-price" code="P0000PPU000F" product-no="10550">19,000 won</span></span><span class="mileage">(<img src="/ot/images/point.png" alt="적립금"> <span id="option_box1_mileage" class="mileage_price" code="P0000PPU000F">100원</span>)</span></td>
 							</tr>
 						</tbody>
 						<!-- //참고 -->
@@ -439,7 +479,7 @@
 		</div>
 		<div
 			class="xans-element- xans-product xans-product-action ec-base-button ">
-			<a href="#none" class="first  yg_btn_30"
+			<a href="/ot/order.jsp" class="first  yg_btn_30"
 				onclick="product_submit(1, '/exec/front/order/basket/', this)"
 				alt="바로구매하기">바로구매하기</a> <a href="#none" class=" yg_btn_30 yg_btn3"
 				onclick="product_submit(2, '/exec/front/order/basket/', this)"
@@ -448,8 +488,8 @@
 			<div id="NaverChk_Button"></div>
 			<!-- //네이버 체크아웃 구매 버튼 -->
 		</div>
-		<a class="option_close" onclick="#"><img
-			src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif"
+		<a class="option_close" onclick="">
+		<img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif"
 			alt="닫기"></a>
 	</div>
 
@@ -475,6 +515,65 @@
 		
 	</script>	
 	
+	<script>
+								
+/*[ +/- num product ]
+   ===========================================================*/
+   $('.num-product-down1').on('click', function(e){
+       e.preventDefault();
+       var numProduct = Number($(this).next().val());
+       if(numProduct > 1) $(this).next().val(numProduct - 1);
+   });
+
+   $('.num-product-up1').on('click', function(e){
+       e.preventDefault();
+       var numProduct = Number($(this).prev().val());
+       $(this).prev().val(numProduct + 1);
+   });
+</script>
+	
+	
+	<script>
+	var count = 2;
+	
+	function optionadd() {
+		const str = 
+			`
+		
+			<div id="option`+count+`o" style=" margin: 5px 0 0 0; border-top: 1px solid #ddd; ">
+		<li>
+			<strong class="optiontype">COLOR</strong> 
+			<select>
+					<option value="블랙">블랙</option>
+					<option value="그레이">그레이</option>
+					<option value="화이트">화이트</option>
+			</select>
+		</li>
+		<li>
+			<strong class="optiontype">SIZE</strong> 
+			<select>
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+					<option value="XL">XL</option>
+					<option value="XXL">XXL</option>
+
+			</select>
+		</li>
+		</div>
+		`
+		$('.option_scroll').append(str);
+		count++;
+	}
+
+	function optiondel(){
+		if(count>2){
+		$("#option"+(count-1)+"o").remove();
+		count--;
+	}
+	}
+	
+	</script>
  <%@include file="footer.jsp" %>
 </body>
 </html>

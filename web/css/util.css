@@ -4290,7 +4290,7 @@ h3 {
 .required3 {
 	margin: -16px 0 -9px;
     text-align: right;
-    top: 64px;
+    top: 68px;
     position: relative;
     font-size: 12px;
     font-weight: 600;
@@ -4494,7 +4494,7 @@ input[type=text] {
     font-family: Nanum Gothic;
     position: relative;
     top: 12px;
-    left: 92%;
+    left: 89%;
 }
 
 .check_btn_140 {
@@ -4571,6 +4571,7 @@ input[type=radio], input[type=checkbox] {
 select {
 	height: 26px;
     border: 1px solid #ddd;
+    width: 191px;
 }
 
 .join_agree {
@@ -4664,7 +4665,7 @@ textarea {
     position: relative;
     font-size:12px;
     font-weight:600;
-    left:12px;
+    left:0px;
 }
 #idMsg8 {
 	    color: #555555;
@@ -4779,7 +4780,7 @@ table td, table th {
 
 .totalDetail {
     display: none;
-    width: 300px;
+    width: 700px;
     color: #757575;
 }
 

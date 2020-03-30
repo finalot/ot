@@ -59,7 +59,7 @@
 			</div>
 
 			<div class="titleArea">
-    			<h2>배송 문의</h2>
+    			<h2>문의</h2>
 			</div>
 
 			<div class="xans-element- xans-layout xans-layout-logincheck ">

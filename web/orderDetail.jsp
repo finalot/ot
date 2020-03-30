@@ -414,9 +414,9 @@
 	</section>
 	
 	<div id="orderdetail" class="totalDetail ec-base-layer" style="top:704px; left: 580.906px; display:none;position:absolute;
-	border:1px solid #000;height:166px;">
+	border:1px solid #000;height:159px;">
         <div class="header">
-            <h3 style="font-size: 14px;position: relative;top: 3px;">총 주문금액 상세내역</h3>
+            <h3 style="font-size: 14px;position: relative;top: 1px;">총 주문금액 상세내역</h3>
         </div>
         <div class="content">
             <p>21,500 won</p>

@@ -850,7 +850,7 @@ input[type=text], input[type=password] {
 /* 팝업 */
 .optiondetail {
     background: white;
-    width: 40%;
+    width: 35%;
     position: absolute;
     display: block;
     /* border: 1px solid rgb(0, 0, 0); */
@@ -881,8 +881,8 @@ input[type=text], input[type=password] {
 }
 
 .optiondetail .optionbody li {
-	padding : 6px 0 10px;
-	height: 36px;
+	padding : 15px 0 10px;
+	height: 50px;
 }
 
 .optiondetail .optionbody li strong {
@@ -899,10 +899,11 @@ input[type=text], input[type=password] {
 
 .optiondetail .optionbody li select {
     float: right;
-    width: 294px;
+    width: 49%;
     line-height: 24px;
     font-size: 12px;
     height : 26px;
+    margin : 0 5px 0 0;
 }
 
 .option_btn {
@@ -1136,10 +1137,11 @@ span.ec-base-help, p.ec-base-help, ul.ec-base-help li {
 }
 
 #totalProducts tbody td .quantity {
-    display: inline-block;
+    display: none;
     position: relative;
     width: 50px;
     vertical-align: top;
+    
 }
 
 #totalProducts tbody.option_products tr td .quantity input, #totalProducts tbody.add_products tr td .quantity input {

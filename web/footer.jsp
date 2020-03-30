@@ -37,6 +37,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -126,7 +127,7 @@
 					</li>
 
 					<li class="p-b-9">
-						<a href="#" class="s-text7">
+						<a href="review.jsp" class="s-text7">
 							REVIEW
 						</a>
 					</li>
@@ -328,8 +329,6 @@
 		
 	</div>
 	
-	
-
 	<!-- Container Selection1 -->
 	<div  id="dropDownSelect1" >
 	<div class="btn-back-to-top bg0-hov" id="chat_container" style="cursor:default;">
@@ -369,7 +368,7 @@
                              <textarea onkeyPress="keyevent();" style=" resize:none; font-size:15px; margin-top:3%;height: 110%;
                              border-radius:4%;width: 89%;" id="chatContent" class="form-control"  
                              placeholder="메세지를 입력하세요." maxlength="100" ></textarea>
-                 <button id="sendChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
+                 <button id="addChat" style="margin-left: 2%;background: white; width: 16%;height: 30%;margin-top: 6%;" 
                  type="button" class="btn btn-default pull-right" onclick="addChat();" >전송</button>
                          </div>
                          <div class="form-group col-xs-2">
@@ -398,9 +397,68 @@
 			</div>
 		</div>
 	</div>
-
+	<input type="hidden" id="chat-test" value="문태환">
 <!--===============================================================================================-->
+	<script src="http://localhost:82/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<script>
+	$(document).ready(function(){
+		var socket = io("http://localhost:82");
+	
+
+		 $('#addChat').click(function(){
+			 
+				if(!$('#chatContent').val()==""){
+	   	 
+			var today = new Date();   
+			var hours = today.getHours(); // 시
+			var minutes = today.getMinutes();  // 분
+			  var ampm = hours >= 12 ? 'pm' : 'am';
+			  hours = hours % 12;
+			  hours = hours ? hours : 12; // the hour '0' should be '12'
+			  minutes = minutes < 10 ? '0'+minutes : minutes;
+			  var strTime = ampm + ' '+hours + ' : ' + minutes;
+			
+			var content = document.getElementById('chatContent').value;
+		//내가 말한 내용 + 보낼내용
+			  $('#chatList').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
+                      '<div style="display:flex; margin-left:4.5%;">'+
+                      '<span style="font-size:7px;margin-left:55px;margin-top: auto;">'+strTime+'</span>'+
+                      '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
+                      '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
+                      'margin-left:3%;margin-top:3%;border:none;">'+content+'</pre>'+
+                      '</div>'+
+                      '</div>' + 
+                      '</div>')
+              $('#chatList').scrollTop($('#chatList')[0].scrollHeight)
+                      
+            
+			
+			socket.emit("send_msg", {id:"userId",msg:content,Time:strTime,type:"user"});
+			document.getElementById('chatContent').value = "";
+			
+	                          
+				}
+		});
+		 
+		//소켓 서버로 부터 send_msg를 통해 이벤트를 받을 경우 
+			socket.on('send_msg', function(data) {
+			
+			if(data.type == "admin"){	
+				
+				 $('#chatList').append('<div>'+ 
+                 '<span style="font-size:12px; margin-left: 18px">상담사</span>'+
+                 '<div style="display:flex">'+
+                 '<div style="color:black;width:270px;border-radius: 10px;background:white;margin-left:3.5%;margin-top:1%;">'+
+                 '<pre  style="resize:none; font-size:12px;background:none;'+
+                 'margin-left:3%;margin-top:3%;border:none;">'+data.msg+'</pre>'+
+                  '</div>'+
+                  '<span style="font-size:7px;margin-left:15px;margin-top: auto;">'+data.Time+'</span>'+
+                  '</div>'+
+                  '</div>')
+			}
+			});
+	});
 	
 	var check = true
 	
@@ -421,38 +479,8 @@
 	function keyevent(){
 	
 		if(event.keyCode==13){addChat();}
+
 	}
-	
-	
-	 function addChat(chatContent){
-		 
-			if(!$('#chatContent').val()==""){
-   	 
-		var today = new Date();   
-		var hours = today.getHours(); // 시
-		var minutes = today.getMinutes();  // 분
-		  var ampm = hours >= 12 ? 'pm' : 'am';
-		  hours = hours % 12;
-		  hours = hours ? hours : 12; // the hour '0' should be '12'
-		  minutes = minutes < 10 ? '0'+minutes : minutes;
-		  var strTime = ampm + ' '+hours + ' : ' + minutes;
-		
-		var content = document.getElementById('chatContent').value;
-		
-         $('#chatList').append('<div align="right" style="text-align: right;"><span style="font-size:12px; margin-right: 10px">나</span>'+
-                          '<div style="display:flex; margin-left:4.5%;">'+
-                          '<span style="font-size:7px;margin-left:55px;margin-top: auto;">'+strTime+'</span>'+
-                          '<div style="text-align: left; width: 270px;margin-left:3.5%;margin-top: 1%;margin-bottom: 1%;background: aliceblue;border-radius: 10px;">' +
-                          '<pre style="color:black;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;font-size:12px;background:none;'+
-                          'margin-left:3%;margin-top:3%;border:none;">'+content+'</pre>'+
-                          '</div>'+
-                          '</div>' + 
-                          '</div>')
-                  $('#chatList').scrollTop($('#chatList')[0].scrollHeight)
-                          
-                  document.getElementById('chatContent').value = "";
-			}
-          }
 	
 	</script>
 
