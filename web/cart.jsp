@@ -617,7 +617,7 @@ margin-right: 3%;
    		 <p style="margin-left: 5%;margin-top: 3%;margin-bottom: 3%;color: black;font-weight: bold;">할인 쿠폰 선택</p>
 		</div>
 		<div style="margin-left: 3%;margin-left: 5%; margin-top: 6%;height: 52%;">
-		<ul id="coupon-list">
+		<ul id="coupon-list" style="font-size: 14px;font-weight: 600;">
 			<li><input class="mycoupon" type="radio" name="mycoupon" value="1000">mycoupon1</li>
 			<li><input class="mycoupon" type="radio" name="mycoupon" value="2000">mycoupon2</li>
 			<li><input class="mycoupon" type="radio" name="mycoupon" value="3000">mycoupon3</li>
@@ -628,11 +628,17 @@ margin-right: 3%;
 		
 		</div>
 		<div style="margin-left: 1px;display: flex;background: #f3f3f3;height: 8%;color: black;font-weight: bold;">
-		<span style="margin-left: 4%;margin-top: 2%;">총 할인금액</span> <span id="coupon-price" style="margin-top:2%;margin-left: 40%;">0</span><span style="margin-left: 2%;margin-top: 2%;">원</span>
+		<span style="margin-left: 4%;margin-top: 2%; font-size: 14px;">총 할인금액</span> <span id="coupon-price" style="margin-top:2%;margin-left: 40%; font-size: 14px;">0</span><span style="margin-left: 2%;margin-top: 2%;font-size: 14px;">원</span>
 		</div>
 		<div align="center" style="margin-top: 6%;">
-		<button id="coupon-arrly" style="margin-right:5%; border: 1px solid;height: 35px;width: 100px;">쿠폰 적용</button>
-		<button id="coupon-close" style="border: 1px solid;height: 35px;width: 100px;">취소</button>
+	<button id="idMsg3" class="hov1 s-text1 trans-0-4 yg_btn_146"
+						style="position: relative;left: -5px;">
+						쿠폰적용
+					</button>
+					<button  id="idMsg3" class="hov1 s-text1 trans-0-4 yg_btn_147" 
+						style="position: relative;left: 15px;">
+						취소
+					</button>
 		</div>
     </div>
 
@@ -671,13 +677,13 @@ margin-right: 3%;
 		$('#coupon-price').text(price);
 		
 	})
-	$('#coupon-arrly').click(function(){
+	$('.yg_btn_146').click(function(){
 		var price = $('#coupon-price').text();
 		$('#point').val(price);
 		$('#orderdetail').css('display','none');
 
 	});
-	$('#coupon-close').click(function(){
+	$('.yg_btn_147').click(function(){
 		$('#orderdetail').css('display','none');
 	})
 	</script>
