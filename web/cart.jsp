@@ -618,21 +618,21 @@ margin-right: 3%;
 		</div>
 		<div style="margin-left: 3%;margin-left: 5%; margin-top: 6%;height: 52%;">
 		<ul id="coupon-list">
-			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
-			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
-			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
-			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
-			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
-			<li><input class="mycoupon" type="radio" name="mycoupon">mycoupon</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon" value="1000">mycoupon1</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon" value="2000">mycoupon2</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon" value="3000">mycoupon3</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon" value="4000">mycoupon4</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon" value="5000">mycoupon5</li>
+			<li><input class="mycoupon" type="radio" name="mycoupon" value="6000">mycoupon6</li>
 		</ul>
 		
 		</div>
 		<div style="margin-left: 1px;display: flex;background: #f3f3f3;height: 8%;color: black;font-weight: bold;">
-		<span style="margin-left: 4%;margin-top: 2%;">총 할인금액</span> <span style="margin-top:3%;margin-left: 40%;">1000원</span>
+		<span style="margin-left: 4%;margin-top: 2%;">총 할인금액</span> <span id="coupon-price" style="margin-top:2%;margin-left: 40%;">0</span><span style="margin-left: 2%;margin-top: 2%;">원</span>
 		</div>
 		<div align="center" style="margin-top: 6%;">
-		<button style="margin-right:5%; border: 1px solid;height: 35px;width: 100px;">쿠폰 적용</button>
-		<button style="border: 1px solid;height: 35px;width: 100px;">취소</button>
+		<button id="coupon-arrly" style="margin-right:5%; border: 1px solid;height: 35px;width: 100px;">쿠폰 적용</button>
+		<button id="coupon-close" style="border: 1px solid;height: 35px;width: 100px;">취소</button>
 		</div>
     </div>
 
@@ -663,6 +663,24 @@ margin-right: 3%;
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	
+	<script>
+	$('.mycoupon').click(function(){
+		var price = $(this).val();
+		
+		$('#coupon-price').text(price);
+		
+	})
+	$('#coupon-arrly').click(function(){
+		var price = $('#coupon-price').text();
+		$('#point').val(price);
+		$('#orderdetail').css('display','none');
+
+	});
+	$('#coupon-close').click(function(){
+		$('#orderdetail').css('display','none');
+	})
+	</script>
 	
 	<script>
 
