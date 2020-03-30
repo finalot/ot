@@ -422,7 +422,7 @@
 	<!-- // td(class=next) 클릭시 페이지 이동 -->
 	<script>
      $("td").click(function(){
-    	 location.href='productListDetail.jsp';
+    	 location.href='customerDetail.jsp';
   	 <%-- var userId = $(this).parent().find('input').val();
   	 
   	 console.log("선택한 유저 ID : "+userId);

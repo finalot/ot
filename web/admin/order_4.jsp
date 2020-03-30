@@ -175,7 +175,7 @@
               <div class="row">
                   <div class="col-md-12">
                       <h1 class="title-4">
-                       &nbsp; &nbsp; &nbsp; 주문 확인 관리
+                       &nbsp; &nbsp; &nbsp; 배송완료 관리
                       </h1>
                       <hr class="line-seprate">
                   </div>
@@ -211,7 +211,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -223,7 +223,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -235,7 +235,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -247,7 +247,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -259,7 +259,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -271,7 +271,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -283,7 +283,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -295,7 +295,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -307,7 +307,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -319,7 +319,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -331,7 +331,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     <tr>
@@ -343,7 +343,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">리뷰</button>
                        	</td>
                     </tr>
                     

@@ -175,7 +175,7 @@
               <div class="row">
                   <div class="col-md-12">
                       <h1 class="title-4">
-                       &nbsp; &nbsp; &nbsp; 주문 확인 관리
+                       &nbsp; &nbsp; &nbsp; 배송대기 관리
                       </h1>
                       <hr class="line-seprate">
                   </div>
@@ -211,7 +211,103 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
+                       	</td>
+                    </tr>
+                    <tr>
+                    	<td>123111</td>
+                    	<td>아주 멋진 골지나시 외 1....</td>
+                    	<td class="one">주문확인</td>
+                    	<td>12,000 원</td>
+                    	<td>경기도 시흥시 인선길53 123동 456호</td>
+                    	<td>2020-03-28</td>
+                    	<td>2020-04-01</td>
+                    	<td>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
                        	</td>
                     </tr>
                     <tr>
@@ -235,7 +331,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
                        	</td>
                     </tr>
                     <tr>
@@ -247,103 +343,7 @@
                     	<td>2020-03-28</td>
                     	<td>2020-04-01</td>
                     	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
-                       	</td>
-                    </tr>
-                    <tr>
-                    	<td>123111</td>
-                    	<td>아주 멋진 골지나시 외 1....</td>
-                    	<td class="one">주문확인</td>
-                    	<td>12,000 원</td>
-                    	<td>경기도 시흥시 인선길53 123동 456호</td>
-                    	<td>2020-03-28</td>
-                    	<td>2020-04-01</td>
-                    	<td>
-                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">주문확인</button>
+                       		<button type="button" class="btn btn-danger" style="margin-left:1%;">배송중</button>
                        	</td>
                     </tr>
                     

@@ -176,7 +176,7 @@ padding-left: 4% !important;
                             </ul>
                         </li>
                         
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-truck"></i>회원 &nbsp;/&nbsp;주문</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -190,7 +190,7 @@ padding-left: 4% !important;
                         </li>
                         
                         
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
@@ -259,132 +259,45 @@ padding-left: 4% !important;
     <!-- 이벤트 내용 -->
    <table id="addlist" style="border: 1px dotted; background: white; font-size:13pt;">
         <tr colspan="2">
-        	<td colspan="2" style="background:#dfe3e6; margin-bottom: 2%;padding-bottom: 2%;">
-        	<h3 style="color: black;margin-left: 5%;"> 상품 상세내용</h3></td>
+        	<td colspan="4" style="background:#dfe3e6; margin-bottom: 2%;padding-bottom: 2%;">
+        	<h3 style="color: black;margin-left: 5%;"> 고객 관리</h3></td>
         </tr>
         <tr>
-        	<th><span style="color:red">*</span> 분류</th>
-        	<td>
-	       		대(大) : &nbsp;&nbsp;
-                   <select id="select-category" onchange="categoryChange(this)" disabled="disabled">
-                       <option value="select">선택1(대분류)</option>
-                       <option value="탑">탑</option>
-                       <option value="아우터" SELECTED>아우터</option>
-                       <option value="c">하의</option>
-                       <option value="d"">스커트</option>
-                       <option value="e"">악세사리</option>
-                       <option value="f">가방/신발</option>
-                       <option value="g">ACC</option>
-                   </select>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                                    중(中) : &nbsp;&nbsp;
-                   <input type="text" value="가디건" style="width:15%;">
-        	</td>
+        	<th>아이디 </th>
+        	<td><input type="text" value="it_seohyun"></td>
+        	<th>성명 </th>
+        	<td><input type="text" value="잇서현"></td>
         </tr>
         <tr>
-        	<th><span style="color:red">*</span> 상품코드</th>
-        	<td>
-        		<input type="text" id="product_code" value="SEO1231111R">
-        	</td>
+        	<th>성별 </th>
+        	<td><input type="text" value="여"></td>
+        	<th>나이 </th>
+        	<td><input type="text" value="25"></td>
         </tr>
         <tr>
-        	<th><span style="color:red">*</span> 상품명</th>
-        	<td>
-        		<input type="text" id="product_name" value="깜떄까르썽 가디건">
-        	</td>
+        	<th>전화번호 </th>
+        	<td><input type="text" value="010-1234-5678"></td>
+        	<th>이메일 </th>
+        	<td><input type="text" value=1234@naver.com"></td>
         </tr>
         <tr>
-        	<th><span style="color:red">*</span> 가격</th>
-        	<td>
-        		<input type="text" value="78,000" style="width:20%;">
-        	</td>
+        	<th>주소 </th>
+        	<td colspan="3"><input type="text" value="경기도 울라불라동 울라불라 불루 211-304" style="width:50%;"></td>
         </tr>
        
-        <tr>
-        	<th><span style="color:red">*</span> 할인가</th>
-        	<td>
-        		<input type="text" value="15" style="width:10%;"> &nbsp; &nbsp; %
-        	</td>
-        </tr>
-        <tr>
-        	<th><span style="color:red">*</span> 대표이미지</th>
-        	<td>
-<!--         		<div id="titleImgArea">
-			<img id="titleImg" width="177px" height="200">
-			</div>
-			<div class="fileArea" id="fileArea">
-		      				<input type="file" id="thumbnailImg1"
-		      				name="thumbnailImg1" onchange="loadImg(this, 1);" />
-		     			 </div> -->
-		     <img src="images/outer.jpg" alt="꼼데가디건" style="width:177px; height:200px;">
-        	</td>
-        </tr>
-        <tr>
-        	<th><span style="color:red">*</span> 상세설명</th>
-        	<td>
-        		<!-- <input type="file" id="descrptionImg" style="border:white 1px;"> -->
-        		상세설명예시 .jpg
-        	</td>
-        </tr>
-       <tr>
-        	<th><span style="color:red">*</span> 색상설정</th>
-        	<td>
-        	
-        		 <div id="color-area" style="display: block;" >
-                    <div id="color-div" class="col-sm-12 col-md-6">
-                        <div class="form-group">
-                            <div class="input-group" style="    width: 105px" >
-                                <input type="text" style=" padding-right: 0%;;padding-left: 36%;"  id="input-group" class="form-control demo" value="#ff0000" />
-								
-                                  <span>등록 색상명 </span> <input type="text" id="color-name">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-         	</td>
-        </tr>
-        <tr>
-        	<th><span style="color:red">*</span>사이즈 설정</th>
-        	<td>상의/모자
-        	 <select id="top-select" 
-        	 style="background:rgba(190, 181, 181, 0.24);margin-left: 10px;margin-right: 10px" 
-        	 disabled>
-                       <option></option>
-                       <option>FREE</option>
-                       <option>XS</option>
-                       <option>S</option>
-                       <option>M</option>
-                       <option>L</option>
-                       <option>XL</option>
-                </select>
-				하의/신발        	
-        		<input id="bottom-select" type="number" style="background:rgba(190, 181, 181, 0.24);border: 1px solid #333330; margin-left: 10px;width: 75px;" readonly>
-        	
-        	</td>
-        </tr>
- 
-        
-        
     </table>
-   <div style="height: 130px;">
-          <div align="center" style="margin-bottom:3%">
-    <button id="product-info-add" style="width: 100px; height: 40px;border-radius: 10px;;background: black; color: white">상품추가</button>
-    </div>
-    </div>
+    
+    
     <div style="border: 1px solid #dfe3e6;margin-left: 5%;margin-right: 5%;padding-left: 1%;">
-    <h4 > <span style="color:red">*</span>재고관리</h4>
+    <h4>주문 목록</h4>
     </div>
     <div align="center" id="product-count">
-    
-    
     
     <table style="width: 90%;" >
     	<thead>
     		<tr>
 	    		<th>상품코드</th>
 	    		<th>상품명</th>
-	    		<th>이미지</th>
 	    		<th>사이즈</th>
 	    		<th>색상</th>
 	    		<th>수량</th>
@@ -399,9 +312,8 @@ padding-left: 4% !important;
     		<tr>
     			<td>SEO1231111R</td>
     			<td>깜떄까르썽 가디건</td>
-    			<td><img src="images/outer.jpg"></td>
     			<td class="size">S</td>
-    			<td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">블루</div><div style="width:20px;height:15px;margin-left: 10%;background:red;"></div></div></td>
+    			<td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">레드</div><div style="width:20px;height:15px;margin-left: 10%;background:red;"></div></div></td>
     			<td>
     			<input type="number" min="0" style="border:1px solid #333330;width: 50%">
   		    	</td>
@@ -409,61 +321,7 @@ padding-left: 4% !important;
     		    <button onclick="closeBtn(this)" style="margin-left: 1%;">X</button>
     		   </td>
     		</tr>
-    		
-    		<tr>
-    			<td>SEO1231111R</td>
-    			<td>깜떄까르썽 가디건</td>
-    			<td><img src="images/outer.jpg"></td>
-    				<td class="size">S</td>
-    			<td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">블루</div><div style="width:20px;height:15px;margin-left: 10%;background:red;"></div></div></td>
-    			<td>
-    			<input type="number" min="0" style="border:1px solid #333330;width: 50%">
-  		    	</td>
-  		    	<td>
-    		    <button onclick="closeBtn(this)" style="margin-left: 1%;">X</button>
-    		   </td>
-    		</tr>
-    		
-    		<tr>
-    			<td>SEO1231111R</td>
-    			<td>깜떄까르썽 가디건</td>
-    			<td><img src="images/outer.jpg"></td>
-    				<td class="size">S</td>
-    		    <td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">블루</div><div style="width:20px;height:15px;margin-left: 10%;background:red;"></div></div></td>
-    			<td>
-    			<input type="number" min="0" style="border:1px solid #333330;width: 50%">
-  		    	</td>
-  		    	<td>
-    		    <button onclick="closeBtn(this)" style="margin-left: 1%;">X</button>
-    		   </td>
-    		</tr>
-    		<tr>
-    			<td>SEO1231111R</td>
-    			<td>깜떄까르썽 가디건</td>
-    			<td><img src="images/outer.jpg"></td>
-    					<td class="size">S</td>
-    			  <td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">블루</div><div style="width:20px;height:15px;margin-left: 10%;background:red;"></div></div></td>
-    			<td>
-    			<input type="number" min="0" style="border:1px solid #333330;width: 50%">
-  		    	</td>
-  		    	<td>
-    		    <button onclick="closeBtn(this)" style="margin-left: 1%;">X</button>
-    		   </td>
-    		</tr>
-    		<tr>
-    			<td>SEO1231111R</td>
-    			<td>깜떄까르썽 가디건</td>
-    			<td><img src="images/outer.jpg"></td>
-    					<td class="size">S</td>
-    		<td><div style="display:inline-flex"><div style="width: -webkit-fill-available;">블루</div><div style="width:20px;height:15px;margin-left: 10%;background:red;"></div></div></td>
-    		<td>
-    			<input type="number" min="0" style="border:1px solid #333330;width: 50%">
-  		    	</td>
-  		    	<td>
-    		    <button onclick="closeBtn(this)" style="margin-left: 1%;">X</button>
-    		   </td>
-    		</tr>
-   	</tbody>
+   		</tbody>
     </table>
     </div>
 
