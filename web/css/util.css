@@ -4684,14 +4684,23 @@ textarea {
 #idMsg10 {
     color: #000;
     position: relative;
-    font-size: 13px;
+    font-size: 12px;
     font-weight:600;
     top:1px;
 }
 #idMsg11 {
 	    color: #000;
     position: relative;
-    font-size:13px;
+    font-size:12px;
+}
+
+#idMsg12 {
+    color: #000;
+    position: relative;
+    font-size: 12px;
+    font-weight:600;
+    top:1px;
+    left:-4px;
 }
 
 .info li {

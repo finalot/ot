@@ -274,7 +274,7 @@ font-size: 9px !important;
 						class="topbar-email"> . </span> &nbsp;&nbsp; <a
 						href="/ot/mypage.jsp" class="topbar-email"> MyPage </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a
-						href="#" class="topbar-email"> Noitce </a> &nbsp;&nbsp; <span
+						href="notice.jsp" class="topbar-email"> Notice </a> &nbsp;&nbsp; <span
 						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar1"
 						class="topbar-social-item fa fa-bars"></a> &nbsp; <span
 						class="topbar-email"> . </span>
@@ -724,7 +724,7 @@ font-size: 9px !important;
 					</div>
 					<div>
 						<h4 class="helve">
-							<a href="/board/free/list.html?board_no=1">NOTICE</a>
+							<a href="notice.jsp">NOTICE</a>
 						</h4>
 						<ul>
 							<li><a href="/board/free/list.html?board_no=1">공지사항</a></li>
@@ -780,14 +780,14 @@ font-size: 9px !important;
 							<li>국민 543001-01-454061</li>
 							<li>농협 301-0231-3595-51</li>
 							<li>신한 140-012-589977</li>
-							<li>예금주 : (주)블랙업</li>
+							<li>예금주 : (주)ot</li>
 						</ul>
 					</div>
 					<div>
 						<h3 class="helve">Instagram</h3>
 						<ul>
-							<li><a href="//instagram.com/blackup_kr" target="_blank">@blackup_kr</a></li>
-							<li><a href="//instagram.com/blackup_jp" target="_blank">@blackup_jp</a></li>
+							<li><a href="//instagram.com/blackup_kr" target="_blank">@ot_kr</a></li>
+							<li><a href="//instagram.com/blackup_jp" target="_blank">@ot_jp</a></li>
 							<li><a href="//instagram.com/nineteen_ninety_kr"
 								target="_blank">@nineteen_ninety_kr</a></li>
 						</ul>

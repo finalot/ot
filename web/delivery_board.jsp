@@ -80,7 +80,7 @@
 				<td style="font-weight:600;"> 공지</td>
                     <td class="displaynone"></td>
                     <td class="subject left txtBreak">
-                        <strong> <a href="/article/배송문의/3001/279655/" style="color:#555555; font-size:14px;">▶ 배송 안내입니다.</a></span></strong>
+                        <strong> <a href="/article/배송문의/3001/279655/" style="color:#555555; font-size:12px;">▶ 배송 안내입니다.</a></span></strong>
                     </td>
                     <td>홍길동</td>
                     <td class=""><span class="txtNum">2017-11-09</span></td>
