@@ -185,7 +185,7 @@
 
 			.contentimgs{
 				width: auto;
-                height: 500px;
+                height: 700px;
                 float: left;
 			 
 			}
@@ -198,16 +198,16 @@
 			}
 
             #modalimg{
-            
-                height: 500px;
+            	width:auto;
+                height:100%;
                 float: left;
             }
 
             #coments{
                 background-color: white;
-                width: 300px;
-                height: 460px;
-                float: left;
+                width: 400px;
+                height: 700px;
+                float: right;
                 padding: 20px;
                 overflow: hidden;
             }
@@ -590,7 +590,7 @@
 
 
 
-						<!-- Modal content -->
+					
 						<div class="wrap-dropdown-content p-t-15 bo7 p-b-14 modalcss"
 							style="width: 98%; height: 100%; margin-top: 60px;margin-left:3.2%;">
 							
@@ -1140,39 +1140,24 @@
 									<br><br>
 									
 									<div id="modal">
-								<div id="modalcontent">
-                <button id="closebtn" onclick="modalclose();">X</button>
-                <div id="modalpost">
-                    <div id="modalimg" class="slideshow-container" >
-                        <div class="mySlides fade" style="display: block;">
-                            <div class="numbertext">1 / 6</div>
-                            <img class="contentimgs" src="/6Days/resources/maruta/dummy8.JPG" >
+								<div id="modalcontent" style="width:80%;height:80%;">
+                
+                <button class="close1" onclick="modalclose();"
+								style="position: relative; left: 49.5%; top: -2%;">&times;</button>
+                
+                <div id="modalpost" >
+                    <div id="modalimg" class="slideshow-container"  >
+                        <div class="mySlides" style="display: block;">
+                            <div class="numbertext">1 / 2</div>
+                            <img class="contentimgs" src="images/oT/review/review_sample1.jpg" alt="sample1" >
                         </div>
                         
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 6</div>
-                            <img class="contentimgs" src="/6Days/resources/maruta/dummy7.JPG" >
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 2</div>
+                            <img class="contentimgs" src="images/oT/review/review_sample2.jpg" alt="sample2" >
                         </div>
                         
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 6</div>
-                            <img class="contentimgs" src="/6Days/resources/maruta/dummy6.JPG" >
-                        </div>
-            
-                        <div class="mySlides fade">
-                            <div class="numbertext">4 / 6</div>
-                            <img class="contentimgs" src="/6Days/resources/maruta/dummy5.JPG" >
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="numbertext">5 / 6</div>
-                            <img class="contentimgs" src="/6Days/resources/maruta/dummy4.JPG" >
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="numbertext">6 / 6</div>
-                            <img class="contentimgs" src="/6Days/resources/maruta/dummy3.JPG" >
-                        </div>
+                     
                         <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
                         <a class="next" onclick="plusSlides(1);">&#10095;</a>
                         
@@ -1181,20 +1166,13 @@
                         <div id="dotbox" style="text-align:center">
                             <span class="dot" onclick="currentSlide(1);"></span> 
                             <span class="dot" onclick="currentSlide(2);"></span> 
-                            <span class="dot" onclick="currentSlide(3);"></span> 
-                            <span class="dot" onclick="currentSlide(4);"></span>
-                            <span class="dot" onclick="currentSlide(5);"></span> 
-                            <span class="dot" onclick="currentSlide(6);"></span> 
+                           
                         </div>      
                         
                                     
                    </div>
             
                </div>
-
-
-
-
 
                     <div id="coments">
                         <div id="userprofilshow">
@@ -1205,6 +1183,7 @@
                             <div class="coments">댓글1</div><br>
                             <div class="coments">댓글2</div><br>
                             <div class="coments">댓글3</div><br>
+                            
                         </div>
                         <div><hr style="margin: 5px;">
                             <button style="font-size: 15px; float: left; border: none; border-radius: 10px; background-color: pink; margin-top: 4px; margin-right: 6px;">좋아요</button>
