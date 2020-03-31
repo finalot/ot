@@ -903,20 +903,36 @@ function qna(){
   box-shadow: 0 4px 6px -6px #222;padding: 20px 0px 20px 29px; border-width: 1px; border-style: solid; border-color: rgb(218, 218, 218); border-image: initial; height: 22%; background: white; margin-bottom: 3%;">
 
 									<form action="#">
-										<label>키 : <input type="text"
+										<label>키 : <input type="text" placeholder="필수입력"
 											style="width: 80px; align: center; height: 25px; border: 2px solid lightgray; text-align: center; border-radius: 10px;"
 											maxlength="6">&nbsp;<small>cm</small></label>&nbsp;&nbsp;&nbsp;
 
-										<label>몸무게 : <input type="text"
+										<label>몸무게 : <input type="text" placeholder="필수입력"
 											style="width: 80px; height: 25px; border: 2px solid lightgray; text-align: center; border-radius: 10px;"
 											maxlength="6">&nbsp;<small>kg</small></label>&nbsp;&nbsp;&nbsp;
-
-										<label>평소사이즈 : <select style="background: none;">
-												<option>상의</option>
-												<option>하의</option>
-										</select> <input type="text"
-											style="width: 80px; height: 25px; border: 2px solid lightgray; text-align: center; border-radius: 10px;"
-											maxlength="6">
+											
+										<div style="display:inline-block;width: 100px; height: 25px; border: 2px solid lightgray; 
+										text-align: center; border-radius: 10px;font-size:10px;">
+										<input name="gong" type="radio">공개
+										<input name="gong" type="radio">비공개
+										</div>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<label>선택한옵션(컬러) : <select style="background: none;width:80px;">
+												<option>------</option>
+												<option>그레이</option>
+												<option>블랙</option>
+												<option>네이비</option>
+												<option>네온옐로우</option>
+										</select> 
+										</label>
+										
+										<label>선택한옵션(사이즈) : <select style="background: none;width:80px;">
+												<option>------</option>
+												<option>XS</option>
+												<option>S</option>
+												<option>M</option>
+												<option>L</option>
+										</select> 
 										</label>
 
 										<button  onclick="reviewOff();"
