@@ -134,6 +134,7 @@ font-size: 9px !important;
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">NEW 5%</a></li>
+							<li><a href="index.jsp">SALE</a></li>
 
 						</ul></li>
 					<span class="linedivide1"></span>
@@ -347,6 +348,7 @@ font-size: 9px !important;
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">NEW 5%</a></li>
+								<li><a href="index.jsp">SALE</a></li>
 
 							</ul></li>
 
@@ -555,6 +557,7 @@ font-size: 9px !important;
 						class="item-menu-mobile" href="index.jsp">EVENT</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">NEW 5%</a></li>
+							<li><a href="index.jsp">SALE</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
@@ -569,136 +572,65 @@ font-size: 9px !important;
 			<div class="allMenuTop">
 				<h3 class="helve">Shop</h3>
 				<div>
-					<h4 class="helve">#</h4>
+					<h4 class="helve">EVENT</h4>
 					<ul>
 						<li><a href="/product/list.html?cate_no=96">NEW5%</a></li>
-						<li><a href="/product/list.html?cate_no=31">BEST50</a></li>
-						<!--li><a href="/category/당일배송/137/">당일배송</a></li-->
+						<li><a href="/product/list.html?cate_no=96">SALE</a></li>
 					</ul>
 				</div>
 				<div>
-					<h4 class="helve">PROJECT</h4>
+					<h4 class="helve">BEST20</h4>
 					<ul>
-						<li><a href="/category/party-look/236/">PARTY LOOK</a></li>
-						<li><a href="/product/list.html?cate_no=234">JEJU촬영</a></li>
-						<li><a href="/category/paris/216/">PARIS촬영</a></li>
-						<li><a href="/category/sydney/215/">SYDNEY촬영</a></li>
-						<li><a href="/product/list.html?cate_no=64">유니섹스</a></li>
-						<li><a href="/product/list.html?cate_no=171">트레이닝</a></li>
+						<li><a href="/category/party-look/236/">랭킹20</a></li>
 					</ul>
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=108">NTNY</a>
+						<a href="/product/list.html?cate_no=108">CLOTHING</a>
 					</h4>
 					<ul>
-						<li><a href="/product/list.html?cate_no=109">탑/아우터</a></li>
-						<li><a href="/product/list.html?cate_no=110">팬츠</a></li>
-						<li><a href="/product/list.html?cate_no=111">악세사리</a></li>
+						<li><a href="index.jsp">티셔츠/나시</a></li>
+							<li><a href="index.jsp">맨투맨</a></li>
+							<li><a href="index.jsp">후디</a></li>
+							<li><a href="index.jsp">바지</a></li>
+							<li><a href="index.jsp">니트</a></li>
+							<li><a href="index.jsp">원피스/스커트</a></li>
+							<li><a href="index.jsp">셔츠/블라우스</a></li>
 					</ul>
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=53">MADE</a>
+						<a href="/product/list.html?cate_no=53">OUTER</a>
 					</h4>
 					<ul>
-						<li><a href="/product/list.html?cate_no=97">탑/아우터</a></li>
-						<li><a href="/product/list.html?cate_no=98">팬츠</a></li>
-						<li><a href="/product/list.html?cate_no=99">악세사리</a></li>
+						<li><a href="index.jsp">자켓</a></li>
+							<li><a href="index.jsp">코트/점퍼</a></li>
+							<li><a href="index.jsp">가디건</a></li>
 					</ul>
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=25">TOP</a>
+						<a href="/product/list.html?cate_no=25">SHOES</a>
 					</h4>
 					<ul>
-						<li><a href="/product/list.html?cate_no=62">긴팔</a></li>
-						<li><a href="/product/list.html?cate_no=93">니트</a></li>
-						<li><a href="/product/list.html?cate_no=61">슬리브리스/반팔</a></li>
-						<li><a href="/product/list.html?cate_no=63">크롭</a></li>
-						<li><a href="/product/list.html?cate_no=127">오프숄더</a></li>
+						<li><a href="index.jsp">신발</a></li>
 
 					</ul>
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=24">OUTER</a>
+						<a href="/product/list.html?cate_no=24">ACC</a>
 					</h4>
 					<ul>
-						<li><a href="/product/list.html?cate_no=72">자켓</a></li>
-						<li><a href="/product/list.html?cate_no=73">코트/점퍼</a></li>
-						<li><a href="/product/list.html?cate_no=74">가디건</a></li>
-						<li><a href="/product/list.html?cate_no=113">베스트</a></li>
+						<li><a href="index.jsp">벨트</a></li>
+							<li><a href="index.jsp">안경/선글라스</a></li>
+							<li><a href="index.jsp">모자</a></li>
+							<li><a href="index.jsp">양말</a></li>
+							<li><a href="index.jsp">악세사리</a></li>
+							<li><a href="index.jsp">기타</a></li>
 					</ul>
 				</div>
-				<div>
-					<h4 class="helve">
-						<a href="/product/list.html?cate_no=26">PANTS</a>
-					</h4>
-					<ul>
-						<li><a href="/product/list.html?cate_no=67">슬랙스</a></li>
-						<li><a href="/product/list.html?cate_no=68">데님</a></li>
-						<li><a href="/product/list.html?cate_no=70">부츠컷</a></li>
-						<li><a href="/product/list.html?cate_no=126">와이드</a></li>
-						<li><a href="/product/list.html?cate_no=71">면바지/기타</a></li>
-						<li><a href="/product/list.html?cate_no=133">트레이닝</a></li>
-						<li><a href="/product/list.html?cate_no=134">조거팬츠</a></li>
-						<li><a href="/product/list.html?cate_no=69">숏/반바지</a></li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="helve">
-						<a href="/product/list.html?cate_no=52">SKIRT</a>
-					</h4>
-					<ul>
-						<li><a href="/product/list.html?cate_no=131">스커트</a></li>
-						<li><a href="/product/list.html?cate_no=132">원피스</a></li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="helve">
-						<a href="/product/list.html?cate_no=42">JEWELRY</a>
-					</h4>
-					<ul>
-						<li><a href="/product/list.html?cate_no=83">귀걸이/귀찌</a></li>
-						<li><a href="/product/list.html?cate_no=84">목걸이</a></li>
-						<li><a href="/product/list.html?cate_no=85">반지</a></li>
-						<li><a href="/product/list.html?cate_no=87">초커/팔찌</a></li>
-						<li><a href="/product/list.html?cate_no=101">시계</a></li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="helve">
-						<a href="/product/list.html?cate_no=76">BAG&amp;SHOES</a>
-					</h4>
-					<ul>
-						<li><a href="/product/list.html?cate_no=77">가방</a></li>
-						<li><a href="/product/list.html?cate_no=79">신발</a></li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="helve">
-						<a href="/product/list.html?cate_no=28">ACC</a>
-					</h4>
-					<ul>
-						<li><a href="/product/list.html?cate_no=75">벨트</a></li>
-						<li><a href="/product/list.html?cate_no=114">안경/선글라스</a></li>
-						<li><a href="/product/list.html?cate_no=80">모자/헤어악세사리</a></li>
-						<li><a href="/product/list.html?cate_no=81">양말/스타킹</a></li>
-						<li><a href="/product/list.html?cate_no=100">머플러/장갑</a></li>
-						<li><a href="/product/list.html?cate_no=125">기타</a></li>
-					</ul>
-				</div>
-				<div>
-					<!--h4 class="helve"><a href="/product/list.html?cate_no=38">SALE</a></h4-->
-					<!--ul>
-                	<li><a href="/product/list.html?cate_no=158">아우터</a></li>
-                    <li><a href="/product/list.html?cate_no=159">탑</a></li>
-                    <li><a href="/product/list.html?cate_no=160">팬츠</a></li>
-                    <li><a href="/product/list.html?cate_no=161">스커트/원피스</a></li>
-                    <li><a href="/product/list.html?cate_no=91">기타</a></li>
-                </ul-->
-				</div>
+				
 			</div>
 
 			<div class="allMenuBottom">
@@ -718,8 +650,6 @@ font-size: 9px !important;
 							<li><a href="/board/free/list.html?board_no=101">해외배송문의</a></li>
 							<li><a href="bad_product_board.jsp">상품불량 및
 									오배송접수</a></li>
-							<li><a href="/board/free/list.html?board_no=7">vip/vvip
-									전용게시판</a></li>
 						</ul>
 					</div>
 					<div>
@@ -768,7 +698,7 @@ font-size: 9px !important;
 					<div>
 						<h3 class="helve">CS center</h3>
 						<ul>
-							<li class="helve" style="font-size: 22px; margin-bottom: 5px;">1566-6813</li>
+							<li class="helve" style="font-size: 22px; margin-bottom: 5px;">010-9252-2608</li>
 							<li>평일 11:00 - 18:00</li>
 							<li>점심 13:00 - 14:00</li>
 							<li>토,일,공휴일 휴무</li>
@@ -777,19 +707,14 @@ font-size: 9px !important;
 					<div>
 						<h3 class="helve">Bank info</h3>
 						<ul>
-							<li>국민 543001-01-454061</li>
-							<li>농협 301-0231-3595-51</li>
-							<li>신한 140-012-589977</li>
+							<li>국민 093402-04-081571</li>
 							<li>예금주 : (주)ot</li>
 						</ul>
 					</div>
 					<div>
 						<h3 class="helve">Instagram</h3>
 						<ul>
-							<li><a href="//instagram.com/blackup_kr" target="_blank">@ot_kr</a></li>
-							<li><a href="//instagram.com/blackup_jp" target="_blank">@ot_jp</a></li>
-							<li><a href="//instagram.com/nineteen_ninety_kr"
-								target="_blank">@nineteen_ninety_kr</a></li>
+							<li><a href="https://www.instagram.com/blackup_kr/" target="_blank">@ot_</a></li>
 						</ul>
 					</div>
 				</div>
