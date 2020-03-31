@@ -73,20 +73,20 @@ label{
 }
 #coupon_div{
     display: none; position: absolute;
-                top: 442px;
-                left: 857px;
-                background: white;
-                width: 410px;
-                border: 1px solid;
+     top: 442px;
+     left: 857px;
+     background: white;
+     height: 800px;
+	width: 750px;
+      border: 1px solid;
 
 }
 #coupon_input{
-    margin-right: 9%;background: black;
+   background: black;
     color: white;
     height: 35px; 
     width: 90px;
     border-radius: 10px;
-    margin-bottom: 4%;
 
 }
 td{
@@ -101,7 +101,17 @@ td{
 background-color:#f5f4f4 !important;
 
 }
+#coupon-table td{
+	border: none;
+}
+#coupon-plus{
+margin-top: 1%;
+    margin-left: 3%;
+    font-size: 50px;
+}
+
 </style>
+
 </head>
 <body class="animsition" style="background: rgb(243, 243, 243);">
 
@@ -236,12 +246,77 @@ background-color:#f5f4f4 !important;
         </tr>
         <tr>
             <td class="first"><span style="color: red">*</span> 이벤트 명</td>
-            <td class="second"><input type="text" name="subject" id="subject">  <button id="coupon_open" style="margin-left: 41%;background: black;color: white;height: 40px; width: 90px;border-radius: 10px;">쿠폰등록</button>
+            <td class="second"><input type="text" name="subject" id="subject"><button id="coupon_open" style="margin-left: 41%;background: black;color: white;height: 40px; width: 90px;border-radius: 10px;">쿠폰등록</button>
                 <div id="coupon_div">
+                 
                     <div align="right" style="background: black;"><button id="coupon_close" style="color: white;margin-right: 1%;">X</button></div>
-                    <div style="margin-left: 5%;margin-top: 3%;"><label style="margin-right: 5%;">쿠폰명  </label> <input id="coupon_name" style="border: 1px solid;" type="text"></div><br>
-                    <div style="margin-left: 5%;margin-top: 3%;"><label style="margin-right: 1%;">쿠폰가격  </label><input id="coupon_price" style="border: 1px solid;" type="number" min="1000" step="1000"></div><br>
-                    <div align="right"><button id="coupon_input">쿠폰등록</button></div>
+                  <div style="border-bottom: 1px solid; display: flex; margin-left: 2%;margin-right: 2%;">
+                	<p style="margin-left: 4%;margin-top: 4%;font-size: 25px;font-weight: bold;">쿠폰</p><button id="coupon-plus"> + </button>   
+                </div>
+                <div align="center" style="height: 70%;width: 96%;overflow: auto;">
+				<table  id="coupon-table" style="margin-top: 3%;font-size: 20px;overflow: scroll;">
+					<thead>
+						<tr style="background: black;color: white;">
+							<th style="padding-left: 100px;border-right: 1px solid;">쿠폰명</th>
+							<th style="padding-left: 105px;">쿠폰가격</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+						<tr>
+							<td><input class="coupon_name" type="text"></td>
+							<td><input class="coupon_price" type="text"></td>
+							<td><button>X</button></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				</div> 
+				
+				 <div align="center"><button id="coupon_input">쿠폰등록</button></div>
+               </div>
+                     <br>
+                   
                 </div>
             </td>
         
@@ -315,15 +390,15 @@ background-color:#f5f4f4 !important;
             $('#coupon_div').css('display','none');
         });
         $('#coupon_input').click(function(){
-            if($('#coupon_name').val() && $('#coupon_price').val() != ""){
-                var coupon_name = $('#coupon_name').val();
+            if($('.coupon_name').val() && $('#coupon_price').val() != ""){
+                var coupon_name = $('.coupon_name').val();
 
                 $('#d_coupon').append("<option value="+coupon_name+">"+coupon_name
                                         +"</option>");
                 alert('쿠폰등록 완료');
                 $('#coupon_div').css('display','none');
-                    document.getElementById('#coupon_name').value = "";
-                    document.getElementById('#coupon_price').value = "";
+                    document.getElementById('.coupon_name').value = "";
+                    document.getElementById('.coupon_price').value = "";
             }else{
                 
                 alert('쿠폰명 또는 쿠폰가격을 입력해 주세요')
