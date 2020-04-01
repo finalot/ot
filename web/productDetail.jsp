@@ -2720,24 +2720,24 @@ function qna(){
 	<style>
 .detail_pic {
 	position: relative;
-	left: 8.4%;
+	left: 8.9%;
 }
 </style>
 	<img class="detail_pic"
 		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_1.jpg"
-		alt="IMG-PRODUCT" width="1000" height="auto">
+		alt="IMG-PRODUCT" width="920" height="auto">
 	<img class="detail_pic"
 		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_3.jpg"
-		alt="IMG-PRODUCT" width="1000" height="auto">
+		alt="IMG-PRODUCT" width="920" height="auto">
 	<img class="detail_pic"
 		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_2.jpg"
-		alt="IMG-PRODUCT" width="1000" height="auto">
+		alt="IMG-PRODUCT" width="920" height="auto">
 	<img class="detail_pic"
 		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_5.jpg"
-		alt="IMG-PRODUCT" width="1000" height="auto">
+		alt="IMG-PRODUCT" width="920" height="auto">
 	<img class="detail_pic"
 		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_4.jpg"
-		alt="IMG-PRODUCT" width="1000" height="auto">
+		alt="IMG-PRODUCT" width="950" height="auto">
 <!-- 디테일 사진 부분 끝-->
 <div id="washing_tip"></div>
 <br><br>
@@ -3095,7 +3095,7 @@ function qna(){
 
 
 	<!-- Relate Product -->
-	<section class="relateproduct bgwhite p-t-45 p-b-138">
+	<section class="relateproduct bgwhite p-t-45 p-b-138" style="position:relative;top:800px;">
 	
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">With Item</h3>
@@ -3423,7 +3423,7 @@ function qna(){
 	<div id="dropDownSelect1"></div>
 	<div id="dropDownSelect2"></div>
 
-<div style=" width: 160%; margin-left:-30%;">
+<div style=" width: 160%; margin-left:-30%;position:relative;top:800px;">
 <!-- Footer -->
 <%@include file="footer.jsp"%>
 </div>
